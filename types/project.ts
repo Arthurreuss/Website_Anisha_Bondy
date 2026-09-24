@@ -35,6 +35,8 @@ export interface VideoRef {
   title: string
   /** Vorschaubild; fehlt es, wird bei YouTube das Standard-Thumbnail genutzt */
   poster?: string
+  /** Seitenverhältnis, Standard 16:9; YouTube Shorts = 9:16 */
+  aspect?: '16:9' | '9:16'
 }
 
 export interface Credit {
