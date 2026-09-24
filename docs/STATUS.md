@@ -3,19 +3,18 @@
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
 **Stand:** 2026-09-24
-**Phase:** 1 – Bau mit Platzhaltern (D-008). P1–P5, P7 ✅.
+**Phase:** 1 – Bau mit Platzhaltern (D-008). P1–P7 ✅.
 
 ## Aktiv
-- P6 Intro-Animation → Orchestrator selbst
 - P9 Scroll-Reveals + Hover-Rolls → Sonnet-Agent im Worktree
+- P8 Seitenübergang → Orchestrator selbst
 
 ## Laufende Agenten
-- (werden beim Start eingetragen) – bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
+- Sonnet „P9 Reveals“ (eigener Worktree, committet dort, pusht nicht). Bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
 
 ## Nächster Schritt
-1. P6 bauen (`composables/useGalleryIntro.ts`, nutzt `setEnabled` aus useInfiniteGallery).
-2. P9 an Sonnet vergeben (Masken `.title-mask`/`.label-mask` in P7 vorbereitet).
-3. Dann P8 (Übergang Karte → Hero, Hero-Container `.case-hero-media[data-slug]`), danach P11 QA.
+1. P9-Ergebnis reviewen und mergen (GalleryCard: `.gallery-item__name-wrapper > *` muss für das Intro erhalten bleiben).
+2. P8 (Übergang Karte → Hero, Hero-Container `.case-hero-media[data-slug]`), danach P11 QA.
 
 ## Bekannte Kleinigkeiten
 - Header-Text über hellen/dunklen Bildern ohne Kontrastlösung (evtl. mix-blend-mode, in P11 prüfen).

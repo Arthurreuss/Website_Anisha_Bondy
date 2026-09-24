@@ -52,3 +52,9 @@ Grund: Review des Sub-Agenten-Ergebnisses, technisch begründet.
 - Send-Button im Kontakt-Overlay nutzt `.font-body-40-100`.
 - Galerie-Bilder der Detailseite bleiben `loading="lazy"`; Lücken in Full-Page-Screenshots sind nur Messartefakt.
 Grund: Review der Sub-Agenten-Ergebnisse und eigene Prüfung per Playwright.
+
+## D-012 · 2026-09-24 · Intro (P6): Auslöser und FOUC-Schutz
+- Intro läuft nur, wenn die Startseite Teil der ersten Hydration ist (`nuxtApp.isHydrating`) – nicht bei Client-Navigation zurück zur Startseite, nicht bei reduced-motion.
+- Gegen Aufblitzen der fertigen Reihe setzt ein Inline-Skript im `<head>` `html.is-intro` (Galerie `visibility:hidden`), Fallback-Timeout 8 s ohne JS.
+- Intro animiert `.gallery-item__stage` (x/y/scale), `.gallery-item__img` (clip-path), `.gallery-item__media` (Zoom 1.3→1.15) und das Kind von `.gallery-item__name-wrapper`; der Slider besitzt weiterhin `x` auf `.gallery-item` und `scale` auf `__wrapper` – keine Überschneidung.
+Grund: SSG liefert die fertige Reihe aus; ohne Klasse vor dem ersten Paint gäbe es einen sichtbaren Sprung.

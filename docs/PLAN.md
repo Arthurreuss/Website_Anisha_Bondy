@@ -14,7 +14,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P3 | Datenvertrag + Platzhalter-Stub (echtes Content-Modell → Phase 2, D-009) | Opus | P1 | ✅ | types/project.ts, composables/useProjects.ts, utils/projects-source.ts, public/placeholders |
 | P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ✅ | components/AppHeader.vue, plugins/lenis.client.ts |
 | P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ✅ | composables/useInfiniteGallery.ts, pages/index.vue |
-| P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ⬜ | composables/useGalleryIntro.ts |
+| P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ✅ | composables/useGalleryIntro.ts |
 | P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ✅ | pages/cases/[slug].vue |
 | P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ⬜ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ⬜ | composables/useReveal.ts |

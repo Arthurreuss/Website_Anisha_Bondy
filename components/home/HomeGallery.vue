@@ -5,6 +5,7 @@ defineProps<{ projects: Project[] }>()
 
 const root = ref<HTMLElement | null>(null)
 const gallery = useInfiniteGallery(root)
+useGalleryIntro(root, gallery)
 
 defineExpose({ root, gallery })
 </script>
@@ -58,5 +59,12 @@ defineExpose({ root, gallery })
   &:focus {
     outline: none;
   }
+}
+</style>
+
+<style lang="scss">
+// Vor dem Intro (P6) ausblenden; Klasse setzt ein Inline-Skript im <head>.
+html.is-intro .gallery {
+  visibility: hidden;
 }
 </style>
