@@ -89,3 +89,11 @@ Grund: Abnahme P11; Kriterium Desktop ≥ 90 erfüllt, Deploy läuft (D-014).
 - Die Pop-Up-Opera-Videos (Selam Opera!) werden zu **einem** Projekt zusammengefasst, nicht als einzelne Projekte.
 - Bestand und Strukturvorschlag in [INHALTE.md](INHALTE.md); Pakete erst nach Freigabe in PLAN.md.
 Grund: Entscheidung des Users beim Start von Phase 2.
+
+## D-018 · 2026-09-24 · Phase 2: Sprache, Platzhalter, Datenformat
+- **Zweisprachig EN + DE** (Entscheidung des Users). `@nuxtjs/i18n`, Strategie `prefix_except_default`: EN unter `/`, DE unter `/de/…`. Ersetzt den Hinweis zu `lang` in D-016.
+- **Offene Fragen (INHALTE.md §7) werden nicht blockierend behandelt:** sichtbare Platzhalter über eine Komponente `UiTodo` (gestrichelt, Text „offen: …“), damit User und Anisha beim Durchgehen sehen, was fehlt. Iterativ ersetzen.
+- **Datenformat:** eine TypeScript-Datei je Projekt in `content/projects/` mit Feldern `{ en, de }` für Texte (typsicher, keine zusätzliche Abhängigkeit) – statt @nuxt/content. Zugriff weiter nur über `useProjects()` (D-009).
+- **Vorläufige Bilder:** YouTube-Vorschaubilder der offiziellen Videos als Cover (auf 4:5 beschnitten) + die vorhandenen Fotos; werden durch freigegebene Pressefotos ersetzt. Seite ist nur Entwurf zum Vorzeigen.
+- Galerie der Startseite = die ★-Projekte aus INHALTE.md §3.
+Grund: Entscheidung des Users („EN + DE, für offene Fragen Platzhalter, Rest schon einbauen, dann iterieren“).

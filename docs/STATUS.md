@@ -6,15 +6,15 @@
 **Phase:** 2 – echte Inhalte. Phase 1 abgeschlossen (P1–P9, P11 ✅, P10 ⏸).
 
 ## Aktiv
-- Inhalte gesammelt + Strukturvorschlag: [INHALTE.md](INHALTE.md) (D-017). Wartet auf Freigabe durch User/Anisha.
+- Phase 2 Umsetzung (D-018): P12 Fundament (Orchestrator) → dann P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. User klärt die offenen Fragen (INHALTE.md §7) mit Anisha, v. a. Sprache, Bilder/Fotos, Galerie-Auswahl.
-2. Danach Pakete P12–P18 (Entwurf in INHALTE.md §6) in PLAN.md übernehmen und starten – zuerst P12 Content-Modell.
-3. YAMawards-Ergebnis (29.09.2026) in INHALTE.md §4 nachtragen.
+1. P12 bauen, committen, pushen.
+2. P13–P16 parallel starten (Briefing nach agent-briefing.md), reviewen, mergen.
+3. P17, dann User zeigt Anisha den Stand; offene Fragen = UiTodo-Markierungen (INHALTE.md §7).
 
 ## Bekannte Kleinigkeiten
 - Zurück zur Startseite: Galerie startet bei Position 0 (D-015).
@@ -25,4 +25,4 @@
 - Porträt aus Anishas PDF liegt nur im Scratchpad (nicht committet, Credit offen).
 
 ## Offene Fragen an den User
-- siehe INHALTE.md §7.
+- INHALTE.md §7 (User klärt mit Anisha; bis dahin Platzhalter).
