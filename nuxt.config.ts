@@ -7,6 +7,10 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      // /about und /archive werden vom Menü-Overlay (P4) bereits verlinkt,
+      // existieren als Seiten aber erst in einem späteren Paket (P7 ff.).
+      // Bis dahin soll ein fehlender Route den SSG-Build nicht abbrechen.
+      failOnError: false,
     },
   },
 
