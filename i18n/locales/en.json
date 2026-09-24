@@ -87,5 +87,29 @@
     "gallery": {
       "empty": "Production photos to follow"
     }
+  },
+  "about": {
+    "seoTitle": "About — Anisha Bondy",
+    "portraitAlt": "Portrait of Anisha Bondy",
+    "approachEyebrow": "Approach",
+    "bioHeading": "Biography",
+    "residenceTodo": "Confirm place of residence (mockup says Vienna, some sources say Berlin)",
+    "workedWithHeading": "Worked with",
+    "timelineHeading": "Timeline",
+    "pressHeading": "Press & awards",
+    "partnersHeading": "Partners",
+    "wonLabel": "Won",
+    "nominatedLabel": "Nominated"
+  },
+  "archive": {
+    "seoTitle": "Archive — Anisha Bondy",
+    "seoDescription": "All productions by Anisha Bondy, filterable by Direct, Create and Participate.",
+    "filterAll": "All",
+    "empty": "No productions for this filter.",
+    "colYear": "Year",
+    "colTitle": "Title",
+    "colVenue": "Venue",
+    "colRole": "Role",
+    "colPillar": "Pillar"
   }
 }
