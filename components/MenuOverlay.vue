@@ -14,9 +14,9 @@ const closeBtnEl = ref<HTMLElement | null>(null)
 let triggerEl: HTMLElement | null = null
 
 const links = [
-  { label: 'Work', to: '/' },
-  { label: 'About', to: '/about' },
-  { label: 'Archive', to: '/archive' },
+  { label: 'nav.work', to: '/' },
+  { label: 'nav.about', to: '/about' },
+  { label: 'nav.archive', to: '/archive' },
 ]
 
 const isOpen = computed(() => overlay.value === 'menu')
@@ -133,11 +133,11 @@ onBeforeUnmount(() => {
         v-for="(link, i) in links"
         :key="link.to"
         :ref="(el) => setLinkEl((el as any)?.$el ?? el, i)"
-        :to="link.to"
+        :to="$localePath(link.to)"
         class="menu-overlay__link font-headline-1"
         @click="close"
       >
-        {{ link.label }}
+        {{ $t(link.label) }}
       </NuxtLink>
     </nav>
   </div>

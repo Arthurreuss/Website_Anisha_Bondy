@@ -26,12 +26,12 @@ useHeroTransition(mediaRef, props.project.slug)
 
       <div class="content">
         <div class="meta font-body-12 uppercase">
-          <span>{{ props.project.client }}</span>
-          <span>{{ props.project.year }}</span>
+          <span>{{ props.project.venue }}</span>
+          <span>{{ props.project.yearLabel }}</span>
         </div>
 
         <div class="cats-tags font-body-12 uppercase">
-          <span>{{ props.project.category }}</span>
+          <span>{{ $t(`pillar.${props.project.pillar}`) }}</span>
           <span v-for="tag in props.project.tags" :key="tag">{{ tag }}</span>
         </div>
       </div>
@@ -74,8 +74,8 @@ useHeroTransition(mediaRef, props.project.slug)
           <h2 class="font-headline-1 title" data-reveal="mask">{{ props.project.title }}</h2>
         </div>
         <div class="meta font-body-12 uppercase">
-          <span>{{ props.project.client }}</span>
-          <span>{{ props.project.year }}</span>
+          <span>{{ props.project.venue }}</span>
+          <span>{{ props.project.yearLabel }}</span>
         </div>
       </div>
 

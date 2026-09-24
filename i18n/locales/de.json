@@ -1,0 +1,7 @@
+{
+  "nav": { "work": "Arbeiten", "about": "Über mich", "archive": "Archiv", "contact": "Kontakt", "menu": "Menü", "close": "Schließen" },
+  "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
+  "pillarSub": { "direct": "Oper & Musiktheater", "create": "Neue Formate & szenische Konzerte", "participate": "Partizipatives Musiktheater" },
+  "todo": { "prefix": "offen" },
+  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." }
+}

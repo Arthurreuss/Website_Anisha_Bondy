@@ -11,7 +11,7 @@ useReveal(leftRef)
 </script>
 
 <template>
-  <NuxtLink :to="`/cases/${project.slug}`" class="next">
+  <NuxtLink :to="$localePath(`/cases/${project.slug}`)" class="next">
     <div class="left" ref="leftRef">
       <div class="title-mask">
         <p class="font-headline-1 eyebrow" data-reveal="mask">next case</p>
@@ -19,7 +19,7 @@ useReveal(leftRef)
       <div class="title-mask">
         <p class="font-headline-1 name" data-reveal="mask">{{ project.title }}</p>
       </div>
-      <p class="meta font-body-12 uppercase">{{ project.category }} · {{ project.client }}</p>
+      <p class="meta font-body-12 uppercase">{{ $t(`pillar.${project.pillar}`) }} · {{ project.venue }}</p>
     </div>
 
     <div class="thumb">

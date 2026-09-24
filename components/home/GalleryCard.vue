@@ -9,7 +9,7 @@ const cover = computed(() => props.project.cover)
 </script>
 
 <template>
-  <NuxtLink :to="`/cases/${project.slug}`" class="gallery-item roll-trigger" :data-slug="project.slug">
+  <NuxtLink :to="$localePath(`/cases/${project.slug}`)" class="gallery-item roll-trigger" :data-slug="project.slug">
     <div class="gallery-item__wrapper">
       <div class="gallery-item__stage">
         <div class="gallery-item__name-wrapper">

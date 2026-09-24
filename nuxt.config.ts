@@ -5,12 +5,37 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   ssr: true,
+
+  modules: ['@nuxtjs/i18n'],
+
+  // Zweisprachig (D-018): EN unter /, DE unter /de
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
+      { code: 'de', language: 'de', name: 'Deutsch', file: 'de.json' },
+    ],
+    defaultLocale: 'en',
+    // Netlify setzt URL beim Build; für hreflang/canonical
+    baseUrl: process.env.URL ?? '',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+    vueI18n: './i18n.config.ts',
+    bundle: { optimizeTranslationDirective: false },
+  },
+
+  runtimeConfig: {
+    public: {
+      // Platzhalter für offene Fragen sichtbar (D-018); für den Livegang auf false
+      showTodos: true,
+    },
+  },
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: ['/', '/de'],
       // Case-Seiten werden über die Links der Startseite gefunden.
       // /about und /archive sind im Menü verlinkt, aber noch nicht gebaut (D-011).
-      ignore: ['/about', '/archive'],
+      ignore: ['/about', '/archive', '/de/about', '/de/archive'],
     },
   },
 
@@ -47,7 +72,6 @@ export default defineNuxtConfig({
     // mode 'default': alte + neue Seite gleichzeitig im DOM.
     pageTransition: { name: 'page', mode: 'default', css: false },
     head: {
-      htmlAttrs: { lang: 'en' },
       title: 'Anisha Bondy',
       meta: [
         { charset: 'utf-8' },

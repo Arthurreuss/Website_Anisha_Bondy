@@ -6,15 +6,14 @@
 **Phase:** 2 – echte Inhalte. Phase 1 abgeschlossen (P1–P9, P11 ✅, P10 ⏸).
 
 ## Aktiv
-- Phase 2 Umsetzung (D-018): P12 Fundament (Orchestrator) → dann P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
+- Phase 2 Umsetzung (D-018, D-019): P12 ✅ → P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. P12 bauen, committen, pushen.
-2. P13–P16 parallel starten (Briefing nach agent-briefing.md), reviewen, mergen.
-3. P17, dann User zeigt Anisha den Stand; offene Fragen = UiTodo-Markierungen (INHALTE.md §7).
+1. P13–P16 parallel starten (Briefing nach agent-briefing.md), reviewen, mergen.
+2. P17, dann User zeigt Anisha den Stand; offene Fragen = UiTodo-Markierungen (INHALTE.md §7).
 
 ## Bekannte Kleinigkeiten
 - Zurück zur Startseite: Galerie startet bei Position 0 (D-015).

@@ -17,7 +17,7 @@ function toggleContact() {
 <template>
   <header class="app-header font-body-12 uppercase">
     <div class="app-header__inner container">
-      <NuxtLink to="/" class="app-header__logo roll-trigger">
+      <NuxtLink :to="$localePath('/')" class="app-header__logo roll-trigger">
         <span class="app-header__logo-line"><RollText text="Anisha" /></span>
         <span class="app-header__logo-line"><RollText text="Bondy" /></span>
       </NuxtLink>

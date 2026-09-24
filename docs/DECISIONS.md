@@ -97,3 +97,10 @@ Grund: Entscheidung des Users beim Start von Phase 2.
 - **Vorläufige Bilder:** YouTube-Vorschaubilder der offiziellen Videos als Cover (auf 4:5 beschnitten) + die vorhandenen Fotos; werden durch freigegebene Pressefotos ersetzt. Seite ist nur Entwurf zum Vorzeigen.
 - Galerie der Startseite = die ★-Projekte aus INHALTE.md §3.
 Grund: Entscheidung des Users („EN + DE, für offene Fragen Platzhalter, Rest schon einbauen, dann iterieren“).
+
+## D-019 · 2026-09-24 · Vorläufige Cover: typografisch statt Fremdbilder (ersetzt D-018 Punkt „Vorläufige Bilder“)
+- YouTube-Vorschaubilder taugen nicht als Cover (Schrift-Overlays), Standbilder lassen sich im Container nicht aus den Videos ziehen, und Pressebilder von den Seiten der Häuser werden ohne Freigabe nicht kopiert.
+- Stattdessen: **typografische Cover** in der Säulenfarbe (`scripts/make-placeholder-cover.py` → `public/media/<slug>/cover.svg`) + die vorhandenen Fotos (Lene, pOpera, Porträt; `scripts/make-cover.py`). YouTube-Thumbnails nur als Vorschaubild im Klick-zum-Laden-Videoblock (P14).
+- i18n-Dateien liegen nach Modul-Standard unter `i18n/` (`i18n/i18n.config.ts`, `i18n/locales/*.json`).
+- `useProjects()` liefert nur Galerie-Projekte (`featured`), `useAllProjects()` alle; `project.client`/`category` → `venue`/`pillar` (Label über `$t('pillar.*')`).
+Grund: Umsetzung P12, Rechte und Bildqualität.

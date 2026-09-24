@@ -1,0 +1,7 @@
+{
+  "nav": { "work": "Work", "about": "About", "archive": "Archive", "contact": "Contact", "menu": "Menu", "close": "Close" },
+  "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
+  "pillarSub": { "direct": "Opera & Music Theatre", "create": "New Formats & Staged Concerts", "participate": "Participatory Music Theatre" },
+  "todo": { "prefix": "open" },
+  "home": { "title": "Selected work", "description": "Anisha Bondy – director for opera and music theatre. Direct. Create. Participate." }
+}

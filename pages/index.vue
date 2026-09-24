@@ -10,15 +10,16 @@ definePageMeta({
 
 const { data: projects } = await useProjects()
 
+const { t } = useI18n()
 useSeoMeta({
   title: 'Anisha Bondy',
-  description: 'Selected work by Anisha Bondy.',
+  description: () => t('home.description'),
 })
 </script>
 
 <template>
   <main class="page page--home">
-    <h1 class="sr-only">Selected work</h1>
+    <h1 class="sr-only">{{ $t('home.title') }}</h1>
     <HomeGallery :projects="projects" />
   </main>
 </template>
