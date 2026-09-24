@@ -27,3 +27,11 @@ Grund: Wunsch des Users; Session-Abbrüche und Autocompact dürfen keinen Kontex
 ## D-006 · 2026-09-24 · Schrift vorläufig: Inter
 Bis zur Entscheidung des Users über eine Lizenz für Neue Haas Unica / Helvetica Now wird **Inter** (frei) verwendet. Schrift ist zentral in `_typography.scss` austauschbar.
 Grund: User hat Lizenzfrage noch nicht beantwortet; Arbeit soll nicht blockieren.
+
+## D-007 · 2026-09-24 · Freie Schrift festgelegt (ersetzt D-006)
+Es bleibt bei einer freien Schrift: **Inter** (self-hosted via @fontsource-variable/inter). Keine Lizenz für Neue Haas Unica / Helvetica Now.
+Grund: Entscheidung des Users.
+
+## D-008 · 2026-09-24 · Erst komplett mit Platzhaltern bauen
+Alle Pakete werden mit Platzhalter-Inhalten (Bilder, Videos, Texte, Projekte) fertiggestellt. Echte Inhalte von Anisha kommen in einem zweiten Schritt; dafür wird vorher neu geplant und das Content-Modell (P3) bei Bedarf angepasst.
+Grund: Entscheidung des Users; Inhalte liegen noch nicht vor.

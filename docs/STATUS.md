@@ -16,8 +16,10 @@
 2. Danach parallel: P3, P4, P7 (Sonnet, Worktrees) · P5 (Opus, selbst).
 
 ## Offene Fragen an den User
-- Schrift: Lizenz für Neue Haas Unica / Helvetica Now oder dauerhaft freie Alternative? (vorläufig Inter, D-006)
-- Inhalte von Anisha (Projekte, Bilder, Videos, Texte) – bis dahin Platzhalter.
+- keine (Schrift: Inter, D-007 · Inhalte: Platzhalter, echte Inhalte in Phase 2, D-008)
+
+## Danach (Phase 2)
+- Echte Inhalte von Anisha einplanen → Content-Modell prüfen/anpassen, neu planen (D-008).
 
 ## Bekannte Probleme
 - keine
