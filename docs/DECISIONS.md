@@ -110,3 +110,12 @@ Grund: Umsetzung P12, Rechte und Bildqualität.
 - Kontakt-„Anliegen“ als Mehrfachauswahl-Chips (Feld `concern[]`), Netlify-Duplikat `public/__forms.html` angepasst.
 - Unbekannte Rollen (Schneekönigin, Mitternachtstür) als „Rolle offen“ + Todo; Clip „Eine Frau …“ ohne ID nicht verlinkt, nur Todo.
 Grund: Review der Sub-Agenten-Ergebnisse.
+
+## D-021 · 2026-09-24 · Merge P14/P15 + QA (P17)
+- Datenschutz-Hinweis im Videoblock einmal pro Block statt unter jedem Video; Verlauf hinter Videotiteln (Lesbarkeit auf hellen Vorschaubildern). „next case“ über i18n (`case.next`).
+- GalleryCard ohne Säulen-Punkt: der Übergang (P8) animiert `.gallery-item__name-wrapper > *`, ein weiteres Kind würde mitanimiert.
+- „Der Zauberer von Oz“ heißt in beiden Sprachen so (deutschsprachige Produktion, Cover ebenso).
+- Archiv sortiert absteigend (Werkverzeichnis), Timeline aufsteigend (Lebenslauf). Offene Punkte der About-Seite als UiTodo-Block am Seitenende.
+- Locale-Konflikte beim Mergen löst `scripts/merge-locales.py` (Namespaces je Paket).
+- Lighthouse Desktop lokal: Start 98/96/100/91, About 96/96/100/83, Case 98/96/100/83. SEO-Abzug nur hreflang/canonical ohne `baseUrl` (lokal leer, auf Netlify `URL`); color-contrast = bekanntes Header-Falsch-Positiv (D-016).
+Grund: Review, Browser-Check EN/DE Desktop + Mobil.

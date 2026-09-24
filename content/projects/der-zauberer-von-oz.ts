@@ -3,8 +3,8 @@ import { defineProject } from '~/types/project'
 
 export default defineProject({
   slug: 'der-zauberer-von-oz',
-  title: { en: 'The Wizard of Oz', de: 'Der Zauberer von Oz' },
-  subtitle: { en: 'Music theatre with puppetry', de: 'Musiktheater mit Puppenspiel' },
+  title: 'Der Zauberer von Oz',
+  subtitle: { en: 'Music theatre with puppetry (in German)', de: 'Musiktheater mit Puppenspiel' },
   venue: {
     en: 'Philharmonie Luxembourg & Musikverein Vienna (Brucknerhaus Linz, 03/2027)',
     de: 'Philharmonie Luxembourg & Musikverein Wien (Brucknerhaus Linz, 03/2027)',
@@ -31,7 +31,7 @@ export default defineProject({
     ],
   },
   videos: [
-    { provider: 'youtube', id: 'WvE5Xzjf6kU', title: { en: 'The Wizard of Oz', de: 'Der Zauberer von Oz' }, aspect: '9:16' },
+    { provider: 'youtube', id: 'WvE5Xzjf6kU', title: 'Der Zauberer von Oz – Trailer', aspect: '9:16' },
     { provider: 'youtube', id: 'XFyY4etJ63Y', title: { en: 'The Wizard of Oz', de: 'Der Zauberer von Oz' } },
   ],
   credits: [

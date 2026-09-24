@@ -14,7 +14,7 @@ useReveal(leftRef)
   <NuxtLink :to="$localePath(`/cases/${project.slug}`)" class="next">
     <div class="left" ref="leftRef">
       <div class="title-mask">
-        <p class="font-headline-1 eyebrow" data-reveal="mask">next case</p>
+        <p class="font-headline-1 eyebrow" data-reveal="mask">{{ $t('case.next') }}</p>
       </div>
       <div class="title-mask">
         <p class="font-headline-1 name" data-reveal="mask">{{ project.title }}</p>

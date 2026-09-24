@@ -26,6 +26,8 @@ useReveal(rootRef)
         <CaseVideoItem :video="video" :pillar-color="pillarColor" />
       </div>
     </div>
+
+    <p class="case-videos__notice font-body-12">{{ $t('case.video.notice') }}</p>
   </section>
 </template>
 
@@ -37,6 +39,11 @@ useReveal(rootRef)
   @include desktop {
     padding-block: 8rem;
   }
+}
+
+.case-videos__notice {
+  margin-top: 1.6rem;
+  opacity: 0.55;
 }
 
 .case-videos__grid {

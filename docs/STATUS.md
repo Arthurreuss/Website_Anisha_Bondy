@@ -3,26 +3,29 @@
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
 **Stand:** 2026-09-24
-**Phase:** 2 – echte Inhalte. Phase 1 abgeschlossen (P1–P9, P11 ✅, P10 ⏸).
+**Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- Phase 2 Umsetzung (D-018, D-019): P12 ✅ → P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
+- nichts – User geht den Draft mit Anisha durch.
 
-## Laufende Agenten (Sonnet, je eigener Worktree, seit 2026-09-24)
-- P13 ✅ gemergt · P14 Case-Seite v2 · P15 /about + /archive · P16 ✅ gemergt.
-- Nach Abbruch: Worktrees unter `.claude/worktrees/` prüfen (`git worktree list`), fertige Commits mergen, Rest neu briefen.
+## Laufende Agenten
+- keine.
 
 ## Nächster Schritt
-1. P13–P16 reviewen und mergen (Konflikte erwartbar nur in i18n/locales/*.json und nuxt.config.ts).
-2. P17, dann User zeigt Anisha den Stand; offene Fragen = UiTodo-Markierungen (INHALTE.md §7).
+1. Antworten von Anisha einarbeiten: jede Markierung „offen:“ (UiTodo) auf der Seite = eine offene Frage; Liste auch in INHALTE.md §7 und in `todos` der Projektdateien bzw. `content/site.ts`.
+2. Echte Fotos → `scripts/make-cover.py` (Cover 4:5) + `gallery` in den Projektdateien; Platzhalter-SVGs löschen.
+3. YAMawards-Ergebnis (29.09.2026) in `content/projects/lene-fliegt-ins-zirkusland.ts` + INHALTE.md §4.
+4. Vor Livegang: Impressum/Datenschutz ausfüllen + prüfen lassen, `showTodos` aus, Lighthouse mobil auf Netlify (D-016).
 
 ## Bekannte Kleinigkeiten
 - Zurück zur Startseite: Galerie startet bei Position 0 (D-015).
 - Zeilen-Split nur reiner Text (D-013).
+- Video-Vorschaubilder (i.ytimg.com) im Container-Headless-Browser wegen Proxy-Zertifikat nicht sichtbar – nur Testumgebung.
 
 ## Hilfsmittel
-- Screenshots/Tests: Playwright-Skripte im Scratchpad (`pw/*.mjs`), Lighthouse in `scratchpad/lh`. Build: `npm run generate` → `dist/`; statischer Server `python3 -m http.server 4173 --directory dist`. Nie `generate` bei laufendem Dev-Server.
-- Porträt aus Anishas PDF liegt nur im Scratchpad (nicht committet, Credit offen).
+- Inhalte: `content/projects/<slug>.ts` (Vorlage: lene-fliegt-ins-zirkusland.ts), `content/site.ts` (About), `content/legal.ts`, UI-Texte `i18n/locales/*.json`.
+- Skripte: `scripts/make-cover.py`, `scripts/make-placeholder-cover.py`, `scripts/merge-locales.py`.
+- Screenshots: Playwright im Scratchpad (`pw/shot.mjs`, `pw/scroll.mjs`, `pw/sheet.py`), Chromium `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`; Lighthouse mit `CHROME_PATH` gesetzt. Build `npm run generate` → `dist/`, Server `python3 -m http.server 4173 --directory dist`.
 
 ## Offene Fragen an den User
-- INHALTE.md §7 (User klärt mit Anisha; bis dahin Platzhalter).
+- INHALTE.md §7 (Sprache ✅ EN+DE geklärt, D-018).

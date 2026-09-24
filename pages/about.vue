@@ -25,11 +25,20 @@ useSeoMeta({
     <AboutTimeline />
     <AboutPress />
     <AboutPartners />
+    <section class="about-todos">
+      <UiTodo v-for="todo in l(siteContent.todos)" :key="todo" block>{{ todo }}</UiTodo>
+    </section>
   </main>
 </template>
 
 <style scoped lang="scss">
 .page--about {
   display: block;
+}
+
+.about-todos {
+  display: grid;
+  gap: 0.8rem;
+  padding: 4rem var(--gutter) 8rem;
 }
 </style>

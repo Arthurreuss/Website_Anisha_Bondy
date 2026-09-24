@@ -58,7 +58,6 @@ function load() {
         <span class="sr-only">{{ $t('case.video.play') }}</span>
       </button>
     </div>
-    <p v-if="!loaded" class="video__notice font-body-12">{{ $t('case.video.notice') }}</p>
   </div>
 </template>
 
@@ -129,6 +128,14 @@ function load() {
   z-index: -1;
 }
 
+.video__trigger::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0) 60%);
+}
+
 .video__fallback {
   position: absolute;
   inset: 0;
@@ -157,9 +164,6 @@ function load() {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
-.video__notice {
-  opacity: 0.55;
-}
 
 .sr-only {
   position: absolute;
