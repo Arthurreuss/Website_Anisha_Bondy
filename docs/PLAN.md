@@ -9,8 +9,8 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 
 | ID | Paket | Modell | Hängt ab von | Status | Nachweis |
 |---|---|---|---|---|---|
-| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | ⬜ | package.json, nuxt.config.ts, netlify.toml |
-| P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | ⬜ | assets/styles/_tokens.scss, assets/styles/_typography.scss |
+| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | 🔄 | package.json, nuxt.config.ts, netlify.toml |
+| P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | 🔄 | assets/styles/_tokens.scss, assets/styles/_typography.scss |
 | P3 | Content-Modell: Projekte als Markdown + Platzhalter-Medien | Sonnet | P1 | ⬜ | content/projects |
 | P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ⬜ | components/AppHeader.vue, plugins/lenis.client.ts |
 | P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ⬜ | composables/useInfiniteGallery.ts, pages/index.vue |
