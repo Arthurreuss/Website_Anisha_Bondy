@@ -65,3 +65,7 @@ Grund: SSG liefert die fertige Reihe aus; ohne Klasse vor dem ersten Paint gäbe
 - Fix im Review: Masken-Reveals triggern auf der Maske (Elternelement), nicht auf dem bereits verschobenen Element – sonst blieb der Hero-Titel unten im Viewport unsichtbar.
 - Zeilen-Split nur für reinen Text; bei Inline-Markup in echten Inhalten (Phase 2) erweitern.
 Grund: Review des Sub-Agenten-Ergebnisses und Browser-Prüfung.
+
+## D-014 · 2026-09-24 · Netlify: Publish-Verzeichnis `dist`
+Auf Netlify wählt Nuxt automatisch das Nitro-Preset `netlify-static`, das nach `dist/` schreibt (nicht `.output/public`) – erster Deploy scheiterte daran. `netlify.toml` publiziert jetzt `dist`; lokal legt `nuxt generate` `dist` als Symlink auf `.output/public` an, beides funktioniert.
+Grund: Build-Fehler beim ersten Netlify-Deploy des Users, lokal mit `NETLIFY=true` reproduziert.

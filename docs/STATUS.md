@@ -13,7 +13,7 @@
 
 ## Nächster Schritt
 1. P8 (Übergang Karte → Hero, Hero-Container `.case-hero-media[data-slug]`), danach P11 QA.
-2. User-Frage offen: Vorschau-Deploy (Netlify-Branch-Deploy oder GitHub Pages) – siehe unten.
+2. Netlify-Deploy des Users prüfen (Publish `dist`, D-014).
 
 ## Bekannte Kleinigkeiten
 - Header-Text über hellen/dunklen Bildern ohne Kontrastlösung (evtl. mix-blend-mode, in P11 prüfen).
@@ -23,7 +23,7 @@
 - Screenshots: Playwright-Skripte im Scratchpad (`pw/shot.mjs`, `pw/probe*.mjs`); Build prüfen mit `npm run generate` + statischem Server auf `.output/public` (Port 4173). Nie `generate` bei laufendem Dev-Server.
 
 ## Offene Fragen an den User
-- Vorschau online: Netlify (Repo verbinden) oder GitHub Pages (Workflow von mir, Pages-Quelle „GitHub Actions“ vom User)? Lokal: `npm run dev -- --port 3100`.
+- keine offen. Vorschau: Netlify (User hat verbunden, D-014); lokal `npm run dev -- --port 3100`.
 - Schrift: Inter, D-007 · Inhalte: Platzhalter, D-008
 
 ## Danach (Phase 2)
