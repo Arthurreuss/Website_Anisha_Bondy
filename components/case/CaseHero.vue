@@ -1,19 +1,23 @@
 <script setup lang="ts">
-// Hero der Case-Detailseite (Spezifikation §5). Statisches Layout + CSS-Hover
-// gemäß Auftrag P7 – Scroll-Reveals folgen in P9.
+// Hero der Case-Detailseite (Spezifikation §5). Scroll-Reveals über
+// useReveal() (P9): Titel in der vorhandenen .title-mask, Intro-Text
+// zeilenweise.
 import type { Project } from '~/types/project'
 
 const props = defineProps<{ project: Project }>()
 
 // Poster wird ausgeblendet, sobald das Video tatsächlich spielt.
 const isPlaying = ref(false)
+
+const heroRef = ref<HTMLElement | null>(null)
+useReveal(heroRef)
 </script>
 
 <template>
-  <section class="hero">
+  <section class="hero" ref="heroRef">
     <div class="left">
       <div class="title-mask">
-        <h1 class="font-headline-1 title">{{ props.project.title }}</h1>
+        <h1 class="font-headline-1 title" data-reveal="mask">{{ props.project.title }}</h1>
       </div>
 
       <div class="content">
@@ -63,7 +67,7 @@ const isPlaying = ref(false)
 
       <div class="mob-content">
         <div class="title-mask">
-          <h2 class="font-headline-1 title">{{ props.project.title }}</h2>
+          <h2 class="font-headline-1 title" data-reveal="mask">{{ props.project.title }}</h2>
         </div>
         <div class="meta font-body-12 uppercase">
           <span>{{ props.project.client }}</span>
@@ -72,7 +76,12 @@ const isPlaying = ref(false)
       </div>
 
       <div class="desc">
-        <p v-for="(paragraph, i) in props.project.intro" :key="i" class="font-body-40-100">
+        <p
+          v-for="(paragraph, i) in props.project.intro"
+          :key="i"
+          class="font-body-40-100"
+          data-reveal="lines"
+        >
           {{ paragraph }}
         </p>
       </div>

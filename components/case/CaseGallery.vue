@@ -1,28 +1,33 @@
 <script setup lang="ts">
 // Bildergalerie der Case-Detailseite (Spezifikation §5).
 // Blocktypen: "single" (ein großes Medium) und "group-3" (drei nebeneinander).
+// Scroll-Reveals über useReveal() (P9): Bilder per clip-path + Zoom, Labels
+// in der vorhandenen .label-mask, Medien parallaxen leicht beim Scrollen.
 import type { GalleryBlock } from '~/types/project'
 
 defineProps<{ blocks: GalleryBlock[] }>()
 
 const pad = (n: number) => String(n).padStart(2, '0')
+
+const galleryRef = ref<HTMLElement | null>(null)
+useReveal(galleryRef)
 </script>
 
 <template>
-  <section class="gallery">
+  <section class="gallery" ref="galleryRef">
     <div v-for="(block, i) in blocks" :key="i" class="block">
-      <div v-if="block.type === 'single'" class="single">
-        <CaseMedia :media="block.media" />
+      <div v-if="block.type === 'single'" class="single" data-reveal="image">
+        <CaseMedia :media="block.media" parallax />
       </div>
 
       <div v-else class="group">
-        <div v-for="(m, mi) in block.media" :key="mi" class="group__item">
-          <CaseMedia :media="m" />
+        <div v-for="(m, mi) in block.media" :key="mi" class="group__item" data-reveal="image">
+          <CaseMedia :media="m" parallax />
         </div>
       </div>
 
       <div class="label-mask">
-        <p class="label font-body-12 uppercase">{{ pad(i + 1) }}. {{ block.label }}</p>
+        <p class="label font-body-12 uppercase" data-reveal="mask">{{ pad(i + 1) }}. {{ block.label }}</p>
       </div>
     </div>
   </section>
@@ -51,6 +56,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
 }
 
 .single {
+  position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   margin-inline: auto;
@@ -73,6 +79,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
 }
 
 .group__item {
+  position: relative;
   grid-column: 1 / -1;
   aspect-ratio: 4 / 5;
   overflow: hidden;

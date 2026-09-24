@@ -58,3 +58,10 @@ Grund: Review der Sub-Agenten-Ergebnisse und eigene Prüfung per Playwright.
 - Gegen Aufblitzen der fertigen Reihe setzt ein Inline-Skript im `<head>` `html.is-intro` (Galerie `visibility:hidden`), Fallback-Timeout 8 s ohne JS.
 - Intro animiert `.gallery-item__stage` (x/y/scale), `.gallery-item__img` (clip-path), `.gallery-item__media` (Zoom 1.3→1.15) und das Kind von `.gallery-item__name-wrapper`; der Slider besitzt weiterhin `x` auf `.gallery-item` und `scale` auf `__wrapper` – keine Überschneidung.
 Grund: SSG liefert die fertige Reihe aus; ohne Klasse vor dem ersten Paint gäbe es einen sichtbaren Sprung.
+
+## D-013 · 2026-09-24 · Merge P9 (Reveals): Abweichungen übernommen
+- `CaseMedia` hat Opt-in-Prop `parallax` (Medium mit 6 % Überhang, absolut positioniert), damit gescrubbte Parallaxe keine Ränder zeigt; Galerie-Container dafür `position: relative`.
+- Kein Reveal auf Hero-Bild und Meta-Zeilen (Hero-Bild ist Ziel des Seitenübergangs P8).
+- Fix im Review: Masken-Reveals triggern auf der Maske (Elternelement), nicht auf dem bereits verschobenen Element – sonst blieb der Hero-Titel unten im Viewport unsichtbar.
+- Zeilen-Split nur für reinen Text; bei Inline-Markup in echten Inhalten (Phase 2) erweitern.
+Grund: Review des Sub-Agenten-Ergebnisses und Browser-Prüfung.
