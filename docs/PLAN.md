@@ -1,0 +1,35 @@
+# Plan – Arbeitspakete
+
+Status: ⬜ offen · 🔄 in Arbeit · 👀 Review · ✅ fertig · ⏸ zurückgestellt
+Spezifikation: [analyse-referenz-brandonyasin.md](analyse-referenz-brandonyasin.md) (Abschnittsnummern = §)
+Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
+
+<!-- Maschinenlesbar für scripts/check-state.sh: Spalten nicht umordnen.
+     Nachweis = kommagetrennte Pfade, die bei ✅ existieren müssen. -->
+
+| ID | Paket | Modell | Hängt ab von | Status | Nachweis |
+|---|---|---|---|---|---|
+| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | ⬜ | package.json, nuxt.config.ts, netlify.toml |
+| P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | ⬜ | assets/styles/_tokens.scss, assets/styles/_typography.scss |
+| P3 | Content-Modell: Projekte als Markdown + Platzhalter-Medien | Sonnet | P1 | ⬜ | content/projects |
+| P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ⬜ | components/AppHeader.vue, plugins/lenis.client.ts |
+| P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ⬜ | composables/useInfiniteGallery.ts, pages/index.vue |
+| P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ⬜ | composables/useGalleryIntro.ts |
+| P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ⬜ | pages/cases/[slug].vue |
+| P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ⬜ | composables/usePageTransition.ts |
+| P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ⬜ | composables/useReveal.ts |
+| P10 | Extras: Tageszeit-Theme, Local-Time-Uhr, Menü-Seitenvorschau | Opus/Sonnet | P4 | ⏸ | – |
+| P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ⬜ | – |
+
+## Abnahmekriterien
+
+- **P1** `npm run dev` und `npm run generate` laufen fehlerfrei; GSAP-Plugins registriert; Lenis aktiv.
+- **P2** Alle Typo-Klassen aus §2 vorhanden; 6/14-Spalten-Raster; Breakpoints ≤767/768/1025/1438 als Mixins; Farben als CSS-Variablen (§3).
+- **P3** Mind. 6 Beispielprojekte mit Feldern: title, slug, client, year, category, tags, cover (Bild oder Video+Poster), intro, gallery-Blöcke (single / group-3).
+- **P4** Header wie §6; Menü und Kontakt öffnen/schließen; Formular-Felder wie §6; Tastatur bedienbar.
+- **P5** Endlos-Loop ohne Sprung, Drag + Wheel (Desktop), Nachlauf, Skalierung bei Tempo, Klick nach Drag unterdrückt, 60 fps auf Desktop (§4).
+- **P6** Ablauf wie §4 Punkt 2; läuft nur beim ersten Laden; bei reduced-motion übersprungen.
+- **P7** Layout wie §5 inkl. Mobile-Variante; Next Case verlinkt zyklisch.
+- **P8** Wie §4 „Seitenübergang“; Zurück-Navigation funktioniert; Video läuft ohne Sprung weiter.
+- **P9** Wie §5 „Dynamik“; alles aus bei reduced-motion.
+- **P11** Keine Konsolenfehler; Lighthouse Performance ≥ 90 (Desktop); deployt.
