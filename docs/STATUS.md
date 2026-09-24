@@ -3,17 +3,17 @@
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
 **Stand:** 2026-09-24
-**Phase:** 1 – Bau mit Platzhaltern (D-008). P1–P7, P9 ✅.
+**Phase:** 1 – Bau mit Platzhaltern (D-008). P1–P9 ✅ (P10 ⏸).
 
 ## Aktiv
-- P8 Seitenübergang → Orchestrator selbst
+- P11 QA → Orchestrator selbst
 
 ## Laufende Agenten
 - keine. Bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
 
 ## Nächster Schritt
-1. P8 (Übergang Karte → Hero, Hero-Container `.case-hero-media[data-slug]`), danach P11 QA.
-2. Netlify-Deploy des Users prüfen (Publish `dist`, D-014).
+1. P11 QA: Favicon, Header-Kontrast, reduced-motion-Gesamtcheck, Lighthouse, Konsolenfehler.
+2. Danach Phase-2-Planung mit dem User (echte Inhalte). Netlify-Deploy läuft (D-014).
 
 ## Bekannte Kleinigkeiten
 - Header-Text über hellen/dunklen Bildern ohne Kontrastlösung (evtl. mix-blend-mode, in P11 prüfen).

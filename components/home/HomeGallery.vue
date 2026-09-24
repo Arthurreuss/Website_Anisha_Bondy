@@ -7,6 +7,14 @@ const root = ref<HTMLElement | null>(null)
 const gallery = useInfiniteGallery(root)
 useGalleryIntro(root, gallery)
 
+// Seitenübergang (P8) nur, wenn der NuxtLink die Navigation übernimmt
+// (nicht bei Strg/Cmd-Klick; Klicks nach einem Drag stoppt der Slider vorher).
+function onClick(e: MouseEvent) {
+  if (!e.defaultPrevented) return
+  const item = (e.target as HTMLElement).closest<HTMLElement>('.gallery-item')
+  if (item) startCardTransition(item)
+}
+
 defineExpose({ root, gallery })
 </script>
 
@@ -18,6 +26,7 @@ defineExpose({ root, gallery })
     aria-roledescription="carousel"
     aria-label="Projects – drag, scroll or use the arrow keys"
     tabindex="-1"
+    @click="onClick"
   >
     <HomeGalleryCard
       v-for="(project, i) in projects"

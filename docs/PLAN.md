@@ -16,7 +16,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ✅ | composables/useInfiniteGallery.ts, pages/index.vue |
 | P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ✅ | composables/useGalleryIntro.ts |
 | P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ✅ | pages/cases/[slug].vue |
-| P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ⬜ | composables/usePageTransition.ts |
+| P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ✅ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ✅ | composables/useReveal.ts |
 | P10 | Extras: Tageszeit-Theme, Local-Time-Uhr, Menü-Seitenvorschau | Opus/Sonnet | P4 | ⏸ | – |
 | P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ⬜ | – |

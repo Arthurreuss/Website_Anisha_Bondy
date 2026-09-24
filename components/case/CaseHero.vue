@@ -11,6 +11,10 @@ const isPlaying = ref(false)
 
 const heroRef = ref<HTMLElement | null>(null)
 useReveal(heroRef)
+
+// Ziel des Seitenübergangs Karte → Hero (P8)
+const mediaRef = ref<HTMLElement | null>(null)
+useHeroTransition(mediaRef, props.project.slug)
 </script>
 
 <template>
@@ -34,7 +38,7 @@ useReveal(heroRef)
     </div>
 
     <div class="right">
-      <div class="image case-hero-media" :data-slug="props.project.slug">
+      <div ref="mediaRef" class="image case-hero-media" :data-slug="props.project.slug">
         <video
           v-if="props.project.cover.type === 'video'"
           class="image__img"

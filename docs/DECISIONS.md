@@ -69,3 +69,10 @@ Grund: Review des Sub-Agenten-Ergebnisses und Browser-Prüfung.
 ## D-014 · 2026-09-24 · Netlify: Publish-Verzeichnis `dist`
 Auf Netlify wählt Nuxt automatisch das Nitro-Preset `netlify-static`, das nach `dist/` schreibt (nicht `.output/public`) – erster Deploy scheiterte daran. `netlify.toml` publiziert jetzt `dist`; lokal legt `nuxt generate` `dist` als Symlink auf `.output/public` an, beides funktioniert.
 Grund: Build-Fehler beim ersten Netlify-Deploy des Users, lokal mit `NETLIFY=true` reproduziert.
+
+## D-015 · 2026-09-24 · Seitenübergang (P8): Mechanik
+- Globale `app.pageTransition` `{ mode: 'default', css: false }` (sofortiger Wechsel), damit immer ein `<Transition>`-Wrapper existiert. Die **verlassende** Seite trägt die Leave-Hooks (Vue bindet sie beim Rendern der alten Seite): `pages/index.vue` → `leavePage()`.
+- Klick auf Karte: Klon von `.gallery-item__img` als `position: fixed` über `body` (z-index 90, unter dem Header); Video im Klon ab gleicher `currentTime`. Startseite bleibt während des Leave als fixierte Ebene stehen (andere Karten scale .7, Medien 1.4, clip-path nach oben, Namen fallen), neue Seite rendert darunter.
+- `useHeroTransition()` im Hero misst `.case-hero-media` und morpht den Klon (1.26 s, eigene Ease „cardMorph“); am Ende Hero-Video auf Klon-Zeit setzen, erst nach `seeked` tauschen.
+- Nicht bei reduced-motion, Strg/Cmd-Klick oder Klick nach Drag. Zurück zur Startseite: Galerie startet wieder bei Position 0 (Position merken → evtl. P11/Phase 2).
+Grund: Vue/Nuxt-Suspense bindet Leave-Hooks an die alte Seite (im Browser nachgewiesen); Klon statt Verschieben des Original-Videos, weil Vue das Original beim Unmount entfernt.

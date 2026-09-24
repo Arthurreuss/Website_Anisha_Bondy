@@ -42,6 +42,10 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // Immer einen <Transition>-Wrapper rendern (ohne CSS = sofortiger Wechsel),
+    // sonst gibt es beim Verlassen der Startseite keinen Leave-Hook (P8, D-015).
+    // mode 'default': alte + neue Seite gleichzeitig im DOM.
+    pageTransition: { name: 'page', mode: 'default', css: false },
     head: {
       title: 'Anisha Bondy',
       meta: [

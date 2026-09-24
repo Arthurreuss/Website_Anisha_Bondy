@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import { leavePage } from '~/composables/usePageTransition'
+
+// Die verlassende Seite bestimmt ihre Leave-Hooks (Vue hängt sie beim Rendern an):
+// Beim Klick auf eine Karte bleibt die Startseite als Ebene stehen, während der
+// Klon ins Hero der neuen Seite morpht (P8, D-015).
+definePageMeta({
+  pageTransition: { name: 'home', mode: 'default', css: false, onLeave: leavePage },
+})
+
 const { data: projects } = await useProjects()
 
 useSeoMeta({
