@@ -3,5 +3,29 @@
   "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
   "pillarSub": { "direct": "Oper & Musiktheater", "create": "Neue Formate & szenische Konzerte", "participate": "Partizipatives Musiktheater" },
   "todo": { "prefix": "offen" },
-  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." }
+  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." },
+  "about": {
+    "seoTitle": "Über mich — Anisha Bondy",
+    "portraitAlt": "Porträt von Anisha Bondy",
+    "approachEyebrow": "Haltung",
+    "bioHeading": "Biografie",
+    "residenceTodo": "Wohnort bestätigen (Mockup nennt Wien, andere Quellen Berlin)",
+    "workedWithHeading": "Zusammengearbeitet mit",
+    "timelineHeading": "Werdegang",
+    "pressHeading": "Presse & Preise",
+    "partnersHeading": "Partner",
+    "wonLabel": "Gewonnen",
+    "nominatedLabel": "Nominiert"
+  },
+  "archive": {
+    "seoTitle": "Archiv — Anisha Bondy",
+    "seoDescription": "Alle Produktionen von Anisha Bondy, filterbar nach Direct, Create und Participate.",
+    "filterAll": "Alle",
+    "empty": "Keine Produktionen für diesen Filter.",
+    "colYear": "Jahr",
+    "colTitle": "Titel",
+    "colVenue": "Haus",
+    "colRole": "Rolle",
+    "colPillar": "Säule"
+  }
 }
