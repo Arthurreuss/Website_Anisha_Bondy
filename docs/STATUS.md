@@ -9,7 +9,7 @@
 - Phase 2 Umsetzung (D-018, D-019): P12 ✅ → P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
 
 ## Laufende Agenten (Sonnet, je eigener Worktree, seit 2026-09-24)
-- P13 Projektinhalte · P14 Case-Seite v2 · P15 /about + /archive · P16 Rahmen/Kontakt/Recht.
+- P13 ✅ gemergt · P14 Case-Seite v2 · P15 /about + /archive · P16 Rahmen/Kontakt/Recht.
 - Nach Abbruch: Worktrees unter `.claude/worktrees/` prüfen (`git worktree list`), fertige Commits mergen, Rest neu briefen.
 
 ## Nächster Schritt
