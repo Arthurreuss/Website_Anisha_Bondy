@@ -17,6 +17,7 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 | `docs/STATUS.md` | **Jetzt-Zustand**: aktives Paket, nächster Schritt, offene Fragen, laufende Agenten | wird **überschrieben**, nie angehängt; max. ~40 Zeilen |
 | `docs/PLAN.md` | Arbeitspakete mit Status, Modell, Abnahmekriterien, Nachweis-Dateien | Status-Spalte pflegen; Umfang ändern nur mit Verweis auf eine Entscheidung |
 | `docs/DECISIONS.md` | Entscheidungs-Log (warum etwas so ist) | **nur anhängen**; alte Einträge nie ändern, sondern durch neuen Eintrag ersetzen („ersetzt D-003“) |
+| `docs/INHALTE.md` | Phase 2: Bestand echter Inhalte (Projekte, Videos, Presse, Quellen) + Strukturvorschlag | Orchestrator pflegt; Entscheidungen daraus nach DECISIONS |
 | `docs/analyse-referenz-brandonyasin.md` | Spezifikation der Referenzseite | **eingefroren** – Abweichungen gehören in DECISIONS |
 | `docs/agent-briefing.md` | Vorlage für Sub-Agenten-Aufträge | bei Prozessänderung anpassen |
 

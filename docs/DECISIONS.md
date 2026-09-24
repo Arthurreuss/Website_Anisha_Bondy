@@ -82,3 +82,10 @@ Grund: Vue/Nuxt-Suspense bindet Leave-Hooks an die alte Seite (im Browser nachge
 - Header: `color:#fff; mix-blend-mode:difference` für Lesbarkeit über Bildern. Lighthouse meldet dafür color-contrast (4 Elemente) – falsch positiv, da Blend-Modes nicht berücksichtigt werden; gerendert dunkel auf hell.
 - `<html lang="en">` (Platzhaltertexte englisch; bei deutschen Inhalten in Phase 2 anpassen), Meta-Description je Case aus erstem Intro-Absatz, SVG-Favicon (Monogramm, Platzhalter).
 Grund: Abnahme P11; Kriterium Desktop ≥ 90 erfüllt, Deploy läuft (D-014).
+
+## D-017 · 2026-09-24 · Phase 2: Vorgaben des Users zu den Inhalten
+- Der Dreisatz **Direct / Create / Participate** ist der rote Faden der Seite (jedes Projekt einer Säule zugeordnet).
+- Texte aus Anishas Mockup gelten, **außer Journal**; die Bilder im Mockup sind Stock und werden nicht verwendet. Die Timeline wird als Lebenslauf genutzt.
+- Die Pop-Up-Opera-Videos (Selam Opera!) werden zu **einem** Projekt zusammengefasst, nicht als einzelne Projekte.
+- Bestand und Strukturvorschlag in [INHALTE.md](INHALTE.md); Pakete erst nach Freigabe in PLAN.md.
+Grund: Entscheidung des Users beim Start von Phase 2.
