@@ -12,10 +12,10 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | ✅ | package.json, nuxt.config.ts, netlify.toml |
 | P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | ✅ | assets/styles/_tokens.scss, assets/styles/_typography.scss |
 | P3 | Datenvertrag + Platzhalter-Stub (echtes Content-Modell → Phase 2, D-009) | Opus | P1 | ✅ | types/project.ts, composables/useProjects.ts, utils/projects-source.ts, public/placeholders |
-| P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ⬜ | components/AppHeader.vue, plugins/lenis.client.ts |
-| P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ⬜ | composables/useInfiniteGallery.ts, pages/index.vue |
+| P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | 🔄 | components/AppHeader.vue, plugins/lenis.client.ts |
+| P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | 🔄 | composables/useInfiniteGallery.ts, pages/index.vue |
 | P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ⬜ | composables/useGalleryIntro.ts |
-| P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ⬜ | pages/cases/[slug].vue |
+| P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | 🔄 | pages/cases/[slug].vue |
 | P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ⬜ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ⬜ | composables/useReveal.ts |
 | P10 | Extras: Tageszeit-Theme, Local-Time-Uhr, Menü-Seitenvorschau | Opus/Sonnet | P4 | ⏸ | – |
