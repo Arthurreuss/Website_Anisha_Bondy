@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/de'],
+      routes: ['/', '/de', '/imprint', '/de/imprint', '/privacy', '/de/privacy'],
       // Case-Seiten werden über die Links der Startseite gefunden.
       // /about und /archive sind im Menü verlinkt, aber noch nicht gebaut (D-011).
       ignore: ['/about', '/archive', '/de/about', '/de/archive'],

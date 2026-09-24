@@ -3,6 +3,7 @@
 // Schritten, Netlify Forms (statisches Duplikat: public/__forms.html).
 // Öffnen/Schließen wie MenuOverlay (clip-path + CustomEase).
 import { CustomEase } from 'gsap/CustomEase'
+import UiTodo from '~/components/ui/UiTodo.vue'
 
 const overlay = useOverlay()
 const { $gsap, $lenis } = useNuxtApp()
@@ -16,22 +17,17 @@ let triggerEl: HTMLElement | null = null
 const isOpen = computed(() => overlay.value === 'contact')
 const visible = ref(false)
 
-const scopeOptions = [
-  'Creative direction',
-  'Brand design',
-  'Digital & UI design',
-  'E-commerce',
-  'Campaign & content',
-  'Spatial design',
-]
-const budgetOptions = ['Under €5,000', '€5,000 – €10,000', '€10,000 – €20,000', '€20,000+', "Let's chat first"]
+const { t } = useI18n()
+
+// Anliegen einer Regisseurin (P16): Mehrfachauswahl wie zuvor bei „Scope“.
+const concernOptions = ['staging', 'newFormat', 'participatory', 'workshop', 'press', 'other'] as const
 
 const form = reactive({
-  scope: [] as string[],
-  budget: '',
   name: '',
   email: '',
-  start: '',
+  organisation: '',
+  concern: [] as string[],
+  period: '',
   message: '',
 })
 
@@ -139,11 +135,11 @@ async function onSubmit() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': 'contact',
-        scope: form.scope.join(', '),
-        budget: form.budget,
         name: form.name,
         email: form.email,
-        start: form.start,
+        organisation: form.organisation,
+        concern: form.concern.join(', '),
+        period: form.period,
         message: form.message,
       }),
     })
@@ -161,56 +157,43 @@ async function onSubmit() {
     class="contact-overlay"
     role="dialog"
     aria-modal="true"
-    aria-label="Contact"
+    :aria-label="$t('nav.contact')"
     :inert="!isOpen"
     :class="{ 'contact-overlay--open': visible }"
   >
     <button ref="closeBtnEl" type="button" class="contact-overlay__close font-body-12 uppercase" @click="close">
-      Close
+      {{ $t('nav.close') }}
     </button>
 
     <div class="contact-overlay__inner">
       <h2 :ref="(el) => setRevealEl(el, 0)" class="contact-overlay__headline font-headline-1">
-        let&rsquo;s build together
+        {{ $t('contact.headline') }}
       </h2>
       <p :ref="(el) => setRevealEl(el, 1)" class="contact-overlay__intro font-body">
-        Tell me about your project and I&rsquo;ll get in touch
+        {{ $t('contact.intro') }}
       </p>
 
       <p v-if="status === 'sent'" class="contact-overlay__thanks font-body-24">
-        Thank you — I&rsquo;ll get back to you soon.
+        {{ $t('contact.success') }}
       </p>
 
       <form v-else name="contact" data-netlify="true" class="contact-form" @submit.prevent="onSubmit">
         <input type="hidden" name="form-name" value="contact" />
 
-        <fieldset :ref="(el) => setRevealEl(el, 2)" class="contact-form__field">
-          <legend class="contact-form__label font-body-12 uppercase">01. Scope</legend>
-          <div class="contact-form__chips">
-            <label v-for="option in scopeOptions" :key="option" class="chip">
-              <input v-model="form.scope" type="checkbox" name="scope[]" :value="option" class="sr-only" />
-              <span class="chip__label font-body-12 uppercase">{{ option }}</span>
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset :ref="(el) => setRevealEl(el, 3)" class="contact-form__field">
-          <legend class="contact-form__label font-body-12 uppercase">02. Budget</legend>
-          <div class="contact-form__chips">
-            <label v-for="option in budgetOptions" :key="option" class="chip">
-              <input v-model="form.budget" type="radio" name="budget" :value="option" class="sr-only" />
-              <span class="chip__label font-body-12 uppercase">{{ option }}</span>
-            </label>
-          </div>
-        </fieldset>
-
-        <div :ref="(el) => setRevealEl(el, 4)" class="contact-form__field">
-          <label class="contact-form__label font-body-12 uppercase" for="contact-name">03. Name</label>
-          <input id="contact-name" v-model="form.name" type="text" name="name" class="contact-form__input font-body" required />
+        <div :ref="(el) => setRevealEl(el, 2)" class="contact-form__field">
+          <label class="contact-form__label font-body-12 uppercase" for="contact-name">01. {{ $t('contact.fields.name') }}</label>
+          <input
+            id="contact-name"
+            v-model="form.name"
+            type="text"
+            name="name"
+            class="contact-form__input font-body"
+            required
+          />
         </div>
 
-        <div :ref="(el) => setRevealEl(el, 5)" class="contact-form__field">
-          <label class="contact-form__label font-body-12 uppercase" for="contact-email">04. Email</label>
+        <div :ref="(el) => setRevealEl(el, 3)" class="contact-form__field">
+          <label class="contact-form__label font-body-12 uppercase" for="contact-email">02. {{ $t('contact.fields.email') }}</label>
           <input
             id="contact-email"
             v-model="form.email"
@@ -221,19 +204,53 @@ async function onSubmit() {
           />
         </div>
 
+        <div :ref="(el) => setRevealEl(el, 4)" class="contact-form__field">
+          <label class="contact-form__label font-body-12 uppercase" for="contact-organisation">
+            03. {{ $t('contact.fields.organisation') }}
+          </label>
+          <input
+            id="contact-organisation"
+            v-model="form.organisation"
+            type="text"
+            name="organisation"
+            class="contact-form__input font-body"
+          />
+        </div>
+
+        <fieldset :ref="(el) => setRevealEl(el, 5)" class="contact-form__field">
+          <legend class="contact-form__label font-body-12 uppercase">04. {{ $t('contact.fields.concern') }}</legend>
+          <div class="contact-form__chips">
+            <label v-for="option in concernOptions" :key="option" class="chip">
+              <input
+                v-model="form.concern"
+                type="checkbox"
+                name="concern[]"
+                :value="t(`contact.concern.${option}`)"
+                class="sr-only"
+              />
+              <span class="chip__label font-body-12 uppercase">{{ t(`contact.concern.${option}`) }}</span>
+            </label>
+          </div>
+        </fieldset>
+
         <div :ref="(el) => setRevealEl(el, 6)" class="contact-form__field">
-          <label class="contact-form__label font-body-12 uppercase" for="contact-start">05. Start</label>
-          <input id="contact-start" v-model="form.start" type="text" name="start" class="contact-form__input font-body" />
+          <label class="contact-form__label font-body-12 uppercase" for="contact-period">
+            05. {{ $t('contact.fields.period') }}
+          </label>
+          <input id="contact-period" v-model="form.period" type="text" name="period" class="contact-form__input font-body" />
         </div>
 
         <div :ref="(el) => setRevealEl(el, 7)" class="contact-form__field">
-          <label class="contact-form__label font-body-12 uppercase" for="contact-message">06. Message</label>
+          <label class="contact-form__label font-body-12 uppercase" for="contact-message">
+            06. {{ $t('contact.fields.message') }}
+          </label>
           <textarea
             id="contact-message"
             v-model="form.message"
             name="message"
             rows="4"
             class="contact-form__input contact-form__input--textarea font-body"
+            required
           ></textarea>
         </div>
 
@@ -243,13 +260,35 @@ async function onSubmit() {
           class="contact-form__submit font-body-40-100"
           :disabled="status === 'sending'"
         >
-          Send
+          {{ $t('contact.submit') }}
         </button>
 
         <p v-if="status === 'error'" class="contact-form__error font-body-12">
-          Something went wrong, please try again.
+          {{ $t('contact.error') }}
         </p>
       </form>
+
+      <div :ref="(el) => setRevealEl(el, 9)" class="contact-overlay__info font-body-12 uppercase">
+        <p class="contact-overlay__info-heading">{{ $t('contact.info.heading') }}</p>
+        <dl class="contact-overlay__info-list">
+          <div class="contact-overlay__info-item">
+            <dt>{{ $t('contact.info.email') }}</dt>
+            <dd><UiTodo /></dd>
+          </div>
+          <div class="contact-overlay__info-item">
+            <dt>{{ $t('contact.info.agency') }}</dt>
+            <dd><UiTodo /></dd>
+          </div>
+          <div class="contact-overlay__info-item">
+            <dt>{{ $t('contact.info.instagram') }}</dt>
+            <dd><UiTodo /></dd>
+          </div>
+          <div class="contact-overlay__info-item">
+            <dt>{{ $t('contact.info.linkedin') }}</dt>
+            <dd><UiTodo /></dd>
+          </div>
+        </dl>
+      </div>
     </div>
   </div>
 </template>
@@ -358,6 +397,33 @@ async function onSubmit() {
   &:disabled {
     opacity: 0.5;
     cursor: default;
+  }
+}
+
+.contact-overlay__info {
+  margin-top: 1.6rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--color-main);
+}
+
+.contact-overlay__info-heading {
+  margin-bottom: 1.2rem;
+  opacity: 0.6;
+}
+
+.contact-overlay__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-overlay__info-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+
+  dt {
+    opacity: 0.6;
   }
 }
 
