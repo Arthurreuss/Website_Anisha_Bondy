@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { loadProjects } from './utils/projects-source'
+
+// P7: die Startseite verlinkt noch nicht auf die Case-Seiten (P6 folgt später),
+// daher müssen deren Routen für `nuxt generate` explizit ergänzt werden -
+// crawlLinks allein würde sie sonst nicht finden.
+const caseRoutes = (await loadProjects()).map((p) => `/cases/${p.slug}`)
+
 export default defineNuxtConfig({
   compatibilityDate: '2026-09-24',
   devtools: { enabled: true },
@@ -7,6 +14,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: caseRoutes,
     },
   },
 
