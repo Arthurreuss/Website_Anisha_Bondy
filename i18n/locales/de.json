@@ -9,11 +9,26 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz"
   },
-  "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
-  "pillarSub": { "direct": "Oper & Musiktheater", "create": "Neue Formate & szenische Konzerte", "participate": "Partizipatives Musiktheater" },
-  "todo": { "prefix": "offen" },
-  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." },
-  "lang": { "label": "Sprache" },
+  "pillar": {
+    "direct": "Direct",
+    "create": "Create",
+    "participate": "Participate"
+  },
+  "pillarSub": {
+    "direct": "Oper & Musiktheater",
+    "create": "Neue Formate & szenische Konzerte",
+    "participate": "Partizipatives Musiktheater"
+  },
+  "todo": {
+    "prefix": "offen"
+  },
+  "home": {
+    "title": "Ausgewählte Arbeiten",
+    "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate."
+  },
+  "lang": {
+    "label": "Sprache"
+  },
   "contact": {
     "headline": "Lass uns etwas gemeinsam entstehen lassen",
     "intro": "Erzähl mir von deinem Projekt – ich melde mich.",
@@ -53,6 +68,24 @@
       "title": "Datenschutz",
       "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen",
       "controllerTodo": "Name und Anschrift der/des Verantwortlichen"
+    }
+  },
+  "case": {
+    "video": {
+      "play": "Video abspielen",
+      "notice": "Beim Abspielen werden Daten an YouTube/Vimeo übertragen."
+    },
+    "facts": {
+      "role": "Rolle",
+      "credits": "Credits",
+      "awards": "Preise",
+      "awardWon": "Ausgezeichnet",
+      "awardNominated": "Nominiert",
+      "press": "Presse",
+      "pressLink": "Artikel lesen"
+    },
+    "gallery": {
+      "empty": "Produktionsfotos folgen"
     }
   }
 }

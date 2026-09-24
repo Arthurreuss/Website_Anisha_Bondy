@@ -9,11 +9,26 @@
     "imprint": "Imprint",
     "privacy": "Privacy"
   },
-  "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
-  "pillarSub": { "direct": "Opera & Music Theatre", "create": "New Formats & Staged Concerts", "participate": "Participatory Music Theatre" },
-  "todo": { "prefix": "open" },
-  "home": { "title": "Selected work", "description": "Anisha Bondy – director for opera and music theatre. Direct. Create. Participate." },
-  "lang": { "label": "Language" },
+  "pillar": {
+    "direct": "Direct",
+    "create": "Create",
+    "participate": "Participate"
+  },
+  "pillarSub": {
+    "direct": "Opera & Music Theatre",
+    "create": "New Formats & Staged Concerts",
+    "participate": "Participatory Music Theatre"
+  },
+  "todo": {
+    "prefix": "open"
+  },
+  "home": {
+    "title": "Selected work",
+    "description": "Anisha Bondy – director for opera and music theatre. Direct. Create. Participate."
+  },
+  "lang": {
+    "label": "Language"
+  },
   "contact": {
     "headline": "Let’s build together",
     "intro": "Tell me about your project and I’ll get in touch.",
@@ -53,6 +68,24 @@
       "title": "Privacy policy",
       "draftNotice": "Draft — to be reviewed legally before going live",
       "controllerTodo": "Name and address of the data controller"
+    }
+  },
+  "case": {
+    "video": {
+      "play": "Play video",
+      "notice": "Playing loads content from YouTube/Vimeo and transmits data to them."
+    },
+    "facts": {
+      "role": "Role",
+      "credits": "Credits",
+      "awards": "Awards",
+      "awardWon": "Winner",
+      "awardNominated": "Nominated",
+      "press": "Press",
+      "pressLink": "Read article"
+    },
+    "gallery": {
+      "empty": "Production photos to follow"
     }
   }
 }

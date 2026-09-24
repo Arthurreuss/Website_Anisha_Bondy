@@ -5,9 +5,17 @@
 // in der vorhandenen .label-mask, Medien parallaxen leicht beim Scrollen.
 import type { GalleryBlock } from '~/types/project'
 
-defineProps<{ blocks: GalleryBlock[] }>()
+const props = defineProps<{ blocks: GalleryBlock[] }>()
 
 const pad = (n: number) => String(n).padStart(2, '0')
+
+// Bildnachweis unter dem Block (D-013 §5): bei group-3 werden mehrere
+// unterschiedliche Nachweise zusammengefasst.
+function credit(block: GalleryBlock): string {
+  if (block.type === 'single') return block.media.credit ?? ''
+  const credits = Array.from(new Set(block.media.map((m) => m.credit).filter((c): c is string => Boolean(c))))
+  return credits.join(' · ')
+}
 
 const galleryRef = ref<HTMLElement | null>(null)
 useReveal(galleryRef)
@@ -15,6 +23,8 @@ useReveal(galleryRef)
 
 <template>
   <section class="gallery" ref="galleryRef">
+    <UiTodo v-if="!props.blocks.length" block :text="$t('case.gallery.empty')" />
+
     <div v-for="(block, i) in blocks" :key="i" class="block">
       <div v-if="block.type === 'single'" class="single" data-reveal="image">
         <CaseMedia :media="block.media" parallax />
@@ -29,6 +39,7 @@ useReveal(galleryRef)
       <div class="label-mask">
         <p class="label font-body-12 uppercase" data-reveal="mask">{{ pad(i + 1) }}. {{ block.label }}</p>
       </div>
+      <p v-if="credit(block)" class="credit font-body-12">{{ credit(block) }}</p>
     </div>
   </section>
 </template>
@@ -107,5 +118,10 @@ useReveal(galleryRef)
 
 .label-mask {
   overflow: hidden;
+}
+
+.credit {
+  opacity: 0.5;
+  margin: -0.8rem 0 0;
 }
 </style>
