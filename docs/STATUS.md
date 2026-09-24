@@ -3,26 +3,29 @@
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
 **Stand:** 2026-09-24
-**Phase:** 1 – Bau mit Platzhaltern (D-008). P1, P2, P3 ✅.
+**Phase:** 1 – Bau mit Platzhaltern (D-008). P1–P5, P7 ✅.
 
 ## Aktiv
-- P4 Layout (Header, Menü, Kontakt, Lenis) → Sonnet-Agent im Worktree
-- P7 Detailseite → Sonnet-Agent im Worktree
-- P5 Infinite-Slider Startseite → Orchestrator selbst (Haupt-Worktree)
+- P6 Intro-Animation → Orchestrator selbst
+- P9 Scroll-Reveals + Hover-Rolls → Sonnet-Agent im Worktree
 
 ## Laufende Agenten
-- Sonnet „P4 Layout“ und Sonnet „P7 Detailseite“, jeweils eigener Worktree, committen dort, pushen nicht.
-  Bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
+- (werden beim Start eingetragen) – bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
 
 ## Nächster Schritt
-1. P5 bauen, parallel Agenten-Ergebnisse reviewen und mergen (Checkliste in agent-briefing.md).
-2. Danach P6 (Intro) + P9 (Reveals, Sonnet), dann P8 (Übergang).
+1. P6 bauen (`composables/useGalleryIntro.ts`, nutzt `setEnabled` aus useInfiniteGallery).
+2. P9 an Sonnet vergeben (Masken `.title-mask`/`.label-mask` in P7 vorbereitet).
+3. Dann P8 (Übergang Karte → Hero, Hero-Container `.case-hero-media[data-slug]`), danach P11 QA.
+
+## Bekannte Kleinigkeiten
+- Header-Text über hellen/dunklen Bildern ohne Kontrastlösung (evtl. mix-blend-mode, in P11 prüfen).
+- Favicon fehlt (404) → P11.
 
 ## Hilfsmittel
-- Screenshots: Playwright-Skripte im Scratchpad (`pw/shot.mjs`); Build prüfen mit `npm run generate` + statischem Server auf `.output/public`.
+- Screenshots: Playwright-Skripte im Scratchpad (`pw/shot.mjs`, `pw/probe*.mjs`); Build prüfen mit `npm run generate` + statischem Server auf `.output/public` (Port 4173). Nie `generate` bei laufendem Dev-Server.
 
 ## Offene Fragen an den User
 - keine (Schrift: Inter, D-007 · Inhalte: Platzhalter, D-008)
 
 ## Danach (Phase 2)
-- Echte Inhalte von Anisha einplanen → Content-Modell ersetzen (D-008, D-009).
+- Echte Inhalte von Anisha einplanen → Content-Modell ersetzen (D-008, D-009); Seiten /about, /archive (D-011).

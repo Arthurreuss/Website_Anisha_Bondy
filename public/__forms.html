@@ -1,0 +1,36 @@
+<!--
+  Statisches Formular-Duplikat nur für die Netlify-Formular-Erkennung beim
+  Build (SSG). Netlify durchsucht die veröffentlichten HTML-Dateien nach
+  <form data-netlify="true">-Elementen; das echte Formular im
+  ContactOverlay wird per Vue erst zur Laufzeit gerendert und würde beim
+  statischen Scan nicht gefunden. Diese Seite wird nie verlinkt oder
+  aufgerufen.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form detection</title>
+  </head>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="bot-field" />
+      <input type="checkbox" name="scope[]" value="Creative direction" />
+      <input type="checkbox" name="scope[]" value="Brand design" />
+      <input type="checkbox" name="scope[]" value="Digital & UI design" />
+      <input type="checkbox" name="scope[]" value="E-commerce" />
+      <input type="checkbox" name="scope[]" value="Campaign & content" />
+      <input type="checkbox" name="scope[]" value="Spatial design" />
+      <input type="radio" name="budget" value="Under €5,000" />
+      <input type="radio" name="budget" value="€5,000 – €10,000" />
+      <input type="radio" name="budget" value="€10,000 – €20,000" />
+      <input type="radio" name="budget" value="€20,000+" />
+      <input type="radio" name="budget" value="Let's chat first" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="start" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

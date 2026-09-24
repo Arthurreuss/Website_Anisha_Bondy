@@ -45,3 +45,10 @@ Grund: Galerie, Detailseite und Übergang können parallel gegen einen festen Ve
 - `typescript` auf ^5.7 gepinnt (vue-tsc 2 ist mit TS 7 inkompatibel).
 - Inter-Gewicht 300 statt 251. Typo-Größensprung am Breakpoint `tablet-up`.
 Grund: Review des Sub-Agenten-Ergebnisses, technisch begründet.
+
+## D-011 · 2026-09-24 · Merge P4/P5/P7: Abweichungen übernommen
+- `/about` und `/archive` sind im Menü verlinkt, aber noch nicht gebaut → in `nitro.prerender.ignore` statt `failOnError: false` (echte Fehler sollen den Build weiter brechen). Seiten folgen in Phase 2.
+- Hover-Roll als CSS-Transform in `components/ui/RollText.vue` (statt GSAP); Eltern-Trigger per Klasse `.roll-trigger` in einem unscoped Style-Block (`:global()` im scoped Block verschiebt sonst das Elternelement).
+- Send-Button im Kontakt-Overlay nutzt `.font-body-40-100`.
+- Galerie-Bilder der Detailseite bleiben `loading="lazy"`; Lücken in Full-Page-Screenshots sind nur Messartefakt.
+Grund: Review der Sub-Agenten-Ergebnisse und eigene Prüfung per Playwright.
