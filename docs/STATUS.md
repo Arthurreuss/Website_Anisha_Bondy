@@ -8,11 +8,12 @@
 ## Aktiv
 - Phase 2 Umsetzung (D-018, D-019): P12 ✅ → P13–P16 parallel (Sonnet, Worktrees) → P17 QA.
 
-## Laufende Agenten
-- keine.
+## Laufende Agenten (Sonnet, je eigener Worktree, seit 2026-09-24)
+- P13 Projektinhalte · P14 Case-Seite v2 · P15 /about + /archive · P16 Rahmen/Kontakt/Recht.
+- Nach Abbruch: Worktrees unter `.claude/worktrees/` prüfen (`git worktree list`), fertige Commits mergen, Rest neu briefen.
 
 ## Nächster Schritt
-1. P13–P16 parallel starten (Briefing nach agent-briefing.md), reviewen, mergen.
+1. P13–P16 reviewen und mergen (Konflikte erwartbar nur in i18n/locales/*.json und nuxt.config.ts).
 2. P17, dann User zeigt Anisha den Stand; offene Fragen = UiTodo-Markierungen (INHALTE.md §7).
 
 ## Bekannte Kleinigkeiten
