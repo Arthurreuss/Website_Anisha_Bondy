@@ -3,23 +3,26 @@
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
 **Stand:** 2026-09-24
-**Phase:** Umsetzung gestartet.
+**Phase:** 1 – Bau mit Platzhaltern (D-008). P1, P2, P3 ✅.
 
 ## Aktiv
-- P1 + P2 (Setup und Design-Tokens) → Sonnet-Agent arbeitet im Haupt-Worktree.
+- P4 Layout (Header, Menü, Kontakt, Lenis) → Sonnet-Agent im Worktree
+- P7 Detailseite → Sonnet-Agent im Worktree
+- P5 Infinite-Slider Startseite → Orchestrator selbst (Haupt-Worktree)
 
 ## Laufende Agenten
-- Sonnet „P1+P2 Setup & Tokens“ – Haupt-Worktree, committet lokal, pusht nicht. Bei Abbruch: `git status`/`git log` prüfen, Rest selbst fertigstellen.
+- Sonnet „P4 Layout“ und Sonnet „P7 Detailseite“, jeweils eigener Worktree, committen dort, pushen nicht.
+  Bei Abbruch: `git worktree list`, Branches prüfen, Ergebnis reviewen oder Paket neu vergeben.
 
 ## Nächster Schritt
-1. Ergebnis reviewen, mergen, PLAN/STATUS aktualisieren.
-2. Danach parallel: P3, P4, P7 (Sonnet, Worktrees) · P5 (Opus, selbst).
+1. P5 bauen, parallel Agenten-Ergebnisse reviewen und mergen (Checkliste in agent-briefing.md).
+2. Danach P6 (Intro) + P9 (Reveals, Sonnet), dann P8 (Übergang).
+
+## Hilfsmittel
+- Screenshots: Playwright-Skripte im Scratchpad (`pw/shot.mjs`); Build prüfen mit `npm run generate` + statischem Server auf `.output/public`.
 
 ## Offene Fragen an den User
-- keine (Schrift: Inter, D-007 · Inhalte: Platzhalter, echte Inhalte in Phase 2, D-008)
+- keine (Schrift: Inter, D-007 · Inhalte: Platzhalter, D-008)
 
 ## Danach (Phase 2)
-- Echte Inhalte von Anisha einplanen → Content-Modell prüfen/anpassen, neu planen (D-008).
-
-## Bekannte Probleme
-- keine
+- Echte Inhalte von Anisha einplanen → Content-Modell ersetzen (D-008, D-009).

@@ -35,3 +35,13 @@ Grund: Entscheidung des Users.
 ## D-008 · 2026-09-24 · Erst komplett mit Platzhaltern bauen
 Alle Pakete werden mit Platzhalter-Inhalten (Bilder, Videos, Texte, Projekte) fertiggestellt. Echte Inhalte von Anisha kommen in einem zweiten Schritt; dafür wird vorher neu geplant und das Content-Modell (P3) bei Bedarf angepasst.
 Grund: Entscheidung des Users; Inhalte liegen noch nicht vor.
+
+## D-009 · 2026-09-24 · Datenvertrag für Projekte, P3 als Stub
+Typen in `types/project.ts`, Zugriff nur über `composables/useProjects.ts` (`useProjects()`, `useProject(slug)` → `{ project, next }`), Quelle austauschbar in `utils/projects-source.ts`. P3 ist mit einem Platzhalter-Stub erledigt (6 Projekte, SVG-Bilder, 2 WebM-Video-Cover in `public/placeholders/`). Das echte Content-Modell (z. B. @nuxt/content) kommt in Phase 2 und ersetzt nur `loadProjects()`.
+Grund: Galerie, Detailseite und Übergang können parallel gegen einen festen Vertrag gebaut werden; Content-Struktur wird laut D-008 ohnehin neu geplant.
+
+## D-010 · 2026-09-24 · Setup-Details aus P1/P2 übernommen
+- Global per `additionalData` nur `_breakpoints.scss` (Mixins); `_tokens.scss` einmal über `main.scss`, `fluid()` per `@use "~/assets/styles/tokens" as *` bei Bedarf.
+- `typescript` auf ^5.7 gepinnt (vue-tsc 2 ist mit TS 7 inkompatibel).
+- Inter-Gewicht 300 statt 251. Typo-Größensprung am Breakpoint `tablet-up`.
+Grund: Review des Sub-Agenten-Ergebnisses, technisch begründet.

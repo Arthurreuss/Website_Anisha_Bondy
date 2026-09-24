@@ -9,9 +9,9 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 
 | ID | Paket | Modell | Hängt ab von | Status | Nachweis |
 |---|---|---|---|---|---|
-| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | 🔄 | package.json, nuxt.config.ts, netlify.toml |
-| P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | 🔄 | assets/styles/_tokens.scss, assets/styles/_typography.scss |
-| P3 | Content-Modell: Projekte als Markdown + Platzhalter-Medien | Sonnet | P1 | ⬜ | content/projects |
+| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | ✅ | package.json, nuxt.config.ts, netlify.toml |
+| P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | ✅ | assets/styles/_tokens.scss, assets/styles/_typography.scss |
+| P3 | Datenvertrag + Platzhalter-Stub (echtes Content-Modell → Phase 2, D-009) | Opus | P1 | ✅ | types/project.ts, composables/useProjects.ts, utils/projects-source.ts, public/placeholders |
 | P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ⬜ | components/AppHeader.vue, plugins/lenis.client.ts |
 | P5 | Startseite: Infinite-Drag-/Wheel-Slider mit Lerp, Inertia, Speed-Scale | **Opus** | P2, P3 | ⬜ | composables/useInfiniteGallery.ts, pages/index.vue |
 | P6 | Startseite: Intro-Animation (Stapel → Reihe, clip-path) | **Opus** | P5 | ⬜ | composables/useGalleryIntro.ts |
@@ -25,7 +25,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 
 - **P1** `npm run dev` und `npm run generate` laufen fehlerfrei; GSAP-Plugins registriert; Lenis aktiv.
 - **P2** Alle Typo-Klassen aus §2 vorhanden; 6/14-Spalten-Raster; Breakpoints ≤767/768/1025/1438 als Mixins; Farben als CSS-Variablen (§3).
-- **P3** Mind. 6 Beispielprojekte mit Feldern: title, slug, client, year, category, tags, cover (Bild oder Video+Poster), intro, gallery-Blöcke (single / group-3).
+- **P3** 6 Platzhalter-Projekte gemäß `types/project.ts` (inkl. 2 Video-Cover), Zugriff nur über `useProjects`/`useProject` (D-009).
 - **P4** Header wie §6; Menü und Kontakt öffnen/schließen; Formular-Felder wie §6; Tastatur bedienbar.
 - **P5** Endlos-Loop ohne Sprung, Drag + Wheel (Desktop), Nachlauf, Skalierung bei Tempo, Klick nach Drag unterdrückt, 60 fps auf Desktop (§4).
 - **P6** Ablauf wie §4 Punkt 2; läuft nur beim ersten Laden; bei reduced-motion übersprungen.
