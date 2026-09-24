@@ -47,11 +47,13 @@ export default defineNuxtConfig({
     // mode 'default': alte + neue Seite gleichzeitig im DOM.
     pageTransition: { name: 'page', mode: 'default', css: false },
     head: {
+      htmlAttrs: { lang: 'en' },
       title: 'Anisha Bondy',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     },
   },
 })

@@ -76,3 +76,9 @@ Grund: Build-Fehler beim ersten Netlify-Deploy des Users, lokal mit `NETLIFY=tru
 - `useHeroTransition()` im Hero misst `.case-hero-media` und morpht den Klon (1.26 s, eigene Ease „cardMorph“); am Ende Hero-Video auf Klon-Zeit setzen, erst nach `seeked` tauschen.
 - Nicht bei reduced-motion, Strg/Cmd-Klick oder Klick nach Drag. Zurück zur Startseite: Galerie startet wieder bei Position 0 (Position merken → evtl. P11/Phase 2).
 Grund: Vue/Nuxt-Suspense bindet Leave-Hooks an die alte Seite (im Browser nachgewiesen); Klon statt Verschieben des Original-Videos, weil Vue das Original beim Unmount entfernt.
+
+## D-016 · 2026-09-24 · QA (P11): Ergebnisse und bewusst offene Punkte
+- Lighthouse Desktop (lokal, unkomprimiert): Start 99/96/100/100, Case 99/95/100/100 (Perf/A11y/BP/SEO). Mobil Perf 81 lokal – Hauptanteil unkomprimiertes JS (360 KB) auf dem Testserver; Netlify liefert komprimiert. Erneut mit echten Inhalten messen (Phase 2).
+- Header: `color:#fff; mix-blend-mode:difference` für Lesbarkeit über Bildern. Lighthouse meldet dafür color-contrast (4 Elemente) – falsch positiv, da Blend-Modes nicht berücksichtigt werden; gerendert dunkel auf hell.
+- `<html lang="en">` (Platzhaltertexte englisch; bei deutschen Inhalten in Phase 2 anpassen), Meta-Description je Case aus erstem Intro-Absatz, SVG-Favicon (Monogramm, Platzhalter).
+Grund: Abnahme P11; Kriterium Desktop ≥ 90 erfüllt, Deploy läuft (D-014).

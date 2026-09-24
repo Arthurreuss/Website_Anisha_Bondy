@@ -12,6 +12,7 @@ if (!project.value) {
 
 useSeoMeta({
   title: () => `${project.value!.title} — Anisha Bondy`,
+  description: () => project.value!.intro[0] ?? `${project.value!.title} by Anisha Bondy.`,
 })
 </script>
 

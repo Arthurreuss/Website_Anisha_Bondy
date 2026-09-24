@@ -19,7 +19,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ✅ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ✅ | composables/useReveal.ts |
 | P10 | Extras: Tageszeit-Theme, Local-Time-Uhr, Menü-Seitenvorschau | Opus/Sonnet | P4 | ⏸ | – |
-| P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ⬜ | – |
+| P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ✅ | public/favicon.svg |
 
 ## Abnahmekriterien
 

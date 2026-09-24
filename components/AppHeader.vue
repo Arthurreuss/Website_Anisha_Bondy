@@ -17,7 +17,7 @@ function toggleContact() {
 <template>
   <header class="app-header font-body-12 uppercase">
     <div class="app-header__inner container">
-      <NuxtLink to="/" class="app-header__logo roll-trigger" aria-label="Anisha Bondy – Startseite">
+      <NuxtLink to="/" class="app-header__logo roll-trigger">
         <span class="app-header__logo-line"><RollText text="Anisha" /></span>
         <span class="app-header__logo-line"><RollText text="Bondy" /></span>
       </NuxtLink>
@@ -56,6 +56,10 @@ function toggleContact() {
   right: 0;
   z-index: 100;
   pointer-events: none;
+  // Lesbar über hellen und dunklen Bildern: Weiß mit „difference“ ergibt auf
+  // dem hellen Hintergrund fast exakt die Textfarbe, auf Bildern die Inverse.
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .app-header__inner {
