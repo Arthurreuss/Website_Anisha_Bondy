@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Project } from '~/types/project'
+import RollText from '~/components/ui/RollText.vue'
 
 const props = defineProps<{ project: Project; eager?: boolean }>()
 
@@ -8,14 +9,11 @@ const cover = computed(() => props.project.cover)
 </script>
 
 <template>
-  <NuxtLink :to="`/cases/${project.slug}`" class="gallery-item" :data-slug="project.slug">
+  <NuxtLink :to="`/cases/${project.slug}`" class="gallery-item roll-trigger" :data-slug="project.slug">
     <div class="gallery-item__wrapper">
       <div class="gallery-item__stage">
         <div class="gallery-item__name-wrapper">
-          <div class="gallery-item__name">
-            <span>{{ project.title }}</span>
-            <span aria-hidden="true">{{ project.title }}</span>
-          </div>
+          <RollText :text="project.title" />
         </div>
         <div class="gallery-item__img">
           <div v-if="cover.type === 'video'" class="gallery-item__media gallery-item__video">
@@ -95,30 +93,6 @@ const cover = computed(() => props.project.cover)
 
   @include desktop {
     margin-bottom: 1.6rem;
-  }
-}
-
-// Text-Roll beim Hover: zweite Kopie liegt unter der ersten
-.gallery-item__name {
-  position: relative;
-  overflow: hidden;
-  line-height: 1;
-
-  span {
-    display: block;
-    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  span:nth-child(2) {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
-
-@media (hover: hover) {
-  .gallery-item:hover .gallery-item__name span {
-    transform: translateY(-100%);
   }
 }
 

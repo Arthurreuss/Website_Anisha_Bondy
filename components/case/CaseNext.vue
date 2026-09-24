@@ -1,19 +1,23 @@
 <script setup lang="ts">
 // "Next case"-Sektion der Detailseite (Spezifikation §5).
 // Verlinkt zyklisch zum nächsten Projekt (letztes -> erstes, siehe useProject()).
+// Scroll-Reveals über useReveal() (P9) auf den vorhandenen .title-mask-Zeilen.
 import type { Project } from '~/types/project'
 
 defineProps<{ project: Project }>()
+
+const leftRef = ref<HTMLElement | null>(null)
+useReveal(leftRef)
 </script>
 
 <template>
   <NuxtLink :to="`/cases/${project.slug}`" class="next">
-    <div class="left">
+    <div class="left" ref="leftRef">
       <div class="title-mask">
-        <p class="font-headline-1 eyebrow">next case</p>
+        <p class="font-headline-1 eyebrow" data-reveal="mask">next case</p>
       </div>
       <div class="title-mask">
-        <p class="font-headline-1 name">{{ project.title }}</p>
+        <p class="font-headline-1 name" data-reveal="mask">{{ project.title }}</p>
       </div>
       <p class="meta font-body-12 uppercase">{{ project.category }} · {{ project.client }}</p>
     </div>
