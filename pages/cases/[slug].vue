@@ -19,6 +19,8 @@ useSeoMeta({
 <template>
   <main v-if="project" class="case">
     <CaseHero :project="project" />
+    <CaseFacts :project="project" />
+    <CaseVideo :videos="project.videos" :pillar="project.pillar" />
     <CaseGallery :blocks="project.gallery" />
     <CaseNext v-if="next" :project="next" />
   </main>

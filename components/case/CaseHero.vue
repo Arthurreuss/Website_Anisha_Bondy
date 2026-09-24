@@ -9,6 +9,9 @@ const props = defineProps<{ project: Project }>()
 // Poster wird ausgeblendet, sobald das Video tatsächlich spielt.
 const isPlaying = ref(false)
 
+// Säulen-Farbpunkt (P14): Farbe kommt aus den Tokens (--color-direct|create|participate).
+const pillarColor = computed(() => `var(--color-${props.project.pillar})`)
+
 const heroRef = ref<HTMLElement | null>(null)
 useReveal(heroRef)
 
@@ -24,14 +27,20 @@ useHeroTransition(mediaRef, props.project.slug)
         <h1 class="font-headline-1 title" data-reveal="mask">{{ props.project.title }}</h1>
       </div>
 
+      <p v-if="props.project.subtitle" class="subtitle font-body">{{ props.project.subtitle }}</p>
+
       <div class="content">
         <div class="meta font-body-12 uppercase">
           <span>{{ props.project.venue }}</span>
           <span>{{ props.project.yearLabel }}</span>
+          <span>{{ props.project.role }}</span>
         </div>
 
         <div class="cats-tags font-body-12 uppercase">
-          <span>{{ $t(`pillar.${props.project.pillar}`) }}</span>
+          <span class="pillar">
+            <span class="pillar__dot" :style="{ '--dot-color': pillarColor }" aria-hidden="true"></span>
+            {{ $t(`pillar.${props.project.pillar}`) }}
+          </span>
           <span v-for="tag in props.project.tags" :key="tag">{{ tag }}</span>
         </div>
       </div>
@@ -73,9 +82,18 @@ useHeroTransition(mediaRef, props.project.slug)
         <div class="title-mask">
           <h2 class="font-headline-1 title" data-reveal="mask">{{ props.project.title }}</h2>
         </div>
+        <p v-if="props.project.subtitle" class="subtitle font-body">{{ props.project.subtitle }}</p>
         <div class="meta font-body-12 uppercase">
           <span>{{ props.project.venue }}</span>
           <span>{{ props.project.yearLabel }}</span>
+          <span>{{ props.project.role }}</span>
+        </div>
+        <div class="cats-tags font-body-12 uppercase">
+          <span class="pillar">
+            <span class="pillar__dot" :style="{ '--dot-color': pillarColor }" aria-hidden="true"></span>
+            {{ $t(`pillar.${props.project.pillar}`) }}
+          </span>
+          <span v-for="tag in props.project.tags" :key="tag">{{ tag }}</span>
         </div>
       </div>
 
@@ -130,6 +148,11 @@ useHeroTransition(mediaRef, props.project.slug)
   margin: 0;
 }
 
+.subtitle {
+  margin: 0.8rem 0 0;
+  opacity: 0.7;
+}
+
 .content {
   margin-top: 2.4rem;
   display: grid;
@@ -142,6 +165,21 @@ useHeroTransition(mediaRef, props.project.slug)
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.pillar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.pillar__dot {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--dot-color);
+  flex-shrink: 0;
 }
 
 .right {

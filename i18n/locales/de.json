@@ -3,5 +3,23 @@
   "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
   "pillarSub": { "direct": "Oper & Musiktheater", "create": "Neue Formate & szenische Konzerte", "participate": "Partizipatives Musiktheater" },
   "todo": { "prefix": "offen" },
-  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." }
+  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." },
+  "case": {
+    "video": {
+      "play": "Video abspielen",
+      "notice": "Beim Abspielen werden Daten an YouTube/Vimeo übertragen."
+    },
+    "facts": {
+      "role": "Rolle",
+      "credits": "Credits",
+      "awards": "Preise",
+      "awardWon": "Ausgezeichnet",
+      "awardNominated": "Nominiert",
+      "press": "Presse",
+      "pressLink": "Artikel lesen"
+    },
+    "gallery": {
+      "empty": "Produktionsfotos folgen"
+    }
+  }
 }
