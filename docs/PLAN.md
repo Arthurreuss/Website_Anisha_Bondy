@@ -24,7 +24,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P13 | Projektinhalte EN/DE + vorläufige Cover | Sonnet | P12 | ✅ | content/projects/selam-opera.ts, content/projects/peter-pan.ts |
 | P14 | Case-Seite v2: Video-Block (Klick-zum-Laden), Credits, Presse/Preise, Säulen-Label | Sonnet | P12 | 🔄 | components/case/CaseVideo.vue, components/case/CaseFacts.vue |
 | P15 | Seiten /about (Bio, Dreisatz, Zitat, Timeline, Presse, Partner) + /archive (Filter nach Säule) | Sonnet | P12 | 🔄 | pages/about.vue, pages/archive.vue, content/site.ts |
-| P16 | Rahmen: Sprachumschalter, Menü, Kontakt-Overlay neu, Impressum/Datenschutz | Sonnet | P12 | 🔄 | components/LangSwitch.vue, pages/imprint.vue, pages/privacy.vue |
+| P16 | Rahmen: Sprachumschalter, Menü, Kontakt-Overlay neu, Impressum/Datenschutz | Sonnet | P12 | ✅ | components/LangSwitch.vue, pages/imprint.vue, pages/privacy.vue |
 | P17 | Phase-2-QA: Merge, Browser-Check EN/DE, Build, Lighthouse, Deploy | **Opus** | P13–P16 | ⬜ | – |
 
 ## Abnahmekriterien

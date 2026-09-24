@@ -104,3 +104,9 @@ Grund: Entscheidung des Users („EN + DE, für offene Fragen Platzhalter, Rest 
 - i18n-Dateien liegen nach Modul-Standard unter `i18n/` (`i18n/i18n.config.ts`, `i18n/locales/*.json`).
 - `useProjects()` liefert nur Galerie-Projekte (`featured`), `useAllProjects()` alle; `project.client`/`category` → `venue`/`pillar` (Label über `$t('pillar.*')`).
 Grund: Umsetzung P12, Rechte und Bildqualität.
+
+## D-020 · 2026-09-24 · Merge P13/P16: Abweichungen übernommen
+- Rechtstexte in `content/legal.ts` (`{ en, de }`), i18n nur für kurze UI-Texte – gleiches Muster wie Projekte (D-018).
+- Kontakt-„Anliegen“ als Mehrfachauswahl-Chips (Feld `concern[]`), Netlify-Duplikat `public/__forms.html` angepasst.
+- Unbekannte Rollen (Schneekönigin, Mitternachtstür) als „Rolle offen“ + Todo; Clip „Eine Frau …“ ohne ID nicht verlinkt, nur Todo.
+Grund: Review der Sub-Agenten-Ergebnisse.
