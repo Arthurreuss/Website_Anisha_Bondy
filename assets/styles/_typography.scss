@@ -1,0 +1,111 @@
+// Typo-System (Spezifikation §2).
+// Schriften sind zentral über --font-primary / --font-ui austauschbar,
+// vorläufig beides 'Inter Variable' (D-006). Weight 251 (Referenz) wird
+// für Inter durch 300 ersetzt, da Inter Variable keine Achse bei 251 hat.
+
+@use 'breakpoints' as *;
+@use 'tokens' as *;
+
+:root {
+  --font-primary: 'Inter Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-ui: 'Inter Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// 12px / 1, UI-Font, für Header/Nav/Meta/Projektnamen. Kann mit .uppercase
+// kombiniert werden.
+.font-body-12 {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1;
+  letter-spacing: 0;
+
+  @include wide {
+    font-size: fluid(1.2rem);
+  }
+}
+
+// 16px / 1.3, Fließtext
+.font-body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+
+  @include wide {
+    font-size: fluid(1.6rem);
+  }
+}
+
+// 16 → 24px, Weight 300 (ersetzt 251), About-Texte
+.font-body-24 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  @include tablet-up {
+    font-size: 2.4rem;
+  }
+
+  @include wide {
+    font-size: fluid(2.4rem);
+  }
+}
+
+// 26 → 40px, Intro-Text Case-Seite
+.font-body-40-100 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.22;
+  letter-spacing: -0.04em;
+
+  @include tablet-up {
+    font-size: 4rem;
+  }
+
+  @include wide {
+    font-size: fluid(4rem);
+  }
+}
+
+// 28 → 48px, Weight 300 (ersetzt 251), Unterüberschriften
+.font-headline-2 {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  @include tablet-up {
+    font-size: 4.8rem;
+  }
+
+  @include wide {
+    font-size: fluid(4.8rem);
+  }
+}
+
+// 54 → 90px, große Titel
+.font-headline-1 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 5.4rem;
+  line-height: 1.24;
+  letter-spacing: -0.04em;
+
+  @include tablet-up {
+    font-size: 9rem;
+  }
+
+  @include wide {
+    font-size: fluid(9rem);
+  }
+}

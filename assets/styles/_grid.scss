@@ -1,0 +1,18 @@
+// Layout-Raster (Spezifikation §3): 6 Spalten mobil, 14 ab Desktop, Gap 0.8rem.
+
+@use 'breakpoints' as *;
+
+.container {
+  width: 100%;
+  padding-inline: var(--gutter);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.8rem;
+
+  @include desktop {
+    grid-template-columns: repeat(14, 1fr);
+  }
+}

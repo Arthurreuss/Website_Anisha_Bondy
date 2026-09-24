@@ -1,0 +1,41 @@
+// Design-Tokens: Farben, Abstände, fluid()-Funktion (Spezifikation §3).
+// Wird zentral einmal über main.scss eingebunden (nicht via additionalData),
+// damit die :root-Deklarationen nicht in jeder Komponenten-Kompilation
+// dupliziert werden. Die CSS-Variablen sind danach per var(--…) überall
+// im Projekt nutzbar, ohne dass diese Datei erneut importiert werden muss.
+
+@use 'sass:math';
+@use 'breakpoints' as *;
+
+// html { font-size: 10px } => 1rem = 10px
+$px-per-rem: 10;
+// ab 1438px: Wert in px / 14.4 => vw
+$fluid-divisor: 14.4;
+
+/// Rechnet einen rem-Wert in eine vw-Skalierung um (ab dem `wide`-Breakpoint).
+/// @param {Number} $rem - Größe in rem (bezogen auf 1rem = 10px)
+/// @return {Number} Wert in vw
+@function fluid($rem) {
+  $px: $rem * $px-per-rem;
+  @return math.div($px, $fluid-divisor) * 1vw;
+}
+
+$gutter-mobile: 0.8rem;
+$gutter-tablet-up: 1.6rem;
+
+:root {
+  --color-main: #111111;
+  --color-bg: #f8f6f2;
+
+  --selection-color: var(--color-main);
+  --selection-bg: #44300033;
+
+  --focus-color: var(--color-main);
+  --focus-bg: var(--color-bg);
+
+  --gutter: #{$gutter-mobile};
+
+  @include tablet-up {
+    --gutter: #{$gutter-tablet-up};
+  }
+}

@@ -1,0 +1,39 @@
+// Breakpoint-Mixins (Spezifikation §3)
+// Reines SCSS: keine CSS-Ausgabe, deshalb sicher für globale Einbindung
+// per vite.css.preprocessorOptions.scss.additionalData.
+//
+// mobile     : ≤767px
+// tablet     : 768px – 1024px
+// tablet-up  : ≥768px
+// desktop    : ≥1025px
+// wide       : ≥1438px (fluid, vw-Skalierung)
+
+@mixin mobile {
+  @media only screen and (width<=767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (768px<=width<=1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media only screen and (width>=768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (width>=1025px) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media only screen and (width>=1438px) {
+    @content;
+  }
+}

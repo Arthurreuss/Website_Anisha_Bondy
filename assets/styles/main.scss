@@ -1,0 +1,9 @@
+// Globales Stylesheet – wird einmal über nuxt.config.ts (css) eingebunden.
+
+@use '@fontsource-variable/inter';
+
+@use 'breakpoints';
+@use 'tokens';
+@use 'typography';
+@use 'grid';
+@use 'base';
