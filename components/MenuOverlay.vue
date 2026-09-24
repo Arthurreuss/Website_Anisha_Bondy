@@ -3,6 +3,8 @@
 // (clip-path-Aufdeckung von oben, Links zeilenweise ein), stoppt Lenis
 // während es offen ist, schließt bei Linkklick / Escape / Routenwechsel.
 import { CustomEase } from 'gsap/CustomEase'
+import LangSwitch from '~/components/LangSwitch.vue'
+import RollText from '~/components/ui/RollText.vue'
 
 const overlay = useOverlay()
 const { $gsap, $lenis } = useNuxtApp()
@@ -120,12 +122,12 @@ onBeforeUnmount(() => {
     class="menu-overlay"
     role="dialog"
     aria-modal="true"
-    aria-label="Menu"
+    :aria-label="$t('nav.menu')"
     :inert="!isOpen"
     :class="{ 'menu-overlay--open': visible }"
   >
     <button ref="closeBtnEl" type="button" class="menu-overlay__close font-body-12 uppercase" @click="close">
-      Close
+      {{ $t('nav.close') }}
     </button>
 
     <nav class="menu-overlay__nav">
@@ -140,6 +142,16 @@ onBeforeUnmount(() => {
         {{ $t(link.label) }}
       </NuxtLink>
     </nav>
+
+    <div class="menu-overlay__footer font-body-12 uppercase">
+      <NuxtLink :to="$localePath('/imprint')" class="menu-overlay__footer-link roll-trigger" @click="close">
+        <RollText :text="$t('nav.imprint')" />
+      </NuxtLink>
+      <NuxtLink :to="$localePath('/privacy')" class="menu-overlay__footer-link roll-trigger" @click="close">
+        <RollText :text="$t('nav.privacy')" />
+      </NuxtLink>
+      <LangSwitch class="menu-overlay__lang" />
+    </div>
   </div>
 </template>
 
@@ -178,5 +190,23 @@ onBeforeUnmount(() => {
 .menu-overlay__link {
   overflow: hidden;
   display: block;
+}
+
+.menu-overlay__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+  opacity: 0.7;
+}
+
+.menu-overlay__footer-link {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.menu-overlay__lang {
+  margin-left: auto;
 }
 </style>

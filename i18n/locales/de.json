@@ -1,7 +1,58 @@
 {
-  "nav": { "work": "Arbeiten", "about": "Über mich", "archive": "Archiv", "contact": "Kontakt", "menu": "Menü", "close": "Schließen" },
+  "nav": {
+    "work": "Arbeiten",
+    "about": "Über mich",
+    "archive": "Archiv",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "close": "Schließen",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
   "pillar": { "direct": "Direct", "create": "Create", "participate": "Participate" },
   "pillarSub": { "direct": "Oper & Musiktheater", "create": "Neue Formate & szenische Konzerte", "participate": "Partizipatives Musiktheater" },
   "todo": { "prefix": "offen" },
-  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." }
+  "home": { "title": "Ausgewählte Arbeiten", "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate." },
+  "lang": { "label": "Sprache" },
+  "contact": {
+    "headline": "Lass uns etwas gemeinsam entstehen lassen",
+    "intro": "Erzähl mir von deinem Projekt – ich melde mich.",
+    "success": "Danke — ich melde mich in Kürze bei dir.",
+    "error": "Etwas ist schiefgelaufen, bitte versuch es noch einmal.",
+    "submit": "Senden",
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "organisation": "Organisation / Haus",
+      "concern": "Worum geht es?",
+      "period": "Zeitraum",
+      "message": "Nachricht"
+    },
+    "concern": {
+      "staging": "Inszenierung",
+      "newFormat": "Neues Format / szenisches Konzert",
+      "participatory": "Partizipatives Projekt",
+      "workshop": "Workshop",
+      "press": "Presse",
+      "other": "Anderes"
+    },
+    "info": {
+      "heading": "Direkter Kontakt",
+      "email": "E-Mail",
+      "agency": "Agentur / Management",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "residenceTodo": "Land des Wohnsitzes klären (DE/AT) – bestimmt die Pflichtangaben"
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen",
+      "controllerTodo": "Name und Anschrift der/des Verantwortlichen"
+    }
+  }
 }

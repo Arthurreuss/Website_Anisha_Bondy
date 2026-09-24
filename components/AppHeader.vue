@@ -2,6 +2,7 @@
 // Kopfzeile (Spezifikation §4/§6): fixiert oben, Logo links, Menu/Contact
 // rechts. Togglet die Overlays über das useOverlay-Composable.
 import RollText from '~/components/ui/RollText.vue'
+import LangSwitch from '~/components/LangSwitch.vue'
 
 const overlay = useOverlay()
 
@@ -23,6 +24,7 @@ function toggleContact() {
       </NuxtLink>
 
       <nav class="app-header__nav">
+        <LangSwitch class="app-header__lang" />
         <button
           type="button"
           class="app-header__btn roll-trigger"
@@ -31,7 +33,7 @@ function toggleContact() {
           aria-controls="menu-overlay"
           @click="toggleMenu"
         >
-          <RollText text="Menu" />
+          <RollText :text="$t('nav.menu')" />
         </button>
         <button
           type="button"
@@ -41,7 +43,7 @@ function toggleContact() {
           aria-controls="contact-overlay"
           @click="toggleContact"
         >
-          <RollText text="Contact" />
+          <RollText :text="$t('nav.contact')" />
         </button>
       </nav>
     </div>
