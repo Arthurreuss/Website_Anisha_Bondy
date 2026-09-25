@@ -7,7 +7,7 @@
 
 ## Aktiv
 - **P24 QA** (D-037): Claude-Teil erledigt (Konsole, fps, Lighthouse, reduced-motion, Mobil). Offen: Safari/iPhone und Abnahme durch den User.
-- **P25 Hosting-Umzug** (D-032, D-033): Cloudflare Pages + Web3Forms laufen. Offen: Testanfrage über die Live-Seite, `SITE_URL` (nötig für SEO, D-037), Domain ([HOSTING.md](HOSTING.md)), Netlify-Seite löschen.
+- **P25 Hosting-Umzug** (D-032, D-033, D-038): Cloudflare Pages, Formular (Mails kommen an), Preview-Branches aus, Netlify offline, Übergangs-Domain des Users verbunden. Offen: `SITE_URL` auf die aktuelle Domain setzen (SEO, D-037); später Anishas Domain ([HOSTING.md](HOSTING.md) §3).
 - Animationen v2 ([animationen-v2.md](animationen-v2.md)): P18–P23 ✅ (D-030, D-031, D-034, D-035).
 
 ## Laufende Agenten
@@ -15,7 +15,7 @@
 
 ## Nächster Schritt
 1. User: Seite auf iPhone/Safari und am Rechner durchklicken → Rückmeldung → P24 ✅.
-2. User: `SITE_URL` setzen + neu bauen; Testanfrage übers Formular; Domain (HOSTING §3).
+2. User: `SITE_URL` = Übergangs-Domain setzen + „Retry deployment“; später Anishas Domain (HOSTING §3).
 3. Anisha: Antworten aus [anfrage-anisha.md](anfrage-anisha.md) (E-Mail fürs Formular, Fotos, Texte, Impressum/Datenschutz), YAMawards 29.09.
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 

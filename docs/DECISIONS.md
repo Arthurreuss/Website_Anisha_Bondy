@@ -235,3 +235,8 @@ Grund: Entscheidung des Users.
 - Offen bis P24 ✅: Safari/iPhone (im Container kein WebKit) und Abnahme durch den User im Browser. Kleinigkeit: Farbkontrast einzelner halbtransparenter Kleintexte (Uhr, Fakten-Liste) – bleibt, Barrierefreiheit trotzdem 96.
 Grund: QA-Lauf vor der Veröffentlichung (D-036).
 
+
+## D-038 · 2026-09-25 · Stand Hosting (Rückmeldung User)
+- Erledigt (User): alte GitHub-Branches gelöscht, Netlify-Projekt offline, „Preview branches“ in Cloudflare auf None, Formular live getestet – Mails kommen an.
+- Übergangsweise eigene Domain des Users mit Cloudflare verbunden; Anishas Domain folgt später (dann Custom Domain + `SITE_URL` umstellen, HOSTING §3).
+Grund: Rückmeldung des Users.
