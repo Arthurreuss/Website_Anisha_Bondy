@@ -222,3 +222,16 @@ Grund: Browser-Prüfung Desktop + Mobil, EN + DE, Zurück mitten im Übergang, R
 - Tastatur: Fokus startet auf Close, Tab läuft durch Fenster und Fuß und bleibt im Menü; reduced-motion ohne Animation.
 - Nebenbei P22: Seitentitel der alten Seite wird bei gescrollter Seite mitverschoben (war außerhalb des Fensters).
 Grund: Browser-Prüfung Desktop (About, Start, Case) + Mobil, Zurück-/Esc-Wechsel, Sprache im Menü, reduced-motion (keine Konsolenfehler).
+
+## D-036 · 2026-09-25 · Veröffentlichen nach P24
+- User: P24 (QA) durchführen und danach `main` direkt nach `production` ausrollen (Fast-Forward, ein Deploy).
+Grund: Entscheidung des Users.
+
+## D-037 · 2026-09-25 · P24 QA Animationen v2 (Claude-Teil)
+- Geprüft (Chromium, Desktop 1440×900, Mobil 390×844 mit Touch, reduced-motion): alle Seiten EN + DE direkt geladen, dazu Intro, Karte → Case, Next Case, Fenster-Übergang, Menü → Seite. Keine Konsolenfehler (außer i.ytimg.com-Zertifikat, nur Testumgebung).
+- Bildrate im Headless-Browser: 58.6–60 fps im Mittel in allen Abläufen, höchstens 3 Frames > 33 ms je Ablauf.
+- Lighthouse Desktop: Performance 94–97, Barrierefreiheit 96, Best Practices 96–100. SEO 82–91 nur wegen fehlendem `SITE_URL` (hreflang/canonical relativ); mit gesetztem `SITE_URL` SEO 100 → User setzt `SITE_URL` in Cloudflare (HOSTING §1).
+- P20-Morph-Ease an die Spezifikation angeglichen (`0.46, 0, 0.09, 1` statt `0.76, 0, 0.18, 1`), erledigt den offenen Punkt aus D-034.
+- Offen bis P24 ✅: Safari/iPhone (im Container kein WebKit) und Abnahme durch den User im Browser. Kleinigkeit: Farbkontrast einzelner halbtransparenter Kleintexte (Uhr, Fakten-Liste) – bleibt, Barrierefreiheit trotzdem 96.
+Grund: QA-Lauf vor der Veröffentlichung (D-036).
+

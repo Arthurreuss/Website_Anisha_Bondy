@@ -50,8 +50,9 @@ interface Pending {
 
 let pending: Pending | null = null
 
+// Spezifikation „reveal / morph“ (animationen-v2, Ease-Tabelle; P24, D-037)
 function morphEase() {
-  return CustomEase.get('cardMorph') ?? CustomEase.create('cardMorph', 'M0,0 C0.76,0 0.18,1 1,1')
+  return CustomEase.get('cardMorph') ?? CustomEase.create('cardMorph', 'M0,0 C0.46,0 0.09,1 1,1')
 }
 
 // Dieselbe Ease wie das Intro (docs/animationen-v2.md, Ease-Tabelle „slowStart“) –

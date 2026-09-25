@@ -32,7 +32,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ✅ | composables/useNextTransition.ts |
 | P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ✅ | composables/useWindowTransition.ts, components/PageTitle.vue, plugins/page-transition.client.ts |
 | P23 | Menü v2: Seiten als Live-Vorschau-Fenster, Klick zoomt auf Vollbild (§6) | **Opus** | P22 | ✅ | components/MenuOverlay.vue, components/menu/MenuPreview.vue |
-| P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | ⬜ | – |
+| P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | 🔄 | – |
 | P25 | Hosting-Umzug: Cloudflare Pages, Branch production, Formular Web3Forms, Domain (D-032) | **Opus** + User | – | 🔄 | docs/HOSTING.md, .node-version |
 
 ## Abnahmekriterien
