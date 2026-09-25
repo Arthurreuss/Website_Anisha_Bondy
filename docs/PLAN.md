@@ -28,7 +28,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P17 | Phase-2-QA: Merge, Browser-Check EN/DE, Build, Lighthouse, Deploy | **Opus** | P13–P16 | ✅ | – |
 | P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | Sonnet | P17 | ✅ | composables/useGalleryIntro.ts |
 | P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | ✅ | composables/useHoverLift.ts |
-| P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | Sonnet | P18 | ⬜ | – |
+| P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | Sonnet | P18 | 🔄 | – |
 | P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ⬜ | – |
 | P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ⬜ | – |
 | P23 | Menü v2: Seiten als Live-Vorschau-Fenster, Klick zoomt auf Vollbild (§6) | **Opus** | P22 | ⬜ | – |
