@@ -126,6 +126,9 @@ function load() {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  // Tageszeit-Theme (P10): nachts etwas abgedunkelt, wie andere Vorschaubilder.
+  filter: brightness(var(--bg-brightness));
+  transition: filter 1.1s ease;
 }
 
 .video__trigger::after {
@@ -164,6 +167,13 @@ function load() {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
+
+// reduced-motion (P10): Theme-Wechsel bleiben, nur ohne Animation.
+@media (prefers-reduced-motion: reduce) {
+  .video__poster {
+    transition: none !important;
+  }
+}
 
 .sr-only {
   position: absolute;

@@ -22,6 +22,9 @@ const show = useRuntimeConfig().public.showTodos
   color: var(--color-todo);
   background: color-mix(in srgb, var(--color-todo) 8%, transparent);
   line-height: 1.4;
+  transition:
+    color 0.6s ease,
+    background-color 0.6s ease;
 
   &--block {
     display: block;
@@ -32,5 +35,12 @@ const show = useRuntimeConfig().public.showTodos
 .ui-todo__prefix {
   margin-right: 0.4em;
   font-weight: 500;
+}
+
+// reduced-motion (P10): Theme-Wechsel bleibt, nur ohne Animation.
+@media (prefers-reduced-motion: reduce) {
+  .ui-todo {
+    transition: none !important;
+  }
 }
 </style>

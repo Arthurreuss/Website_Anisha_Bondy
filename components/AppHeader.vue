@@ -3,6 +3,7 @@
 // rechts. Togglet die Overlays über das useOverlay-Composable.
 import RollText from '~/components/ui/RollText.vue'
 import LangSwitch from '~/components/LangSwitch.vue'
+import LocalTime from '~/components/LocalTime.vue'
 
 const overlay = useOverlay()
 
@@ -45,6 +46,7 @@ function toggleContact() {
         >
           <RollText :text="$t('nav.contact')" />
         </button>
+        <LocalTime class="app-header__clock" />
       </nav>
     </div>
   </header>
@@ -88,7 +90,12 @@ function toggleContact() {
 
 .app-header__nav {
   display: flex;
-  gap: 2.4rem;
+  align-items: center;
+  gap: 1.6rem;
+
+  @include tablet-up {
+    gap: 2.4rem;
+  }
 }
 
 .app-header__btn {

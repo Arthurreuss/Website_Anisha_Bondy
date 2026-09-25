@@ -180,6 +180,7 @@ useHeroTransition(mediaRef, props.project.slug)
   border-radius: 50%;
   background: var(--dot-color);
   flex-shrink: 0;
+  transition: background-color 0.6s ease;
 }
 
 .right {
@@ -200,6 +201,18 @@ useHeroTransition(mediaRef, props.project.slug)
     aspect-ratio: auto;
     height: calc(100vh - 6rem);
   }
+
+  // Tageszeit-Theme (P10): dunkles Overlay über dem Bild nachts
+  // (--img-over-opacity, max. ~0.15), damit das Bild nicht "zu hell" wirkt.
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, var(--img-over-opacity));
+    transition: background-color 1.1s ease;
+  }
 }
 
 .image__img {
@@ -208,6 +221,8 @@ useHeroTransition(mediaRef, props.project.slug)
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(var(--bg-brightness));
+  transition: filter 1.1s ease;
 }
 
 .image__poster {
@@ -217,7 +232,10 @@ useHeroTransition(mediaRef, props.project.slug)
   height: 100%;
   object-fit: cover;
   opacity: 1;
-  transition: opacity 0.1s linear;
+  filter: brightness(var(--bg-brightness));
+  transition:
+    opacity 0.1s linear,
+    filter 1.1s ease;
 
   &.is-hidden {
     opacity: 0;
@@ -246,6 +264,16 @@ useHeroTransition(mediaRef, props.project.slug)
   @include desktop {
     margin-top: 6rem;
     padding-bottom: 10rem;
+  }
+}
+
+// reduced-motion (P10): Theme-Wechsel bleiben, nur ohne Animation.
+@media (prefers-reduced-motion: reduce) {
+  .pillar__dot,
+  .image::after,
+  .image__img,
+  .image__poster {
+    transition: none !important;
   }
 }
 </style>
