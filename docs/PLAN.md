@@ -18,7 +18,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ✅ | pages/cases/[slug].vue |
 | P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ✅ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ✅ | composables/useReveal.ts |
-| P10 | Tageszeit-Theme + ziehbare Local-Time-Uhr ([Spezifikation](analyse-referenz-brandonyasin.md) §3); Menü-Vorschau → P23 (D-023) | Sonnet | P17 | ⬜ | – |
+| P10 | Tageszeit-Theme + ziehbare Local-Time-Uhr ([Spezifikation](analyse-referenz-brandonyasin.md) §3); Menü-Vorschau → P23 (D-023) | Sonnet | P17 | 🔄 | – |
 | P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ✅ | public/favicon.svg |
 | P12 | Phase 2 Fundament: i18n EN/DE, Datenmodell v2, Loader, UiTodo, Säulen-Farben | **Opus** | P11 | ✅ | i18n/i18n.config.ts, i18n/locales/en.json, i18n/locales/de.json, components/ui/UiTodo.vue, content/projects/index.ts |
 | P13 | Projektinhalte EN/DE + vorläufige Cover | Sonnet | P12 | ✅ | content/projects/selam-opera.ts, content/projects/peter-pan.ts |
@@ -26,8 +26,8 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P15 | Seiten /about (Bio, Dreisatz, Zitat, Timeline, Presse, Partner) + /archive (Filter nach Säule) | Sonnet | P12 | ✅ | pages/about.vue, pages/archive.vue, content/site.ts |
 | P16 | Rahmen: Sprachumschalter, Menü, Kontakt-Overlay neu, Impressum/Datenschutz | Sonnet | P12 | ✅ | components/LangSwitch.vue, pages/imprint.vue, pages/privacy.vue |
 | P17 | Phase-2-QA: Merge, Browser-Check EN/DE, Build, Lighthouse, Deploy | **Opus** | P13–P16 | ✅ | – |
-| P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | Sonnet | P17 | ⬜ | – |
-| P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | ⬜ | – |
+| P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | Sonnet | P17 | 🔄 | – |
+| P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | 🔄 | – |
 | P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | Sonnet | P18 | ⬜ | – |
 | P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ⬜ | – |
 | P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ⬜ | – |

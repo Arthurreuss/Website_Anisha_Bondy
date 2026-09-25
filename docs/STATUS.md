@@ -6,13 +6,13 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- Animationen v2 + Tageszeit-Theme (D-023, D-024): Plan P10, P18–P24 steht, Spezifikation [animationen-v2.md](animationen-v2.md). Wartet auf „los“.
+- Animationen v2 + Tageszeit-Theme (D-023–D-025), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 läuft.**
 
 ## Laufende Agenten
-- keine.
+- Sonnet, eigene Worktrees: P18 (Intro v2), P19 (Hover), P10 (Tageszeit-Theme + Uhr). Nach Rückmeldung: Review + Merge nach Checkliste in agent-briefing.md.
 
 ## Nächster Schritt
-1. Nach „los“: Welle 1 Sonnet parallel P18, P19, P10 → Opus-Review; dann P20 (Sonnet); dann Opus P22 → P21 → P23; zum Schluss P24.
+1. Welle 1 reviewen + mergen (P18, P19, P10) → dann P20 (Sonnet); dann Opus P22 → P21 → P23; zum Schluss P24.
 2. Nebenher: Antworten von Anisha („offen:“-Kästen, INHALTE.md §7), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
 3. User: Netlify-Formular-Benachrichtigung + Testnachricht (D-022).
 

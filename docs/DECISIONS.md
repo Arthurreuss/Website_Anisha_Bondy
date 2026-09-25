@@ -142,3 +142,7 @@ Grund: Entscheidung des Users.
 - Tageszeit-Theme + Uhr (P10) kommen in diese Runde.
 - Modelle, um Tokens zu sparen: Sonnet für gut spezifizierte Pakete mit festen Zahlen (P10, P18, P19, P20), Opus nur für neue Übergangs-Architektur (P21, P22, P23) und QA (P24). Opus reviewt jedes Sonnet-Ergebnis im Browser.
 Grund: Entscheidung des Users; Soll-Werte liegen seit D-023 fest, dadurch sind P18/P20 keine Forschungsaufgaben mehr.
+
+## D-025 · 2026-09-25 · Große Seitentitel wie im Original
+Seitentitel erscheinen im Menü (P23) **und** in den Fenster-Übergängen (P22); im Vollbild rollen sie weg. Vorläufige Wörter: EN „work“ / „archive“ / „about“, DE „Arbeiten“ / „Archiv“ / „Über mich“ (i18n, änderbar). Bestätigt D-024.
+Grund: Entscheidung des Users nach Screenshot-Vergleich mit dem Original.
