@@ -95,6 +95,7 @@ function onClick(e: MouseEvent) {
 }
 
 .thumb {
+  position: relative;
   flex: none;
   width: 9rem;
   aspect-ratio: 4 / 5;
@@ -103,6 +104,17 @@ function onClick(e: MouseEvent) {
   @include desktop {
     width: 16rem;
   }
+
+  // Tageszeit-Theme (D-028): dunkles Overlay über dem Vorschaubild nachts, wie CaseHero.vue.
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, var(--img-over-opacity));
+    transition: background-color 1.1s ease;
+  }
 }
 
 .thumb__img {
@@ -110,5 +122,12 @@ function onClick(e: MouseEvent) {
   height: 100%;
   object-fit: cover;
   transform: scale(1);
+}
+
+// reduced-motion (D-028): Theme-Wechsel bleiben, nur ohne Animation.
+@media (prefers-reduced-motion: reduce) {
+  .thumb::after {
+    transition: none !important;
+  }
 }
 </style>

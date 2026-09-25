@@ -1,25 +1,41 @@
-// Seitenübergang Karte → Detail-Hero (P8, Spezifikation §4 „Seitenübergang“).
+// Seitenübergang Karte → Detail-Hero (P8/P20, Spezifikation §4 „Seitenübergang“
+// bzw. docs/animationen-v2.md §3 „Klick Karte → Detailseite“).
 //
-// Ablauf:
+// Ablauf, zwei Phasen (gesamt ≈ 2.5 s):
 // 1. Klick auf eine Karte (startCardTransition): Das Kartenbild wird geklont und
 //    position:fixed exakt über das Original gelegt; ein Video läuft im Klon ab
-//    derselben currentTime weiter. Danach navigiert der NuxtLink normal.
+//    derselben currentTime weiter (D-015). Danach navigiert der NuxtLink normal.
 // 2. Die Startseite deklariert eine Page-Transition im Modus „default“ (beide
 //    Seiten gleichzeitig im DOM). leavePage() fixiert die Startseite als Ebene
-//    über der neuen Seite und lässt die übrigen Karten wegschrumpfen.
+//    über der neuen Seite: Phase 1 (0–1.27 s, PHASE1_DURATION) lässt die übrigen
+//    Karten wegschrumpfen (Medien-Zoom, Bild nach oben weggeschnitten, Name fällt),
+//    gestaffelt nach Kartenabstand zur geklickten Karte; deren eigener Name fällt
+//    sofort (Distanz 0/1 → Offset 0 s).
 // 3. Die neue Seite ist darunter bereits gerendert: useHeroTransition() misst
-//    den Hero-Container und morpht den Klon dorthin (FLIP). Am Ende wird das
-//    Hero-Video auf die Zeit des Klons gesetzt und der Klon entfernt.
+//    den Hero-Container, wartet auf das Ende von Phase 1 (pending.phase1) und
+//    morpht danach den Klon dorthin (Phase 2, FLIP, MORPH_DURATION). Am Ende wird
+//    das Hero-Video auf die Zeit des Klons gesetzt und der Klon entfernt.
 import { gsap } from 'gsap'
 import { CustomEase } from 'gsap/CustomEase'
 import type { Ref } from 'vue'
 
 gsap.registerPlugin(CustomEase)
 
-const MORPH_DURATION = 1.26
-const LEAVE_DURATION = 0.9
+const MORPH_DURATION = 1.26 // Phase 2 (§3)
+const PHASE1_DURATION = 1.27 // Phase 1 (§3)
+const PHASE1_MIN_DURATION = 0.2 // Untergrenze je Karte, falls der Offset sonst über PHASE1_DURATION hinausliefe
+// Offset je Kartenabstand zur geklickten Karte (§3): 1→0s, 2→0.33s, 3→0.56s, danach +0.23s/Position
+const PHASE1_OFFSETS = [0, 0, 0.33, 0.56]
+const PHASE1_OFFSET_STEP = 0.23
+const LEAVE_SCALE = 0.7 // Ursprung 50% 40% (§3)
+const LEAVE_MEDIA_SCALE = 1.4
+const LEAVE_ORIGIN = '50% 40%'
 const MEDIA_SCALE_FROM = 1.15 // CSS-Ruhezustand der Kartenmedien
 const CLONE_Z = 90 // unter dem Header (100), über allem anderen
+// Bild "nach oben weggeschnitten" (§3): gleiche Polygone wie useGalleryIntro.ts,
+// nur in umgekehrter Richtung (offen → zu einer Linie oben kollabiert).
+const CLIP_OPEN = 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
+const CLIP_CLOSED = 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)'
 
 interface Pending {
   slug: string
@@ -27,6 +43,9 @@ interface Pending {
   clone: HTMLElement
   media: HTMLElement | null
   video: HTMLVideoElement | null
+  /** Löst, sobald Phase 1 (die übrigen Karten) fertig ist – Phase 2 (Morph) wartet darauf. */
+  phase1: Promise<void>
+  resolvePhase1: () => void
 }
 
 let pending: Pending | null = null
@@ -35,8 +54,17 @@ function morphEase() {
   return CustomEase.get('cardMorph') ?? CustomEase.create('cardMorph', 'M0,0 C0.76,0 0.18,1 1,1')
 }
 
-function softEase() {
-  return CustomEase.get('introSoft') ?? CustomEase.create('introSoft', 'M0,0 C0.46,0 0.09,1 1,1')
+// Dieselbe Ease wie das Intro (docs/animationen-v2.md, Ease-Tabelle „slowStart“) –
+// get-or-create, damit sie nicht doppelt unter anderem Namen angelegt wird.
+function slowStartEase() {
+  return CustomEase.get('introSlowStart') ?? CustomEase.create('introSlowStart', 'M0,0 C0.9,0 0.58,1 1,1')
+}
+
+/** Offset (s) für einen Kartenabstand `d` (§3); für d>3 in PHASE1_OFFSET_STEP-Schritten weiter gestaffelt. */
+function staggerOffset(distance: number) {
+  const d = Math.max(0, distance)
+  const raw = d <= 3 ? PHASE1_OFFSETS[d]! : PHASE1_OFFSETS[3]! + (d - 3) * PHASE1_OFFSET_STEP
+  return Math.min(raw, PHASE1_DURATION - PHASE1_MIN_DURATION)
 }
 
 function reducedMotion() {
@@ -84,12 +112,24 @@ export function startCardTransition(item: HTMLElement) {
   document.body.appendChild(clone)
   img.style.visibility = 'hidden'
 
+  // Phase 2 (Morph) wartet auf das Ende von Phase 1 (§3). Fallback-Timer, falls
+  // leavePage() aus irgendeinem Grund nie läuft (kein Leave-Hook, andere Route) –
+  // ansonsten würde useHeroTransition ewig auf den Morph-Start warten.
+  let resolvePhase1: () => void = () => undefined
+  const phase1 = new Promise<void>((resolve) => {
+    resolvePhase1 = resolve
+  })
+  const fallback = window.setTimeout(resolvePhase1, (PHASE1_DURATION + 0.5) * 1000)
+  phase1.then(() => window.clearTimeout(fallback))
+
   pending = {
     slug,
     source: item,
     clone,
     media: clone.querySelector<HTMLElement>('.gallery-item__media'),
     video,
+    phase1,
+    resolvePhase1,
   }
 }
 
@@ -100,9 +140,11 @@ export function startCardTransition(item: HTMLElement) {
 export function leavePage(el: Element, done: () => void) {
   const page = el as HTMLElement
   if (!pending || !page.contains(pending.source)) {
+    pending?.resolvePhase1()
     done()
     return
   }
+  const current = pending
 
   // Alte Seite als Ebene über der neuen fixieren
   Object.assign(page.style, {
@@ -113,28 +155,47 @@ export function leavePage(el: Element, done: () => void) {
     pointerEvents: 'none',
   })
 
-  const others = Array.from(page.querySelectorAll<HTMLElement>('.gallery-item')).filter((i) => i !== pending!.source)
-  const q = (sel: string, list = others) =>
-    list.map((i) => i.querySelector<HTMLElement>(sel)).filter((n): n is HTMLElement => !!n)
-  const ease = softEase()
+  const allItems = Array.from(page.querySelectorAll<HTMLElement>('.gallery-item'))
+  const clickedIndex = allItems.indexOf(current.source)
+  const ease = slowStartEase()
 
   const tl = gsap.timeline({ onComplete: done })
-  tl.to(q('.gallery-item__stage'), { scale: 0.7, duration: LEAVE_DURATION, ease }, 0)
-  tl.to(q('.gallery-item__media'), { scale: 1.4, duration: LEAVE_DURATION, ease }, 0)
-  // Startwert explizit: von clip-path „none“ kann GSAP nicht interpolieren
-  tl.fromTo(
-    q('.gallery-item__img'),
-    { clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)' },
-    { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)', duration: LEAVE_DURATION, ease },
-    0,
-  )
-  tl.to(
-    q('.gallery-item__name-wrapper > *', [...others, pending.source]),
-    { yPercent: 100, duration: 0.5, ease: 'power2.in' },
-    0,
-  )
-  // Zum Schluss die Deckebene ausblenden, darunter liegt die neue Seite
-  tl.to(page, { autoAlpha: 0, duration: 0.3, ease: 'none' }, LEAVE_DURATION - 0.2)
+  // Phase 2 (Morph) darf erst beginnen, wenn Phase 1 durch ist (§3) – unabhängig
+  // vom anschließenden Ausblenden der Deckebene weiter unten.
+  tl.call(() => current.resolvePhase1(), [], PHASE1_DURATION)
+
+  // Phase 1 (§3): je Karte einzeln gestaffelt nach Abstand zur geklickten Karte,
+  // alle enden gemeinsam bei PHASE1_DURATION.
+  allItems.forEach((item, i) => {
+    const distance = Math.abs(i - clickedIndex)
+    const offset = staggerOffset(distance)
+    const duration = PHASE1_DURATION - offset
+    const isClicked = item === current.source
+
+    // Name fällt auf jeder Karte, auch der geklickten (Distanz 0 → Offset 0).
+    const name = item.querySelector<HTMLElement>('.gallery-item__name-wrapper > *')
+    if (name) tl.to(name, { yPercent: 100, duration, ease }, offset)
+
+    if (isClicked) return // Bild/Medium der geklickten Karte: siehe Klon (Phase 2)
+
+    const stage = item.querySelector<HTMLElement>('.gallery-item__stage')
+    const media = item.querySelector<HTMLElement>('.gallery-item__media')
+    const img = item.querySelector<HTMLElement>('.gallery-item__img')
+
+    if (stage) {
+      tl.to(stage, { scale: LEAVE_SCALE, transformOrigin: LEAVE_ORIGIN, duration, ease }, offset)
+    }
+    if (media) {
+      tl.to(media, { scale: LEAVE_MEDIA_SCALE, duration, ease }, offset)
+    }
+    if (img) {
+      // Startwert explizit: von clip-path „none“ kann GSAP nicht interpolieren
+      tl.fromTo(img, { clipPath: CLIP_OPEN }, { clipPath: CLIP_CLOSED, duration, ease }, offset)
+    }
+  })
+
+  // Zum Schluss die Deckebene ausblenden, darunter liegt die neue Seite (Phase 2 läuft dort schon)
+  tl.to(page, { autoAlpha: 0, duration: 0.3, ease: 'none' }, PHASE1_DURATION - 0.2)
 }
 
 /**
@@ -143,6 +204,7 @@ export function leavePage(el: Element, done: () => void) {
  */
 export function useHeroTransition(target: Ref<HTMLElement | null>, slug: string) {
   let tween: gsap.core.Timeline | null = null
+  let cancelled = false
 
   onMounted(() => {
     const el = target.value
@@ -150,32 +212,37 @@ export function useHeroTransition(target: Ref<HTMLElement | null>, slug: string)
       cleanup()
       return
     }
-    const { clone, media, video } = pending
+    const { clone, media, video, phase1 } = pending
     el.style.visibility = 'hidden'
+    // Sofort messen (Layout steht bereits); der Morph selbst startet erst nach Phase 1 (§3).
     const to = el.getBoundingClientRect()
     const heroVideo = el.querySelector<HTMLVideoElement>('video')
 
-    tween = gsap.timeline({
-      onComplete: () => finish(el, heroVideo, video),
+    phase1.then(() => {
+      if (cancelled || !pending || pending.clone !== clone) return // inzwischen unmounted/aufgeräumt
+      tween = gsap.timeline({
+        onComplete: () => finish(el, heroVideo, video),
+      })
+      tween.to(
+        clone,
+        {
+          left: to.left,
+          top: to.top,
+          width: to.width,
+          height: to.height,
+          duration: MORPH_DURATION,
+          ease: morphEase(),
+        },
+        0,
+      )
+      if (media) {
+        tween.fromTo(media, { scale: MEDIA_SCALE_FROM }, { scale: 1, duration: MORPH_DURATION, ease: morphEase() }, 0)
+      }
     })
-    tween.to(
-      clone,
-      {
-        left: to.left,
-        top: to.top,
-        width: to.width,
-        height: to.height,
-        duration: MORPH_DURATION,
-        ease: morphEase(),
-      },
-      0,
-    )
-    if (media) {
-      tween.fromTo(media, { scale: MEDIA_SCALE_FROM }, { scale: 1, duration: MORPH_DURATION, ease: morphEase() }, 0)
-    }
   })
 
   onBeforeUnmount(() => {
+    cancelled = true
     tween?.kill()
     tween = null
     cleanup()
