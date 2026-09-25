@@ -25,6 +25,8 @@ export interface InfiniteGalleryOptions {
   scaleSelector?: string
   /** Wird bei jeder Nutzer-Interaktion aufgerufen (z. B. um das Intro abzubrechen). */
   onInteract?: () => void
+  /** Wird einmalig beim Beginn eines Drags aufgerufen (P19: laufende Hover-Lifts zurücksetzen). */
+  onDragStart?: () => void
 }
 
 export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: InfiniteGalleryOptions = {}) {
@@ -176,6 +178,7 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
         const x = self.x ?? pointerX
         const dx = x - pointerX
         pointerX = x
+        if (!dragged) options.onDragStart?.()
         dragged = true
         // Beim Ziehen folgt die Position direkt dem Finger
         target -= dx
@@ -252,5 +255,9 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
     refresh: () => {
       if (measure()) render()
     },
+    /** true während des Intros bzw. wenn Eingaben gesperrt sind (P19: Hover-Lift unterdrücken). */
+    isEnabled: () => enabled,
+    /** true ab Drag-Beginn bis zum folgenden Klick-Event (P19: Hover-Lift unterdrücken). */
+    isDragging: () => dragged,
   }
 }
