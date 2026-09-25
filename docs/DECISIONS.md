@@ -171,3 +171,10 @@ Grund: Review + Browser-Prüfung (03/05:30/06/07/12/18:30/22 Uhr, Desktop + Mobi
 ## D-029 · 2026-09-25 · Uhr unter „Local Time“ und größer
 Das runde Zifferblatt steht unter „Local Time 00:00“ (rechtsbündig) und ist größer, damit man es gut greifen und drehen kann. Ergänzt D-028.
 Grund: Entscheidung des Users.
+
+## D-030 · 2026-09-25 · Merge P20 (Karte → Detail v2)
+- Phase 2 (Morph) wartet per Promise auf das Ende von Phase 1 (Fallback-Timer 1.77 s, falls der Leave-Hook nie läuft).
+- Staffelung nach **sichtbarer** Reihenfolge der Karten (nach `left` sortiert), nicht nach DOM-Index – der Endlos-Slider verschiebt Karten (Orchestrator-Korrektur).
+- Alle Karten enden gemeinsam bei 1.27 s: spätere Karten haben kürzere Dauer (mind. 0.2 s). Spezifikation nennt nur Startversätze.
+- Nachts leichtes Bild-Overlay (`--img-over-opacity`) jetzt auch auf Galerie- und Next-Case-Bildern (D-028 erledigt).
+Grund: Review + Browser-Prüfung (Klick auf 2. Karte: Nachbarn gleichzeitig, weitere Karte später, Morph ab 1.27 s, keine Konsolenfehler).

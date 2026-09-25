@@ -100,6 +100,17 @@ const cover = computed(() => props.project.cover)
   position: relative;
   aspect-ratio: 396 / 496;
   overflow: hidden;
+
+  // Tageszeit-Theme (D-028): dunkles Overlay über dem Bild nachts, wie CaseHero.vue.
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, var(--img-over-opacity));
+    transition: background-color 1.1s ease;
+  }
 }
 
 .gallery-item__media {
@@ -132,6 +143,13 @@ const cover = computed(() => props.project.cover)
 
   &.is-hidden {
     opacity: 0;
+  }
+}
+
+// reduced-motion (D-028): Theme-Wechsel bleiben, nur ohne Animation.
+@media (prefers-reduced-motion: reduce) {
+  .gallery-item__img::after {
+    transition: none !important;
   }
 }
 </style>
