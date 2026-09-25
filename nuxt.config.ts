@@ -28,9 +28,9 @@ export default defineNuxtConfig({
     public: {
       // Platzhalter für offene Fragen sichtbar (D-018); für den Livegang auf false
       showTodos: true,
-      // Web3Forms-Zugangsschlüssel (öffentlich, D-032); beim Build per
-      // NUXT_PUBLIC_WEB3FORMS_KEY gesetzt
-      web3formsKey: '',
+      // Web3Forms-Zugangsschlüssel (öffentlich, steht ohnehin im Seitenquelltext;
+      // D-032). NUXT_PUBLIC_WEB3FORMS_KEY beim Build überschreibt ihn.
+      web3formsKey: '23be0b31-9c40-4a08-af3b-13cf3260ad88',
     },
   },
   nitro: {

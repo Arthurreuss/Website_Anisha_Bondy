@@ -28,7 +28,7 @@ Umgebungsvariablen wirken erst beim nächsten Build (Deployments → „Retry de
 ## 2 · Kontaktformular: Web3Forms (einmalig)
 
 - Kein Konto mit Passwort nötig: auf **web3forms.com** die E-Mail-Adresse eingeben, an die Anfragen gehen sollen (Anishas Adresse, anfrage-anisha §1.1) → der **Access Key** kommt per Mail an diese Adresse.
-- Den Key in Cloudflare als `NUXT_PUBLIC_WEB3FORMS_KEY` eintragen (oder Claude schicken). Er ist öffentlich (steht im Seitenquelltext) – das ist bei Web3Forms so vorgesehen; er erlaubt nur, Mails an genau diese Adresse zu schicken.
+- Der Key steht als Standardwert in `nuxt.config.ts` (seit 2026-09-25); `NUXT_PUBLIC_WEB3FORMS_KEY` in Cloudflare ist optional und überschreibt ihn (z. B. bei neuem Empfänger). Er ist öffentlich (steht im Seitenquelltext) – das ist bei Web3Forms so vorgesehen; er erlaubt nur, Mails an genau diese Adresse zu schicken.
 - Gratis-Tarif: begrenzte Zahl Einsendungen pro Monat (bei Anlage prüfen, für ein Portfolio reichlich). Spam-Schutz: unsichtbares Honeypot-Feld.
 - Optional: über den Link in der Mail ein Dashboard öffnen (Einsendungen ansehen, Empfänger ändern).
 - Test: Formular auf der Seite abschicken → Mail „Website-Anfrage: <Name>“ muss ankommen; Antworten gehen per „Antworten“ direkt an die absendende Person.

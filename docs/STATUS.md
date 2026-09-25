@@ -6,7 +6,7 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- **P25 Hosting-Umzug** (D-032): Code fertig (Web3Forms, SITE_URL, Datenschutz), Schritte für den User in [HOSTING.md](HOSTING.md). Wartet auf User: Cloudflare-Projekt anlegen, Web3Forms-Key, Netlify auf `production`.
+- **P25 Hosting-Umzug** (D-032): Cloudflare Pages + Web3Forms laufen (User), `production` angelegt, Web3Forms-Key im Code. Offen: Testanfrage über die Live-Seite, `SITE_URL`, Domain, Netlify abschalten ([HOSTING.md](HOSTING.md)).
 - Animationen v2 + Tageszeit-Theme (D-023–D-025, Uhr-Layout D-029), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 fertig** (P18, P19, P10 ✅), P20 + P22 ✅ (D-030, D-031).
 
 ## Laufende Agenten
@@ -15,7 +15,7 @@
 ## Nächster Schritt
 1. Opus P21 (Case → nächster Case, §4) → P23 (Menü mit Seitenfenstern, §6; nutzt PageTitle + Fenster-Geometrie aus useWindowTransition) → P24 QA.
 2. Nebenher: Antworten von Anisha ([anfrage-anisha.md](anfrage-anisha.md)), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
-3. User: HOSTING.md §1–2 umsetzen, dann Testanfrage übers Formular; später Domain (§3).
+3. User: veröffentlichen (Key im Code) → Testanfrage übers Formular; `SITE_URL` setzen; Domain (HOSTING §3); Netlify-Seite löschen.
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 
 ## Bekannte Kleinigkeiten
