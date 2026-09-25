@@ -169,8 +169,10 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="local-time">
-    <span class="local-time__label font-body-12 uppercase">{{ $t('clock.label') }}</span>
-    <span class="local-time__digital font-body-12">{{ digital }}</span>
+    <div class="local-time__text">
+      <span class="local-time__label font-body-12 uppercase">{{ $t('clock.label') }}</span>
+      <span class="local-time__digital font-body-12">{{ digital }}</span>
+    </div>
     <div
       class="local-time__face"
       tabindex="0"
@@ -200,9 +202,17 @@ onBeforeUnmount(() => {
 </template>
 
 <style lang="scss" scoped>
+// Zifferblatt unter „Local Time 00:00“, rechtsbündig und groß genug zum
+// Greifen (D-029).
 .local-time {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.local-time__text {
+  display: flex;
   gap: 0.8rem;
 }
 
@@ -217,17 +227,21 @@ onBeforeUnmount(() => {
 // Fließtext, das runde Ziffernblatt bleibt als kompaktes Wiedererkennungs-
 // merkmal und Bedienelement erhalten.
 @media (max-width: 767px) {
-  .local-time__label,
-  .local-time__digital {
+  .local-time__text {
     display: none;
   }
 }
 
 .local-time__face {
   position: relative;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 4.4rem;
+  height: 4.4rem;
   cursor: grab;
+
+  @media (min-width: 768px) {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
   touch-action: none;
   border-radius: 50%;
 

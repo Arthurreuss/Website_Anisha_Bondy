@@ -167,3 +167,7 @@ Grund: Review + Browser-Prüfung (Desktop 1440×900, Mobil 390×844; Stapel deck
 - Orchestrator-Nachtrag: Header (weiß + `mix-blend-mode: difference`) war auf mittelgrauem Hintergrund unlesbar → `html.theme-twilight` schaltet ihn dort auf `--color-main`.
 - Offen: `--img-over-opacity`/`--bg-brightness` erst in CaseHero/CaseVideoItem angeschlossen (Galerie + CaseNext folgen in P20/P21). Video-Fallback-Fläche nutzt nachts die helle Säulenfarbe (nur ohne Poster sichtbar). `--color-participate` hat tagsüber nur 3.1:1 (bestehend, nur Farbpunkt).
 Grund: Review + Browser-Prüfung (03/05:30/06/07/12/18:30/22 Uhr, Desktop + Mobil, keine Konsolenfehler).
+
+## D-029 · 2026-09-25 · Uhr unter „Local Time“ und größer
+Das runde Zifferblatt steht unter „Local Time 00:00“ (rechtsbündig) und ist größer, damit man es gut greifen und drehen kann. Ergänzt D-028.
+Grund: Entscheidung des Users.

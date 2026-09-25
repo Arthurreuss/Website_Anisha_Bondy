@@ -97,7 +97,8 @@ html.theme-twilight .app-header {
 
 .app-header__nav {
   display: flex;
-  align-items: center;
+  // oben bündig: die Uhr (D-029) ist höher als die Textzeile
+  align-items: flex-start;
   gap: 1.6rem;
 
   @include tablet-up {
