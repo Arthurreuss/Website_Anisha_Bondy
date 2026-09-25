@@ -211,3 +211,14 @@ Grund: Entscheidung des Users.
 - Browser-Zurück und andere Case → Case-Wechsel ohne Übergang; eine neue Navigation schließt einen laufenden Übergang sofort ab.
 - Offen für P24: P20 nutzt als Morph-Ease `0.76, 0, 0.18, 1` statt `0.46, 0, 0.09, 1` (Spezifikation) – prüfen.
 Grund: Browser-Prüfung Desktop + Mobil, EN + DE, Zurück mitten im Übergang, Regression P20/P22 (keine Konsolenfehler).
+
+## D-035 · 2026-09-25 · P23 Menü mit Seitenfenstern
+- Aktuelle Seite schrumpft wie beim Fenster-Übergang (P22) auf 0.75 und wird zum ersten Fenster links; Vorschauen der anderen Hauptseiten (Work, About, Archive) gleiten rechts daneben herein, versetzt 0.06 s, Ease pageSpread, 1.3 s; auf jedem Fenster rollt der Seitentitel ein.
+- Fensterbreite richtet sich nach der Anzahl (3 auf Hauptseiten, 4 auf Case-/Rechtsseiten): 4 % Rand, 2.4 % Abstand; der Schnitt (`--cut`) ergibt sich daraus statt fest 37.4 %.
+- „Live-Vorschau“ = leichte Nachbauten der Seiten (`MenuPreview.vue`): Standbilder statt Videos, keine Scroll-Reveals, kein Intro, kein SEO – so keine doppelten Videos/Last. Die aktuelle Seite ist die echte (live).
+- Hover: Fenster hebt sich um 12 px (Deutung von „rücken leicht nach“; Originalwert nicht gemessen). Klick: Fenster zoomt auf Vollbild, aktuelle Seite fährt hinaus (×1.15), dann Seitenwechsel ohne weiteren Übergang, Fenster blendet in 0.35 s über der echten Seite aus.
+- Schließen (Close, Esc, Klick aufs aktuelle Fenster oder die Fläche): aktuelles Fenster zoomt zurück, Scrollposition bleibt erhalten. Impressum/Datenschutz/Sprache im Menü: Menü sofort weg, dann normaler Übergang.
+- Mobil: kleine Fenster in einer Reihe oben (anklickbar, nicht im Tab-Fluss), darunter die großen Textlinks wie bisher.
+- Tastatur: Fokus startet auf Close, Tab läuft durch Fenster und Fuß und bleibt im Menü; reduced-motion ohne Animation.
+- Nebenbei P22: Seitentitel der alten Seite wird bei gescrollter Seite mitverschoben (war außerhalb des Fensters).
+Grund: Browser-Prüfung Desktop (About, Start, Case) + Mobil, Zurück-/Esc-Wechsel, Sprache im Menü, reduced-motion (keine Konsolenfehler).

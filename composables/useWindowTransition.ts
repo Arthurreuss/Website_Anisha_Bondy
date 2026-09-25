@@ -5,6 +5,7 @@
 //   - Karte → Detail (Klick in der Galerie, P20): Leave-Logik aus
 //     usePageTransition (leavePage), die neue Seite erscheint sofort darunter.
 //   - „next case“-Klick (P21): useNextTransition (leaveCase/prepareNextEnter).
+//   - Klick auf ein Menü-Fenster (P23): schon animiert, kein Übergang.
 //   - gleiche Seite in anderer Sprache / sonstiges Case → Case: kein Übergang.
 //   - alles andere: Fenster-Übergang.
 //
@@ -74,7 +75,13 @@ export function getWindowTransitionLenis() {
   return lenis
 }
 
-function pageSpread() {
+let suppressNext = false
+/** Nächsten Wechsel ohne Fenster-Übergang (Menü P23 hat ihn selbst animiert). */
+export function suppressWindowTransition() {
+  suppressNext = true
+}
+
+export function pageSpread() {
   return CustomEase.get('pageSpread') ?? CustomEase.create('pageSpread', 'M0,0 C0.46,0 0.09,0.99 1,1')
 }
 
@@ -87,7 +94,8 @@ export function prepareWindowTransition(to: RouteLocationNormalized, from: Route
   finishNextNow() // laufenden Next-Übergang (P21) abschließen
   const initial = !from.matched.length
   const samePage = baseName(to) === baseName(from)
-  candidate = !initial && !samePage && !reducedMotion()
+  candidate = !initial && !samePage && !reducedMotion() && !suppressNext
+  suppressNext = false
   direction = baseName(to) === 'index' ? 'back' : 'forward'
   leaveScroll = window.scrollY
 }
@@ -176,7 +184,8 @@ async function start() {
   for (const el of [from, to]) {
     const parts = titleParts(el)
     if (!parts) continue
-    gsap.set(parts.title, { autoAlpha: 1 })
+    // Titel sitzt oben in der Seite: bei gescrollter alter Seite mitverschieben
+    gsap.set(parts.title, { autoAlpha: 1, y: el.scrollTop })
     tl.fromTo(parts.text, { yPercent: 100 }, { yPercent: 0, duration: PHASE_DURATION, ease }, 0)
   }
 
