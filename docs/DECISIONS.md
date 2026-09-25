@@ -146,3 +146,9 @@ Grund: Entscheidung des Users; Soll-Werte liegen seit D-023 fest, dadurch sind P
 ## D-025 · 2026-09-25 · Große Seitentitel wie im Original
 Seitentitel erscheinen im Menü (P23) **und** in den Fenster-Übergängen (P22); im Vollbild rollen sie weg. Vorläufige Wörter: EN „work“ / „archive“ / „about“, DE „Arbeiten“ / „Archiv“ / „Über mich“ (i18n, änderbar). Bestätigt D-024.
 Grund: Entscheidung des Users nach Screenshot-Vergleich mit dem Original.
+
+## D-026 · 2026-09-25 · Merge P19 (Hover-Lift) + Worktree-Build
+- Hover-Lift als `composables/useHoverLift.ts`: `y` auf `.gallery-item` (Slider-`x` per GSAP, kombiniert) und `.gallery-item__media` (Intro/Übergang animieren dort nur `scale`). `useInfiniteGallery` liefert dafür `onDragStart`, `isEnabled()`, `isDragging()`.
+- CaseNext: bisheriger CSS-Hover-Zoom (1.06) läuft jetzt im selben GSAP-Tween (Inline-Transform würde die CSS-Regel sonst aushebeln).
+- Sub-Agenten-Worktrees liegen unter `.claude/worktrees/`; Vite findet dort die `tsconfig.json` des Haupt-Checkouts und braucht dessen `.nuxt/` → im Haupt-Checkout einmal `npm ci`.
+Grund: Review + Browser-Prüfung (Hover −8/+4 px gemessen, Klick nach Drag navigiert).
