@@ -6,13 +6,13 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- Animationen v2 nach Nutzbarkeitstest (D-023): Plan P18–P24 steht, Spezifikation [animationen-v2.md](animationen-v2.md). Wartet auf Freigabe des Users.
+- Animationen v2 + Tageszeit-Theme (D-023, D-024): Plan P10, P18–P24 steht, Spezifikation [animationen-v2.md](animationen-v2.md). Wartet auf „los“.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. Nach Freigabe: P19 (Sonnet, klein) und P18 (Opus) parallel, dann P20 → P21 → P22 → P23, zum Schluss P24.
+1. Nach „los“: Welle 1 Sonnet parallel P18, P19, P10 → Opus-Review; dann P20 (Sonnet); dann Opus P22 → P21 → P23; zum Schluss P24.
 2. Nebenher: Antworten von Anisha („offen:“-Kästen, INHALTE.md §7), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
 3. User: Netlify-Formular-Benachrichtigung + Testnachricht (D-022).
 
@@ -27,4 +27,4 @@
 - Screenshots: Playwright im Scratchpad (`pw/shot.mjs`, `pw/scroll.mjs`, `pw/sheet.py`), Chromium `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`; Lighthouse mit `CHROME_PATH` gesetzt. Build `npm run generate` → `dist/`, Server `python3 -m http.server 4173 --directory dist`.
 
 ## Offene Fragen an den User
-- Animationen v2 auch mobil 1:1 wie Desktop? Große Seitentitel (Work/About/Archive) in den Übergängen gewünscht? Uhr/Tageszeit-Theme (P10) in diese Runde?
+- keine (D-024).

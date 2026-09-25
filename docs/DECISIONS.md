@@ -135,3 +135,10 @@ Rückmeldung des Users nach dem ersten Test gegen das Original:
 - Menü: langsamer, mit Fenster-Übergang wie im Original (Seiten werden klein und wieder groß).
 Umsetzung: Soll-Werte in [animationen-v2.md](animationen-v2.md) (aus dem Original gemessen, kein Code übernommen), Pakete P18–P24. Die Menü-Seitenvorschau aus P10 wandert in P23; Uhr/Tageszeit-Theme bleibt in P10.
 Grund: Entscheidung des Users.
+
+## D-024 · 2026-09-25 · Animationen v2: Umfang und Modelle
+- Mobil: die kleineren/kürzeren Mobil-Varianten des Originals übernehmen (animationen-v2 jeweils in Klammern).
+- Große Seitentitel in den Fenster-Übergängen (P22) und Menü als herausgezoomte Seiten-Fenster, Klick zoomt hinein (P23) – wie im Original.
+- Tageszeit-Theme + Uhr (P10) kommen in diese Runde.
+- Modelle, um Tokens zu sparen: Sonnet für gut spezifizierte Pakete mit festen Zahlen (P10, P18, P19, P20), Opus nur für neue Übergangs-Architektur (P21, P22, P23) und QA (P24). Opus reviewt jedes Sonnet-Ergebnis im Browser.
+Grund: Entscheidung des Users; Soll-Werte liegen seit D-023 fest, dadurch sind P18/P20 keine Forschungsaufgaben mehr.
