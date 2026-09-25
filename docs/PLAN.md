@@ -18,7 +18,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P7 | Detailseite: Hero (sticky links), Galerie-Blöcke, Next Case | Sonnet | P2, P3 | ✅ | pages/cases/[slug].vue |
 | P8 | Seitenübergang Karte → Detail-Hero (FLIP-Klon, Video-Sync) | **Opus** | P5, P7 | ✅ | composables/usePageTransition.ts |
 | P9 | Scroll-Reveals (Zeilen, Bilder, Parallax) + Hover-Rolls | Sonnet | P4, P7 | ✅ | composables/useReveal.ts |
-| P10 | Tageszeit-Theme + ziehbare Local-Time-Uhr ([Spezifikation](analyse-referenz-brandonyasin.md) §3); Menü-Vorschau → P23 (D-023) | Sonnet | P17 | 🔄 | – |
+| P10 | Tageszeit-Theme + ziehbare Local-Time-Uhr ([Spezifikation](analyse-referenz-brandonyasin.md) §3); Menü-Vorschau → P23 (D-023) | Sonnet | P17 | ✅ | utils/daytime-theme.ts, composables/useDaytimeTheme.ts, components/LocalTime.vue |
 | P11 | QA: reduced-motion, Mobile, Lighthouse, Deploy | Opus | alle | ✅ | public/favicon.svg |
 | P12 | Phase 2 Fundament: i18n EN/DE, Datenmodell v2, Loader, UiTodo, Säulen-Farben | **Opus** | P11 | ✅ | i18n/i18n.config.ts, i18n/locales/en.json, i18n/locales/de.json, components/ui/UiTodo.vue, content/projects/index.ts |
 | P13 | Projektinhalte EN/DE + vorläufige Cover | Sonnet | P12 | ✅ | content/projects/selam-opera.ts, content/projects/peter-pan.ts |

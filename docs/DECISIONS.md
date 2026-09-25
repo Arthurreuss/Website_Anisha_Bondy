@@ -158,3 +158,12 @@ Grund: Review + Browser-Prüfung (Hover −8/+4 px gemessen, Klick nach Drag nav
 - Bildwarte bis max. 4 s (vorher 1.5 s), Fallback-Timeout der `is-intro`-Klasse 12 s (vorher 8 s).
 - Galerie wird erst mit der Landung (4.53 s nach Start) ziehbar.
 Grund: Review + Browser-Prüfung (Desktop 1440×900, Mobil 390×844; Stapel deckungsgleich, keine Titel vor 4.5 s, Endzustand = Ruhezustand, keine Konsolenfehler).
+
+## D-028 · 2026-09-25 · Merge P10 (Tageszeit-Theme + Uhr)
+- Stützpunkte nur in `utils/daytime-theme.ts`; ein Head-Skript setzt die Farben vor dem ersten Paint, `useDaytimeTheme` aktualisiert jede Minute.
+- Textfarbe in der Dämmerung abweichend von Spezifikation §3: aufgehelltes Gelb `#F4CF6A`, kurze helle Brücke `#F5F3EA`, dann harter Wechsel auf `#111111`. Eine gerade Überblendung hätte fast keinen Kontrast. Kontrast minimal 3.8:1 für ca. 20 min/Tag, sonst ≥ 4.5:1.
+- Säulenfarben nachts aufgehellt (`ACCENT_NIGHT`, ≥ 4.5:1 auf `#2C2922`).
+- Uhr: 24-h-Zifferblatt (eine Drehung = ein Tag), Rücksprung zur echten Zeit nach 30 s oder per Doppelklick/Esc/Enter; mobil nur das runde Zifferblatt.
+- Orchestrator-Nachtrag: Header (weiß + `mix-blend-mode: difference`) war auf mittelgrauem Hintergrund unlesbar → `html.theme-twilight` schaltet ihn dort auf `--color-main`.
+- Offen: `--img-over-opacity`/`--bg-brightness` erst in CaseHero/CaseVideoItem angeschlossen (Galerie + CaseNext folgen in P20/P21). Video-Fallback-Fläche nutzt nachts die helle Säulenfarbe (nur ohne Poster sichtbar). `--color-participate` hat tagsüber nur 3.1:1 (bestehend, nur Farbpunkt).
+Grund: Review + Browser-Prüfung (03/05:30/06/07/12/18:30/22 Uhr, Desktop + Mobil, keine Konsolenfehler).

@@ -24,15 +24,26 @@ $gutter-mobile: 0.8rem;
 $gutter-tablet-up: 1.6rem;
 
 :root {
+  // Tagesfarben als Fallback (SSG-Markup vor Hydration, Head-Skript in
+  // app.vue überschreibt beide sofort per lokaler Uhrzeit, P10/D-012-Muster;
+  // utils/daytime-theme.ts ist die alleinige Quelle der Stützpunkte).
   --color-main: #111111;
   --color-bg: #f8f6f2;
 
-  // Säulen-Akzente (D-017/D-018), Töne aus Anishas Mockup
+  // Säulen-Akzente (D-017/D-018), Töne aus Anishas Mockup. Nachts blendet
+  // das Tageszeit-Theme (P10) hellere Varianten ein (utils/daytime-theme.ts
+  // ACCENT_NIGHT), damit sie auf dunklem Hintergrund lesbar bleiben.
   --color-direct: #b01e3c;
   --color-create: #15294f;
   --color-participate: #c27c14;
   // Platzhalter für offene Fragen (UiTodo)
   --color-todo: #c2410c;
+
+  // Tageszeit-Theme (P10): dunkles Overlay über Bildern / Helligkeitsfaktor
+  // für Hintergrundbilder, nachts von 0 → --img-over-opacity max. bzw.
+  // --bg-brightness < 1 hochgefahren.
+  --img-over-opacity: 0;
+  --bg-brightness: 1;
 
   --selection-color: var(--color-main);
   --selection-bg: #44300033;
@@ -44,5 +55,27 @@ $gutter-tablet-up: 1.6rem;
 
   @include tablet-up {
     --gutter: #{$gutter-tablet-up};
+  }
+}
+
+// Weiche Übergänge, sobald das Tageszeit-Theme (useDaytimeTheme) nach dem
+// ersten Frame die Klasse setzt – der allererste Zustand (vom Head-Skript)
+// bekommt bewusst keine Transition, sonst gäbe es beim Laden ein sichtbares
+// Ein-/Ausblenden statt der schon korrekten Farbe (Abnahmekriterium: kein
+// Aufblitzen). prefers-reduced-motion: Klasse wird gar nicht erst gesetzt.
+html.daytime-transition body {
+  transition:
+    background-color 1.1s ease,
+    color 1.1s ease;
+}
+
+// reduced-motion (Abnahmekriterium P10): Theme-Wechsel gelten weiter, aber
+// ohne animierte Übergänge. Die entsprechenden Komponenten (CaseHero,
+// CaseVideoItem, UiTodo) haben dafür je eine eigene @media-Regel in ihrem
+// scoped <style> – ein globales Override hier würde deren höhere
+// [data-v-…]-Spezifität nicht schlagen.
+@media (prefers-reduced-motion: reduce) {
+  html.daytime-transition body {
+    transition: none !important;
   }
 }

@@ -29,6 +29,10 @@
   "lang": {
     "label": "Sprache"
   },
+  "clock": {
+    "label": "Ortszeit",
+    "ariaLabel": "Ortszeit-Uhr, ziehbar, aktuell"
+  },
   "contact": {
     "headline": "Lass uns etwas gemeinsam entstehen lassen",
     "intro": "Erzähl mir von deinem Projekt – ich melde mich.",

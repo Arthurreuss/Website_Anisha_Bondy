@@ -29,6 +29,10 @@
   "lang": {
     "label": "Language"
   },
+  "clock": {
+    "label": "Local Time",
+    "ariaLabel": "Local time clock, draggable, currently"
+  },
   "contact": {
     "headline": "Let’s build together",
     "intro": "Tell me about your project and I’ll get in touch.",
