@@ -116,5 +116,10 @@
     "colVenue": "Venue",
     "colRole": "Role",
     "colPillar": "Pillar"
+  },
+  "pageTitle": {
+    "work": "work",
+    "archive": "archive",
+    "about": "about"
   }
 }

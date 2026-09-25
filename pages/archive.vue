@@ -34,6 +34,7 @@ useSeoMeta({
 
 <template>
   <main class="page page--archive">
+    <PageTitle :text="$t('pageTitle.archive')" />
     <div class="container">
       <h1 class="sr-only">{{ $t('nav.archive') }}</h1>
       <ArchiveFilter :model-value="activePillar" @update:model-value="setPillar" />

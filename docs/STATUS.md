@@ -6,18 +6,17 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- Animationen v2 + Tageszeit-Theme (D-023–D-025, Uhr-Layout D-029), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 fertig** (P18, P19, P10 ✅).
+- Animationen v2 + Tageszeit-Theme (D-023–D-025, Uhr-Layout D-029), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 fertig** (P18, P19, P10 ✅), P20 + P22 ✅ (D-030, D-031).
 
 ## Laufende Agenten
-- keine. P20 ✅ (D-030). Welle 1 gemergt: P19 (D-026), P18 (D-027), P10 (D-028). Nach Rückmeldung: Review + Merge nach Checkliste in agent-briefing.md.
+- keine.
 
 ## Nächster Schritt
-1. Opus P22 → P21 → P23; zum Schluss P24.
+1. Opus P21 (Case → nächster Case, §4) → P23 (Menü mit Seitenfenstern, §6; nutzt PageTitle + Fenster-Geometrie aus useWindowTransition) → P24 QA.
 2. Nebenher: Antworten von Anisha („offen:“-Kästen, INHALTE.md §7), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
 3. User: Netlify-Formular-Benachrichtigung + Testnachricht (D-022).
 
 ## Bekannte Kleinigkeiten
-- Zurück zur Startseite: Galerie startet bei Position 0 (D-015).
 - Zeilen-Split nur reiner Text (D-013).
 - Video-Vorschaubilder (i.ytimg.com) im Container-Headless-Browser wegen Proxy-Zertifikat nicht sichtbar – nur Testumgebung.
 

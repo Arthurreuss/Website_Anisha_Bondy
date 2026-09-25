@@ -30,7 +30,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | ✅ | composables/useHoverLift.ts |
 | P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | Sonnet | P18 | ✅ | composables/usePageTransition.ts |
 | P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ⬜ | – |
-| P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ⬜ | – |
+| P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ✅ | composables/useWindowTransition.ts, components/PageTitle.vue, plugins/page-transition.client.ts |
 | P23 | Menü v2: Seiten als Live-Vorschau-Fenster, Klick zoomt auf Vollbild (§6) | **Opus** | P22 | ⬜ | – |
 | P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | ⬜ | – |
 

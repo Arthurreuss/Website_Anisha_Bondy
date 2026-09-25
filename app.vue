@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // <html lang> und hreflang-Links je Sprache (D-018)
 import { buildHeadInlineScript } from '~/utils/daytime-theme'
+import { windowPageTransition } from '~/composables/useWindowTransition'
 
 const head = useLocaleHead()
 useHead({
@@ -18,6 +19,7 @@ useDaytimeTheme()
 
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <!-- Ein Hook-Satz für alle Seitenwechsel (P22, Fenster-Übergang) -->
+    <NuxtPage :transition="windowPageTransition" />
   </NuxtLayout>
 </template>

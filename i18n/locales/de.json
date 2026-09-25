@@ -116,5 +116,10 @@
     "colVenue": "Haus",
     "colRole": "Rolle",
     "colPillar": "Säule"
+  },
+  "pageTitle": {
+    "work": "Arbeiten",
+    "archive": "Archiv",
+    "about": "Über mich"
   }
 }

@@ -79,3 +79,20 @@ html.daytime-transition body {
     transition: none !important;
   }
 }
+
+// Fenster-Übergang (P22): dunklere Fläche hinter den Seiten-Fenstern,
+// folgt dem Tageszeit-Theme (P10).
+:root {
+  --color-backdrop: color-mix(in srgb, var(--color-bg) 55%, #2a2716);
+}
+
+// Eigene Ebene statt body-Hintergrund: der body blendet Farbwechsel über
+// 1.1 s über (Tageszeit-Theme), die Fläche soll am Ende aber sofort weg sein.
+html.is-window-transition body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-color: var(--color-backdrop);
+  pointer-events: none;
+}

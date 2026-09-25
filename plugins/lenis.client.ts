@@ -1,6 +1,7 @@
 import Lenis from 'lenis'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { isWindowTransitionCandidate } from '~/composables/useWindowTransition'
 
 // Smooth-Scroll-Plugin (Spezifikation §1/§6). Lenis wird an den gsap.ticker
 // gekoppelt statt seinen eigenen requestAnimationFrame-Loop zu nutzen
@@ -26,6 +27,9 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     const router = useRouter()
     router.afterEach(() => {
+      // Beim Fenster-Übergang (P22) bleibt die alte Seite an ihrer Position
+      // stehen; nach oben gescrollt wird erst am Ende des Übergangs.
+      if (isWindowTransitionCandidate()) return
       lenis?.scrollTo(0, { immediate: true })
     })
 

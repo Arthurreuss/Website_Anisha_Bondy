@@ -178,3 +178,12 @@ Grund: Entscheidung des Users.
 - Alle Karten enden gemeinsam bei 1.27 s: spätere Karten haben kürzere Dauer (mind. 0.2 s). Spezifikation nennt nur Startversätze.
 - Nachts leichtes Bild-Overlay (`--img-over-opacity`) jetzt auch auf Galerie- und Next-Case-Bildern (D-028 erledigt).
 Grund: Review + Browser-Prüfung (Klick auf 2. Karte: Nachbarn gleichzeitig, weitere Karte später, Morph ab 1.27 s, keine Konsolenfehler).
+
+## D-031 · 2026-09-25 · P22 Seitenübergang „Fenster“
+- Ein Hook-Satz für alle Seitenwechsel (`<NuxtPage :transition>` in app.vue) entscheidet je Wechsel: Karten-Klick → P20-Logik, gleiche Seite in anderer Sprache sowie Case → Case → kein Übergang (Case → Case bis P21), alles andere → Fenster.
+- Richtung „zurück“ (Fenster kommt von links) = Ziel ist die Startseite; sonst „vorwärts“.
+- Abweichung vom Original: Der globale Header bleibt fest über den Fenstern (nicht Teil der Seitenfenster); die Fläche dahinter ist `--color-backdrop` (Theme-Hintergrund mit Dunkel gemischt, folgt damit der Tageszeit).
+- Die alte Seite behält im Fenster ihre Scrollposition; Scroll-Reset erst nach dem Übergang.
+- Große Seitentitel (`PageTitle.vue`, i18n `pageTitle.*`) nur während des Übergangs sichtbar.
+- Startseite merkt sich die Galerie-Position (in Item-Breiten) über Seitenwechsel → erledigt den D-015-Punkt „Galerie startet bei 0“.
+Grund: Browser-Prüfung Desktop + Mobil (about ↔ Startseite, gescrollter Case → Startseite, Archiv → Case, Galerie-Position, Karten-Klick, Sprachwechsel; keine Konsolenfehler).

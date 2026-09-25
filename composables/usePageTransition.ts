@@ -133,6 +133,11 @@ export function startCardTransition(item: HTMLElement) {
   }
 }
 
+/** true, wenn ein Karten-Übergang aussteht (optional: dessen Karte liegt in `el`). */
+export function hasPendingCard(el?: Element) {
+  return !!pending && (!el || el.contains(pending.source))
+}
+
 /**
  * Schritt 2 – onLeave der Page-Transition der Startseite. Ohne laufenden
  * Kartenübergang verschwindet die alte Seite sofort.

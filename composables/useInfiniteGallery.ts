@@ -20,6 +20,11 @@ const THROW = 0.3 // Nachlauf: Anteil der Loslass-Geschwindigkeit (px/s)
 const WHEEL = 2 // Wheel-Multiplikator (Desktop)
 const FRAME_MS = 1000 / 60
 
+// Position über Seitenwechsel hinweg merken (P22: zurück zur Startseite
+// landet man dort, wo man war; löst den D-015-Punkt). In Item-Breiten
+// gespeichert, damit ein Resize dazwischen nichts verschiebt.
+let savedSteps: number | null = null
+
 export interface InfiniteGalleryOptions {
   itemSelector?: string
   scaleSelector?: string
@@ -141,6 +146,7 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
     scalers = items.map((item) => item.querySelector<HTMLElement>(scaleSelector) ?? item)
     setX = items.map((item) => gsap.quickSetter(item, 'x', 'px') as (v: number) => void)
     if (!measure()) return
+    if (savedSteps !== null) current = target = last = savedSteps * step
     render()
 
     // Klick nach Drag unterdrücken, natives Bild-Dragging verhindern
@@ -229,6 +235,7 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
   }
 
   function destroy() {
+    if (step) savedSteps = current / step
     gsap.ticker.remove(tick)
     observer?.kill()
     wheelObserver?.kill()

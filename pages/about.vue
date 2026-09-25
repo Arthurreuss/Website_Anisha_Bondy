@@ -16,6 +16,7 @@ useSeoMeta({
 
 <template>
   <main class="page page--about">
+    <PageTitle :text="$t('pageTitle.about')" />
     <AboutHero />
     <AboutPillars />
     <AboutApproach />
