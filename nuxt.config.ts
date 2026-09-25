@@ -15,8 +15,9 @@ export default defineNuxtConfig({
       { code: 'de', language: 'de', name: 'Deutsch', file: 'de.json' },
     ],
     defaultLocale: 'en',
-    // Netlify setzt URL beim Build; für hreflang/canonical
-    baseUrl: process.env.URL ?? '',
+    // Für hreflang/canonical: SITE_URL im Hosting setzen (Cloudflare Pages, D-032),
+    // Netlify liefert URL selbst
+    baseUrl: process.env.SITE_URL ?? process.env.URL ?? '',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
@@ -27,6 +28,9 @@ export default defineNuxtConfig({
     public: {
       // Platzhalter für offene Fragen sichtbar (D-018); für den Livegang auf false
       showTodos: true,
+      // Web3Forms-Zugangsschlüssel (öffentlich, D-032); beim Build per
+      // NUXT_PUBLIC_WEB3FORMS_KEY gesetzt
+      web3formsKey: '',
     },
   },
   nitro: {

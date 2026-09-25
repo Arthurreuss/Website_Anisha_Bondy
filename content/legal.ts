@@ -35,24 +35,24 @@ export const privacySections: PrivacySection[] = [
     key: 'hosting',
     heading: { en: 'Hosting', de: 'Hosting' },
     body: {
-      en: 'This site is hosted by Netlify, Inc. Netlify processes the technical data (e.g. IP address) needed to deliver the site. See Netlify’s own privacy policy for details.',
-      de: 'Diese Website wird von Netlify, Inc. gehostet. Netlify verarbeitet dabei technisch notwendige Daten (z. B. IP-Adresse), um die Seite auszuliefern. Details dazu in Netlifys eigener Datenschutzerklärung.',
+      en: 'This site is hosted on Cloudflare Pages by Cloudflare, Inc. Cloudflare processes the technical data (e.g. IP address) needed to deliver the site. See Cloudflare’s own privacy policy for details.',
+      de: 'Diese Website wird über Cloudflare Pages von Cloudflare, Inc. gehostet. Cloudflare verarbeitet dabei technisch notwendige Daten (z. B. IP-Adresse), um die Seite auszuliefern. Details dazu in Cloudflares eigener Datenschutzerklärung.',
     },
   },
   {
     key: 'logs',
     heading: { en: 'Server log files', de: 'Server-Logfiles' },
     body: {
-      en: 'Like most web hosts, Netlify automatically collects information in server log files that your browser transmits, such as browser type/version, operating system, referrer URL, hostname of the accessing device and the time of the request. This data is not merged with other data sources.',
-      de: 'Wie die meisten Webhoster erfasst Netlify automatisch Informationen in Server-Logfiles, die der Browser übermittelt, etwa Browsertyp/-version, Betriebssystem, Referrer-URL, Hostname des zugreifenden Geräts und Zeitpunkt der Anfrage. Diese Daten werden nicht mit anderen Datenquellen zusammengeführt.',
+      en: 'Like most web hosts, Cloudflare automatically collects information in server log files that your browser transmits, such as browser type/version, operating system, referrer URL, hostname of the accessing device and the time of the request. This data is not merged with other data sources.',
+      de: 'Wie die meisten Webhoster erfasst Cloudflare automatisch Informationen in Server-Logfiles, die der Browser übermittelt, etwa Browsertyp/-version, Betriebssystem, Referrer-URL, Hostname des zugreifenden Geräts und Zeitpunkt der Anfrage. Diese Daten werden nicht mit anderen Datenquellen zusammengeführt.',
     },
   },
   {
     key: 'contactForm',
     heading: { en: 'Contact form', de: 'Kontaktformular' },
     body: {
-      en: 'The contact form is handled by Netlify Forms. Data entered there (name, email, message and the other fields) is submitted to Netlify and forwarded by email so the request can be answered. It is used for no other purpose.',
-      de: 'Das Kontaktformular wird über Netlify Forms abgewickelt. Die dort eingegebenen Daten (Name, E-Mail, Nachricht und die weiteren Felder) werden an Netlify übermittelt und per E-Mail weitergeleitet, damit die Anfrage beantwortet werden kann. Eine weitergehende Nutzung findet nicht statt.',
+      en: 'The contact form is handled by the service Web3Forms. Data entered there (name, email, message and the other fields) is submitted to Web3Forms and forwarded by email so the request can be answered. It is used for no other purpose.',
+      de: 'Das Kontaktformular wird über den Dienst Web3Forms abgewickelt. Die dort eingegebenen Daten (Name, E-Mail, Nachricht und die weiteren Felder) werden an Web3Forms übermittelt und per E-Mail weitergeleitet, damit die Anfrage beantwortet werden kann. Eine weitergehende Nutzung findet nicht statt.',
     },
   },
   {

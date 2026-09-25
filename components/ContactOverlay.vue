@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // Kontakt-Overlay (Spezifikation §6): Headline, Formular in 6 nummerierten
-// Schritten, Netlify Forms (statisches Duplikat: public/__forms.html).
+// Schritten, Versand über Web3Forms (D-032; Zugangsschlüssel per
+// NUXT_PUBLIC_WEB3FORMS_KEY bzw. runtimeConfig.public.web3formsKey).
 // Öffnen/Schließen wie MenuOverlay (clip-path + CustomEase).
 import { CustomEase } from 'gsap/CustomEase'
 import UiTodo from '~/components/ui/UiTodo.vue'
@@ -121,29 +122,35 @@ onBeforeUnmount(() => {
   window.removeEventListener('keydown', onKeydown)
 })
 
-function encode(data: Record<string, string>) {
-  return Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key] ?? '')}`)
-    .join('&')
-}
+const web3formsKey = useRuntimeConfig().public.web3formsKey as string
+// Honeypot gegen Spam-Bots: bleibt für Menschen unsichtbar und leer
+const botcheck = ref(false)
 
 async function onSubmit() {
+  if (!web3formsKey) {
+    console.error('Kontaktformular: NUXT_PUBLIC_WEB3FORMS_KEY fehlt')
+    status.value = 'error'
+    return
+  }
   status.value = 'sending'
   try {
-    await $fetch('/', {
+    const res = await $fetch<{ success: boolean }>('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': 'contact',
+      headers: { Accept: 'application/json' },
+      body: {
+        access_key: web3formsKey,
+        subject: `Website-Anfrage: ${form.name}`,
+        from_name: 'Website Anisha Bondy',
+        botcheck: botcheck.value,
         name: form.name,
         email: form.email,
         organisation: form.organisation,
         concern: form.concern.join(', '),
         period: form.period,
         message: form.message,
-      }),
+      },
     })
-    status.value = 'sent'
+    status.value = res.success ? 'sent' : 'error'
   } catch {
     status.value = 'error'
   }
@@ -177,8 +184,8 @@ async function onSubmit() {
         {{ $t('contact.success') }}
       </p>
 
-      <form v-else name="contact" data-netlify="true" class="contact-form" @submit.prevent="onSubmit">
-        <input type="hidden" name="form-name" value="contact" />
+      <form v-else name="contact" class="contact-form" @submit.prevent="onSubmit">
+        <input v-model="botcheck" type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
         <div :ref="(el) => setRevealEl(el, 2)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-name">01. {{ $t('contact.fields.name') }}</label>

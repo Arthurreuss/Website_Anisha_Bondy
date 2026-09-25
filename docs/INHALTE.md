@@ -93,13 +93,4 @@ P12 Content-Modell + Projektdateien · P13 Video-Block (Klick-zum-Laden) · P14 
 
 ## 7. Offene Fragen an Anisha / User
 
-1. **Sprache:** Mockup ist Englisch mit DE/EN-Schalter – nur EN, oder EN + DE?
-2. **Bilder:** Kann sie Pressefotos der Häuser (mit Credits) besorgen? Sonst Screenshots aus den Videos – welche Szenen?
-3. **Galerie-Auswahl:** Stimmen die ★-Projekte? Flucht ohne Bildmaterial – rein ins Archiv?
-4. **Pop-Up-Opera:** Welche Clips hat sie selbst inszeniert? Was ist „Eine Frau“?
-5. **Die Mitternachtstür (UA 2026)** – Haus, Rolle, Termin?
-6. **Preis „Schauspielbühne“** – welcher Preis, welches Jahr?
-7. **Showreel** für den Hero-CTA vorhanden?
-8. **Kontakt/Agentur**, E-Mail, Social-Links; Impressum-Angaben.
-9. Freigabe von Zitaten (Tagesspiegel, nachtkritik) und Partnerlogos.
-10. **Schreiben:** Oz ist ihr erster eigener Text – eigene Kategorie „Writing“ oder unter Create?
+Verschoben nach [anfrage-anisha.md §1](anfrage-anisha.md) (eine Liste für Anisha, 2026-09-25).

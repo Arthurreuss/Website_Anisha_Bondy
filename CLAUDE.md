@@ -1,7 +1,7 @@
 # Website Anisha Bondy – Arbeitsregeln für Claude
 
 Portfolio-Website nach dem Vorbild von brandonyasin.com (Startseite mit Projekt-Galerie + Case-Detailseiten).
-Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
+Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Cloudflare Pages (D-032).
 
 ## Beim Start / nach Abbruch / nach Autocompact – IMMER zuerst
 
@@ -20,7 +20,8 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 | `docs/INHALTE.md` | Phase 2: Bestand echter Inhalte (Projekte, Videos, Presse, Quellen) + Strukturvorschlag | Orchestrator pflegt; Entscheidungen daraus nach DECISIONS |
 | `docs/analyse-referenz-brandonyasin.md` | Spezifikation der Referenzseite | **eingefroren** – Abweichungen gehören in DECISIONS |
 | `docs/animationen-v2.md` | Soll-Werte der überarbeiteten Animationen (P18–P23) | bei Änderung durch User: neue DECISION + Datei anpassen |
-| `docs/anfrage-anisha.md` | Fragen- und Lieferliste an Anisha (Fotos, Domain, Impressum; §1–3 teils überholt → INHALTE §7) | bei neuen offenen Punkten ergänzen; Antworten → DECISIONS |
+| `docs/anfrage-anisha.md` | **die** Liste offener Fragen/Lieferungen an Anisha (Inhalte, Fotos, Domain, Impressum) | bei neuen offenen Punkten ergänzen; Antworten → DECISIONS |
+| `docs/HOSTING.md` | Einrichtung Cloudflare Pages, Web3Forms, Domain; wie veröffentlicht wird | bei Änderung am Hosting anpassen |
 | `docs/agent-briefing.md` | Vorlage für Sub-Agenten-Aufträge | bei Prozessänderung anpassen |
 
 ## Anti-Drift-Regeln
@@ -37,5 +38,5 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 
 - Orchestrator (Opus): Planung, Review, Browser-Check, schwere Animationen (Slider-Physik, Intro, Seitenübergang).
 - Sub-Agenten (Sonnet): klar abgegrenzte Pakete laut `PLAN.md`, Briefing nach `docs/agent-briefing.md`, parallel in eigenen Worktrees.
-- Branch: `main` (Netlify-Produktions-Branch, D-022). Commits klein und beschreibend, danach pushen.
+- Branch: `main` = Arbeitsstand, Commits klein und beschreibend, danach pushen. **`production` = live** (D-032): nur auf ausdrücklichen Zuruf des Users per Fast-Forward auf `main` nachziehen – jeder Push dorthin ist ein Deploy.
 - Keine Assets, Texte, Code oder lizenzierten Fonts der Referenzseite übernehmen.

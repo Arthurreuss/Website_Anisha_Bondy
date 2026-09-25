@@ -187,3 +187,11 @@ Grund: Review + Browser-Prüfung (Klick auf 2. Karte: Nachbarn gleichzeitig, wei
 - Große Seitentitel (`PageTitle.vue`, i18n `pageTitle.*`) nur während des Übergangs sichtbar.
 - Startseite merkt sich die Galerie-Position (in Item-Breiten) über Seitenwechsel → erledigt den D-015-Punkt „Galerie startet bei 0“.
 Grund: Browser-Prüfung Desktop + Mobil (about ↔ Startseite, gescrollter Case → Startseite, Archiv → Case, Galerie-Position, Karten-Klick, Sprachwechsel; keine Konsolenfehler).
+
+## D-032 · 2026-09-25 · Hosting: Cloudflare Pages, Branch `production`, Formular über Web3Forms (ersetzt D-022 Punkt 1)
+- Netlify-Deploy-Credits waren aufgebraucht, weil jeder Push auf `main` einen Produktions-Deploy auslöste. Umzug zu **Cloudflare Pages** (kostenlos, gewerbliche Nutzung erlaubt); Domain-Routing ebenfalls über Cloudflare.
+- Neuer Branch **`production`** = Live-Stand. `main` bleibt Arbeitsbranch; `production` wird nur auf Zuruf des Users per Fast-Forward nachgezogen. Netlify zeigt übergangsweise ebenfalls auf `production`.
+- Kontaktformular über **Web3Forms** (JSON-POST aus dem Browser, Honeypot `botcheck`); Schlüssel per `NUXT_PUBLIC_WEB3FORMS_KEY` beim Build. `public/__forms.html` entfällt. Datenschutztext (Hosting, Logfiles, Formular) auf Cloudflare/Web3Forms umgestellt.
+- `baseUrl` (hreflang/canonical) aus `SITE_URL`, Netlify-`URL` als Rückfall. Cloudflare-Build lokal geprüft (`CF_PAGES=1`: Preset schreibt direkt nach `dist`, erzeugt `_headers`/`_redirects`).
+- Einrichtungsschritte in [HOSTING.md](HOSTING.md). Fragenkatalog an Anisha (`anfrage-anisha.md`) aktualisiert und ersetzt INHALTE.md §7.
+Grund: Entscheidung des Users.

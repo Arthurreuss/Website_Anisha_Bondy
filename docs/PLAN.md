@@ -33,6 +33,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ✅ | composables/useWindowTransition.ts, components/PageTitle.vue, plugins/page-transition.client.ts |
 | P23 | Menü v2: Seiten als Live-Vorschau-Fenster, Klick zoomt auf Vollbild (§6) | **Opus** | P22 | ⬜ | – |
 | P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | ⬜ | – |
+| P25 | Hosting-Umzug: Cloudflare Pages, Branch production, Formular Web3Forms, Domain (D-032) | **Opus** + User | – | 🔄 | docs/HOSTING.md, .node-version |
 
 ## Abnahmekriterien
 
@@ -58,5 +59,6 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 - **P21** Ablauf wie §4 Desktop + Mobil; Browser-Zurück funktioniert; Video-Zeit übernommen.
 - **P22** Wie §5 für alle übrigen Wechsel; Richtung stimmt; Galerie-Position beim Zurück zur Startseite bleibt erhalten (löst D-015-Punkt).
 - **P23** Wie §6; Tastatur bedienbar (Esc, Tab); Vorschauen ohne doppelte Videos/Last; Mobil-Variante.
+- **P25** Seite baut auf Cloudflare aus `production`; Push auf `main` löst keinen Deploy aus; Test-Anfrage übers Formular kommt per Mail an; Domain mit HTTPS verbunden, `SITE_URL` gesetzt; Netlify abgeschaltet.
 - **P24** Keine Konsolenfehler, 60 fps Desktop, Lighthouse Desktop ≥ 90, User-Abnahme im Browser.
 - **P11** Keine Konsolenfehler; Lighthouse Performance ≥ 90 (Desktop); deployt.
