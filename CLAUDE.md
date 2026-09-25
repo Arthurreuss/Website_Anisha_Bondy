@@ -18,6 +18,7 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 | `docs/PLAN.md` | Arbeitspakete mit Status, Modell, Abnahmekriterien, Nachweis-Dateien | Status-Spalte pflegen; Umfang ändern nur mit Verweis auf eine Entscheidung |
 | `docs/DECISIONS.md` | Entscheidungs-Log (warum etwas so ist) | **nur anhängen**; alte Einträge nie ändern, sondern durch neuen Eintrag ersetzen („ersetzt D-003“) |
 | `docs/analyse-referenz-brandonyasin.md` | Spezifikation der Referenzseite | **eingefroren** – Abweichungen gehören in DECISIONS |
+| `docs/anfrage-anisha.md` | Fragen- und Lieferliste an Anisha (Inhalte, Fotos, Domain, Impressum) | bei neuen offenen Punkten ergänzen; Antworten → DECISIONS |
 | `docs/agent-briefing.md` | Vorlage für Sub-Agenten-Aufträge | bei Prozessänderung anpassen |
 
 ## Anti-Drift-Regeln

@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-24
+**Stand:** 2026-09-25
 **Phase:** 1 – Bau mit Platzhaltern (D-008) **abgeschlossen**: P1–P9, P11 ✅, P10 ⏸ (Extras).
 
 ## Aktiv
@@ -24,7 +24,7 @@
 - Screenshots/Tests: Playwright-Skripte im Scratchpad (`pw/*.mjs`, `pw/sheet.mjs` für Kontaktbögen), Lighthouse in `scratchpad/lh`. Build: `npm run generate` → `dist/`; statischer Server `python3 -m http.server 4173 --directory dist`. Nie `generate` bei laufendem Dev-Server.
 
 ## Offene Fragen an den User
-- Phase 2: Wann kommen Inhalte, welche Sprache, welche Seiten zusätzlich?
+- Phase 2: Fragenkatalog + Foto-Auftragsliste + Domain/Impressum an Anisha → `docs/anfrage-anisha.md` (wartet auf Antworten).
 
 ## Danach (Phase 2)
 - siehe Nächster Schritt 1.
