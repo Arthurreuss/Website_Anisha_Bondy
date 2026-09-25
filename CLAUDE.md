@@ -35,5 +35,5 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 
 - Orchestrator (Opus): Planung, Review, Browser-Check, schwere Animationen (Slider-Physik, Intro, Seitenübergang).
 - Sub-Agenten (Sonnet): klar abgegrenzte Pakete laut `PLAN.md`, Briefing nach `docs/agent-briefing.md`, parallel in eigenen Worktrees.
-- Branch: `claude/exciting-lamport-1ng4ff`. Commits klein und beschreibend, danach pushen.
+- Branch: `main` (Netlify-Produktions-Branch, D-022). Commits klein und beschreibend, danach pushen.
 - Keine Assets, Texte, Code oder lizenzierten Fonts der Referenzseite übernehmen.

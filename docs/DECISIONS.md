@@ -119,3 +119,8 @@ Grund: Review der Sub-Agenten-Ergebnisse.
 - Locale-Konflikte beim Mergen löst `scripts/merge-locales.py` (Namespaces je Paket).
 - Lighthouse Desktop lokal: Start 98/96/100/91, About 96/96/100/83, Case 98/96/100/83. SEO-Abzug nur hreflang/canonical ohne `baseUrl` (lokal leer, auf Netlify `URL`); color-contrast = bekanntes Header-Falsch-Positiv (D-016).
 Grund: Review, Browser-Check EN/DE Desktop + Mobil.
+
+## D-022 · 2026-09-25 · `main` als Produktions-Branch, Formular-Feld `concern`
+- `main` angelegt (Stand `claude/laughing-brown-2su69r`) und in Netlify als Production Branch gesetzt; fertige Änderungen gehen nach `main`.
+- Netlify-Formular-Duplikat `public/__forms.html`: „Anliegen“ als ein Textfeld `concern` statt Checkboxen `concern[]` – das Overlay sendet die Auswahl kommagetrennt als `concern`, Netlify speichert nur Felder, die im erkannten Formular stehen (korrigiert D-020).
+Grund: Entscheidung des Users (Deploy zeigte alten Stand); Review der Formular-Einbindung.

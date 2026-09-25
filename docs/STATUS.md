@@ -2,11 +2,11 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-24
+**Stand:** 2026-09-25 · live über Netlify-Branch `main` (D-022)
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- nichts – User geht den Draft mit Anisha durch.
+- User geht den Draft mit Anisha durch. Offen: Netlify-Formular-Benachrichtigung einrichten + Testnachricht (User), P10 Uhr/Tageszeit-Theme auf Wunsch.
 
 ## Laufende Agenten
 - keine.
