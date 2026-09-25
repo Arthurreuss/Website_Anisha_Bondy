@@ -8,10 +8,30 @@ defineProps<{ project: Project }>()
 
 const leftRef = ref<HTMLElement | null>(null)
 useReveal(leftRef)
+
+// Hover-Lift (P19): gleiches Anheben wie auf den Galerie-Karten, dazu der
+// bestehende Zoom des Vorschaubilds (bisher rein per CSS-:hover) – als GSAP-Tween,
+// da eine per JS gesetzte Inline-transform sonst die CSS-Regel überschreiben würde.
+const thumbRef = ref<HTMLElement | null>(null)
+const thumbImgRef = ref<HTMLElement | null>(null)
+const hoverLift = useHoverLift()
+
+onMounted(() => {
+  if (thumbRef.value && thumbImgRef.value) {
+    hoverLift.add(thumbRef.value, thumbImgRef.value, { enter: { scale: 1.06 }, leave: { scale: 1 } })
+  }
+})
+
+function onClick(e: MouseEvent) {
+  // Bei Strg/Cmd/mittlerer Maustaste öffnet der Browser einen neuen Tab –
+  // die aktuelle Seite bleibt bestehen, also nicht zurückfallen lassen.
+  if (e.ctrlKey || e.metaKey || e.button === 1) return
+  if (thumbRef.value) hoverLift.dropToZero(thumbRef.value, 1.2, 'power2.inOut')
+}
 </script>
 
 <template>
-  <NuxtLink :to="$localePath(`/cases/${project.slug}`)" class="next">
+  <NuxtLink :to="$localePath(`/cases/${project.slug}`)" class="next" @click="onClick">
     <div class="left" ref="leftRef">
       <div class="title-mask">
         <p class="font-headline-1 eyebrow" data-reveal="mask">{{ $t('case.next') }}</p>
@@ -22,14 +42,15 @@ useReveal(leftRef)
       <p class="meta font-body-12 uppercase">{{ $t(`pillar.${project.pillar}`) }} · {{ project.venue }}</p>
     </div>
 
-    <div class="thumb">
+    <div class="thumb" ref="thumbRef">
       <img
         v-if="project.cover.type === 'video'"
         class="thumb__img"
+        ref="thumbImgRef"
         :src="project.cover.poster"
         :alt="project.cover.alt"
       />
-      <img v-else class="thumb__img" :src="project.cover.src" :alt="project.cover.alt" />
+      <img v-else class="thumb__img" ref="thumbImgRef" :src="project.cover.src" :alt="project.cover.alt" />
     </div>
   </NuxtLink>
 </template>
@@ -89,10 +110,5 @@ useReveal(leftRef)
   height: 100%;
   object-fit: cover;
   transform: scale(1);
-  transition: transform 0.5s ease;
-}
-
-.next:hover .thumb__img {
-  transform: scale(1.06);
 }
 </style>
