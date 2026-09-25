@@ -26,6 +26,13 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P15 | Seiten /about (Bio, Dreisatz, Zitat, Timeline, Presse, Partner) + /archive (Filter nach Säule) | Sonnet | P12 | ✅ | pages/about.vue, pages/archive.vue, content/site.ts |
 | P16 | Rahmen: Sprachumschalter, Menü, Kontakt-Overlay neu, Impressum/Datenschutz | Sonnet | P12 | ✅ | components/LangSwitch.vue, pages/imprint.vue, pages/privacy.vue |
 | P17 | Phase-2-QA: Merge, Browser-Check EN/DE, Build, Lighthouse, Deploy | **Opus** | P13–P16 | ✅ | – |
+| P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | **Opus** | P17 | ⬜ | – |
+| P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | ⬜ | – |
+| P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | **Opus** | P18 | ⬜ | – |
+| P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ⬜ | – |
+| P22 | Seitenübergang „Fenster“ inkl. Case → Startseite, große Seitentitel, Richtung vor/zurück (§5) | **Opus** | P20 | ⬜ | – |
+| P23 | Menü v2: Seiten als Live-Vorschau-Fenster, Klick zoomt auf Vollbild (§6) | **Opus** | P22 | ⬜ | – |
+| P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | ⬜ | – |
 
 ## Abnahmekriterien
 
@@ -44,4 +51,11 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 - **P15** Texte aus INHALTE.md §2; Timeline aus Projektdaten; Archiv filterbar nach Direct/Create/Participate; beide Sprachen.
 - **P16** Umschalter EN/DE behält aktuelle Seite; Kontaktformular mit Feldern für Anfragen an eine Regisseurin; Impressum/Datenschutz mit Todos; im Footer/Menü verlinkt.
 - **P17** Keine Konsolenfehler, alle Seiten beider Sprachen prerendert, Lighthouse Desktop ≥ 90.
+- **P18** Ablauf und Zeiten wie animationen-v2 §1 (±10 %); keine Titel vor 4.5 s; Karten im Stapel deckungsgleich; nur erstes Laden; reduced-motion überspringt.
+- **P19** Nur Desktop (Maus); zurück beim Verlassen; kein Konflikt mit Drag-Skalierung und Klick-Übergang.
+- **P20** Zwei Phasen wie §3; Video ohne Sprung; Strg/Cmd-Klick und Klick nach Drag ohne Übergang (D-015 bleibt).
+- **P21** Ablauf wie §4 Desktop + Mobil; Browser-Zurück funktioniert; Video-Zeit übernommen.
+- **P22** Wie §5 für alle übrigen Wechsel; Richtung stimmt; Galerie-Position beim Zurück zur Startseite bleibt erhalten (löst D-015-Punkt).
+- **P23** Wie §6; Tastatur bedienbar (Esc, Tab); Vorschauen ohne doppelte Videos/Last; Mobil-Variante.
+- **P24** Keine Konsolenfehler, 60 fps Desktop, Lighthouse Desktop ≥ 90, User-Abnahme im Browser.
 - **P11** Keine Konsolenfehler; Lighthouse Performance ≥ 90 (Desktop); deployt.

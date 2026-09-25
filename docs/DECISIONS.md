@@ -124,3 +124,14 @@ Grund: Review, Browser-Check EN/DE Desktop + Mobil.
 - `main` angelegt (Stand `claude/laughing-brown-2su69r`) und in Netlify als Production Branch gesetzt; fertige Änderungen gehen nach `main`.
 - Netlify-Formular-Duplikat `public/__forms.html`: „Anliegen“ als ein Textfeld `concern` statt Checkboxen `concern[]` – das Overlay sendet die Auswahl kommagetrennt als `concern`, Netlify speichert nur Felder, die im erkannten Formular stehen (korrigiert D-020).
 Grund: Entscheidung des Users (Deploy zeigte alten Stand); Review der Formular-Einbindung.
+
+## D-023 · 2026-09-25 · Animationen v2 nach Nutzbarkeitstest
+Rückmeldung des Users nach dem ersten Test gegen das Original:
+- Intro: Bilder sollen **deckungsgleich** gestapelt liegen, langsam **größer werden**, dann in die Reihe fallen; **Titel erst danach**; insgesamt langsamer.
+- Hover auf Karten der Startseite: Karte hebt sich leicht an.
+- Klick Karte → Detailseite: langsamer.
+- Detailseite → nächstes Projekt: nicht abrupt, sondern Inhalt wird ausradiert, Bild fährt von unten rechts groß nach rechts oben, Titel fährt hoch.
+- Detailseite → Startseite (Klick auf den Namen): ähnlich weicher Übergang.
+- Menü: langsamer, mit Fenster-Übergang wie im Original (Seiten werden klein und wieder groß).
+Umsetzung: Soll-Werte in [animationen-v2.md](animationen-v2.md) (aus dem Original gemessen, kein Code übernommen), Pakete P18–P24. Die Menü-Seitenvorschau aus P10 wandert in P23; Uhr/Tageszeit-Theme bleibt in P10.
+Grund: Entscheidung des Users.

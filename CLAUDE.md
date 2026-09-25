@@ -19,6 +19,7 @@ Stack: Nuxt 3 · TypeScript · SCSS · GSAP · Lenis · Netlify.
 | `docs/DECISIONS.md` | Entscheidungs-Log (warum etwas so ist) | **nur anhängen**; alte Einträge nie ändern, sondern durch neuen Eintrag ersetzen („ersetzt D-003“) |
 | `docs/INHALTE.md` | Phase 2: Bestand echter Inhalte (Projekte, Videos, Presse, Quellen) + Strukturvorschlag | Orchestrator pflegt; Entscheidungen daraus nach DECISIONS |
 | `docs/analyse-referenz-brandonyasin.md` | Spezifikation der Referenzseite | **eingefroren** – Abweichungen gehören in DECISIONS |
+| `docs/animationen-v2.md` | Soll-Werte der überarbeiteten Animationen (P18–P23) | bei Änderung durch User: neue DECISION + Datei anpassen |
 | `docs/agent-briefing.md` | Vorlage für Sub-Agenten-Aufträge | bei Prozessänderung anpassen |
 
 ## Anti-Drift-Regeln

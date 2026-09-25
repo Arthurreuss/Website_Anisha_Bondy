@@ -6,16 +6,15 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- User geht den Draft mit Anisha durch. Offen: Netlify-Formular-Benachrichtigung einrichten + Testnachricht (User), P10 Uhr/Tageszeit-Theme auf Wunsch.
+- Animationen v2 nach Nutzbarkeitstest (D-023): Plan P18–P24 steht, Spezifikation [animationen-v2.md](animationen-v2.md). Wartet auf Freigabe des Users.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. Antworten von Anisha einarbeiten: jede Markierung „offen:“ (UiTodo) auf der Seite = eine offene Frage; Liste auch in INHALTE.md §7 und in `todos` der Projektdateien bzw. `content/site.ts`.
-2. Echte Fotos → `scripts/make-cover.py` (Cover 4:5) + `gallery` in den Projektdateien; Platzhalter-SVGs löschen.
-3. YAMawards-Ergebnis (29.09.2026) in `content/projects/lene-fliegt-ins-zirkusland.ts` + INHALTE.md §4.
-4. Vor Livegang: Impressum/Datenschutz ausfüllen + prüfen lassen, `showTodos` aus, Lighthouse mobil auf Netlify (D-016).
+1. Nach Freigabe: P19 (Sonnet, klein) und P18 (Opus) parallel, dann P20 → P21 → P22 → P23, zum Schluss P24.
+2. Nebenher: Antworten von Anisha („offen:“-Kästen, INHALTE.md §7), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
+3. User: Netlify-Formular-Benachrichtigung + Testnachricht (D-022).
 
 ## Bekannte Kleinigkeiten
 - Zurück zur Startseite: Galerie startet bei Position 0 (D-015).
@@ -28,4 +27,4 @@
 - Screenshots: Playwright im Scratchpad (`pw/shot.mjs`, `pw/scroll.mjs`, `pw/sheet.py`), Chromium `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`; Lighthouse mit `CHROME_PATH` gesetzt. Build `npm run generate` → `dist/`, Server `python3 -m http.server 4173 --directory dist`.
 
 ## Offene Fragen an den User
-- INHALTE.md §7 (Sprache ✅ EN+DE geklärt, D-018).
+- Animationen v2 auch mobil 1:1 wie Desktop? Große Seitentitel (Work/About/Archive) in den Übergängen gewünscht? Uhr/Tageszeit-Theme (P10) in diese Runde?
