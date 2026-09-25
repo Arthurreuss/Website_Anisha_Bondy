@@ -6,7 +6,7 @@
 **Phase:** 2 – echte Inhalte, **erster Draft fertig** (P12–P17 ✅, D-018–D-021). Phase 1: P1–P9, P11 ✅, P10 ⏸.
 
 ## Aktiv
-- Animationen v2 + Tageszeit-Theme (D-023–D-025), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 fertig** (P18, P19, P10 ✅).
+- Animationen v2 + Tageszeit-Theme (D-023–D-025, Uhr-Layout D-029), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 fertig** (P18, P19, P10 ✅).
 
 ## Laufende Agenten
 - Sonnet, eigener Worktree: P20 (Karte → Detail v2 + Bild-Abdunklung nachts). Welle 1 gemergt: P19 (D-026), P18 (D-027), P10 (D-028). Nach Rückmeldung: Review + Merge nach Checkliste in agent-briefing.md.
