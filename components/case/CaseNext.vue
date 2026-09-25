@@ -3,8 +3,9 @@
 // Verlinkt zyklisch zum nächsten Projekt (letztes -> erstes, siehe useProject()).
 // Scroll-Reveals über useReveal() (P9) auf den vorhandenen .title-mask-Zeilen.
 import type { Project } from '~/types/project'
+import { startNextTransition } from '~/composables/useNextTransition'
 
-defineProps<{ project: Project }>()
+const props = defineProps<{ project: Project }>()
 
 const leftRef = ref<HTMLElement | null>(null)
 useReveal(leftRef)
@@ -25,8 +26,10 @@ onMounted(() => {
 function onClick(e: MouseEvent) {
   // Bei Strg/Cmd/mittlerer Maustaste öffnet der Browser einen neuen Tab –
   // die aktuelle Seite bleibt bestehen, also nicht zurückfallen lassen.
-  if (e.ctrlKey || e.metaKey || e.button === 1) return
+  if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return
   if (thumbRef.value) hoverLift.dropToZero(thumbRef.value, 1.2, 'power2.inOut')
+  // Übergang zum nächsten Projekt (P21)
+  startNextTransition(e.currentTarget as HTMLElement, props.project.slug)
 }
 </script>
 

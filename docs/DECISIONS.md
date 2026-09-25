@@ -201,3 +201,13 @@ Grund: Entscheidung des Users.
 - Web3Forms-Schlüssel als Standardwert in `nuxt.config.ts`: Er landet ohnehin im ausgelieferten JavaScript (öffentlich by design), eine Cloudflare-Variable brächte keinen Schutz, nur die Möglichkeit, ihn ohne Code-Änderung zu tauschen (`NUXT_PUBLIC_WEB3FORMS_KEY` überschreibt weiterhin).
 - Erste Veröffentlichung nach `production` auf Zuruf des Users.
 Grund: Entscheidung des Users.
+
+## D-034 · 2026-09-25 · P21 Übergang „next case“
+- Läuft über denselben Dispatcher wie P22 (`useWindowTransition`): Klick auf CaseNext merkt Ziel + Scrollposition, alte Seite wird als Ebene eingefroren, neue liegt darunter mit verborgenen Landeplätzen (`.is-next-entering`).
+- Zeiten wie animationen-v2 §4. Ergänzungen: alte Deckebene verschwindet bei 1.4–1.6 s (nach dem „next case“-Roll); Untertitel/Text der neuen Seite blenden zum Schluss ein (0.6 s).
+- Titel-Klon übernimmt beim Flug die Breite der Zielspalte, damit er dort umbricht wie am Ziel. Meta-Klon (Säule · Haus) fliegt zur Meta-Spalte und blendet bei der Landung aus, weil die Zielspalte andere Angaben zeigt.
+- Mobil: alter Titel rollt nach oben weg, neuer rollt ein; Bild-Flug gleich.
+- Keine Video-Zeit-Übergabe: das Next-Vorschaubild ist immer ein Standbild (Poster).
+- Browser-Zurück und andere Case → Case-Wechsel ohne Übergang; eine neue Navigation schließt einen laufenden Übergang sofort ab.
+- Offen für P24: P20 nutzt als Morph-Ease `0.76, 0, 0.18, 1` statt `0.46, 0, 0.09, 1` (Spezifikation) – prüfen.
+Grund: Browser-Prüfung Desktop + Mobil, EN + DE, Zurück mitten im Übergang, Regression P20/P22 (keine Konsolenfehler).

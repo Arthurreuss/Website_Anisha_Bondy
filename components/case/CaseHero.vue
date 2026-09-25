@@ -277,3 +277,18 @@ useHeroTransition(mediaRef, props.project.slug)
   }
 }
 </style>
+
+<style lang="scss">
+// Übergang „next case“ (P21): Landeplätze und Rest des Heros bleiben verborgen,
+// bis die Klone ankommen bzw. der Rest eingeblendet wird (useNextTransition).
+.is-next-entering .hero {
+  .image,
+  .left .title-mask,
+  .content,
+  .subtitle,
+  .desc,
+  .mob-content {
+    visibility: hidden;
+  }
+}
+</style>

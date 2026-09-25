@@ -4,7 +4,8 @@
 // je Wechsel entscheidet:
 //   - Karte → Detail (Klick in der Galerie, P20): Leave-Logik aus
 //     usePageTransition (leavePage), die neue Seite erscheint sofort darunter.
-//   - gleiche Seite in anderer Sprache / Case → Case (P21 folgt): kein Übergang.
+//   - „next case“-Klick (P21): useNextTransition (leaveCase/prepareNextEnter).
+//   - gleiche Seite in anderer Sprache / sonstiges Case → Case: kein Übergang.
 //   - alles andere: Fenster-Übergang.
 //
 // Fenster-Übergang (gesamt ≈ 2.7 s, Ease pageSpread):
@@ -21,6 +22,7 @@ import { CustomEase } from 'gsap/CustomEase'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import type { RouteLocationNormalized } from 'vue-router'
 import { hasPendingCard, leavePage } from '~/composables/usePageTransition'
+import { finishNow as finishNextNow, hasPendingNext, leaveCase, prepareNextEnter } from '~/composables/useNextTransition'
 
 gsap.registerPlugin(CustomEase, ScrollTrigger)
 
@@ -68,6 +70,9 @@ let lenis: LenisLike | null = null
 export function setWindowTransitionLenis(value: LenisLike | null) {
   lenis = value
 }
+export function getWindowTransitionLenis() {
+  return lenis
+}
 
 function pageSpread() {
   return CustomEase.get('pageSpread') ?? CustomEase.create('pageSpread', 'M0,0 C0.46,0 0.09,0.99 1,1')
@@ -79,6 +84,7 @@ const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)'
 
 /** Router (beforeEach): Richtung, Scrollposition und Art des Wechsels festhalten. */
 export function prepareWindowTransition(to: RouteLocationNormalized, from: RouteLocationNormalized) {
+  finishNextNow() // laufenden Next-Übergang (P21) abschließen
   const initial = !from.matched.length
   const samePage = baseName(to) === baseName(from)
   candidate = !initial && !samePage && !reducedMotion()
@@ -208,6 +214,7 @@ export const windowPageTransition = {
   css: false,
 
   onLeave(el: Element, done: () => void) {
+    if (hasPendingNext(el)) return leaveCase(el, done)
     if (hasPendingCard(el)) return leavePage(el, done)
     if (!isWindow()) return done()
     const page = el as HTMLElement
@@ -221,6 +228,7 @@ export const windowPageTransition = {
   },
 
   onBeforeEnter(el: Element) {
+    if (hasPendingNext()) return prepareNextEnter(el)
     if (!isWindow()) return
     const page = el as HTMLElement
     fixPage(page, 2)
