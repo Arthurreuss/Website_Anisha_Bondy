@@ -195,3 +195,9 @@ Grund: Browser-Prüfung Desktop + Mobil (about ↔ Startseite, gescrollter Case 
 - `baseUrl` (hreflang/canonical) aus `SITE_URL`, Netlify-`URL` als Rückfall. Cloudflare-Build lokal geprüft (`CF_PAGES=1`: Preset schreibt direkt nach `dist`, erzeugt `_headers`/`_redirects`).
 - Einrichtungsschritte in [HOSTING.md](HOSTING.md). Fragenkatalog an Anisha (`anfrage-anisha.md`) aktualisiert und ersetzt INHALTE.md §7.
 Grund: Entscheidung des Users.
+
+## D-033 · 2026-09-25 · Netlify aus dem Code, Web3Forms-Schlüssel im Code
+- Cloudflare Pages + Web3Forms laufen (User). `netlify.toml` entfernt, `baseUrl` nur noch aus `SITE_URL`; Nachweis von P1 entsprechend auf `.node-version` umgestellt.
+- Web3Forms-Schlüssel als Standardwert in `nuxt.config.ts`: Er landet ohnehin im ausgelieferten JavaScript (öffentlich by design), eine Cloudflare-Variable brächte keinen Schutz, nur die Möglichkeit, ihn ohne Code-Änderung zu tauschen (`NUXT_PUBLIC_WEB3FORMS_KEY` überschreibt weiterhin).
+- Erste Veröffentlichung nach `production` auf Zuruf des Users.
+Grund: Entscheidung des Users.

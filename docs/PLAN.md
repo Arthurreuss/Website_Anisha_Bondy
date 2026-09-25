@@ -9,7 +9,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 
 | ID | Paket | Modell | Hängt ab von | Status | Nachweis |
 |---|---|---|---|---|---|
-| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Netlify-Config | Sonnet | – | ✅ | package.json, nuxt.config.ts, netlify.toml |
+| P1 | Setup: Nuxt 3 + TS + SCSS + GSAP + Lenis, Hosting-Config (Netlify → Cloudflare, D-033) | Sonnet | – | ✅ | package.json, nuxt.config.ts, .node-version |
 | P2 | Design-Tokens: Farben, Typo-Klassen, Raster, Breakpoints, vw-Skalierung ab 1438px | Sonnet | P1 | ✅ | assets/styles/_tokens.scss, assets/styles/_typography.scss |
 | P3 | Datenvertrag + Platzhalter-Stub (echtes Content-Modell → Phase 2, D-009) | Opus | P1 | ✅ | types/project.ts, composables/useProjects.ts, utils/projects-source.ts, public/placeholders |
 | P4 | Layout: Header, Menü-Overlay, Kontakt-Overlay (Basis-Animation), Lenis-Plugin | Sonnet | P2 | ✅ | components/AppHeader.vue, plugins/lenis.client.ts |

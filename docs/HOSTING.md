@@ -42,4 +42,4 @@ Umgebungsvariablen wirken erst beim nächsten Build (Deployments → „Retry de
 
 ## 4 · Netlify
 
-Bleibt nur übergangsweise: dort Production Branch auf `production` stellen, damit Pushes auf `main` keine Credits mehr kosten. Netlify-Formulare werden nicht mehr genutzt; nach dem Umzug die Netlify-Seite löschen und `netlify.toml` entfernen.
+Abgelöst (D-033): `netlify.toml` ist aus dem Code entfernt. Die Netlify-Seite im Netlify-Konto löschen, falls noch nicht geschehen.

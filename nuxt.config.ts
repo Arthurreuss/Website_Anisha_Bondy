@@ -15,9 +15,8 @@ export default defineNuxtConfig({
       { code: 'de', language: 'de', name: 'Deutsch', file: 'de.json' },
     ],
     defaultLocale: 'en',
-    // Für hreflang/canonical: SITE_URL im Hosting setzen (Cloudflare Pages, D-032),
-    // Netlify liefert URL selbst
-    baseUrl: process.env.SITE_URL ?? process.env.URL ?? '',
+    // Für hreflang/canonical: SITE_URL im Hosting setzen (Cloudflare Pages, D-032)
+    baseUrl: process.env.SITE_URL ?? '',
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
