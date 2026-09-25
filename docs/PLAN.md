@@ -26,7 +26,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P15 | Seiten /about (Bio, Dreisatz, Zitat, Timeline, Presse, Partner) + /archive (Filter nach Säule) | Sonnet | P12 | ✅ | pages/about.vue, pages/archive.vue, content/site.ts |
 | P16 | Rahmen: Sprachumschalter, Menü, Kontakt-Overlay neu, Impressum/Datenschutz | Sonnet | P12 | ✅ | components/LangSwitch.vue, pages/imprint.vue, pages/privacy.vue |
 | P17 | Phase-2-QA: Merge, Browser-Check EN/DE, Build, Lighthouse, Deploy | **Opus** | P13–P16 | ✅ | – |
-| P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | Sonnet | P17 | 🔄 | – |
+| P18 | Intro v2: deckungsgleicher Stapel wächst, Aufdecken, Fallen, Titel erst am Ende ([animationen-v2](animationen-v2.md) §1) | Sonnet | P17 | ✅ | `composables/useGalleryIntro.ts` |
 | P19 | Hover: Karte hebt sich (−8 px), Bild gegenläufig; auch Next-Case-Bild (§2) | Sonnet | P17 | ✅ | composables/useHoverLift.ts |
 | P20 | Übergang Karte → Detail v2: zwei Phasen, gestaffelt, ≈ 2.5 s (§3) | Sonnet | P18 | ⬜ | – |
 | P21 | Übergang Case → nächstes Case: Ausradieren, Bild-Flug nach rechts oben, Titel-Flug (§4) | **Opus** | P20 | ⬜ | – |

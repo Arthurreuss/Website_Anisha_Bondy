@@ -152,3 +152,9 @@ Grund: Entscheidung des Users nach Screenshot-Vergleich mit dem Original.
 - CaseNext: bisheriger CSS-Hover-Zoom (1.06) läuft jetzt im selben GSAP-Tween (Inline-Transform würde die CSS-Regel sonst aushebeln).
 - Sub-Agenten-Worktrees liegen unter `.claude/worktrees/`; Vite findet dort die `tsconfig.json` des Haupt-Checkouts und braucht dessen `.nuxt/` → im Haupt-Checkout einmal `npm ci`.
 Grund: Review + Browser-Prüfung (Hover −8/+4 px gemessen, Klick nach Drag navigiert).
+
+## D-027 · 2026-09-25 · Merge P18 (Intro v2)
+- Nur die ersten 4 Karten (Mobil ≤767 px: 2) spielen mit; Karten ab Index 4 liegen außerhalb des Viewports und bleiben im Endzustand. Auf Mobil blenden die Karten 2–3 beim Fallen kurz aus.
+- Bildwarte bis max. 4 s (vorher 1.5 s), Fallback-Timeout der `is-intro`-Klasse 12 s (vorher 8 s).
+- Galerie wird erst mit der Landung (4.53 s nach Start) ziehbar.
+Grund: Review + Browser-Prüfung (Desktop 1440×900, Mobil 390×844; Stapel deckungsgleich, keine Titel vor 4.5 s, Endzustand = Ruhezustand, keine Konsolenfehler).

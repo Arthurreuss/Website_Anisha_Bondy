@@ -9,10 +9,10 @@
 - Animationen v2 + Tageszeit-Theme (D-023–D-025), Spezifikation [animationen-v2.md](animationen-v2.md). **Welle 1 läuft.**
 
 ## Laufende Agenten
-- Sonnet, eigene Worktrees: P18 (Intro v2), P10 (Tageszeit-Theme + Uhr). P19 ✅ gemergt. Nach Rückmeldung: Review + Merge nach Checkliste in agent-briefing.md.
+- Sonnet, eigener Worktree: P10 (Tageszeit-Theme + Uhr). P18 ✅ (D-027), P19 ✅ (D-026) gemergt. Nach Rückmeldung: Review + Merge nach Checkliste in agent-briefing.md.
 
 ## Nächster Schritt
-1. Welle 1 reviewen + mergen (P18, P19, P10) → dann P20 (Sonnet); dann Opus P22 → P21 → P23; zum Schluss P24.
+1. P10 reviewen + mergen → dann P20 (Sonnet); dann Opus P22 → P21 → P23; zum Schluss P24.
 2. Nebenher: Antworten von Anisha („offen:“-Kästen, INHALTE.md §7), echte Fotos, YAMawards 29.09., Impressum/Datenschutz.
 3. User: Netlify-Formular-Benachrichtigung + Testnachricht (D-022).
 
