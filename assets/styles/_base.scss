@@ -11,6 +11,16 @@
 html {
   font-size: 10px; // 1rem = 10px
   -webkit-text-size-adjust: 100%;
+
+  // Keine sichtbare Scrollbar (Spezifikation §3). Die Fenster-Scrollbar hängt
+  // am Wurzelelement – nur am body gesetzt, erschien sie bei klassischen
+  // Scrollbars (Windows, Mac mit Maus) mit der langen Case-Seite, die Startseite
+  // wurde 15 px schmaler und die Karte rückte unter dem Klon weg (D-051).
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {

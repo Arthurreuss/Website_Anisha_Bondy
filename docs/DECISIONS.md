@@ -342,3 +342,9 @@ Grund: Antworten von Anisha, weitergegeben durch den User.
 - Lösung: `useInfiniteGallery().freeze()` – beim Karten-Klick vor dem Klonen: Ziel = aktuelle Position, Ticker-Update aus, Eingaben (Drag, Rad, Nachlauf) gesperrt; beim Unmount bleibt die Skalierung stehen. Nachmessung: Karte, Titel und Klon bleiben pixelgleich bis zum Morph.
 - Per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
 Grund: Rückmeldung des Users.
+
+## D-051 · 2026-09-26 · Ruck beim Karten-Klick: Fenster-Scrollbar ausblenden (ergänzt D-050)
+- User: Nach D-050 liegt die Kachel beim Start der Animation weiterhin nicht 1:1 über der Karte, sie rückt nach rechts.
+- Ursache (nachgestellt mit sichtbaren, klassischen Scrollbars – Windows, Mac mit Maus): Rund 0,1 s nach dem Klick wird die lange Case-Seite darunter gerendert, der Browser blendet die Fenster-Scrollbar ein (15 px). Die Startseite (fixiert, `inset: 0`) wird schmaler, die Karte samt Titel rückt 8,6 px nach links, der Klon bleibt stehen. `scrollbar-width: none` stand nur am `body`, gilt aber nur am Wurzelelement – die Scrollbar war entgegen Spezifikation §3 sichtbar.
+- Lösung: `scrollbar-width: none` und `::-webkit-scrollbar { display: none }` auch an `html` (`assets/styles/_base.scss`). Nachmessung: Fensterbreite bleibt 1440 px, Karte, Titel und Klon bleiben pixelgleich bis zum Morph. Scrollen bleibt unverändert möglich.
+Grund: Rückmeldung des Users.
