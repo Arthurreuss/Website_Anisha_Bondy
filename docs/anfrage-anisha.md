@@ -16,7 +16,7 @@ Auf der Startseite haben diese Projekte **noch gar kein Bild** (nur eine farbige
 | Hänsel und Gretel | Cover + Galerie |
 | Die Nacht vor Weihnachten | Cover + Galerie |
 | VOCES8 – The World is Turning | Cover + Galerie |
-| Flucht | Cover + Galerie (bisher gar kein Bild- oder Videomaterial) |
+| Flucht | Nur Standbilder aus dem YouTube-Trailer (D-052) – echte Fotos wären besser |
 | Selam Opera! | besseres Cover (aktuell ein Standbild aus einem Clip, geringe Auflösung) + Galerie – gern vom Operndolmuş |
 
 Im Archiv (weniger dringend): Die Schneekönigin, Les espaces acoustiques, Vivier 70/35 – je ein Bild. Klangstreich: Fotos nach der Premiere (11.10.).
@@ -35,7 +35,7 @@ Antworten vom 26.09. sind eingebaut (D-049). Noch offen:
 |---|---|
 | **Season 2026/27** | Liste der fünf kommenden Projekte (Titel, Haus, Premiere, deine Rolle) – dafür kommt eine eigene Box „Upcoming“ auf die Seite. Klangstreich ist schon angelegt. |
 | VOCES8 – The World is Turning | Genaues Datum 2023. |
-| Flucht | Der Trailer als Videodatei (vom Haus) – daraus machen wir ein bewegtes Cover. |
+| Flucht | Erledigt aus dem YouTube-Trailer (D-052). Die Originaldatei vom Haus hätte bessere Qualität und klärt die Rechte. |
 | Die Nacht vor Weihnachten | Fotos (Trailer ist gefunden und eingebaut). |
 
 Allgemein:

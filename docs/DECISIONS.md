@@ -348,3 +348,10 @@ Grund: Rückmeldung des Users.
 - Ursache (nachgestellt mit sichtbaren, klassischen Scrollbars – Windows, Mac mit Maus): Rund 0,1 s nach dem Klick wird die lange Case-Seite darunter gerendert, der Browser blendet die Fenster-Scrollbar ein (15 px). Die Startseite (fixiert, `inset: 0`) wird schmaler, die Karte samt Titel rückt 8,6 px nach links, der Klon bleibt stehen. `scrollbar-width: none` stand nur am `body`, gilt aber nur am Wurzelelement – die Scrollbar war entgegen Spezifikation §3 sichtbar.
 - Lösung: `scrollbar-width: none` und `::-webkit-scrollbar { display: none }` auch an `html` (`assets/styles/_base.scss`). Nachmessung: Fensterbreite bleibt 1440 px, Karte, Titel und Klon bleiben pixelgleich bis zum Morph. Scrollen bleibt unverändert möglich.
 Grund: Rückmeldung des Users.
+
+## D-052 · 2026-09-26 · Flucht: Cover-Schleife und Galerie aus dem Trailer
+- Quelle: YouTube-Trailer der Komischen Oper (NUGsQ-HoR54, 1080p, 40 s). Download im Container scheitert (403 bzw. Bot-Abfrage), der User hat die Datei hochgeladen.
+- Cover: stumme Schleife wie bei Dornröschen (D-039), 4:5 800×1000, H.264 `cover.mp4` (10,8 s, ~2 MB), 7 Einstellungen mit harten Schnitten (Publikum von oben, Sängerin, Sprecherin, rote Bühne, Publikum auf der Bühne, Saal, Kammermusik unter dem Lüster). Standbild `cover-poster.jpg` = Publikum von oben.
+- Galerie: 9 Standbilder (jeweils das schärfste Bild einer Einstellung), 16:10 in 1728×1080 bzw. 4:5 in 864×1080 – nicht hochskaliert, Quelle ist nur 1080p. Blöcke: Auf der Bühne, Stimmen (3), Die Band, Räume (3), Der Saal. Nachweis: „Trailer: Komische Oper Berlin“. Keine Personennamen in Alt-Texten (Mitwirkende im Bild nicht belegt).
+- Platzhalter `cover.svg` und der Todo-Hinweis entfallen; „Flucht“ bleibt damit auf der Startseite (offen aus D-049). Rechte liegen beim Haus → Punkt in [anfrage-anisha.md](anfrage-anisha.md) bleibt: bessere Fotos/Originaldatei von der Komischen Oper wären willkommen.
+Grund: Auftrag des Users.
