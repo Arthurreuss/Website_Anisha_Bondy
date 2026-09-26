@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Facts-Block nach dem Intro (P14): Rolle, Credits, Preise, Presse und die
+// Facts-Block nach dem Intro (P14): Rolle, Termine, Credits, Preise, Presse und die
 // offenen `todos` des Projekts. Leere Abschnitte werden nicht gerendert.
 // Reveals wie auf der übrigen Detailseite (useReveal, data-reveal="mask" auf
 // den Labels).
@@ -10,6 +10,7 @@ const props = defineProps<{ project: Project }>()
 const hasContent = computed(
   () =>
     Boolean(props.project.role) ||
+    props.project.dates.length > 0 ||
     props.project.credits.length > 0 ||
     props.project.awards.length > 0 ||
     props.project.press.length > 0 ||
@@ -27,6 +28,15 @@ useReveal(rootRef)
         <p class="label font-body-12 uppercase" data-reveal="mask">{{ $t('case.facts.role') }}</p>
       </div>
       <p class="value font-body">{{ project.role }}</p>
+    </div>
+
+    <div v-if="project.dates.length" class="facts__col">
+      <div class="label-mask">
+        <p class="label font-body-12 uppercase" data-reveal="mask">{{ $t('case.facts.dates') }}</p>
+      </div>
+      <ul class="list">
+        <li v-for="line in project.dates" :key="line" class="font-body">{{ line }}</li>
+      </ul>
     </div>
 
     <div v-if="project.credits.length" class="facts__col">

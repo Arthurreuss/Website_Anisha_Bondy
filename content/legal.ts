@@ -124,8 +124,8 @@ export const privacySections: PrivacySection[] = [
     key: 'contactForm',
     heading: { en: 'Contact form', de: 'Kontaktformular' },
     body: {
-      en: 'The contact form is handled by the service Web3Forms. Data entered there (name, email, message and the other fields) is submitted to Web3Forms and forwarded by email so the request can be answered. It is used for no other purpose.',
-      de: 'Das Kontaktformular wird über den Dienst Web3Forms abgewickelt. Die dort eingegebenen Daten (Name, E-Mail, Nachricht und die weiteren Felder) werden an Web3Forms übermittelt und per E-Mail weitergeleitet, damit die Anfrage beantwortet werden kann. Eine weitergehende Nutzung findet nicht statt.',
+      en: 'The contact form is handled by the service Web3Forms. Data entered there (name, email, message and the other fields) is submitted to Web3Forms and forwarded by email so the request can be answered. It is used for no other purpose. The request is kept only in the recipient’s email inbox and deleted once it is no longer needed.',
+      de: 'Das Kontaktformular wird über den Dienst Web3Forms abgewickelt. Die dort eingegebenen Daten (Name, E-Mail, Nachricht und die weiteren Felder) werden an Web3Forms übermittelt und per E-Mail weitergeleitet, damit die Anfrage beantwortet werden kann. Eine weitergehende Nutzung findet nicht statt. Die Anfrage wird nur im E-Mail-Postfach der Empfängerin aufbewahrt und gelöscht, sobald sie nicht mehr benötigt wird.',
     },
   },
   {

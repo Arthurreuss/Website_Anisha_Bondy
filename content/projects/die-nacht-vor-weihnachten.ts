@@ -12,6 +12,10 @@ export default defineProject({
   year: 2022,
   pillar: 'create',
   role: { en: 'Scenic staging', de: 'Szenische Einrichtung' },
+  dates: {
+    en: ['23 December 2022, Philharmonie Berlin'],
+    de: ['23. Dezember 2022, Philharmonie Berlin'],
+  },
   tags: { en: ['Staged concert', 'Rimsky-Korsakov', 'Christmas'], de: ['Szenisches Konzert', 'Rimski-Korsakow', 'Weihnachten'] },
   cover: {
     type: 'image',
@@ -34,12 +38,22 @@ export default defineProject({
   credits: [
     { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
     { role: { en: 'Scenic staging', de: 'Szenische Einrichtung' }, name: 'Anisha Bondy' },
+    { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Uta Jäger, Saskia Theis' },
+    { role: { en: 'Lighting', de: 'Licht' }, name: 'Marco Philipp' },
+    { role: { en: 'Video', de: 'Video' }, name: 'Benjamin Spencer Weiß' },
+    { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Rundfunk-Sinfonieorchester Berlin' },
+    { role: { en: 'Choir', de: 'Chor' }, name: 'Philharmonischer Chor „George Enescu“ Bukarest · Ion Iosif Prunner' },
+    {
+      role: { en: 'Cast', de: 'Mit' },
+      name: 'Mikhail Vekua, Sofia Fomina, Dmitry Ulyanov, Ksenia Dudnikova, Alexander Fedorov, Marina Prudenskaya, Sergei Leiferkus, Milan Siljanov, Vsevolod Grivnov, Nadine Weissmann, Josefine Mindus',
+    },
   ],
   awards: [],
   press: [
     {
       source: 'Tagesspiegel',
-      date: '2022-12',
+      author: 'Frederik Hanssen',
+      date: '2022-12-24',
       url: 'https://www.tagesspiegel.de/kultur/weihnachtsoper-schmiede-dir-dein-gluck-9088726.html',
     },
     {
@@ -53,12 +67,10 @@ export default defineProject({
   order: 8,
   todos: {
     en: [
-      'Tagesspiegel quote behind paywall – clear wording/rights before quoting',
       'Video/documentation material',
       'Production photos for the gallery',
     ],
     de: [
-      'Tagesspiegel-Zitat hinter Paywall – Wortlaut/Freigabe vor Zitat prüfen',
       'Video-/Dokumentationsmaterial',
       'Produktionsfotos für die Galerie',
     ],

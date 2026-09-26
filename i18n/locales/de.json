@@ -80,6 +80,7 @@
     },
     "facts": {
       "role": "Rolle",
+      "dates": "Termine",
       "credits": "Credits",
       "awards": "Preise",
       "awardWon": "Ausgezeichnet",

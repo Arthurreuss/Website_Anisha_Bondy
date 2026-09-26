@@ -1,6 +1,6 @@
 # Was wir von Anisha noch brauchen
 
-Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044). Beantwortetes steht in DECISIONS (D-039, D-042, D-043); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
+Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-046). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-046); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
@@ -25,30 +25,21 @@ Im Archiv (weniger dringend): Die Schneekönigin, Die Mitternachtstür, Les espa
 1. **Pressefotos der Häuser.** Die Philharmonie Luxembourg hat zu Dornröschen, Lene und pOpera schon Fotos geliefert (Inês Rebelo de Andrade, Alfonso Salgueiro, Laurent Sturm). Bitte bei der Presseabteilung nach **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, VOCES8 und Flucht** fragen. Pro Projekt 3–6 Fotos, dazu der Name der Fotograf:in.
 2. **Wenn es keine Fotos gibt: Szenen aus den Videos.** Pro Projekt 1–3 Stellen als Minute:Sekunde, die dir besonders gefallen (z. B. „Peter Pan 12:40 – Flugszene“), am besten eine Figur oder Gruppe in der Bildmitte. Dazu brauchen wir die **Videodatei** (vom Haus oder per WeTransfer), weil YouTube keine Downloads zulässt. Daraus machen wir Standbilder oder eine kurze stumme Schleife wie bei Dornröschen.
 
-**Außerdem:**
-- **Showreel** für den Button auf der Startseite – gibt es eins?
-- **Probenfoto mit Barrie Kosky (Echnaton):** ist auf der About-Seite eingebaut. Wenn die Fotograf:in doch noch bekannt wird, bitte den Namen schicken, dann ergänzen wir den Bildnachweis.
-
 Technische Anforderungen an Bilder und Videos: siehe §5.
 
 ## 2 · Angaben zu den Projekten
 
+Premieren, Termine und Credits haben wir aus den Seiten der Häuser übernommen (Philharmonie Luxembourg, Musikverein Wien, RSB, Komische Oper, ensemble unitedberlin) – bitte beim Durchsehen der Projektseiten kurz prüfen. Im Netz **nicht** zu finden war:
+
 | Projekt | Offen |
 |---|---|
-| Der Zauberer von Oz | genaues Premierendatum |
-| Dornröschen | genaues Premierendatum |
-| Lene fliegt ins Zirkusland | weitere Credits (Dirigat, Zirkus, Ausstattung); Ergebnis YAMawards am 29.09. |
-| pOpera | vollständige Credits (Komposition/Bearbeitung, musikalische Leitung, Team); genaues Premierendatum |
+| Lene fliegt ins Zirkusland | Ergebnis YAMawards am 29.09. |
 | Selam Opera! | Welche Pop-Up-Clips hast du selbst inszeniert? |
-| Peter Pan | genaues Premierendatum; weitere Credits (Dirigat, Ausstattung) |
-| Hänsel und Gretel | genaue Termine; weitere Credits |
-| Die Nacht vor Weihnachten | Tagesspiegel-Zitat: genauer Wortlaut und ob wir es zeigen dürfen; Video- oder Dokumentationsmaterial |
-| VOCES8 | genaues Premierendatum; weitere Credits |
-| Flucht | Programm der drei Teile, Termine, weitere Credits |
-| Die Schneekönigin | deine Rolle (Regie/Assistenz?), Komponist:in/Fassung, Credits |
-| Die Mitternachtstür (UA 2026) | Haus, Termin, Stück/Komponist:in, deine Rolle; passt die Säule „Create“? |
-| Les espaces acoustiques | genaues Programm und Datum, Credits |
-| Vivier 70/35 | genaues Programm und Datum, Credits |
+| Die Nacht vor Weihnachten | Video- oder Dokumentationsmaterial. (Der Tagesspiegel-Artikel ist hinter der Paywall – falls du ihn hast, schick uns den Satz zur Inszenierung, dann zitieren wir ihn.) |
+| VOCES8 – The World is Turning | genaues Datum 2023; weitere Credits (war Julia Hansen Bühnenbildnerin?) |
+| Flucht | Laut Komischer Oper dirigierte **Stefan Sanderling** Flucht I – war Vladimir Jurowski überhaupt beteiligt? Hat Flucht III (angekündigt für 15.05.2020, Corona) stattgefunden? Weitere Credits zu Flucht II. |
+| Die Mitternachtstür | Laut Deutscher Oper am Rhein: Uraufführung 14.11.2026 in Düsseldorf, **Regie Mizgîn Bilmen** (Musik James Reynolds, Text Pamela Dürr). Was ist deine Rolle – oder ist ein anderes Projekt gemeint? |
+| **Klangstreich** (neu gefunden) | Theater an der Wien, österreichische Erstaufführung ab 11.10.2026, **Regie Anisha Bondy** (Marc L. Vogler, a-cappella-Kinderoper). Soll das auf die Seite? Dann bitte Fotos nach der Premiere. |
 
 Allgemein:
 - **Startseite:** Stimmen Auswahl und Reihenfolge der Projekte? Soll „Flucht“ ohne Bildmaterial ins Archiv?
@@ -58,7 +49,6 @@ Allgemein:
 ## 3 · About-Seite & Kontakt
 
 - **Preis „Schauspielbühne“:** Welcher Preis, welches Jahr?
-- **Partner und Zitate:** Dürfen wir die Häuser (Komische Oper, Philharmonie Luxembourg, Musikverein, Fondation EME, RSB, ensemble unitedberlin, Zaltimbanq') und die Pressezitate (Tagesspiegel, nachtkritik) nennen? Gibt es Logos?
 - **Kontakt:** Agentur/Management, Instagram, LinkedIn – was soll verlinkt werden (oder die Zeilen weglassen)?
 - **Tipp für Google:** Die Seite ist neu, Google kennt noch keine Links darauf. Wenn du `anishabondy.com` in deinen Profilen einträgst (Instagram, LinkedIn, Künstlerseiten bei Philharmonie/Fondation EME, Agentur), wird sie schneller gefunden.
 
@@ -69,8 +59,7 @@ Impressum und Datenschutzerklärung sind ausgefüllt und online (österreichisch
 Dabei klären:
 1. **Impressum:** Passen Angaben und Tätigkeit („Regisseurin, Oper & Musiktheater“)? Braucht es Angaben zu Gewerbe/Kammer (bei freier künstlerischer Tätigkeit meist nicht)?
 2. **UID:** Ab 2027 die UID-Nummer schicken, dann tragen wir sie ein.
-3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044).
-4. **Datenschutz:** Soll es eine Besucherstatistik geben? (Wenn ja: datenschutzfreundlich, z. B. Plausible – sonst wäre ein Cookie-Banner nötig.) Wie lange sollen Kontaktanfragen aufbewahrt werden?
+3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044). Ebenso bei den **Logos der Partnerhäuser** auf der About-Seite (von deren Websites übernommen, D-046).
 
 Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (Cloudflare, Inc., USA; Server-Logfiles mit IP-Adressen) · Kontaktformular über Web3Forms (Weiterleitung per E-Mail an anishabondy@gmail.com) · YouTube/Vimeo erst nach Klick (YouTube über youtube-nocookie.com) · Schrift lokal eingebunden · keine Cookies, kein Tracking.
 
@@ -89,4 +78,4 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 
 ---
 
-**Kurz: das Wichtigste zuerst** – Pressefotos der Philharmonie (§1), Showreel, Kontakt-Links (§3), rechtliche Prüfung (§4).
+**Kurz: das Wichtigste zuerst** – Pressefotos der Philharmonie (§1), Mitternachtstür/Klangstreich (§2), Kontakt-Links (§3), rechtliche Prüfung (§4).

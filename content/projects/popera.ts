@@ -9,6 +9,10 @@ export default defineProject({
   year: 2026,
   pillar: 'participate',
   role: { en: 'Stage direction', de: 'Regie' },
+  dates: {
+    en: ['Premiere 23 April 2026, Philharmonie Luxembourg (Grand Auditorium)', 'School performance 24 April 2026'],
+    de: ['Premiere 23. April 2026, Philharmonie Luxembourg (Grand Auditorium)', 'Schulvorstellung 24. April 2026'],
+  },
   tags: { en: ['Community opera', 'Participatory', 'Romeo and Juliet'], de: ['Community Opera', 'Partizipativ', 'Romeo und Julia'] },
   cover: {
     type: 'image',
@@ -133,13 +137,23 @@ export default defineProject({
     },
   ],
   videos: [{ provider: 'youtube', id: 'Ug5YmCOTu3M', title: 'pOpera' }],
-  credits: [{ role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' }],
+  credits: [
+    { role: { en: 'Music', de: 'Musik' }, name: 'Tim Wollmann' },
+    { role: { en: 'Text', de: 'Text' }, name: 'Antoine Pohu' },
+    { role: { en: 'Concept & artistic direction', de: 'Konzept & künstlerische Leitung' }, name: 'Paulo Lameiro' },
+    { role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Co-direction & choreography', de: 'Co-Regie & Choreografie' }, name: 'Mariana Souza' },
+    { role: { en: 'Set & costumes', de: 'Bühne & Kostüme' }, name: 'Anne Hölzinger' },
+    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'Ivan Boumans' },
+    { role: { en: 'Choir direction', de: 'Chorleitung' }, name: 'Julie Colin, Pit Heyart' },
+    { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
+    {
+      role: { en: 'Cast', de: 'Mit' },
+      name: 'Stephany Ortega (Juliet), Johannes Bamberger (Romeo), Fredrika Brillembourg, Tijl Faveyts, community choir, Pueri Cantores du Conservatoire de la Ville de Luxembourg, choir of the CLI Adam Roberti school',
+    },
+  ],
   awards: [],
   press: [],
   featured: true,
   order: 2,
-  todos: {
-    en: ['Full credits (composer/arrangement, musical direction, further team)', 'Exact premiere date'],
-    de: ['Vollständige Credits (Komposition/Bearbeitung, musikalische Leitung, weiteres Team)', 'Genaues Premierendatum'],
-  },
 })

@@ -9,6 +9,10 @@ export default defineProject({
   year: 2026,
   pillar: 'create',
   role: { en: 'Direction', de: 'Regie' },
+  dates: {
+    en: ['Premiere 6 March 2026 (school performance), Philharmonie Luxembourg', 'Family performance 7 March 2026'],
+    de: ['Premiere 6. März 2026 (Schulvorstellung), Philharmonie Luxembourg', 'Familienvorstellung 7. März 2026'],
+  },
   tags: { en: ['Dance', 'Tchaikovsky', 'New format'], de: ['Tanz', 'Tschaikowsky', 'Neues Format'] },
   cover: {
     type: 'video',
@@ -126,6 +130,7 @@ export default defineProject({
     { role: { en: 'Text & dramaturgy', de: 'Text & Dramaturgie' }, name: 'Sabrina Zwach' },
     { role: { en: 'Set', de: 'Bühne' }, name: 'Isabelle Kaiser' },
     { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Saskia Theis' },
+    { role: { en: 'Lighting', de: 'Licht' }, name: 'Michael Morgan' },
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
     {
       role: { en: 'Cast', de: 'Mit' },
@@ -136,8 +141,4 @@ export default defineProject({
   press: [],
   featured: true,
   order: 7,
-  todos: {
-    en: ['Exact premiere date'],
-    de: ['Genaues Premierendatum'],
-  },
 })

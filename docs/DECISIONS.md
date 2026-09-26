@@ -296,3 +296,15 @@ Grund: Entscheidung des Users.
 - Menü (P23): Die großen Seitentitel lagen ohne Hintergrund auf der Seite im Fenster (auf dem Porträt bei „Über mich“, auf der Filterzeile bei „Archiv“). Jetzt liegt hinter dem Titel ein Band in Hintergrundfarbe von der Fensteroberkante bis kurz unter die Schrift (`.page-title--band`, `--band` 0–1). Es blendet mit dem Titel ein und beim Schließen oder Klick auf ein Fenster wieder aus. Gilt nur im Menü, der Fenster-Übergang (P22) bleibt unverändert.
 - Nachweis: Frame-Protokoll des Klons (keine Rundungssprünge mehr), Menü auf About und Case (Desktop), Handy-Menü, Schließen per Esc, Klick auf Fenster bzw. Link. Kein Band bleibt zurück, keine Konsolenfehler.
 Grund: Rückmeldung des Users.
+
+## D-046 · 2026-09-26 · Web-Recherche Projektangaben, Partner mit Logos, Datenschutz-Antworten
+- User: **Showreel gibt es nicht** → Hinweis auf der About-Seite entfernt. **Kosky-Probenfoto:** Fotograf:in gibt es nicht, Bildnachweis bleibt weg (Foto bleibt, D-044).
+- User: **Partnerhäuser und Pressezitate dürfen genannt werden.** Partner auf der About-Seite jetzt als Logo-Reihe mit Link zur Website des Hauses (`content/site.ts` → `partners`, Logos in `public/media/partners/`, von den Websites der Häuser, einfarbig per `mask-image`). Ersetzt „nur Namen, keine Logos“ (P15).
+- User: **Keine Besucherstatistik.** Kontaktanfragen werden nur im Postfach aufbewahrt – Satz dazu im Datenschutz (Kontaktformular).
+- Web-Recherche aller Projektangaben (Quellen: Seiten der Philharmonie Luxembourg, Musikverein-Broschüre 25/26, RSB, Boosey, nmz, theaterkompass, Dossier ensemble unitedberlin, zitty, miz). Neues Feld `dates` (Termine) im Projekt, in den Fakten angezeigt.
+  - Premieren: Peter Pan 04.05.2024 · Lene 25.04.2025 · Oz 17.01.2026 Musikverein (UA), 25.01.2026 Luxemburg · Dornröschen 06.03.2026 · pOpera 23.04.2026 · Hänsel und Gretel 20.12.2025 · Nacht vor Weihnachten 23.12.2022 · Vivier 27.02.2018 · Grisey 19.05.2019 · Schneekönigin UA 24.10.2010 · Flucht I 15.09.2019, II 26.01.2020.
+  - Credits ergänzt (Dirigat, Ausstattung, Licht, Besetzung) bei Lene, Peter Pan, Dornröschen, pOpera, Hänsel und Gretel, Nacht vor Weihnachten, Grisey, Vivier, Schneekönigin.
+  - **Korrekturen:** Schneekönigin = Regie Anisha Bondy (Valtinoni, UA). Flucht: Jurowski nicht belegt, Flucht I dirigierte Stefan Sanderling → Jurowski aus Flucht entfernt. Hänsel und Gretel nur 2025 (nicht 2025/26).
+  - Neue Pressezitate: nmz (Schneekönigin), Berliner Morgenpost (Vivier). Tagesspiegel (Weihnachten) bleibt ohne Zitat (Paywall), nur Link.
+  - Nicht gefunden → anfrage-anisha §2: VOCES8-Datum, Flucht III, Selam-Clips. Mitternachtstür laut Deutscher Oper am Rhein: Regie Mizgîn Bilmen – Anishas Rolle unklar. Neu gefunden: *Klangstreich*, Theater an der Wien ab 11.10.2026, Regie Anisha Bondy (noch nicht auf der Seite).
+Grund: Antworten und Auftrag des Users.

@@ -40,11 +40,12 @@ Säule = Vorschlag für Direct (D) / Create (C) / Participate (P). ★ = Kandida
 | ★ | **pOpera** – Community Opera nach Romeo & Julia | 2026 | Fondation EME / Philharmonie Luxembourg | Regie | P | [YT Ug5YmCOTu3M](https://youtu.be/Ug5YmCOTu3M) | – |
 | ★ | **Selam Opera!** – Pop-Up-Opera & Operndolmuş (**ein** Projekt, D-017) | 2015–2022 | Komische Oper Berlin, mit Mustafa Akça | szenische Leitung | P | Pop-Up-Clips, siehe unten | **BKM-Preis Kulturelle Bildung 2017** („Auf den Spuren der Gastarbeiterroute“); nachtkritik 2016 |
 | ★ | **Die Nacht vor Weihnachten** (Rimski-Korsakow) | 2022 | RSB · Vladimir Jurowski, Philharmonie Berlin | szenische Einrichtung | C | – | Tagesspiegel: „charmante“ Einrichtung; Bachtrack-Kritik |
-| ★? | **Flucht** – szenische Konzert-Trilogie | 2019/20 | Komische Oper Berlin · Jurowski | Regie | C | – | – |
+| ★? | **Flucht** – szenische Konzert-Trilogie | 2019/20 | Komische Oper Berlin; Flucht I Ltg. Stefan Sanderling (zitty), Jurowski **nicht belegt** (D-046) | Regie | C | – | – |
 | | Claude Vivier – *70/35 – a sacred act* | 2018 | Konzerthaus Berlin, ensemble unitedberlin · Jurowski | szen. Einrichtung | C | – | hundert11 (gemischt, nicht zitieren) |
 | | Grisey – *Les espaces acoustiques* | 2019 | Konzerthaus Berlin · Jurowski | szen. Einrichtung | C | – | – |
 | | Die Schneekönigin | 2010 | Komische Oper Berlin | Regie | D | – | – |
-| | Die Mitternachtstür (UA) | 2026 | ? | ? | ? | – | nichts gefunden → fragen |
+| | Die Mitternachtstür (UA) | 2026 | Deutsche Oper am Rhein, UA 14.11.2026 – Regie laut Haus Mizgîn Bilmen (D-046) | ? | ? | – | Rolle Anishas unklar → fragen |
+| | *Klangstreich* (Marc L. Vogler), ÖEA | 2026 | Theater an der Wien, ab 11.10.2026 | Regie | D? | – | neu gefunden (D-046), noch nicht auf der Seite |
 | | Assistenzen: u. a. Kosky (*Rusalka*, Wiederaufnahme-Regie 2016), Baumgarten (*Tannhäuser*, Bayreuth 2011–14), Thalbach, Guth, Konwitschny, Neuenfels | 2007– | | Regieassistenz / Spielleitung | – | [„My very special Barrie moment“](https://www.youtube.com/watch?v=eWz4lkQRvmQ) (Komische Oper) | – |
 
 **Pop-Up-Opera-Clips** (Kanal Komische Oper Berlin; Zuordnung zu den Google-Links wahrscheinlich, von Anisha bestätigen lassen – auch, bei welchen sie Regie geführt hat):
@@ -54,7 +55,9 @@ Carmen in Kreuzberg `AriBiymQ0og` · Ring frei für Helena! `SR1GJEFUYUc` · Wie
 
 - **YAMawards 2026**, Nominierung „Best Opera“: *Lene fliegt ins Zirkusland* ([YAM](https://www.youngaudiencesmusic.com/post/announcing-the-yamawards-nominees-2026)). Ergebnis am 29.09. nachtragen.
 - **BKM-Preis Kulturelle Bildung 2017** für Selam Opera! / Gastarbeiterroute ([Komische Oper](https://www.komische-oper-berlin.de/entdecken/selam_opera/auf-den-spuren-der-gastarbeiterroute/)).
-- **Tagesspiegel**, 12/2022, *Die Nacht vor Weihnachten*: „charmante“ szenische Einrichtung ([Link](https://www.tagesspiegel.de/kultur/weihnachtsoper-schmiede-dir-dein-gluck-9088726.html) – Wortlaut hinter Paywall, vor Zitat prüfen).
+- **Tagesspiegel**, Frederik Hanssen, 24.12.2022, *Die Nacht vor Weihnachten*: „charmante“ szenische Einrichtung ([Link](https://www.tagesspiegel.de/kultur/weihnachtsoper-schmiede-dir-dein-gluck-9088726.html) – Wortlaut hinter Paywall, nur verlinkt).
+- **nmz**, Barbara Haack, 25.10.2010, *Die Schneekönigin*: „Lebhaft und kindgerecht von Anisha Bondy inszeniert“ ([Link](https://www.nmz.de/online/kinderoper-ernst-genommen-pierangelo-valtinoni-die-schneekoenigin-an-der-komischen-oper)).
+- **Berliner Morgenpost**, Matthias Nöther, 02.03.2018, *Vivier 70/35*: Zitat zur Regie (Quelle: [Dossier ensemble unitedberlin](https://unitedberlin.de/wp-content/uploads/2025/08/Vivier_dossier.pdf)).
 - **Bachtrack**, Svenja Koch, 27.12.2022, gleiche Produktion ([Link](https://bachtrack.com/kritik-rimsky-korsakow-nacht-vor-weihnachten-jurowski-rundfunk-sinfonieorchester-philharmonie-berlin-dezember-2022)).
 - **nachtkritik**, Eva Biringer, 13.06.2016, Operndolmuş: Mitmach-Momente „funktionieren besonders gut“ ([Link](https://nachtkritik.de/index.php?Itemid=83&catid=53&id=12702%3Aoperndolmus-der-komischen-oper-berlin&option=com_content&view=article)).
 - **Ö1 / ORF** Porträt „Anisha Bondy, Musiktheater-Regie“ ([Link](https://oe1.orf.at/artikel/207033)) · Podcast *Leitmotifs* (Common Ground Berlin).

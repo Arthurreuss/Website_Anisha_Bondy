@@ -16,6 +16,15 @@ export interface PressLink {
   url?: string
 }
 
+export interface Partner {
+  name: string
+  url: string
+  /** Logo unter public/media/partners/, wird einfarbig (Maske) dargestellt */
+  logo: string
+  /** Seitenverhältnis Breite/Höhe des Logos – für gleich wirkende Größen */
+  ratio: number
+}
+
 export interface SiteContent {
   statement: { title: L; body: L }
   pillars: PillarContent[]
@@ -24,7 +33,7 @@ export interface SiteContent {
   /** Bio in dritter Person, 2–3 Absätze. */
   bio: L<string[]>
   workedWith: string[]
-  partners: string[]
+  partners: Partner[]
   /** Presse, die sich nicht einem einzelnen Projekt zuordnen lässt. */
   pressGeneral: PressLink[]
   todos: L<string[]>
@@ -108,14 +117,15 @@ export const siteContent: SiteContent = {
     'Benedict Andrews',
   ],
 
+  // Nennung freigegeben (D-046). Logos von den Websites der Häuser.
   partners: [
-    'Komische Oper Berlin',
-    'Philharmonie Luxembourg',
-    'Musikverein Wien',
-    'Fondation EME',
-    'Rundfunk-Sinfonieorchester Berlin',
-    'ensemble unitedberlin',
-    "Zaltimbanq' Zirkus",
+    { name: 'Komische Oper Berlin', url: 'https://www.komische-oper-berlin.de', logo: '/media/partners/komische-oper-berlin.svg', ratio: 9.05 },
+    { name: 'Philharmonie Luxembourg', url: 'https://www.philharmonie.lu', logo: '/media/partners/philharmonie-luxembourg.svg', ratio: 1.48 },
+    { name: 'Musikverein Wien', url: 'https://www.musikverein.at', logo: '/media/partners/musikverein-wien.png', ratio: 1.81 },
+    { name: 'Fondation EME', url: 'https://www.fondation-eme.lu', logo: '/media/partners/fondation-eme.svg', ratio: 3.19 },
+    { name: 'Rundfunk-Sinfonieorchester Berlin', url: 'https://www.rsb-online.de', logo: '/media/partners/rsb.svg', ratio: 2.31 },
+    { name: 'ensemble unitedberlin', url: 'https://unitedberlin.de', logo: '/media/partners/ensemble-unitedberlin.svg', ratio: 5.1 },
+    { name: "Zaltimbanq' Zirkus", url: 'https://www.zaltimbanq.lu', logo: '/media/partners/zaltimbanq.png', ratio: 0.57 },
   ],
 
   pressGeneral: [
@@ -137,15 +147,7 @@ export const siteContent: SiteContent = {
   ],
 
   todos: {
-    en: [
-      'Showreel',
-      'Nomination “Schauspielbühne” (prize and year?)',
-      'Approval to name partners',
-    ],
-    de: [
-      'Showreel',
-      'Nominierung „Schauspielbühne“ (Preis und Jahr?)',
-      'Freigabe der Partnernennung',
-    ],
+    en: ['Nomination “Schauspielbühne” (prize and year?)'],
+    de: ['Nominierung „Schauspielbühne“ (Preis und Jahr?)'],
   },
 }

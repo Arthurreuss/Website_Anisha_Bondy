@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-26 · Lieferung, SEO, Dornröschen-Video, Kosky-Foto, Flicker-Fix + Menü-Titelband live (D-039 – D-045); live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-26 · D-039 – D-045 live; D-046 (Web-Recherche Projektangaben, Partner-Logos, Datenschutz-Satz) auf dem Arbeitsbranch, noch nicht live; live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
@@ -12,15 +12,18 @@
 - **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
 - **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
 - **Feinschliff** (D-045): Flicker Karte → Case behoben (GSAP-Rundung, Video-Klon), Titelband im Menü – live.
+- **Projektangaben aus dem Netz** (D-046): Termine (neues Feld `dates`), Credits, Pressezitate, Partner-Logos mit Links; Showreel-Hinweis raus. Branch `claude/loving-albattani-511565`.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. User: Live-Seite ansehen – Karten-Übergang (kein Zucken mehr?), Menü-Titel, Dornröschen-Video auf echtem Gerät.
-2. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
-3. Anisha: Liste in [anfrage-anisha.md](anfrage-anisha.md) abarbeiten (Bilder, Projektangaben, Kontakt-Links, rechtliche Prüfung).
-4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
+1. User: D-046 ansehen (About-Partner, Projekt-Fakten) → auf Zuruf nach `main`/`production`.
+2. User: Klangstreich (Theater an der Wien, Regie Anisha) als Projekt aufnehmen? Mitternachtstür klären (anfrage §2).
+3. User: Live-Seite ansehen – Karten-Übergang, Menü-Titel, Dornröschen-Video auf echtem Gerät.
+4. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
+5. Anisha: Liste in [anfrage-anisha.md](anfrage-anisha.md) abarbeiten (Bilder, Projektangaben, Kontakt-Links, rechtliche Prüfung).
+6. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
 ## Bekannte Kleinigkeiten
 - Zeilen-Split nur reiner Text (D-013).

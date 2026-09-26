@@ -73,6 +73,8 @@ export interface Project {
   pillar: Pillar
   /** Anishas Rolle, z. B. „Regie“ */
   role: string
+  /** Premiere / Termine, eine Zeile je Eintrag, z. B. „Uraufführung 25.04.2025“ */
+  dates: string[]
   tags: string[]
   /** Karte auf der Startseite und Hero auf der Detailseite (Format 4:5) */
   cover: Media
@@ -111,6 +113,7 @@ export interface ProjectSource {
   yearLabel?: string
   pillar: Pillar
   role: L
+  dates?: L<string[]>
   tags?: L<string[]>
   cover: MediaSource
   intro: L<string[]>

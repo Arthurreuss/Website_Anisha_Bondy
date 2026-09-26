@@ -5,10 +5,14 @@ export default defineProject({
   slug: 'les-espaces-acoustiques',
   title: 'Les espaces acoustiques',
   subtitle: { en: 'Scenic staging after Gérard Grisey', de: 'Szenische Einrichtung nach Gérard Grisey' },
-  venue: { en: 'Konzerthaus Berlin · Vladimir Jurowski', de: 'Konzerthaus Berlin · Vladimir Jurowski' },
+  venue: { en: 'Konzerthaus Berlin · RSB & ensemble unitedberlin · Vladimir Jurowski', de: 'Konzerthaus Berlin · RSB & ensemble unitedberlin · Vladimir Jurowski' },
   year: 2019,
   pillar: 'create',
   role: { en: 'Scenic staging', de: 'Szenische Einrichtung' },
+  dates: {
+    en: ['19 May 2019, Konzerthaus Berlin (Berlin premiere of the complete cycle)'],
+    de: ['19. Mai 2019, Konzerthaus Berlin (Berliner Erstaufführung des ganzen Zyklus)'],
+  },
   tags: { en: ['Gérard Grisey', 'Staged concert'], de: ['Gérard Grisey', 'Szenisches Konzert'] },
   cover: {
     type: 'image',
@@ -19,23 +23,25 @@ export default defineProject({
   },
   intro: {
     en: [
-      'A scenic staging of Gérard Grisey’s spectral cycle Les espaces acoustiques, developed under Vladimir Jurowski for the Konzerthaus Berlin.',
+      'A scenic staging of Gérard Grisey’s spectral cycle Les espaces acoustiques, developed with Vladimir Jurowski for the Konzerthaus Berlin: 90 minutes of music that grow from a solo viola to full orchestra, played for the first time together by the Rundfunk-Sinfonieorchester Berlin and ensemble unitedberlin.',
     ],
     de: [
-      'Eine szenische Einrichtung von Gérard Griseys Spektralmusik-Zyklus Les espaces acoustiques, entwickelt unter Vladimir Jurowski für das Konzerthaus Berlin.',
+      'Eine szenische Einrichtung von Gérard Griseys Spektralmusik-Zyklus Les espaces acoustiques, entwickelt mit Vladimir Jurowski für das Konzerthaus Berlin: 90 Minuten Musik, die von der Solo-Bratsche bis zum großen Orchester anwächst, erstmals gemeinsam gespielt vom Rundfunk-Sinfonieorchester Berlin und dem ensemble unitedberlin.',
     ],
   },
   videos: [],
   credits: [
     { role: { en: 'Scenic staging', de: 'Szenische Einrichtung' }, name: 'Anisha Bondy' },
     { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
+    { role: { en: 'Viola', de: 'Viola' }, name: 'Jean-Claude Velin' },
+    { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Rundfunk-Sinfonieorchester Berlin, ensemble unitedberlin' },
   ],
   awards: [],
   press: [],
   featured: false,
   order: 101,
   todos: {
-    en: ['Exact programme/date', 'Further credits', 'Image material'],
-    de: ['Genaues Programm/Datum', 'Weitere Credits', 'Bildmaterial'],
+    en: ['Image material'],
+    de: ['Bildmaterial'],
   },
 })

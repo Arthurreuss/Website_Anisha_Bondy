@@ -32,6 +32,7 @@ export function resolveProject(p: ProjectSource, locale: Locale): Project {
     yearLabel: p.yearLabel ?? String(p.year),
     pillar: p.pillar,
     role: pick(p.role, locale),
+    dates: p.dates ? pick(p.dates, locale) : [],
     tags: p.tags ? pick(p.tags, locale) : [],
     cover: media(p.cover, locale),
     intro: pick(p.intro, locale),

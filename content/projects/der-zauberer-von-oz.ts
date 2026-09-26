@@ -12,6 +12,10 @@ export default defineProject({
   year: 2026,
   pillar: 'create',
   role: { en: 'Text & direction', de: 'Text & Regie' },
+  dates: {
+    en: ['World premiere 17 January 2026, Musikverein Vienna (Brahms-Saal)', '25 January 2026, Philharmonie Luxembourg', '20–27 March 2027, Brucknerhaus Linz'],
+    de: ['Uraufführung 17. Januar 2026, Musikverein Wien (Brahms-Saal)', '25. Januar 2026, Philharmonie Luxembourg', '20.–27. März 2027, Brucknerhaus Linz'],
+  },
   tags: { en: ['Puppetry', 'Family opera', 'First own text'], de: ['Puppenspiel', 'Familienoper', 'Erster eigener Text'] },
   cover: {
     type: 'image',
@@ -162,8 +166,4 @@ export default defineProject({
   press: [],
   featured: true,
   order: 4,
-  todos: {
-    en: ['Exact premiere date'],
-    de: ['Genaues Premierendatum'],
-  },
 })

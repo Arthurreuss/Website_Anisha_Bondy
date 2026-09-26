@@ -80,6 +80,7 @@
     },
     "facts": {
       "role": "Role",
+      "dates": "Dates",
       "credits": "Credits",
       "awards": "Awards",
       "awardWon": "Winner",
