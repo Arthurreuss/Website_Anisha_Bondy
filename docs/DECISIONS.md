@@ -240,3 +240,11 @@ Grund: QA-Lauf vor der Veröffentlichung (D-036).
 - Erledigt (User): alte GitHub-Branches gelöscht, Netlify-Projekt offline, „Preview branches“ in Cloudflare auf None, Formular live getestet – Mails kommen an.
 - Übergangsweise eigene Domain des Users mit Cloudflare verbunden; Anishas Domain folgt später (dann Custom Domain + `SITE_URL` umstellen, HOSTING §3).
 Grund: Rückmeldung des Users.
+
+## D-039 · 2026-09-26 · Antworten von Anisha (Domain, E-Mail, Impressum) + Lieferung Fotos
+- **Domain `anishabondy.com`** (international). Arthur kauft und verwaltet sie, auch die jährliche Verlängerung; Inhaberin laut Empfehlung Anisha ([anfrage-anisha.md](anfrage-anisha.md) §5). Danach Custom Domain + `SITE_URL` umstellen (HOSTING §3).
+- **E-Mail öffentlich und fürs Formular:** anishabondy@gmail.com (Web3Forms-Empfänger stellt der User im Web3Forms-Konto um).
+- **Impressum nach österreichischem Recht** (§ 5 ECG, § 25 MedienG): Steuersitz Wien, Anschrift Riemergasse 6/Top 11, 1010 Wien. Diese Adresse steht im Impressum, weil § 5 ECG die geografische Anschrift verlangt; ein Postfach genügt nicht. Kleinunternehmerin, 2026 ohne UID; die UID wird ab 2027 nachgetragen. Die Steuernummer kommt nicht ins Impressum.
+- Das Impressum ihres Vaters (arpadbondy.com) dient nur als Vorlage für den Urheberrechts-, Bildnachweis- und Link-Hinweis. Der Teil zu RStV/DE, Cookies und Datenschutz wird nicht übernommen: Diese Seite setzt keine Cookies, und die bestehende Datenschutzerklärung (D-032) ist genauer.
+- WeTransfer 25.09.: Fotos zu Dornröschen, Zauberer von Oz, Lene, pOpera; 5 Portraits (Claudia Greco); ein Probenfoto Echnaton/Kosky; Dornröschen-Trailer (.mov); Videolinks, neu davon nur Schneekönigin (vimeo 1136280860); zwei Entwürfe von „Johannes“ = das bekannte Mockup (INHALTE §2).
+Grund: Antworten von Anisha, weitergegeben durch den User.
