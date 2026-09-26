@@ -53,6 +53,7 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
   let dragged = false
   let pointerX = 0
   let enabled = true
+  let frozen = false
   let reducedMotion = false
 
   let observer: Observer | null = null
@@ -93,6 +94,7 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
   const ease = (f: number, frames: number) => 1 - (1 - f) ** frames
 
   function tick(_time: number, deltaMs: number) {
+    if (frozen) return
     const frames = Math.min(4, Math.max(0.25, (deltaMs || FRAME_MS) / FRAME_MS))
     const diff = target - current
     current = Math.abs(diff) < 0.01 ? target : current + diff * ease(FOLLOW, frames)
@@ -242,7 +244,9 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
     mm?.revert()
     resizeObserver?.disconnect()
     cleanups.splice(0).forEach((fn) => fn())
-    applyScale(1)
+    // Eingefroren (Karten-Klick): Die Seite bleibt während des Übergangs sichtbar,
+    // ein Zurückspringen auf scale 1 wäre dort ein Ruck.
+    if (!frozen) applyScale(1)
     items = []
     scalers = []
     setX = []
@@ -256,6 +260,19 @@ export function useInfiniteGallery(container: Ref<HTMLElement | null>, options: 
     setEnabled: (value: boolean) => {
       enabled = value
       if (observer) value ? observer.enable() : observer.disable()
+    },
+    /**
+     * Galerie sofort anhalten (Karten-Klick → Seitenübergang): Nachlauf, Lerp und
+     * Geschwindigkeits-Skalierung stoppen, Eingaben sperren. Sonst gleitet die
+     * Galerie nach einem Trackpad-Scroll unter dem stehenden Klon weiter, bis sie
+     * beim Unmount stehen bleibt und auf scale 1 springt – die Karte wirkt, als
+     * rücke sie ein Stück zur Seite (D-050).
+     */
+    freeze: () => {
+      frozen = true
+      enabled = false
+      target = last = current
+      observer?.disable()
     },
     /** Aktuelle Position (für Übergänge). */
     getPosition: () => current,

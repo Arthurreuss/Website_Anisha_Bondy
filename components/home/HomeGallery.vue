@@ -31,6 +31,7 @@ function onClick(e: MouseEvent) {
   if (!e.defaultPrevented) return
   const item = (e.target as HTMLElement).closest<HTMLElement>('.gallery-item')
   if (item) {
+    gallery.freeze() // vor dem Klonen: nichts gleitet mehr unter dem Klon weiter (D-050)
     startCardTransition(item)
     hoverLift.dropToZero(item)
   }
