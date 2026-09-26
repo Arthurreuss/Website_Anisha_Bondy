@@ -244,7 +244,7 @@ export function leaveCase(el: Element, done: () => void) {
       const sub = gsap.timeline()
       // Bild: auf Hero-Größe; Text: Breite der Zielspalte, damit der Titel dort umbricht wie am Ziel
       const size = key === 'image' ? { width: r.width, height: r.height } : { width: r.width }
-      sub.to(clone, { left: r.left, top: r.top, ...size, duration, ease: morph }, 0)
+      sub.to(clone, { left: r.left, top: r.top, ...size, duration, ease: morph, autoRound: false }, 0)
       extra?.(sub)
       sub.call(() => {
         showLanding(target)

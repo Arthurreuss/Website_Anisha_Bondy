@@ -289,3 +289,10 @@ Grund: Entscheidung des Users.
 - Search Console: Sitemap eingereicht, 38 Seiten erkannt, Status „Gefunden – zurzeit nicht indexiert“ (normal für eine neue Domain).
 - Veröffentlichung auf Zuruf des Users.
 Grund: Entscheidung des Users.
+
+## D-045 · 2026-09-26 · Flicker Karte → Case behoben, Titelband im Menü
+- User meldete ein kurzes Zucken nach dem Klick auf eine Karte, bevor das Bild groß wird. Ursache (Messung je Frame): GSAP rundet `left/top/width/height` standardmäßig auf ganze Pixel (`autoRound`). Der Klon sprang beim Morph-Start von 379.2/420.7 auf 379/421 und wuchs danach in ganzen Pixelschritten. Behoben mit `autoRound: false` im Morph (P20) und im Flug von „next case“ (P21).
+- Bei Video-Karten zeigte der geklonte `<video>` beim Laden kurz sein Poster (Sprung zurück zum Standbild). Jetzt liegt das aktuelle Videobild als Canvas über dem Klon, bis dessen Video läuft (spätestens 1,5 s).
+- Menü (P23): Die großen Seitentitel lagen ohne Hintergrund auf der Seite im Fenster (auf dem Porträt bei „Über mich“, auf der Filterzeile bei „Archiv“). Jetzt liegt hinter dem Titel ein Band in Hintergrundfarbe von der Fensteroberkante bis kurz unter die Schrift (`.page-title--band`, `--band` 0–1). Es blendet mit dem Titel ein und beim Schließen oder Klick auf ein Fenster wieder aus. Gilt nur im Menü, der Fenster-Übergang (P22) bleibt unverändert.
+- Nachweis: Frame-Protokoll des Klons (keine Rundungssprünge mehr), Menü auf About und Case (Desktop), Handy-Menü, Schließen per Esc, Klick auf Fenster bzw. Link. Kein Band bleibt zurück, keine Konsolenfehler.
+Grund: Rückmeldung des Users.

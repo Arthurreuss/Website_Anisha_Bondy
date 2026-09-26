@@ -219,6 +219,9 @@ async function openMenu() {
     if (!parts) return
     // Titel sitzt oben in der Seite: bei gescrollter Seite mitverschieben
     gsap.set(parts.title, { autoAlpha: 1, y: el.scrollTop })
+    // Band hinter dem Titel deckt die Seite darunter ab (D-045)
+    parts.title.classList.add('page-title--band')
+    t.fromTo(parts.title, { '--band': 0 }, { '--band': 1, duration: dur(0.6), ease: 'power2.out' }, dur(STAGGER * i))
     t.fromTo(parts.text, { yPercent: 100 }, { yPercent: 0, duration: d, ease }, dur(STAGGER * i))
   })
   t.fromTo(uiTargets(), { autoAlpha: 0 }, { autoAlpha: 1, duration: dur(0.5), ease: 'power2.out' }, dur(0.4))
@@ -250,7 +253,10 @@ function closeMenu() {
   if (page) {
     t.to(page, { x: 0, y: 0, scale: 1, '--cut': '100%', duration: d, ease }, 0)
     const parts = titleParts(page)
-    if (parts) t.to(parts.text, { yPercent: 100, duration: dur(TITLE_OUT), ease }, 0)
+    if (parts) {
+      t.to(parts.text, { yPercent: 100, duration: dur(TITLE_OUT), ease }, 0)
+      t.to(parts.title, { '--band': 0, duration: dur(TITLE_OUT), ease: 'power2.in' }, 0)
+    }
   }
   triggerEl?.focus()
 }
@@ -261,7 +267,11 @@ function cleanup() {
   tl = null
   if (page) {
     const parts = titleParts(page)
-    if (parts) gsap.set([parts.title, parts.text], { clearProps: 'all' })
+    if (parts) {
+      gsap.set([parts.title, parts.text], { clearProps: 'all' })
+      parts.title.classList.remove('page-title--band')
+      parts.title.style.removeProperty('--band')
+    }
     gsap.set(page, { clearProps: 'all' })
     page.style.removeProperty('--cut')
     window.scrollTo(0, savedScroll)
@@ -316,7 +326,10 @@ async function go(i: number, e: MouseEvent) {
   t.to(uiTargets(), { autoAlpha: 0, duration: dur(0.3) }, 0)
   t.to(win, { x: 0, y: 0, scale: 1, '--cut': '100%', duration: d, ease }, 0)
   const parts = titleParts(win)
-  if (parts) t.to(parts.text, { yPercent: 100, duration: dur(TITLE_OUT), ease }, 0)
+  if (parts) {
+    t.to(parts.text, { yPercent: 100, duration: dur(TITLE_OUT), ease }, 0)
+    t.to(parts.title, { '--band': 0, duration: dur(TITLE_OUT), ease: 'power2.in' }, 0)
+  }
   previews.value.forEach((_, j) => {
     const other = windowEls[j]
     if (other && other !== win) t.to(other, { x: `+=${vw}`, duration: d, ease }, 0)

@@ -78,6 +78,28 @@ function cleanup() {
   pending = null
 }
 
+/** Aktuelles Videobild als Canvas (deckt den Klon ab, solange dessen Video lädt). */
+function snapshot(video: HTMLVideoElement): HTMLCanvasElement | null {
+  if (!video.videoWidth || video.readyState < 2) return null
+  const canvas = document.createElement('canvas')
+  canvas.width = video.videoWidth
+  canvas.height = video.videoHeight
+  try {
+    canvas.getContext('2d')?.drawImage(video, 0, 0)
+  } catch {
+    return null
+  }
+  Object.assign(canvas.style, {
+    position: 'absolute',
+    inset: '0',
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    pointerEvents: 'none',
+  })
+  return canvas
+}
+
 /** Schritt 1 – vom Klick-Handler der Galerie aufgerufen (vor der Navigation). */
 export function startCardTransition(item: HTMLElement) {
   const slug = item.dataset.slug
@@ -105,6 +127,16 @@ export function startCardTransition(item: HTMLElement) {
   const originalVideo = img.querySelector<HTMLVideoElement>('video')
   const video = clone.querySelector<HTMLVideoElement>('video')
   if (originalVideo && video) {
+    // Der geklonte <video> muss erst laden und zeigt bis dahin sein Poster –
+    // ein Sprung vom laufenden Bild zurück zum Standbild. Das aktuelle Bild
+    // liegt deshalb als Canvas darüber, bis der Klon wirklich läuft (D-045).
+    const still = snapshot(originalVideo)
+    if (still) {
+      video.after(still)
+      const drop = () => still.remove()
+      video.addEventListener('playing', drop, { once: true })
+      window.setTimeout(drop, 1500)
+    }
     video.muted = true
     video.currentTime = originalVideo.currentTime
     video.play().catch(() => undefined)
@@ -244,6 +276,10 @@ export function useHeroTransition(target: Ref<HTMLElement | null>, slug: string)
           height: to.height,
           duration: MORPH_DURATION,
           ease: morphEase(),
+          // GSAP rundet px-Werte sonst auf ganze Pixel: Der Klon springt im
+          // ersten Frame von z. B. 379.2 auf 379 und wächst dann stufig – das
+          // sichtbare Zucken vor dem Morph (D-045).
+          autoRound: false,
         },
         0,
       )
