@@ -108,20 +108,29 @@ export function startCardTransition(item: HTMLElement) {
   cleanup()
 
   const rect = img.getBoundingClientRect()
+  // Die Karte ist eine eigene Ebene (will-change: transform), verschoben per
+  // translate (Galerie x, Hover y) – oft auf Bruchteil-Pixeln. Der Klon wird
+  // genauso aufgebaut: Layout-Anteil per left/top, Verschiebung per transform.
+  // Nur per left/top gezeichnet sah er anders aus und sprang beim Klick um
+  // ein Stück zur Seite (D-046).
+  const tx = Number(gsap.getProperty(item, 'x')) || 0
+  const ty = Number(gsap.getProperty(item, 'y')) || 0
   const clone = img.cloneNode(true) as HTMLElement
   clone.classList.add('page-transition-clone')
   clone.setAttribute('aria-hidden', 'true')
   Object.assign(clone.style, {
     position: 'fixed',
-    left: `${rect.left}px`,
-    top: `${rect.top}px`,
+    left: `${rect.left - tx}px`,
+    top: `${rect.top - ty}px`,
     width: `${rect.width}px`,
     height: `${rect.height}px`,
     aspectRatio: 'auto',
     margin: '0',
     zIndex: String(CLONE_Z),
     pointerEvents: 'none',
+    willChange: 'transform',
   })
+  gsap.set(clone, { x: tx, y: ty })
 
   // Video nahtlos weiterlaufen lassen
   const originalVideo = img.querySelector<HTMLVideoElement>('video')
@@ -270,8 +279,12 @@ export function useHeroTransition(target: Ref<HTMLElement | null>, slug: string)
       tween.to(
         clone,
         {
+          // Verschiebungs-Anteil läuft gleichzeitig auf 0 – am Ende liegt der
+          // Klon wie der Hero allein per Layout (left/top).
           left: to.left,
           top: to.top,
+          x: 0,
+          y: 0,
           width: to.width,
           height: to.height,
           duration: MORPH_DURATION,

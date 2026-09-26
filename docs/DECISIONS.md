@@ -296,3 +296,10 @@ Grund: Entscheidung des Users.
 - Menü (P23): Die großen Seitentitel lagen ohne Hintergrund auf der Seite im Fenster (auf dem Porträt bei „Über mich“, auf der Filterzeile bei „Archiv“). Jetzt liegt hinter dem Titel ein Band in Hintergrundfarbe von der Fensteroberkante bis kurz unter die Schrift (`.page-title--band`, `--band` 0–1). Es blendet mit dem Titel ein und beim Schließen oder Klick auf ein Fenster wieder aus. Gilt nur im Menü, der Fenster-Übergang (P22) bleibt unverändert.
 - Nachweis: Frame-Protokoll des Klons (keine Rundungssprünge mehr), Menü auf About und Case (Desktop), Handy-Menü, Schließen per Esc, Klick auf Fenster bzw. Link. Kein Band bleibt zurück, keine Konsolenfehler.
 Grund: Rückmeldung des Users.
+
+## D-046 · 2026-09-26 · Rest-Ruck beim Karten-Klick: Klon wie die Karte aufgebaut
+- User: Nach D-045 ist beim Klick noch ein kleiner Ruck zur Seite zu sehen, als werde die Kachel neu geladen.
+- Ursache (nachgestellt mit DPR 2 und Scrollwerten auf Bruchteil-Pixeln, wie beim Trackpad): Die Karte ist eine eigene Ebene (`will-change: transform`) und wird per translate verschoben (Galerie x, Hover y). Der Klon lag dagegen nur per left/top im Layout, dadurch zeichnete der Browser ihn anders. Pixel-Abweichung Klon ↔ Karte: 7,1 / 3,9 / 6,2 (bei ganzen Pixeln 0).
+- Lösung: Der Klon wird genauso aufgebaut wie die Karte. left/top = Layout-Anteil (Rechteck minus Karten-Verschiebung), transform = Karten-Verschiebung, `will-change: transform`. Im Morph läuft die Verschiebung gleichzeitig auf 0, das Ende liegt wie der Hero im Layout. Abweichung danach 1,7 / 1,6 / 0,8, ganze Pixel 0. Der Rest ist Kantenglättung ohne Versatz (Verschiebungstest: Minimum bei 0 px).
+- Verworfen: Galerie und Klon aufs Geräte-Pixelraster runden. Die Abweichung stieg auf bis zu 5,7, weil Bilder bewusst auf Bruchteil-Pixeln gezeichnet werden.
+Grund: Rückmeldung des Users.
