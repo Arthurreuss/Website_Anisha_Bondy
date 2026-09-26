@@ -362,3 +362,7 @@ Grund: Auftrag des Users.
 - Galerie: Abfahrt · Die Vorstellung (3, Koffer-Szene) · Die Musik · Der Abschied (Wasser-Brauch) · Begegnungen (3) · Richtung Istanbul. 16:10 in 1152×720, 4:5 in 576×720. Nachweis „Film: Komische Oper Berlin“. Datum der Abfahrt (29. Mai 2016) laut Einblendung im Film. Keine Personennamen.
 - Todo „Produktionsfotos“ entfällt; bessere Fotos vom Haus bleiben in anfrage-anisha erwünscht.
 Grund: Auftrag des Users.
+
+## D-054 · 2026-09-26 · D-052 und D-053 live
+- Flucht (D-052) und Selam Opera! (D-053) per Fast-Forward nach `main` und `production` übernommen (ein Deploy), auf Zuruf des Users.
+Grund: Freigabe des Users.

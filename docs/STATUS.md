@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-26 · D-039 – D-051 live, D-052, D-053 auf dem Arbeitsstand (D-047 Web-Recherche + Partner-Logos, D-048 Liste gekürzt, D-049 Antworten Anisha); live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-26 · D-039 – D-053 live (D-047 Web-Recherche + Partner-Logos, D-048 Liste gekürzt, D-049 Antworten Anisha); live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
@@ -13,7 +13,7 @@
 - **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
 - **Feinschliff** (D-045, D-046): Flicker Karte → Case (GSAP-Rundung, Video-Klon, Klon wie Karten-Ebene), Titelband im Menü – live. D-050: Galerie hält beim Karten-Klick an (Ruck nach rechts) – live. D-051: Fenster-Scrollbar ausgeblendet (Rest-Ruck) – live.
 - **Projektangaben aus dem Netz** (D-047): Termine (Feld `dates`), Credits, Pressezitate, Partner-Logos mit Links; Showreel-Hinweis raus – live.
-- **Flucht** (D-052): Cover-Schleife + 9 Standbilder aus dem Trailer; **Selam Opera!** (D-053): Bus-Schleife als Cover + Galerie aus dem Dokumentarfilm – nur Arbeitsstand, noch nicht live.
+- **Flucht** (D-052): Cover-Schleife + 9 Standbilder aus dem Trailer; **Selam Opera!** (D-053): Bus-Schleife als Cover + Galerie aus dem Dokumentarfilm – live.
 - **Antworten Anisha** (D-049): Selam-Credits/Clips, Oz-Text, Flucht-Trailer, Klangstreich neu, Mitternachtstür gelöscht, Instagram/LinkedIn – live. Geplant: Box „Season 2026/27“, sobald Anishas Liste (5 Projekte) da ist.
 
 ## Laufende Agenten
@@ -22,7 +22,7 @@
 ## Nächster Schritt
 1. Anisha: Liste Season 2026/27, Fotos, VOCES8-Datum, Rechtsprüfung ([anfrage-anisha.md](anfrage-anisha.md)).
 2. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
-3. User: Flucht und Selam ansehen (D-052, D-053), dann auf Zuruf nach `production`. Karten-Klick nach Trackpad-Scrollen prüfen (D-046, D-050, D-051); Dornröschen-Video auf echtem Gerät.
+3. User: Karten-Klick nach Trackpad-Scrollen prüfen (D-046, D-050, D-051); Dornröschen-Video auf echtem Gerät.
 4. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
 5. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
