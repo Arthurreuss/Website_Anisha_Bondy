@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-26 · Lieferung, SEO, Dornröschen-Video live (D-039 – D-042); live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-26 · Lieferung, SEO, Dornröschen-Video, Kosky-Foto live (D-039 – D-044); live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
@@ -10,15 +10,15 @@
 - **P24 QA** (D-037): offen Safari/iPhone + Abnahme User.
 - **P25 Hosting** (D-032, D-038, D-040): `anishabondy.com` verbunden und live.
 - **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
-- **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §7).
+- **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
 1. User: Live-Seite ansehen (Fotos, Impressum, Kontakt).
-2. User: Search Console bestätigt (DNS-TXT, nicht löschen) → `sitemap.xml` einreichen, Startseite per URL-Prüfung indexieren lassen (HOSTING §5); Dornröschen-Video auf echtem Gerät prüfen.
-3. Anisha: Fotos/Zeitstempel für die Kachel-Projekte (anfrage §7); Nutzung des Kosky-Probenfotos klären.
+2. User: Search Console fertig (Sitemap: 38 Seiten); optional „Indexierung beantragen“ für Start/About; Dornröschen-Video auf echtem Gerät prüfen.
+3. Anisha: Liste in [anfrage-anisha.md](anfrage-anisha.md) abarbeiten (Bilder, Projektangaben, Kontakt-Links, rechtliche Prüfung).
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
 ## Bekannte Kleinigkeiten

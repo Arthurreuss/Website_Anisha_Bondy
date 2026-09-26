@@ -1,110 +1,92 @@
-# Was wir von Anisha brauchen
+# Was wir von Anisha noch brauchen
 
-Stand: 2026-09-26 (2) · **Die** Liste offener Fragen und Lieferungen an Anisha (ersetzt INHALTE.md §7). Der erste Entwurf der Seite steht mit echten Inhalten; was noch fehlt, ist auf der Seite als gestrichelter Kasten „offen: …“ markiert. Anisha beantwortet bzw. liefert, Arthur baut ein.
+Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044). Beantwortetes steht in DECISIONS (D-039, D-042, D-043); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
-**Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.), ein Unterordner pro Projekt (`01_peter-pan/`, `02_…`), dazu `00_allgemein/` für Portrait und Texte. Antworten gern direkt unter die Fragen.
-
-**Beantwortet am 26.09. (D-039):** E-Mail (1.1), Domain (§5 → `anishabondy.com`), Impressum-Angaben (§6: Wien, Kleinunternehmerin ohne UID), Portraits (Claudia Greco), Fotos zu Dornröschen, Zauberer von Oz, Lene und pOpera, Video Schneekönigin. Schon eingebaut.
-
-**Antworten 26.09. (D-042):** a. Größere Oz-Fotos gibt es nicht. · b. Wer das Kosky-Probenfoto gemacht hat, ist unbekannt; die Nutzung klärt Anisha noch, bis dahin wird es nicht verwendet. · c. Der Dornröschen-Trailer läuft als stumme Schleife auf dem Cover; die Credits aus dem Trailer sind übernommen. · d. Tätigkeit: „Regisseurin, Oper & Musiktheater“. · e. Anisha ist auf dem pOpera-Cover, auf dem ersten Bild der Dreiergruppe und auf dem Chorbild darunter.
-
-## 7 · Bilder für Projekte, die noch eine farbige Kachel haben
-
-Offen sind **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, Flucht, VOCES8** (alle auf der Startseite) sowie im Archiv **Die Schneekönigin, Die Mitternachtstür, Les espaces acoustiques, Vivier 70/35**. **Selam Opera!** hat vorläufig ein Standbild aus einem Pop-Up-Clip.
-
-Am besten in dieser Reihenfolge:
-1. **Pressefotos der Häuser.** Die Philharmonie Luxembourg hat zu Dornröschen, Lene und pOpera schon Fotos geliefert (Inês Rebelo de Andrade, Alfonso Salgueiro, Laurent Sturm). Bitte bei der Presseabteilung auch nach **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, VOCES8 und Flucht** fragen. Pro Projekt reichen 3–6 Fotos, dazu der Name der Fotograf:in.
-2. **Wenn es keine Fotos gibt: Szenen aus den Videos.** Pro Projekt 1–3 Stellen als Minute:Sekunde, die Anisha besonders gefallen (z. B. „Peter Pan 12:40 – Flugszene“). Hochformat 4:5 ist das Ziel, die Szene sollte also eine Figur oder Gruppe in der Bildmitte zeigen. YouTube lässt Downloads aus unserer Umgebung nicht zu, deshalb brauchen wir dazu die **Videodatei** (vom Haus oder per WeTransfer). Daraus schneiden wir Standbilder oder eine kurze stumme Schleife wie bei Dornröschen.
-3. **Selam Opera!:** Gibt es Fotos der Pop-Up-Auftritte? Sonst bleibt das Standbild.
+**Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
 ---
 
-## 1 · Inhalte
+## 1 · Bilder (am dringendsten)
 
-1. ~~**Kontakt:** Welche E-Mail-Adresse steht öffentlich auf der Seite, und **an welche Adresse sollen Anfragen aus dem Kontaktformular gehen**? (Wird für das Formular eingerichtet, D-032.)~~ → anishabondy@gmail.com
-2. **Agentur/Management, Instagram, LinkedIn** – was soll verlinkt werden?
-3. **Bilder:** Kannst du Pressefotos der Häuser (mit Fotograf:in für die Credits) besorgen? Sonst: welche Szenen aus den Videos als Standbild?
-4. **Galerie-Auswahl:** Stimmen die Projekte auf der Startseite und ihre Reihenfolge? „Flucht“ ohne Bildmaterial – ins Archiv?
-5. **Pop-Up-Opera:** Welche Clips hast du selbst inszeniert? Was ist „Eine Frau …“?
-6. **Die Mitternachtstür (UA 2026):** Haus, deine Rolle, Termin?
-7. **Die Schneekönigin:** deine Rolle?
-8. **Preis „Schauspielbühne“:** welcher Preis, welches Jahr?
-9. **Showreel** für den Button oben auf der Startseite vorhanden?
-10. **Zitate** (Tagesspiegel, nachtkritik) und **Partnerlogos:** dürfen wir sie zeigen?
-11. **Schreiben:** „Der Zauberer von Oz“ ist dein erster eigener Text – eigene Kategorie „Writing“ oder unter „Create“?
-12. **Durchsehen:** EN- und DE-Texte einmal gegenlesen (Bio, Projekttexte) – passt Ton und Inhalt?
+Auf der Startseite haben diese Projekte **noch gar kein Bild** (nur eine farbige Kachel) und keine Galerie:
 
-## 4 · Foto- & Video-Auftragsliste
+| Projekt | Was fehlt |
+|---|---|
+| Peter Pan | Cover + Galerie |
+| Hänsel und Gretel | Cover + Galerie |
+| Die Nacht vor Weihnachten | Cover + Galerie |
+| VOCES8 – The World is Turning | Cover + Galerie |
+| Flucht | Cover + Galerie (bisher gar kein Bild- oder Videomaterial) |
+| Selam Opera! | besseres Cover (aktuell ein Standbild aus einem Clip, geringe Auflösung) + Galerie |
 
-### Technische Anforderungen (für alles)
+Im Archiv (weniger dringend): Die Schneekönigin, Die Mitternachtstür, Les espaces acoustiques, Vivier 70/35 – je ein Bild.
+
+**So kommen wir am schnellsten dran:**
+1. **Pressefotos der Häuser.** Die Philharmonie Luxembourg hat zu Dornröschen, Lene und pOpera schon Fotos geliefert (Inês Rebelo de Andrade, Alfonso Salgueiro, Laurent Sturm). Bitte bei der Presseabteilung nach **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, VOCES8 und Flucht** fragen. Pro Projekt 3–6 Fotos, dazu der Name der Fotograf:in.
+2. **Wenn es keine Fotos gibt: Szenen aus den Videos.** Pro Projekt 1–3 Stellen als Minute:Sekunde, die dir besonders gefallen (z. B. „Peter Pan 12:40 – Flugszene“), am besten eine Figur oder Gruppe in der Bildmitte. Dazu brauchen wir die **Videodatei** (vom Haus oder per WeTransfer), weil YouTube keine Downloads zulässt. Daraus machen wir Standbilder oder eine kurze stumme Schleife wie bei Dornröschen.
+
+**Außerdem:**
+- **Showreel** für den Button auf der Startseite – gibt es eins?
+- **Probenfoto mit Barrie Kosky (Echnaton):** ist auf der About-Seite eingebaut. Wenn die Fotograf:in doch noch bekannt wird, bitte den Namen schicken, dann ergänzen wir den Bildnachweis.
+
+Technische Anforderungen an Bilder und Videos: siehe §5.
+
+## 2 · Angaben zu den Projekten
+
+| Projekt | Offen |
+|---|---|
+| Der Zauberer von Oz | genaues Premierendatum |
+| Dornröschen | genaues Premierendatum |
+| Lene fliegt ins Zirkusland | weitere Credits (Dirigat, Zirkus, Ausstattung); Ergebnis YAMawards am 29.09. |
+| pOpera | vollständige Credits (Komposition/Bearbeitung, musikalische Leitung, Team); genaues Premierendatum |
+| Selam Opera! | Welche Pop-Up-Clips hast du selbst inszeniert? |
+| Peter Pan | genaues Premierendatum; weitere Credits (Dirigat, Ausstattung) |
+| Hänsel und Gretel | genaue Termine; weitere Credits |
+| Die Nacht vor Weihnachten | Tagesspiegel-Zitat: genauer Wortlaut und ob wir es zeigen dürfen; Video- oder Dokumentationsmaterial |
+| VOCES8 | genaues Premierendatum; weitere Credits |
+| Flucht | Programm der drei Teile, Termine, weitere Credits |
+| Die Schneekönigin | deine Rolle (Regie/Assistenz?), Komponist:in/Fassung, Credits |
+| Die Mitternachtstür (UA 2026) | Haus, Termin, Stück/Komponist:in, deine Rolle; passt die Säule „Create“? |
+| Les espaces acoustiques | genaues Programm und Datum, Credits |
+| Vivier 70/35 | genaues Programm und Datum, Credits |
+
+Allgemein:
+- **Startseite:** Stimmen Auswahl und Reihenfolge der Projekte? Soll „Flucht“ ohne Bildmaterial ins Archiv?
+- **Schreiben:** „Der Zauberer von Oz“ ist dein erster eigener Text – eigene Kategorie „Writing“ oder unter „Create“ lassen?
+- **Texte gegenlesen:** Bio und Projekttexte auf Deutsch und Englisch einmal durchsehen – passen Ton und Inhalt?
+
+## 3 · About-Seite & Kontakt
+
+- **Preis „Schauspielbühne“:** Welcher Preis, welches Jahr?
+- **Partner und Zitate:** Dürfen wir die Häuser (Komische Oper, Philharmonie Luxembourg, Musikverein, Fondation EME, RSB, ensemble unitedberlin, Zaltimbanq') und die Pressezitate (Tagesspiegel, nachtkritik) nennen? Gibt es Logos?
+- **Kontakt:** Agentur/Management, Instagram, LinkedIn – was soll verlinkt werden (oder die Zeilen weglassen)?
+- **Tipp für Google:** Die Seite ist neu, Google kennt noch keine Links darauf. Wenn du `anishabondy.com` in deinen Profilen einträgst (Instagram, LinkedIn, Künstlerseiten bei Philharmonie/Fondation EME, Agentur), wird sie schneller gefunden.
+
+## 4 · Rechtliches – bitte prüfen lassen
+
+Impressum und Datenschutzerklärung sind ausgefüllt und online (österreichisches Recht: § 5 ECG, § 25 MedienG, DSGVO). Wir haben sie nach bestem Wissen erstellt, **das ist aber keine Rechtsberatung**. Bitte einmal prüfen lassen, z. B. von einer Anwältin/einem Anwalt oder einer Beratungsstelle für Selbständige/Künstler:innen.
+
+Dabei klären:
+1. **Impressum:** Passen Angaben und Tätigkeit („Regisseurin, Oper & Musiktheater“)? Braucht es Angaben zu Gewerbe/Kammer (bei freier künstlerischer Tätigkeit meist nicht)?
+2. **UID:** Ab 2027 die UID-Nummer schicken, dann tragen wir sie ein.
+3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044).
+4. **Datenschutz:** Soll es eine Besucherstatistik geben? (Wenn ja: datenschutzfreundlich, z. B. Plausible – sonst wäre ein Cookie-Banner nötig.) Wie lange sollen Kontaktanfragen aufbewahrt werden?
+
+Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (Cloudflare, Inc., USA; Server-Logfiles mit IP-Adressen) · Kontaktformular über Web3Forms (Weiterleitung per E-Mail an anishabondy@gmail.com) · YouTube/Vimeo erst nach Klick (YouTube über youtube-nocookie.com) · Schrift lokal eingebunden · keine Cookies, kein Tracking.
+
+## 5 · Technische Anforderungen an Bilder und Videos
 
 | Verwendung | Format | Mindestgröße | Hinweis |
 |---|---|---|---|
 | **Cover** (Startseite + großes Bild oben auf der Projektseite) | Hochformat **4:5** | 1600 × 2000 px | wichtigstes Bild; wirkt auch klein, wenig Text im Bild |
 | **Galerie – Einzelbild** | Querformat, ca. **16:10** | 2400 px breit | groß, über die ganze Breite |
-| **Galerie – Dreiergruppe** | 3× Hochformat **4:5** | je 1200 × 1500 px | drei Bilder, die zusammengehören (Serie, Details) |
-| **Video** (optional, als Cover oder in der Galerie) | MP4, 4:5 oder 16:10 | 1080 px auf der kurzen Seite | 5–15 s, **ohne Ton**, soll als Schleife funktionieren, + ein Standbild |
+| **Galerie – Dreiergruppe** | 3× Hochformat **4:5** | je 1200 × 1500 px | drei Bilder, die zusammengehören |
+| **Video** (optional, als Cover oder in der Galerie) | MP4 | 1080 px auf der kurzen Seite | 5–15 s, **ohne Ton**, soll als Schleife funktionieren |
 
-- Dateien: JPG/PNG in voller Qualität, **nicht** vorher verkleinern oder per WhatsApp schicken – wir komprimieren selbst.
-- Dateinamen mit Nummer: `01-cover.jpg`, `02-galerie.jpg`, `03a.jpg`, `03b.jpg`, `03c.jpg` …
-- Fotograf:in und Nutzungsrechte bitte pro Bild notieren (für Credits und damit wir die Bilder zeigen dürfen).
-
-### Pro Projekt (Wunschliste – mindestens ✱)
-
-- [ ] ✱ **1 Cover** 4:5 – das stärkste Motiv des Projekts
-- [ ] ✱ **1–2 Einzelbilder** quer – Gesamtansicht, Key Visual, Mockup in Umgebung
-- [ ] ✱ **1 Dreiergruppe** 4:5 – Details (Typo, Material, Farben, Anwendungen)
-- [ ] 1 weitere Dreiergruppe – z. B. Prozess, Skizzen, Varianten
-- [ ] 1 kurzes Video – Bewegtes aus dem Projekt (Animation, Screen-Recording, Making-of)
-- [ ] Je Gruppe ein Kurztitel (z. B. „Identity“, „Packaging“, „Campaign“)
-
-Besonders gut für Bühnenarbeiten: Aufführungsfotos (Totale + Nahaufnahmen der Darsteller:innen), Probenfotos, Bühnenbild-/Kostümdetails, bei Mitmach-Projekten das Publikum.
-
-### Allgemein (About-Seite, Vorschaubilder)
-
-- [ ] ✱ **Portrait** – 2–3 Varianten, eher ruhig, heller oder neutraler Hintergrund, hoch 4:5 und quer
-- [ ] Arbeitssituation – am Schreibtisch, Skizzen, Material (1–3 Bilder)
-- [ ] **Vorschaubild für Social/Links** (wird beim Teilen angezeigt) – kann auch ein Projektbild sein, 1200 × 630 px
-- [ ] Archiv: pro Arbeit 1 Bild (beliebiges Format) + Titel/Jahr
-
-## 5 · Domain
-
-**Frage an Anisha:** Soll Arthur die Domain kaufen und verwalten?
-Empfehlung: Arthur registriert und verwaltet sie, **Inhaberin wird aber Anisha** (ihr Name/ihre Adresse beim Anbieter) – dann gehört die Domain ihr, auch wenn sich später etwas ändert. Kosten: ca. 5–15 €/Jahr.
-
-Vorschläge (geprüft am 25.09.2026 über die Registry-Abfragen von DENIC bzw. Verisign):
-
-| # | Domain | Status | Preis ca. (INWX, inkl. MwSt.) |
-|---|---|---|---|
-| 1 | **anishabondy.de** ⭐ Empfehlung | frei | ~5,60 € im 1. Jahr, danach ~4,30 €/Jahr |
-| 2 | **anishabondy.com** – international | frei | ~15,60 €/Jahr |
-| 3 | **anishabondy.at** – falls Anisha in Österreich sitzt | unklar (zwei Abfragen widersprechen sich) – vor dem Kauf prüfen | ~14,30 €/Jahr |
-
-Ausweichmöglichkeit: `anisha-bondy.de` ist ebenfalls frei. Optional `.de` + `.com` kaufen und `.com` auf `.de` weiterleiten. Die Seite läuft auf Cloudflare Pages (D-032); wie die Domain dort angebunden wird, steht in [HOSTING.md](HOSTING.md) (HTTPS inklusive).
-
-## 6 · Impressum & Datenschutz
-
-Beides ist für eine geschäftliche Website Pflicht (DE: § 5 DDG · AT: § 5 ECG + § 25 MedienG). Die Texte erstellen wir mit einem Generator (z. B. e-recht24.de oder datenschutz-generator.de) – verantwortlich bleibt Anisha, das hier ist keine Rechtsberatung.
-
-**Für das Impressum brauchen wir:**
-1. Voller Name (bzw. Firmenname und Rechtsform, falls vorhanden)
-2. **Ladungsfähige Anschrift** – kein Postfach. Wenn die Privatadresse nicht öffentlich sein soll: Geschäftsadresse/Adress-Service besorgen.
-3. E-Mail-Adresse + zweiter schneller Kontaktweg (Telefon oder das Kontaktformular)
-4. Umsatzsteuer-ID (DE: USt-IdNr. / AT: UID), falls vorhanden – oder Kleinunternehmerin?
-5. **Wohnt/arbeitet Anisha in Deutschland oder Österreich?** (entscheidet, welche Regeln gelten)
-6. Nur Österreich: Gewerbe/WKO-Mitgliedschaft, Unternehmensgegenstand
-7. Berufsbezeichnung, wie sie im Impressum stehen soll (z. B. „Regisseurin“)
-
-**Für die Datenschutzerklärung – was die Seite aktuell tut:**
-- Hosting bei **Cloudflare Pages** (Cloudflare, Inc., USA; Server-Logfiles mit IP-Adressen)
-- **Kontaktformular** über den Dienst **Web3Forms** (Name, E-Mail, Nachricht und weitere Felder werden per E-Mail weitergeleitet)
-- Videos von YouTube/Vimeo erst nach Klick (vorher keine Verbindung, YouTube über youtube-nocookie.com)
-- Schrift lokal eingebunden (keine Google-Fonts-Anfragen), keine Cookies, kein Tracking → **kein Cookie-Banner nötig**
-
-**Fragen dazu:**
-1. Soll es eine Besucherstatistik geben? (Wenn ja: datenschutzfreundlich, z. B. Plausible – sonst Cookie-Banner nötig.)
-2. Wie lange sollen Kontaktanfragen aufbewahrt werden?
+- Dateien in voller Qualität, **nicht** per WhatsApp schicken – wir verkleinern selbst. Querformat-Fotos gehen auch, wir schneiden zu.
+- Fotograf:in und Nutzungsrechte bitte pro Bild notieren (für den Bildnachweis).
+- Besonders gut für Bühnenarbeiten: Aufführungsfotos (Totale + Nahaufnahmen), Probenfotos, Details von Bühne/Kostüm, bei Mitmach-Projekten das Publikum.
 
 ---
 
-**Kurz: das Wichtigste zuerst** – E-Mail für das Formular (1.1), Bilder/Pressefotos (1.3 + 4), Galerie-Auswahl (1.4), Anschrift/Land für das Impressum (6), Go für die Domain (5).
+**Kurz: das Wichtigste zuerst** – Pressefotos der Philharmonie (§1), Showreel, Kontakt-Links (§3), rechtliche Prüfung (§4).

@@ -281,3 +281,11 @@ Grund: Antworten und Entscheidungen des Users.
 - Entfernt: Selam-Hinweis zum Clip „Eine Frau …“ (nicht in Anishas Link-Liste, also nicht vorhanden) und „Entwurf – vor Livegang rechtlich prüfen“ im Datenschutz (Verantwortliche eingetragen, Seite live; eine rechtliche Prüfung bleibt Anishas Sache, anfrage §6).
 - Regel für später: Beantwortete Punkte entfernt, wer die Antwort einbaut, im selben Commit.
 Grund: Entscheidung des Users.
+
+## D-044 · 2026-09-26 · Kosky-Probenfoto trotz unbekannter Fotograf:in, Liste an Anisha neu gefasst
+- User: Das Probenfoto „Echnaton“ mit Barrie Kosky kommt auf die Seite, auch wenn die Fotograf:in unbekannt ist; das Restrisiko nimmt er in Kauf. Eingebaut auf der About-Seite unter „Zusammengearbeitet mit“ (3:2, Bildunterschrift, ohne Bildnachweis). Ersetzt den Punkt „bis dahin nicht verwenden“ aus D-042.
+- „Entwurf“-Hinweis im Datenschutz bleibt entfernt (D-043); die rechtliche Prüfung steht als Aufgabe für Anisha in anfrage-anisha.md §4.
+- anfrage-anisha.md neu gefasst: nur noch offene Punkte, gegliedert nach Bildern, Projektangaben, About/Kontakt, Rechtlichem und technischen Anforderungen. Die Abschnittsnummern haben sich geändert (Kachel-Bilder jetzt §1).
+- Search Console: Sitemap eingereicht, 38 Seiten erkannt, Status „Gefunden – zurzeit nicht indexiert“ (normal für eine neue Domain).
+- Veröffentlichung auf Zuruf des Users.
+Grund: Entscheidung des Users.
