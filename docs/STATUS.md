@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-26 · Lieferung, SEO, Dornröschen-Video, Kosky-Foto live (D-039 – D-044); live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-26 · Lieferung, SEO, Dornröschen-Video, Kosky-Foto, Flicker-Fix + Menü-Titelband live (D-039 – D-045); live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
@@ -11,13 +11,14 @@
 - **P25 Hosting** (D-032, D-038, D-040): `anishabondy.com` verbunden und live.
 - **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
 - **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
+- **Feinschliff** (D-045): Flicker Karte → Case behoben (GSAP-Rundung, Video-Klon), Titelband im Menü – live.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. User: Live-Seite ansehen (Fotos, Impressum, Kontakt).
-2. User: Search Console fertig (Sitemap: 38 Seiten); optional „Indexierung beantragen“ für Start/About; Dornröschen-Video auf echtem Gerät prüfen.
+1. User: Live-Seite ansehen – Karten-Übergang (kein Zucken mehr?), Menü-Titel, Dornröschen-Video auf echtem Gerät.
+2. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
 3. Anisha: Liste in [anfrage-anisha.md](anfrage-anisha.md) abarbeiten (Bilder, Projektangaben, Kontakt-Links, rechtliche Prüfung).
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
@@ -34,4 +35,4 @@
 
 ## Offene Fragen an den User
 - Abnahme P24 (Safari/iPhone).
-- „offen: …“-Kästen (`showTodos`) sind live sichtbar und werden von Google mitgelesen – ausblenden (`NUXT_PUBLIC_SHOW_TODOS=false`)?
+- Menü mit 4 Fenstern: „Über mich“ am Fensterrand angeschnitten (schon vor D-045) – Titel dort kleiner?
