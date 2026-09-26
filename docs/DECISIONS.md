@@ -355,3 +355,10 @@ Grund: Rückmeldung des Users.
 - Galerie: 9 Standbilder (jeweils das schärfste Bild einer Einstellung), 16:10 in 1728×1080 bzw. 4:5 in 864×1080 – nicht hochskaliert, Quelle ist nur 1080p. Blöcke: Auf der Bühne, Stimmen (3), Die Band, Räume (3), Der Saal. Nachweis: „Trailer: Komische Oper Berlin“. Keine Personennamen in Alt-Texten (Mitwirkende im Bild nicht belegt).
 - Platzhalter `cover.svg` und der Todo-Hinweis entfallen; „Flucht“ bleibt damit auf der Startseite (offen aus D-049). Rechte liegen beim Haus → Punkt in [anfrage-anisha.md](anfrage-anisha.md) bleibt: bessere Fotos/Originaldatei von der Komischen Oper wären willkommen.
 Grund: Auftrag des Users.
+
+## D-053 · 2026-09-26 · Selam Opera!: Bus-Schleife als Cover, Galerie aus dem Dokumentarfilm
+- Quelle: Dokumentarfilm „Eine Opernreise“ der Komischen Oper (ne6MrSY6MhM, nur 720p, 2:10), vom User hochgeladen. Der Film war schon als Video auf der Case-Seite eingebunden (D-049) und bleibt dort.
+- Cover (Wunsch des Users): der losfahrende Operndolmuş, 12 s, eine durchgehende Einstellung (Sängerin winkt aus dem Fenster → „Selam Opera!“-Schriftzug → Bus biegt ab und fährt die Straße hinunter) plus der Moment davor (Wasser wird hinterhergegossen), so gedreht, dass der einzige Schnitt der Schleifenübergang ist. 4:5 in 576×720 (nicht hochskaliert), `cover.mp4` ~1,5 MB, Standbild = erster Frame. Ersetzt das vorläufige Cover aus D-042; dieses wandert als „Begegnungen“ in die Galerie (`05c.jpg`).
+- Galerie: Abfahrt · Die Vorstellung (3, Koffer-Szene) · Die Musik · Der Abschied (Wasser-Brauch) · Begegnungen (3) · Richtung Istanbul. 16:10 in 1152×720, 4:5 in 576×720. Nachweis „Film: Komische Oper Berlin“. Datum der Abfahrt (29. Mai 2016) laut Einblendung im Film. Keine Personennamen.
+- Todo „Produktionsfotos“ entfällt; bessere Fotos vom Haus bleiben in anfrage-anisha erwünscht.
+Grund: Auftrag des Users.

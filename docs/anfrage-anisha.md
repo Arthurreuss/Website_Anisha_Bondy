@@ -17,7 +17,7 @@ Auf der Startseite haben diese Projekte **noch gar kein Bild** (nur eine farbige
 | Die Nacht vor Weihnachten | Cover + Galerie |
 | VOCES8 – The World is Turning | Cover + Galerie |
 | Flucht | Nur Standbilder aus dem YouTube-Trailer (D-052) – echte Fotos wären besser |
-| Selam Opera! | besseres Cover (aktuell ein Standbild aus einem Clip, geringe Auflösung) + Galerie – gern vom Operndolmuş |
+| Selam Opera! | Cover + Galerie jetzt aus dem Dokumentarfilm (D-053, nur 720p) – echte Fotos vom Operndolmuş wären besser |
 
 Im Archiv (weniger dringend): Die Schneekönigin, Les espaces acoustiques, Vivier 70/35 – je ein Bild. Klangstreich: Fotos nach der Premiere (11.10.).
 

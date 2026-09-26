@@ -13,15 +13,17 @@ export default defineProject({
   role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' },
   tags: { en: ['Pop-up opera', 'Intercultural', 'Public space'], de: ['Pop-Up-Opera', 'Interkulturell', 'Öffentlicher Raum'] },
   cover: {
-    // Vorläufig: Standbild aus dem Pop-Up-Clip (YouTube-Vorschaubild, D-042)
-    type: 'image',
-    src: '/media/selam-opera/cover.jpg',
+    // Operndolmuş-Abfahrt aus dem Dokumentarfilm „Eine Opernreise“ (D-053)
+    type: 'video',
+    src: '/media/selam-opera/cover.mp4',
+    poster: '/media/selam-opera/cover-poster.jpg',
     alt: {
-      en: 'A singer in a beret and leather jacket sings with outstretched arms among the audience of a pop-up opera.',
-      de: 'Eine Sängerin mit Baskenmütze und Lederjacke singt mit ausgebreiteten Armen mitten im Publikum einer Pop-Up-Oper.',
+      en: 'The Operndolmuş minibus with the lettering “Selam Opera!” sets off; a singer waves from the window, water is poured after it.',
+      de: 'Der Operndolmuş mit der Aufschrift „Selam Opera!“ fährt los, eine Sängerin winkt aus dem Fenster, hinterher wird Wasser gegossen.',
     },
     width: 576,
     height: 720,
+    credit: 'Film: Komische Oper Berlin',
   },
   intro: {
     en: [
@@ -33,6 +35,146 @@ export default defineProject({
       'Das bekannteste Kapitel, der Operndolmuş, folgte mit einem Kleinbus der historischen Route der türkischen „Gastarbeiter“-Generation von Berlin nach Istanbul, mit Auftritten und geteilten Geschichten unterwegs – ausgezeichnet mit dem BKM-Preis Kulturelle Bildung 2017. Das Projekt lief von 2015 bis 2022.',
     ],
   },
+  gallery: [
+    {
+      type: 'single',
+      label: { en: 'Departure', de: 'Abfahrt' },
+      media: {
+        type: 'image',
+        src: '/media/selam-opera/01.jpg',
+        alt: {
+          en: 'The silver minibus with the turquoise lettering “Selam Opera!” leaves Berlin on 29 May 2016.',
+          de: 'Der silberne Kleinbus mit der türkisen Aufschrift „Selam Opera!“ fährt am 29. Mai 2016 in Berlin los.',
+        },
+        width: 1152,
+        height: 720,
+        credit: 'Film: Komische Oper Berlin',
+      },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'The show', de: 'Die Vorstellung' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/selam-opera/02a.jpg',
+          alt: {
+            en: 'A singer in a floral dress lifts a suitcase above her head; her partner in a leather jacket sits in front of her.',
+            de: 'Eine Sängerin im Blumenkleid stemmt einen Koffer über den Kopf, vor ihr sitzt ihr Partner in Lederjacke.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Film: Komische Oper Berlin',
+        },
+        {
+          type: 'image',
+          src: '/media/selam-opera/02b.jpg',
+          alt: {
+            en: 'The singer with the suitcase behind her partner, a large map flying behind them.',
+            de: 'Die Sängerin mit Koffer hinter ihrem Partner, hinter beiden fliegt eine große Landkarte.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Film: Komische Oper Berlin',
+        },
+        {
+          type: 'image',
+          src: '/media/selam-opera/02c.jpg',
+          alt: {
+            en: 'Both singers at the front of the stage, he with clenched fists as if steering.',
+            de: 'Beide Sänger:innen vorn auf der Bühne, er mit geballten Fäusten wie am Steuer.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Film: Komische Oper Berlin',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'The music', de: 'Die Musik' },
+      media: {
+        type: 'image',
+        src: '/media/selam-opera/03.jpg',
+        alt: {
+          en: 'Double bass and accordion beside the two singers, the audience in front of the stage.',
+          de: 'Kontrabass und Akkordeon neben den beiden Sänger:innen, davor das Publikum.',
+        },
+        width: 1152,
+        height: 720,
+        credit: 'Film: Komische Oper Berlin',
+      },
+    },
+    {
+      type: 'single',
+      label: { en: 'Farewell', de: 'Der Abschied' },
+      media: {
+        type: 'image',
+        src: '/media/selam-opera/04.jpg',
+        alt: {
+          en: 'Children and adults pour water after the departing bus – a Turkish custom for a safe journey.',
+          de: 'Kinder und Erwachsene gießen dem abfahrenden Bus Wasser hinterher – ein türkischer Brauch für eine gute Reise.',
+        },
+        width: 1152,
+        height: 720,
+        credit: 'Film: Komische Oper Berlin',
+      },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'Encounters', de: 'Begegnungen' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/selam-opera/05a.jpg',
+          alt: {
+            en: 'A singer waves, laughing, from the bus window.',
+            de: 'Eine Sängerin winkt lachend aus dem Busfenster.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Film: Komische Oper Berlin',
+        },
+        {
+          type: 'image',
+          src: '/media/selam-opera/05b.jpg',
+          alt: {
+            en: 'Schoolchildren with paper cups see the bus off.',
+            de: 'Schulkinder mit Pappbechern verabschieden den Bus.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Film: Komische Oper Berlin',
+        },
+        {
+          type: 'image',
+          src: '/media/selam-opera/05c.jpg',
+          alt: {
+            en: 'A singer in a beret and leather jacket sings with outstretched arms among the audience of a pop-up opera.',
+            de: 'Eine Sängerin mit Baskenmütze und Lederjacke singt mit ausgebreiteten Armen mitten im Publikum einer Pop-Up-Oper.',
+          },
+          width: 576,
+          height: 720,
+          credit: 'Clip: Komische Oper Berlin',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'Towards Istanbul', de: 'Richtung Istanbul' },
+      media: {
+        type: 'image',
+        src: '/media/selam-opera/06.jpg',
+        alt: {
+          en: 'The bus drives off down a wide street between old buildings.',
+          de: 'Der Bus fährt eine breite Straße zwischen Altbauten hinunter.',
+        },
+        width: 1152,
+        height: 720,
+        credit: 'Film: Komische Oper Berlin',
+      },
+    },
+  ],
   // Pop-Up-Clips unter Anishas Regie (D-049; ohne Waschsalon und Planetarium)
   videos: [
     { provider: 'youtube', id: 'ne6MrSY6MhM', title: { en: 'Operndolmuş – Eine Opernreise (documentary)', de: 'Operndolmuş – Eine Opernreise (Dokumentarfilm)' } },
@@ -70,8 +212,4 @@ export default defineProject({
   ],
   featured: true,
   order: 3,
-  todos: {
-    en: ['Production photos for the gallery'],
-    de: ['Produktionsfotos für die Galerie'],
-  },
 })
