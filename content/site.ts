@@ -94,13 +94,13 @@ export const siteContent: SiteContent = {
   bio: {
     en: [
       'Anisha Bondy was born in London in 1981, with roots in London, Vienna, Mallorca and Berlin. She studied music theatre directing at the mdw – University of Music and Performing Arts Vienna, graduating in 2005 with a production of Carl Orff’s “Die Kluge”. Her early practice took her to Theater Basel and Oper Köln, where she worked alongside Katharina Thalbach, and from 2011 to 2014 she was assistant director at the Bayreuth Festival, on Sebastian Baumgarten’s “Tannhäuser”.',
-      'For many years she worked as a Spielleiterin (revival director) at the Komische Oper Berlin, supported by a scholarship from the Akademie Musiktheater heute (Deutsche Bank Stiftung). From 2015 she spent seven years as artistic director of Selam Opera!, together with Mustafa Akça, developing the formats Pop-Up-Opera and Operndolmuş, and staged concert formats with conductor Vladimir Jurowski.',
-      'Since 2023 she has worked for the Philharmonie Luxembourg and collaborates with the Fondation EME. She has also begun writing herself: her own text for “Der Zauberer von Oz” premieres in 2026. Based in Vienna, she works internationally.',
+      'For many years she worked as a Spielleiterin (revival director) at the Komische Oper Berlin, supported by a scholarship from the Akademie Musiktheater heute (Deutsche Bank Stiftung). From 2015 she spent seven years as creative director and stage director of Selam Opera!, alongside artistic director Mustafa Akça, developing the formats Pop-Up-Opera and Operndolmuş, and staged concert formats with conductor Vladimir Jurowski.',
+      'Since 2023 she has worked for the Philharmonie Luxembourg and collaborates with the Fondation EME. She has also begun writing herself: for “Der Zauberer von Oz” (2026) she wrote the text together with Suse Wächter. Based in Vienna, she works internationally.',
     ],
     de: [
       'Anisha Bondy wurde 1981 in London geboren, mit Wurzeln in London, Wien, Mallorca und Berlin. Sie studierte Musiktheaterregie an der mdw – Universität für Musik und darstellende Kunst Wien und schloss 2005 mit einer Inszenierung von Carl Orffs „Die Kluge“ ab. Erste Praxis sammelte sie am Theater Basel und an der Oper Köln, dort auch mit Katharina Thalbach, und von 2011 bis 2014 war sie Regieassistentin bei den Bayreuther Festspielen, bei Sebastian Baumgartens „Tannhäuser“.',
-      'Langjährig arbeitete sie als Spielleiterin an der Komischen Oper Berlin, gefördert mit einem Stipendium der Akademie Musiktheater heute (Deutsche Bank Stiftung). Ab 2015 war sie sieben Jahre lang szenische Leiterin von Selam Opera!, gemeinsam mit Mustafa Akça, und entwickelte die Formate Pop-Up-Opera und Operndolmuş sowie szenische Konzertformate mit dem Dirigenten Vladimir Jurowski.',
-      'Seit 2023 arbeitet sie für die Philharmonie Luxembourg und in Zusammenarbeit mit der Fondation EME. Inzwischen beginnt sie auch selbst zu schreiben: Ihr eigener Text zu „Der Zauberer von Oz“ hat 2026 Premiere. Sie lebt in Wien und arbeitet international.',
+      'Langjährig arbeitete sie als Spielleiterin an der Komischen Oper Berlin, gefördert mit einem Stipendium der Akademie Musiktheater heute (Deutsche Bank Stiftung). Ab 2015 war sie sieben Jahre lang Creative Director und Regisseurin von Selam Opera! an der Seite des künstlerischen Leiters Mustafa Akça und entwickelte die Formate Pop-Up-Opera und Operndolmuş sowie szenische Konzertformate mit dem Dirigenten Vladimir Jurowski.',
+      'Seit 2023 arbeitet sie für die Philharmonie Luxembourg und in Zusammenarbeit mit der Fondation EME. Inzwischen schreibt sie auch selbst: Den Text zu „Der Zauberer von Oz“ (2026) verfasste sie gemeinsam mit Suse Wächter. Sie lebt in Wien und arbeitet international.',
     ],
   },
 
@@ -147,7 +147,7 @@ export const siteContent: SiteContent = {
   ],
 
   todos: {
-    en: ['Nomination “Schauspielbühne” (prize and year?)'],
-    de: ['Nominierung „Schauspielbühne“ (Preis und Jahr?)'],
+    en: [],
+    de: [],
   },
 }

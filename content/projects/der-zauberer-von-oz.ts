@@ -31,11 +31,11 @@ export default defineProject({
   intro: {
     en: [
       'A music theatre production for the whole family, combining live music with puppetry: Dorothy’s journey through Oz unfolds through song, sound and puppet figures built and performed by Suse Wächter.',
-      'The text is Anisha Bondy’s first own libretto, written together with the production’s staging. The piece is a co-production of the Philharmonie Luxembourg and the Musikverein Vienna, with a further run at the Brucknerhaus Linz planned for March 2027.',
+      'Anisha Bondy wrote the text together with Suse Wächter – her first own libretto, developed alongside the staging. The piece is a co-production of the Philharmonie Luxembourg and the Musikverein Vienna, with a further run at the Brucknerhaus Linz planned for March 2027.',
     ],
     de: [
       'Ein Musiktheaterstück für die ganze Familie, das live gespielte Musik mit Puppenspiel verbindet: Dorothys Reise durch Oz entsteht aus Gesang, Klang und Puppenfiguren, gebaut und gespielt von Suse Wächter.',
-      'Der Text ist Anisha Bondys erstes eigenes Libretto, entstanden gemeinsam mit der Inszenierung. Das Stück ist eine Koproduktion der Philharmonie Luxembourg und des Musikvereins Wien, eine weitere Vorstellungsserie am Brucknerhaus Linz ist für März 2027 geplant.',
+      'Den Text schrieb Anisha Bondy gemeinsam mit Suse Wächter – ihr erstes eigenes Libretto, entstanden zusammen mit der Inszenierung. Das Stück ist eine Koproduktion der Philharmonie Luxembourg und des Musikvereins Wien, eine weitere Vorstellungsserie am Brucknerhaus Linz ist für März 2027 geplant.',
     ],
   },
   gallery: [
@@ -155,7 +155,7 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Matthias Werner' },
     { role: { en: 'Text & direction', de: 'Text & Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Text, puppets & concept', de: 'Text, Puppen & Konzept' }, name: 'Suse Wächter' },
+    { role: { en: 'Text, puppets, puppetry & concept', de: 'Text, Puppen, Puppenspiel & Konzept' }, name: 'Suse Wächter' },
     { role: { en: 'Costume & set', de: 'Kostüm & Bühne' }, name: 'Renate Vogg' },
     { role: { en: 'Performer', de: 'Spiel' }, name: 'Lenya Gramß' },
     { role: { en: 'Clarinet', de: 'Klarinette' }, name: 'Frédéric Alvarado-Dupuy' },

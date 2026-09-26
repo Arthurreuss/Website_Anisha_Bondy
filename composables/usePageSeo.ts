@@ -1,6 +1,6 @@
 // Titel, Beschreibung und Vorschau für Suchmaschinen und geteilte Links (D-041).
 // canonical/hreflang/og:locale kommen aus useLocaleHead in app.vue.
-import { contactEmail } from '~/content/legal'
+import { contactEmail, socialLinks } from '~/content/legal'
 
 interface PageSeo {
   title: () => string
@@ -49,6 +49,7 @@ export function usePersonSchema() {
             image: `${siteUrl}/media/about/portrait.jpg`,
             jobTitle: t('seo.jobTitle'),
             email: `mailto:${contactEmail}`,
+            sameAs: [socialLinks.instagram.url, socialLinks.linkedin.url],
             address: { '@type': 'PostalAddress', addressLocality: 'Wien', addressCountry: 'AT' },
             alumniOf: { '@type': 'CollegeOrUniversity', name: 'mdw – Universität für Musik und darstellende Kunst Wien' },
           }),

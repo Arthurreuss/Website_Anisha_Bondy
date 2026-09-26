@@ -34,7 +34,7 @@ export default defineProject({
       'Die Produktion war im Dezember 2022 in der Philharmonie Berlin zu sehen.',
     ],
   },
-  videos: [],
+  videos: [{ provider: 'youtube', id: '0SRwI1FEzZM', title: { en: 'The Night Before Christmas – trailer (RSB)', de: 'Die Nacht vor Weihnachten – Trailer (RSB)' } }],
   credits: [
     { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
     { role: { en: 'Scenic staging', de: 'Szenische Einrichtung' }, name: 'Anisha Bondy' },
@@ -67,11 +67,9 @@ export default defineProject({
   order: 8,
   todos: {
     en: [
-      'Video/documentation material',
       'Production photos for the gallery',
     ],
     de: [
-      'Video-/Dokumentationsmaterial',
       'Produktionsfotos für die Galerie',
     ],
   },

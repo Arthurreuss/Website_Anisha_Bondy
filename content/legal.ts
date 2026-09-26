@@ -7,6 +7,12 @@ import type { L } from '~/types/project'
 /** Kontakt-E-Mail (D-039) – auch im Kontakt-Overlay verwendet. */
 export const contactEmail = 'anishabondy@gmail.com'
 
+/** Profile (D-049) – Kontakt-Overlay und JSON-LD `sameAs`. Agentur gibt es noch nicht. */
+export const socialLinks = {
+  instagram: { label: '@anishabondy', url: 'https://www.instagram.com/anishabondy/' },
+  linkedin: { label: 'Anisha Bondy', url: 'https://www.linkedin.com/in/anisha-bondy-20830364/' },
+}
+
 export interface ImprintField {
   key: string
   label: L<string>

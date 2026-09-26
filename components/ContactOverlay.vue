@@ -4,8 +4,7 @@
 // NUXT_PUBLIC_WEB3FORMS_KEY bzw. runtimeConfig.public.web3formsKey).
 // Öffnen/Schließen wie MenuOverlay (clip-path + CustomEase).
 import { CustomEase } from 'gsap/CustomEase'
-import UiTodo from '~/components/ui/UiTodo.vue'
-import { contactEmail } from '~/content/legal'
+import { contactEmail, socialLinks } from '~/content/legal'
 
 const overlay = useOverlay()
 const { $gsap, $lenis } = useNuxtApp()
@@ -284,16 +283,20 @@ async function onSubmit() {
             <dd><a :href="`mailto:${contactEmail}`" class="contact-overlay__mail">{{ contactEmail }}</a></dd>
           </div>
           <div class="contact-overlay__info-item">
-            <dt>{{ $t('contact.info.agency') }}</dt>
-            <dd><UiTodo /></dd>
-          </div>
-          <div class="contact-overlay__info-item">
             <dt>{{ $t('contact.info.instagram') }}</dt>
-            <dd><UiTodo /></dd>
+            <dd>
+              <a :href="socialLinks.instagram.url" target="_blank" rel="noopener noreferrer" class="contact-overlay__mail">
+                {{ socialLinks.instagram.label }}
+              </a>
+            </dd>
           </div>
           <div class="contact-overlay__info-item">
             <dt>{{ $t('contact.info.linkedin') }}</dt>
-            <dd><UiTodo /></dd>
+            <dd>
+              <a :href="socialLinks.linkedin.url" target="_blank" rel="noopener noreferrer" class="contact-overlay__mail">
+                {{ socialLinks.linkedin.label }}
+              </a>
+            </dd>
           </div>
         </dl>
       </div>

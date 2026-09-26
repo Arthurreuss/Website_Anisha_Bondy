@@ -322,3 +322,16 @@ Grund: Antworten und Auftrag des Users.
 - D-047 samt Merge von `main` (D-046) per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
 Grund: Entscheidung des Users.
 
+## D-049 · 2026-09-26 · Antworten von Anisha (WhatsApp) eingebaut
+- **Selam Opera!:** Credits in dieser Reihenfolge: Mustafa Akça – Artistic Director; Anisha Bondy – Creative Director & Stage Director (auch Rolle und Bio). Clips „Figaros Waschbar“ (+ Director’s Cut) und „Rusalka im Planetarium“ entfernt, alle übrigen hat Anisha inszeniert. Ergänzt: „Super-Sexy-Operetten-Bingo!“ (SO36, lB0Du1RbrOI) und Dokumentarfilm „Eine Opernreise“ zum Operndolmuş (ne6MrSY6MhM); der BKM-Preis 2017 gehört zum Operndolmuş (Label angepasst). „Ring frei für Helena!“ = Boxclub, war schon drin.
+- **Der Zauberer von Oz:** Text von Anisha gemeinsam mit Suse Wächter; die Puppen spielt Suse Wächter (Intro, Credit, Bio).
+- **VOCES8:** Julia Hansen hat das Konzept mitentwickelt (so schon eingetragen). Datum weiter offen.
+- **Flucht:** Jurowski war nicht beteiligt (bestätigt D-047). Flucht III nur als Aufzeichnung (Anisha war im Mutterschutz – steht nicht auf der Seite). Trailer eingebunden (NUGsQ-HoR54).
+- **Die Mitternachtstür:** nicht Anishas Projekt → Projekt und Platzhalter gelöscht.
+- **Klangstreich:** aufnehmen → neues Projekt (Archiv, Platzhalter-Cover). Anisha möchte eine Box **„Season 2026/27“ (upcoming)** mit fünf Projekten; Liste folgt von ihr, erst dann bauen.
+- **Die Nacht vor Weihnachten:** Trailer (RSB, 0SRwI1FEzZM) eingebunden; Fotos sucht Anisha.
+- **„Schauspielbühne“:** gibt es nicht → Hinweis entfernt.
+- **Kontakt:** Instagram (@anishabondy) und LinkedIn verlinkt (auch JSON-LD `sameAs`), keine Agentur → Zeile entfernt. Profile per Web-Suche gefunden.
+- Veröffentlichung auf `main` und `production` auf Zuruf des Users.
+Grund: Antworten von Anisha, weitergegeben durch den User.
+

@@ -1,6 +1,6 @@
 # Was wir von Anisha noch brauchen
 
-Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
+Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047; Antworten D-049). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047, D-049); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
@@ -17,9 +17,9 @@ Auf der Startseite haben diese Projekte **noch gar kein Bild** (nur eine farbige
 | Die Nacht vor Weihnachten | Cover + Galerie |
 | VOCES8 – The World is Turning | Cover + Galerie |
 | Flucht | Cover + Galerie (bisher gar kein Bild- oder Videomaterial) |
-| Selam Opera! | besseres Cover (aktuell ein Standbild aus einem Clip, geringe Auflösung) + Galerie |
+| Selam Opera! | besseres Cover (aktuell ein Standbild aus einem Clip, geringe Auflösung) + Galerie – gern vom Operndolmuş |
 
-Im Archiv (weniger dringend): Die Schneekönigin, Die Mitternachtstür, Les espaces acoustiques, Vivier 70/35 – je ein Bild.
+Im Archiv (weniger dringend): Die Schneekönigin, Les espaces acoustiques, Vivier 70/35 – je ein Bild. Klangstreich: Fotos nach der Premiere (11.10.).
 
 **So kommen wir am schnellsten dran:**
 1. **Pressefotos der Häuser.** Die Philharmonie Luxembourg hat zu Dornröschen, Lene und pOpera schon Fotos geliefert (Inês Rebelo de Andrade, Alfonso Salgueiro, Laurent Sturm). Bitte bei der Presseabteilung nach **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, VOCES8 und Flucht** fragen. Pro Projekt 3–6 Fotos, dazu der Name der Fotograf:in.
@@ -29,17 +29,14 @@ Technische Anforderungen an Bilder und Videos: siehe §5.
 
 ## 2 · Angaben zu den Projekten
 
-Premieren, Termine, Credits und Pressezitate haben wir selbst recherchiert (Seiten der Häuser, Verlage, Presse) und eingebaut – bitte die Projektseiten einmal durchsehen, ob alles stimmt. **Nur diese Punkte ließen sich nicht klären:**
+Antworten vom 26.09. sind eingebaut (D-049). Noch offen:
 
-| Projekt | Frage |
+| Projekt | Offen |
 |---|---|
-| Der Zauberer von Oz | Wer hat den Text geschrieben – du allein oder mit Suse Wächter? (In einer frühen Musikverein-Broschüre stand „Text: Olivier Garofalo“.) Und wer spielt die Puppen: Suse Wächter oder Lenya Gramß? |
-| VOCES8 – The World is Turning | Genaues Datum 2023? War Julia Hansen Konzept oder Bühnenbild? Weitere Beteiligte? |
-| Flucht | Stefan Sanderling hat Flucht I dirigiert – war Vladimir Jurowski überhaupt beteiligt? Hat Flucht III (geplant 15.05.2020) wegen Corona stattgefunden? |
-| Die Mitternachtstür | Die Deutsche Oper am Rhein nennt Mizgîn Bilmen als Regie (UA 14.11.2026, Düsseldorf). Was ist deine Rolle – oder ist ein anderes Projekt gemeint? |
-| Klangstreich (neu gefunden) | Theater an der Wien, ab 11.10.2026, Regie Anisha Bondy. Soll das auf die Seite? Dann nach der Premiere bitte Fotos. |
-| Selam Opera! | Bei welchen Pop-Up-Clips hast du selbst Regie geführt? |
-| Die Nacht vor Weihnachten | Gibt es Video oder Fotos? (Falls du den Tagesspiegel-Artikel hast: den Satz zur Inszenierung schicken, dann zitieren wir ihn.) |
+| **Season 2026/27** | Liste der fünf kommenden Projekte (Titel, Haus, Premiere, deine Rolle) – dafür kommt eine eigene Box „Upcoming“ auf die Seite. Klangstreich ist schon angelegt. |
+| VOCES8 – The World is Turning | Genaues Datum 2023. |
+| Flucht | Der Trailer als Videodatei (vom Haus) – daraus machen wir ein bewegtes Cover. |
+| Die Nacht vor Weihnachten | Fotos (Trailer ist gefunden und eingebaut). |
 
 Allgemein:
 - **Startseite:** Stimmen Auswahl und Reihenfolge der Projekte?
@@ -47,9 +44,7 @@ Allgemein:
 
 ## 3 · About-Seite & Kontakt
 
-- **Preis „Schauspielbühne“:** Welcher Preis, welches Jahr?
-- **Kontakt:** Agentur/Management, Instagram, LinkedIn – was soll verlinkt werden (oder die Zeilen weglassen)?
-- **Tipp für Google:** Die Seite ist neu, Google kennt noch keine Links darauf. Wenn du `anishabondy.com` in deinen Profilen einträgst (Instagram, LinkedIn, Künstlerseiten bei Philharmonie/Fondation EME, Agentur), wird sie schneller gefunden.
+- **Tipp für Google:** Die Seite ist neu, Google kennt noch keine Links darauf. Wenn du `anishabondy.com` in deinen Profilen einträgst (Instagram, LinkedIn, Künstlerseiten bei Philharmonie/Fondation EME), wird sie schneller gefunden.
 
 ## 4 · Rechtliches – bitte prüfen lassen
 
@@ -77,4 +72,4 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 
 ---
 
-**Kurz: das Wichtigste zuerst** – Pressefotos (§1), die offenen Projektfragen (§2), Kontakt-Links (§3), rechtliche Prüfung (§4).
+**Kurz: das Wichtigste zuerst** – Pressefotos (§1), Liste Season 2026/27 (§2), rechtliche Prüfung (§4).
