@@ -275,3 +275,9 @@ Grund: Entscheidung des Users.
 - og:image: Das Porträt (Claudia Greco = Fotografin) zeigt Anisha. Bleibt Standard, bis der User etwas anderes will.
 - Ausrollen auf `production` auf Zuruf des Users (inkl. D-041).
 Grund: Antworten und Entscheidungen des Users.
+
+## D-043 · 2026-09-26 · Hinweis-Kästen nur für echte offene Punkte (präzisiert D-018)
+- User: Die Kästen „offen: …“ bleiben sichtbar, wo wirklich noch etwas fehlt. Was erledigt ist oder was Anisha nicht liefern kann, wird entfernt.
+- Entfernt: Selam-Hinweis zum Clip „Eine Frau …“ (nicht in Anishas Link-Liste, also nicht vorhanden) und „Entwurf – vor Livegang rechtlich prüfen“ im Datenschutz (Verantwortliche eingetragen, Seite live; eine rechtliche Prüfung bleibt Anishas Sache, anfrage §6).
+- Regel für später: Beantwortete Punkte entfernt, wer die Antwort einbaut, im selben Commit.
+Grund: Entscheidung des Users.

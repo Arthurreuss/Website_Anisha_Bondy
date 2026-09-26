@@ -73,12 +73,10 @@ export default defineProject({
   todos: {
     en: [
       'Which pop-up clips did Anisha Bondy direct herself?',
-      'The clip “Eine Frau …” mentioned in the source material could not be identified/linked',
       'Production photos for the gallery',
     ],
     de: [
       'Welche Pop-Up-Clips hat Anisha Bondy selbst inszeniert?',
-      'Der in der Quelle erwähnte Clip „Eine Frau …“ konnte nicht eindeutig zugeordnet/verlinkt werden',
       'Produktionsfotos für die Galerie',
     ],
   },
