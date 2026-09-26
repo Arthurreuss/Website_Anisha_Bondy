@@ -340,4 +340,5 @@ Grund: Antworten von Anisha, weitergegeben durch den User.
 - User: Beim Klick auf eine Kachel rückt sie direkt danach ein Stück nach rechts, erst dann wächst sie.
 - Ursache (nachgemessen nach Scrollen per Rad/Trackpad): Die Galerie läuft nach jeder Eingabe per Lerp nach (und verkleinert die Karten je nach Tempo). Beim Klick wird der Klon an der aktuellen Stelle eingefroren, die Galerie gleitet darunter aber weiter nach links, bis die Startseite ~0,1 s später unmountet (Ticker aus, Karten springen auf scale 1). Gemessen: Titel und Nachbarkarten rücken 9,5 px nach links, der Klon bleibt stehen – relativ dazu springt die Kachel nach rechts. D-046 hatte nur den Zustand ohne Nachlauf geprüft.
 - Lösung: `useInfiniteGallery().freeze()` – beim Karten-Klick vor dem Klonen: Ziel = aktuelle Position, Ticker-Update aus, Eingaben (Drag, Rad, Nachlauf) gesperrt; beim Unmount bleibt die Skalierung stehen. Nachmessung: Karte, Titel und Klon bleiben pixelgleich bis zum Morph.
+- Per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
 Grund: Rückmeldung des Users.
