@@ -8,7 +8,7 @@
 ## Aktiv
 - **Inhalte aus WeTransfer 25.09.** (D-039): Impressum (AT) + Verantwortliche im Datenschutz + E-Mail im Kontakt eingetragen; Fotos (Cover + Galerie) für Dornröschen, Zauberer von Oz, Lene, pOpera; About-Portrait (Claudia Greco); Vimeo-Video Schneekönigin. Auf `main` und `production` (D-040).
 - **P24 QA** (D-037): offen Safari/iPhone + Abnahme User.
-- **P25 Hosting** (D-032, D-038, D-040): `anishabondy.com` verbunden und live.
+- **P25 Hosting** ✅ (D-032, D-038, D-040, D-041): `anishabondy.com` live, Formular an Anisha.
 - **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
 - **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
 - **Feinschliff** (D-045): Flicker Karte → Case behoben (GSAP-Rundung, Video-Klon), Titelband im Menü – live.
