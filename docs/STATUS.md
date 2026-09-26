@@ -11,13 +11,13 @@
 - **P25 Hosting** ✅ (D-032, D-038, D-040, D-041): `anishabondy.com` live, Formular an Anisha.
 - **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
 - **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
-- **Feinschliff** (D-045, D-046): Flicker Karte → Case (GSAP-Rundung, Video-Klon, Klon wie Karten-Ebene), Titelband im Menü. D-045 live, D-046 auf `main`.
+- **Feinschliff** (D-045, D-046): Flicker Karte → Case (GSAP-Rundung, Video-Klon, Klon wie Karten-Ebene), Titelband im Menü. Beides live.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. User: D-046 freigeben (`production`), dann Karten-Klick nach Trackpad-Scrollen prüfen.
+1. User: Karten-Klick nach Trackpad-Scrollen prüfen (D-046 live).
 2. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
 3. Anisha: Liste in [anfrage-anisha.md](anfrage-anisha.md) abarbeiten (Bilder, Projektangaben, Kontakt-Links, rechtliche Prüfung).
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
