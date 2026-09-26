@@ -1,6 +1,5 @@
 <script setup lang="ts">
-// Bio (dritte Person), 3 Absätze. Wohnort widersprüchlich (Mockup vs. Quellen,
-// siehe INHALTE.md §2/§7) → Mockup-Angabe „Vienna“ verwenden + UiTodo.
+// Bio (dritte Person), 3 Absätze. Wohnort Wien bestätigt (D-039).
 import { siteContent } from '~/content/site'
 import { pick } from '~/content/projects'
 import type { Locale } from '~/types/project'
@@ -23,7 +22,6 @@ useReveal(rootRef)
       <p v-for="(paragraph, i) in paragraphs" :key="i" class="font-body-24" data-reveal="lines">
         {{ paragraph }}
       </p>
-      <UiTodo block>{{ $t('about.residenceTodo') }}</UiTodo>
     </div>
   </section>
 </template>

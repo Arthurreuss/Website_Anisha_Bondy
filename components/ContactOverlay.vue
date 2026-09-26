@@ -5,6 +5,7 @@
 // Öffnen/Schließen wie MenuOverlay (clip-path + CustomEase).
 import { CustomEase } from 'gsap/CustomEase'
 import UiTodo from '~/components/ui/UiTodo.vue'
+import { contactEmail } from '~/content/legal'
 
 const overlay = useOverlay()
 const { $gsap, $lenis } = useNuxtApp()
@@ -280,7 +281,7 @@ async function onSubmit() {
         <dl class="contact-overlay__info-list">
           <div class="contact-overlay__info-item">
             <dt>{{ $t('contact.info.email') }}</dt>
-            <dd><UiTodo /></dd>
+            <dd><a :href="`mailto:${contactEmail}`" class="contact-overlay__mail">{{ contactEmail }}</a></dd>
           </div>
           <div class="contact-overlay__info-item">
             <dt>{{ $t('contact.info.agency') }}</dt>
@@ -422,6 +423,12 @@ async function onSubmit() {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.contact-overlay__mail {
+  text-transform: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .contact-overlay__info-item {

@@ -65,13 +65,11 @@
   },
   "legal": {
     "imprint": {
-      "title": "Imprint",
-      "residenceTodo": "Country of residence to be clarified (DE/AT) – determines the required disclosures"
+      "title": "Imprint"
     },
     "privacy": {
       "title": "Privacy policy",
-      "draftNotice": "Draft — to be reviewed legally before going live",
-      "controllerTodo": "Name and address of the data controller"
+      "draftNotice": "Draft — to be reviewed legally before going live"
     }
   },
   "case": {
@@ -98,7 +96,6 @@
     "portraitAlt": "Portrait of Anisha Bondy",
     "approachEyebrow": "Approach",
     "bioHeading": "Biography",
-    "residenceTodo": "Confirm place of residence (mockup says Vienna, some sources say Berlin)",
     "workedWithHeading": "Worked with",
     "timelineHeading": "Timeline",
     "pressHeading": "Press & awards",

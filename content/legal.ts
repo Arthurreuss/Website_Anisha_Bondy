@@ -1,21 +1,91 @@
 // Inhalte der Rechtsseiten (P16, Aufgabe 5): analog zu content/projects
 // eine Datei mit { en, de } je Text, statt UI-Chrome (das bleibt in
 // i18n/locales/*.json, Schlüssel `legal.*`). Entwurf – siehe UiTodo-Hinweis
-// auf pages/privacy.vue und DECISIONS.md.
+// auf pages/privacy.vue und DECISIONS.md. Angaben seit D-039 (Österreich).
 import type { L } from '~/types/project'
+
+/** Kontakt-E-Mail (D-039) – auch im Kontakt-Overlay verwendet. */
+export const contactEmail = 'anishabondy@gmail.com'
 
 export interface ImprintField {
   key: string
   label: L<string>
+  /** Wert; mehrzeilig mit \n */
+  value: L<string>
 }
 
-/** Pflichtangaben nach § 5 DDG (DE) bzw. § 25 MedienG (AT) – Werte fehlen noch (Todo). */
+/** Pflichtangaben nach österreichischem Recht: § 5 ECG + § 25 MedienG (D-039). */
 export const imprintFields: ImprintField[] = [
-  { key: 'name', label: { en: 'Name', de: 'Name' } },
-  { key: 'address', label: { en: 'Address', de: 'Anschrift' } },
-  { key: 'contact', label: { en: 'Contact (email, phone)', de: 'Kontakt (E-Mail, Telefon)' } },
-  { key: 'vat', label: { en: 'VAT ID (if applicable)', de: 'USt-IdNr. (falls vorhanden)' } },
-  { key: 'responsible', label: { en: 'Responsible for content (§ 55(2) RStV/MStV)', de: 'Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV/MStV)' } },
+  {
+    key: 'name',
+    label: { en: 'Media owner and service provider', de: 'Medieninhaberin und Diensteanbieterin' },
+    value: { en: 'Anisha Bondy', de: 'Anisha Bondy' },
+  },
+  {
+    key: 'profession',
+    label: { en: 'Profession', de: 'Tätigkeit' },
+    value: { en: 'Director, music theatre', de: 'Regisseurin, Musiktheater' },
+  },
+  {
+    key: 'address',
+    label: { en: 'Address', de: 'Anschrift' },
+    value: {
+      en: 'Riemergasse 6/Top 11\n1010 Vienna\nAustria',
+      de: 'Riemergasse 6/Top 11\n1010 Wien\nÖsterreich',
+    },
+  },
+  {
+    key: 'contact',
+    label: { en: 'Contact', de: 'Kontakt' },
+    value: {
+      en: `${contactEmail}\nor via the contact form on this site`,
+      de: `${contactEmail}\noder über das Kontaktformular dieser Website`,
+    },
+  },
+  {
+    key: 'vat',
+    label: { en: 'VAT ID', de: 'UID-Nummer' },
+    value: {
+      en: 'none – small business under Austrian VAT law (§ 6 (1) no. 27 UStG)',
+      de: 'keine – Kleinunternehmerin gemäß § 6 Abs. 1 Z 27 UStG',
+    },
+  },
+  {
+    key: 'direction',
+    label: { en: 'Purpose of this website (§ 25 MedienG)', de: 'Grundlegende Richtung (§ 25 MedienG)' },
+    value: {
+      en: 'Presentation of the artistic work of Anisha Bondy.',
+      de: 'Darstellung der künstlerischen Arbeit von Anisha Bondy.',
+    },
+  },
+]
+
+/** Weitere Hinweise unter den Pflichtangaben (nach Vorlage arpadbondy.com, D-039). */
+export const imprintNotes: { key: string; heading: L<string>; body: L<string> }[] = [
+  {
+    key: 'copyright',
+    heading: { en: 'Copyright', de: 'Urheberrecht' },
+    body: {
+      en: 'All texts, images, videos and other content on this website are protected by copyright. Unless stated otherwise, they belong to Anisha Bondy or to the photographers and institutions named. Any reproduction or use in other electronic or printed publications requires prior permission.',
+      de: 'Alle Texte, Bilder, Videos und sonstigen Inhalte dieser Website sind urheberrechtlich geschützt. Soweit nicht anders angegeben, liegen die Rechte bei Anisha Bondy bzw. bei den genannten Fotograf:innen und Häusern. Eine Vervielfältigung oder Verwendung in anderen elektronischen oder gedruckten Publikationen ist nur mit vorheriger Zustimmung gestattet.',
+    },
+  },
+  {
+    key: 'credits',
+    heading: { en: 'Photo credits', de: 'Bildnachweise' },
+    body: {
+      en: 'Portraits: Claudia Greco. Production photos: credited on the respective project page.',
+      de: 'Porträts: Claudia Greco. Produktionsfotos: jeweils auf der Projektseite angegeben.',
+    },
+  },
+  {
+    key: 'links',
+    heading: { en: 'External links', de: 'Externe Links' },
+    body: {
+      en: 'Despite careful checking, no liability is accepted for the content of external links. The operators of linked pages are solely responsible for their content.',
+      de: 'Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.',
+    },
+  },
 ]
 
 export interface PrivacySection {
@@ -29,7 +99,10 @@ export const privacySections: PrivacySection[] = [
   {
     key: 'controller',
     heading: { en: 'Data controller', de: 'Verantwortliche' },
-    // Kein body: Name/Anschrift fehlen noch, siehe UiTodo auf der Seite.
+    body: {
+      en: `Anisha Bondy, Riemergasse 6/Top 11, 1010 Vienna, Austria · ${contactEmail}`,
+      de: `Anisha Bondy, Riemergasse 6/Top 11, 1010 Wien, Österreich · ${contactEmail}`,
+    },
   },
   {
     key: 'hosting',
@@ -83,8 +156,8 @@ export const privacySections: PrivacySection[] = [
     key: 'rights',
     heading: { en: 'Your rights', de: 'Rechte der Betroffenen' },
     body: {
-      en: 'You have the right to access, rectify, erase or restrict the processing of your personal data, and to data portability, under applicable data protection law.',
-      de: 'Ihnen stehen nach geltendem Datenschutzrecht das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie auf Datenübertragbarkeit zu.',
+      en: 'You have the right to access, rectify, erase or restrict the processing of your personal data, and to data portability, under the GDPR. You also have the right to lodge a complaint with a supervisory authority; in Austria this is the Data Protection Authority (Datenschutzbehörde, dsb.gv.at).',
+      de: 'Ihnen stehen nach geltendem Datenschutzrecht das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie auf Datenübertragbarkeit zu. Außerdem können Sie sich bei einer Aufsichtsbehörde beschweren, in Österreich bei der Datenschutzbehörde (dsb.gv.at).',
     },
   },
 ]

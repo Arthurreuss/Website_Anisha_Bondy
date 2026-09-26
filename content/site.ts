@@ -140,13 +140,11 @@ export const siteContent: SiteContent = {
     en: [
       'Showreel',
       'Nomination “Schauspielbühne” (prize and year?)',
-      'Photo credit for the portrait',
       'Approval to name partners',
     ],
     de: [
       'Showreel',
       'Nominierung „Schauspielbühne“ (Preis und Jahr?)',
-      'Bildnachweis Porträt',
       'Freigabe der Partnernennung',
     ],
   },

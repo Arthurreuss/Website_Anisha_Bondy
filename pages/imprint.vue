@@ -1,9 +1,7 @@
 <script setup lang="ts">
-// Impressum (P16, Aufgabe 5). Struktur nach § 5 DDG bzw. § 25 MedienG (AT) –
-// welches Recht gilt, hängt vom Wohnsitz ab (noch offen, siehe Todo unten).
-// Angaben selbst fehlen noch (D-018: sichtbare Platzhalter via UiTodo).
-import UiTodo from '~/components/ui/UiTodo.vue'
-import { imprintFields } from '~/content/legal'
+// Impressum (P16, Aufgabe 5). Österreichisches Recht: § 5 ECG + § 25 MedienG
+// (D-039). Angaben und Hinweise in content/legal.ts.
+import { imprintFields, imprintNotes } from '~/content/legal'
 
 const { locale, t } = useI18n()
 const currentLocale = computed(() => locale.value as 'en' | 'de')
@@ -17,16 +15,17 @@ useSeoMeta({
   <main class="page page--legal container">
     <h1 class="page__title font-headline-2">{{ $t('legal.imprint.title') }}</h1>
 
-    <UiTodo block :text="$t('legal.imprint.residenceTodo')" class="page__notice" />
-
     <dl class="legal-list">
       <div v-for="field in imprintFields" :key="field.key" class="legal-list__item">
         <dt class="legal-list__label font-body-12 uppercase">{{ field.label[currentLocale] }}</dt>
-        <dd class="legal-list__value font-body">
-          <UiTodo />
-        </dd>
+        <dd class="legal-list__value font-body">{{ field.value[currentLocale] }}</dd>
       </div>
     </dl>
+
+    <section v-for="note in imprintNotes" :key="note.key" class="legal-section">
+      <h2 class="legal-section__heading font-body-24">{{ note.heading[currentLocale] }}</h2>
+      <p class="legal-section__body font-body">{{ note.body[currentLocale] }}</p>
+    </section>
   </main>
 </template>
 
@@ -40,11 +39,16 @@ useSeoMeta({
   margin-bottom: 2.4rem;
 }
 
-.page__notice {
-  margin-bottom: 3.2rem;
+.legal-section {
+  margin-bottom: 2.8rem;
+}
+
+.legal-section__heading {
+  margin-bottom: 0.8rem;
 }
 
 .legal-list {
+  margin-bottom: 4.8rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -54,6 +58,10 @@ useSeoMeta({
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+}
+
+.legal-list__value {
+  white-space: pre-line;
 }
 
 .legal-list__label {

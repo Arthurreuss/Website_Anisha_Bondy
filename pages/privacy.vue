@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // Datenschutz (P16, Aufgabe 5): Entwurf, Abschnitte in content/legal.ts.
-// Verantwortliche fehlt noch (D-018: UiTodo statt erfundener Angabe).
+// Verantwortliche seit D-039 eingetragen.
 import UiTodo from '~/components/ui/UiTodo.vue'
 import { privacySections } from '~/content/legal'
 
@@ -21,9 +21,6 @@ useSeoMeta({
     <section v-for="section in privacySections" :key="section.key" class="legal-section">
       <h2 class="legal-section__heading font-body-24">{{ section.heading[currentLocale] }}</h2>
       <p v-if="section.body" class="legal-section__body font-body">{{ section.body[currentLocale] }}</p>
-      <p v-else class="legal-section__body font-body">
-        <UiTodo :text="$t('legal.privacy.controllerTodo')" />
-      </p>
     </section>
   </main>
 </template>

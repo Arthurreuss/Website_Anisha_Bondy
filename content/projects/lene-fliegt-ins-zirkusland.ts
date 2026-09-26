@@ -17,8 +17,9 @@ export default defineProject({
       en: 'A performer in a red feathered bird costume walks down the aisle through the children in the audience.',
       de: 'Eine Darstellerin im roten Federkostüm geht durch den Mittelgang zwischen den Kindern im Publikum.',
     },
-    width: 342,
-    height: 427,
+    width: 1067,
+    height: 1334,
+    credit: 'Alfonso Salgueiro',
   },
   intro: {
     en: [
@@ -30,6 +31,53 @@ export default defineProject({
       'Die Auftragsproduktion der Philharmonie Luxembourg wurde im April 2025 uraufgeführt und ist für die YAMawards 2026 in der Kategorie „Best Opera“ nominiert.',
     ],
   },
+  gallery: [
+    {
+      type: 'single',
+      label: { en: 'The circus ring', de: 'Die Manege' },
+      media: {
+        type: 'image',
+        src: '/media/lene-fliegt-ins-zirkusland/01.jpg',
+        alt: {
+          en: 'Singers and circus artists gather in the circus ring under purple spotlights.',
+          de: 'Sänger:innen und Artist:innen versammeln sich in der Manege unter violetten Scheinwerfern.',
+        },
+        width: 2000,
+        height: 1250,
+        credit: 'Alfonso Salgueiro',
+      },
+    },
+    {
+      type: 'single',
+      label: { en: 'Performance', de: 'Aufführung' },
+      media: {
+        type: 'image',
+        src: '/media/lene-fliegt-ins-zirkusland/02.jpg',
+        alt: {
+          en: 'Acrobats on a pole above the ensemble in the ring, the circus tent built into the concert hall.',
+          de: 'Akrobat:innen an einer Stange über dem Ensemble in der Manege, das Zirkuszelt im Konzertsaal.',
+        },
+        width: 2000,
+        height: 1250,
+        credit: 'Alfonso Salgueiro',
+      },
+    },
+    {
+      type: 'single',
+      label: { en: 'The hall', de: 'Der Saal' },
+      media: {
+        type: 'image',
+        src: '/media/lene-fliegt-ins-zirkusland/03.jpg',
+        alt: {
+          en: 'Wide view of the hall: the orchestra behind the red ring, the audience in front.',
+          de: 'Weiter Blick in den Saal: das Orchester hinter der roten Manege, davor das Publikum.',
+        },
+        width: 2000,
+        height: 1250,
+        credit: 'Alfonso Salgueiro',
+      },
+    },
+  ],
   videos: [{ provider: 'youtube', id: 'mAt9nKScTB8', title: '«Lene fliegt ins Zirkusland» | Märchenzirkusoper' }],
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Elena Kats-Chernin' },
@@ -41,7 +89,7 @@ export default defineProject({
   featured: true,
   order: 1,
   todos: {
-    en: ['Photo credit for the cover image', 'Further credits (conductor, circus, design)', 'Production photos for the gallery', 'YAMawards result (29 Sept 2026)'],
-    de: ['Bildnachweis für das Cover', 'Weitere Credits (Dirigat, Zirkus, Ausstattung)', 'Produktionsfotos für die Galerie', 'Ergebnis YAMawards (29.09.2026)'],
+    en: ['Further credits (conductor, circus, design)', 'YAMawards result (29 Sept 2026)'],
+    de: ['Weitere Credits (Dirigat, Zirkus, Ausstattung)', 'Ergebnis YAMawards (29.09.2026)'],
   },
 })

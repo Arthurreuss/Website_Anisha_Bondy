@@ -25,7 +25,7 @@ export default defineProject({
       'Eine Produktion der Schneekönigin an der Komischen Oper Berlin im Jahr 2010. Weitere Angaben zu Stück, Besetzung und Team liegen noch nicht vor.',
     ],
   },
-  videos: [],
+  videos: [{ provider: 'vimeo', id: '1136280860', title: { en: 'The Snow Queen', de: 'Die Schneekönigin' } }],
   credits: [],
   awards: [],
   press: [],

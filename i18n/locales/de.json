@@ -65,13 +65,11 @@
   },
   "legal": {
     "imprint": {
-      "title": "Impressum",
-      "residenceTodo": "Land des Wohnsitzes klären (DE/AT) – bestimmt die Pflichtangaben"
+      "title": "Impressum"
     },
     "privacy": {
       "title": "Datenschutz",
-      "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen",
-      "controllerTodo": "Name und Anschrift der/des Verantwortlichen"
+      "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen"
     }
   },
   "case": {
@@ -98,7 +96,6 @@
     "portraitAlt": "Porträt von Anisha Bondy",
     "approachEyebrow": "Haltung",
     "bioHeading": "Biografie",
-    "residenceTodo": "Wohnort bestätigen (Mockup nennt Wien, andere Quellen Berlin)",
     "workedWithHeading": "Zusammengearbeitet mit",
     "timelineHeading": "Werdegang",
     "pressHeading": "Presse & Preise",

@@ -1,14 +1,23 @@
 # Was wir von Anisha brauchen
 
-Stand: 2026-09-25 · **Die** Liste offener Fragen und Lieferungen an Anisha (ersetzt INHALTE.md §7). Der erste Entwurf der Seite steht mit echten Inhalten; was noch fehlt, ist auf der Seite als gestrichelter Kasten „offen: …“ markiert. Anisha beantwortet bzw. liefert, Arthur baut ein.
+Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (ersetzt INHALTE.md §7). Der erste Entwurf der Seite steht mit echten Inhalten; was noch fehlt, ist auf der Seite als gestrichelter Kasten „offen: …“ markiert. Anisha beantwortet bzw. liefert, Arthur baut ein.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.), ein Unterordner pro Projekt (`01_peter-pan/`, `02_…`), dazu `00_allgemein/` für Portrait und Texte. Antworten gern direkt unter die Fragen.
+
+**Beantwortet am 26.09. (D-039):** E-Mail (1.1), Domain (§5 → `anishabondy.com`), Impressum-Angaben (§6: Wien, Kleinunternehmerin ohne UID), Portraits (Claudia Greco), Fotos zu Dornröschen, Zauberer von Oz, Lene und pOpera, Video Schneekönigin. Schon eingebaut.
+
+**Neu offen aus der Lieferung:**
+- a. Zauberer von Oz: Die Fotos von Julia Wesely sind die „small“-Fassung (1182 px). Gibt es sie größer?
+- b. Probenfoto „Barry Kosky – Proben Echnaton“: Wer hat es fotografiert, und darf es auf die About-Seite?
+- c. Dornröschen-Trailer (.mov): als stummer Kurzloop aufs Cover? Das YouTube-Video ist schon eingebunden.
+- d. Tätigkeit im Impressum: Passt „Regisseurin, Musiktheater“? Ab 2027 die UID nachreichen.
+- e. Auf den pOpera-Fotos: Ist das Anisha? (Dann nennen die Bildbeschreibungen sie mit Namen.)
 
 ---
 
 ## 1 · Inhalte
 
-1. **Kontakt:** Welche E-Mail-Adresse steht öffentlich auf der Seite, und **an welche Adresse sollen Anfragen aus dem Kontaktformular gehen**? (Wird für das Formular eingerichtet, D-032.)
+1. ~~**Kontakt:** Welche E-Mail-Adresse steht öffentlich auf der Seite, und **an welche Adresse sollen Anfragen aus dem Kontaktformular gehen**? (Wird für das Formular eingerichtet, D-032.)~~ → anishabondy@gmail.com
 2. **Agentur/Management, Instagram, LinkedIn** – was soll verlinkt werden?
 3. **Bilder:** Kannst du Pressefotos der Häuser (mit Fotograf:in für die Credits) besorgen? Sonst: welche Szenen aus den Videos als Standbild?
 4. **Galerie-Auswahl:** Stimmen die Projekte auf der Startseite und ihre Reihenfolge? „Flucht“ ohne Bildmaterial – ins Archiv?
