@@ -248,3 +248,9 @@ Grund: Rückmeldung des Users.
 - Das Impressum ihres Vaters (arpadbondy.com) dient nur als Vorlage für den Urheberrechts-, Bildnachweis- und Link-Hinweis. Der Teil zu RStV/DE, Cookies und Datenschutz wird nicht übernommen: Diese Seite setzt keine Cookies, und die bestehende Datenschutzerklärung (D-032) ist genauer.
 - WeTransfer 25.09.: Fotos zu Dornröschen, Zauberer von Oz, Lene, pOpera; 5 Portraits (Claudia Greco); ein Probenfoto Echnaton/Kosky; Dornröschen-Trailer (.mov); Videolinks, neu davon nur Schneekönigin (vimeo 1136280860); zwei Entwürfe von „Johannes“ = das bekannte Mockup (INHALTE §2).
 Grund: Antworten von Anisha, weitergegeben durch den User.
+
+## D-040 · 2026-09-26 · Domain registriert, Lieferung D-039 veröffentlicht
+- User: `anishabondy.com` registriert, Web3Forms-Empfänger auf anishabondy@gmail.com umgestellt, Originale der WeTransfer-Lieferung gesichert.
+- Arbeitsbranch per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
+- Offen (User): `anishabondy.com` in Pages als Custom Domain verbinden, `SITE_URL` = `https://anishabondy.com`, dann „Retry deployment“ (HOSTING §1/§3).
+Grund: Entscheidung des Users.
