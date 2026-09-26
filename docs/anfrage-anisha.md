@@ -1,6 +1,6 @@
 # Was wir von Anisha noch brauchen
 
-Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-046). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-046); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
+Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
@@ -29,21 +29,20 @@ Technische Anforderungen an Bilder und Videos: siehe §5.
 
 ## 2 · Angaben zu den Projekten
 
-Premieren, Termine und Credits haben wir aus den Seiten der Häuser übernommen (Philharmonie Luxembourg, Musikverein Wien, RSB, Komische Oper, ensemble unitedberlin) – bitte beim Durchsehen der Projektseiten kurz prüfen. Im Netz **nicht** zu finden war:
+Premieren, Termine, Credits und Pressezitate haben wir selbst recherchiert (Seiten der Häuser, Verlage, Presse) und eingebaut – bitte die Projektseiten einmal durchsehen, ob alles stimmt. **Nur diese Punkte ließen sich nicht klären:**
 
-| Projekt | Offen |
+| Projekt | Frage |
 |---|---|
-| Lene fliegt ins Zirkusland | Ergebnis YAMawards am 29.09. |
-| Selam Opera! | Welche Pop-Up-Clips hast du selbst inszeniert? |
-| Die Nacht vor Weihnachten | Video- oder Dokumentationsmaterial. (Der Tagesspiegel-Artikel ist hinter der Paywall – falls du ihn hast, schick uns den Satz zur Inszenierung, dann zitieren wir ihn.) |
-| VOCES8 – The World is Turning | genaues Datum 2023; weitere Credits (war Julia Hansen Bühnenbildnerin?) |
-| Flucht | Laut Komischer Oper dirigierte **Stefan Sanderling** Flucht I – war Vladimir Jurowski überhaupt beteiligt? Hat Flucht III (angekündigt für 15.05.2020, Corona) stattgefunden? Weitere Credits zu Flucht II. |
-| Die Mitternachtstür | Laut Deutscher Oper am Rhein: Uraufführung 14.11.2026 in Düsseldorf, **Regie Mizgîn Bilmen** (Musik James Reynolds, Text Pamela Dürr). Was ist deine Rolle – oder ist ein anderes Projekt gemeint? |
-| **Klangstreich** (neu gefunden) | Theater an der Wien, österreichische Erstaufführung ab 11.10.2026, **Regie Anisha Bondy** (Marc L. Vogler, a-cappella-Kinderoper). Soll das auf die Seite? Dann bitte Fotos nach der Premiere. |
+| Der Zauberer von Oz | Wer hat den Text geschrieben – du allein oder mit Suse Wächter? (In einer frühen Musikverein-Broschüre stand „Text: Olivier Garofalo“.) Und wer spielt die Puppen: Suse Wächter oder Lenya Gramß? |
+| VOCES8 – The World is Turning | Genaues Datum 2023? War Julia Hansen Konzept oder Bühnenbild? Weitere Beteiligte? |
+| Flucht | Stefan Sanderling hat Flucht I dirigiert – war Vladimir Jurowski überhaupt beteiligt? Hat Flucht III (geplant 15.05.2020) wegen Corona stattgefunden? |
+| Die Mitternachtstür | Die Deutsche Oper am Rhein nennt Mizgîn Bilmen als Regie (UA 14.11.2026, Düsseldorf). Was ist deine Rolle – oder ist ein anderes Projekt gemeint? |
+| Klangstreich (neu gefunden) | Theater an der Wien, ab 11.10.2026, Regie Anisha Bondy. Soll das auf die Seite? Dann nach der Premiere bitte Fotos. |
+| Selam Opera! | Bei welchen Pop-Up-Clips hast du selbst Regie geführt? |
+| Die Nacht vor Weihnachten | Gibt es Video oder Fotos? (Falls du den Tagesspiegel-Artikel hast: den Satz zur Inszenierung schicken, dann zitieren wir ihn.) |
 
 Allgemein:
-- **Startseite:** Stimmen Auswahl und Reihenfolge der Projekte? Soll „Flucht“ ohne Bildmaterial ins Archiv?
-- **Schreiben:** „Der Zauberer von Oz“ ist dein erster eigener Text – eigene Kategorie „Writing“ oder unter „Create“ lassen?
+- **Startseite:** Stimmen Auswahl und Reihenfolge der Projekte?
 - **Texte gegenlesen:** Bio und Projekttexte auf Deutsch und Englisch einmal durchsehen – passen Ton und Inhalt?
 
 ## 3 · About-Seite & Kontakt
@@ -59,7 +58,7 @@ Impressum und Datenschutzerklärung sind ausgefüllt und online (österreichisch
 Dabei klären:
 1. **Impressum:** Passen Angaben und Tätigkeit („Regisseurin, Oper & Musiktheater“)? Braucht es Angaben zu Gewerbe/Kammer (bei freier künstlerischer Tätigkeit meist nicht)?
 2. **UID:** Ab 2027 die UID-Nummer schicken, dann tragen wir sie ein.
-3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044). Ebenso bei den **Logos der Partnerhäuser** auf der About-Seite (von deren Websites übernommen, D-046).
+3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044). Ebenso bei den **Logos der Partnerhäuser** auf der About-Seite (von deren Websites übernommen, D-047).
 
 Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (Cloudflare, Inc., USA; Server-Logfiles mit IP-Adressen) · Kontaktformular über Web3Forms (Weiterleitung per E-Mail an anishabondy@gmail.com) · YouTube/Vimeo erst nach Klick (YouTube über youtube-nocookie.com) · Schrift lokal eingebunden · keine Cookies, kein Tracking.
 
@@ -78,4 +77,4 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 
 ---
 
-**Kurz: das Wichtigste zuerst** – Pressefotos der Philharmonie (§1), Mitternachtstür/Klangstreich (§2), Kontakt-Links (§3), rechtliche Prüfung (§4).
+**Kurz: das Wichtigste zuerst** – Pressefotos (§1), die offenen Projektfragen (§2), Kontakt-Links (§3), rechtliche Prüfung (§4).

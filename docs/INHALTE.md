@@ -40,12 +40,12 @@ Säule = Vorschlag für Direct (D) / Create (C) / Participate (P). ★ = Kandida
 | ★ | **pOpera** – Community Opera nach Romeo & Julia | 2026 | Fondation EME / Philharmonie Luxembourg | Regie | P | [YT Ug5YmCOTu3M](https://youtu.be/Ug5YmCOTu3M) | – |
 | ★ | **Selam Opera!** – Pop-Up-Opera & Operndolmuş (**ein** Projekt, D-017) | 2015–2022 | Komische Oper Berlin, mit Mustafa Akça | szenische Leitung | P | Pop-Up-Clips, siehe unten | **BKM-Preis Kulturelle Bildung 2017** („Auf den Spuren der Gastarbeiterroute“); nachtkritik 2016 |
 | ★ | **Die Nacht vor Weihnachten** (Rimski-Korsakow) | 2022 | RSB · Vladimir Jurowski, Philharmonie Berlin | szenische Einrichtung | C | – | Tagesspiegel: „charmante“ Einrichtung; Bachtrack-Kritik |
-| ★? | **Flucht** – szenische Konzert-Trilogie | 2019/20 | Komische Oper Berlin; Flucht I Ltg. Stefan Sanderling (zitty), Jurowski **nicht belegt** (D-046) | Regie | C | – | – |
+| ★? | **Flucht** – szenische Konzert-Trilogie | 2019/20 | Komische Oper Berlin; Flucht I Ltg. Stefan Sanderling (zitty), Jurowski **nicht belegt** (D-047) | Regie | C | – | – |
 | | Claude Vivier – *70/35 – a sacred act* | 2018 | Konzerthaus Berlin, ensemble unitedberlin · Jurowski | szen. Einrichtung | C | – | hundert11 (gemischt, nicht zitieren) |
 | | Grisey – *Les espaces acoustiques* | 2019 | Konzerthaus Berlin · Jurowski | szen. Einrichtung | C | – | – |
 | | Die Schneekönigin | 2010 | Komische Oper Berlin | Regie | D | – | – |
-| | Die Mitternachtstür (UA) | 2026 | Deutsche Oper am Rhein, UA 14.11.2026 – Regie laut Haus Mizgîn Bilmen (D-046) | ? | ? | – | Rolle Anishas unklar → fragen |
-| | *Klangstreich* (Marc L. Vogler), ÖEA | 2026 | Theater an der Wien, ab 11.10.2026 | Regie | D? | – | neu gefunden (D-046), noch nicht auf der Seite |
+| | Die Mitternachtstür (UA) | 2026 | Deutsche Oper am Rhein, UA 14.11.2026 – Regie laut Haus Mizgîn Bilmen (D-047) | ? | ? | – | Rolle Anishas unklar → fragen |
+| | *Klangstreich* (Marc L. Vogler), ÖEA | 2026 | Theater an der Wien, ab 11.10.2026 | Regie | D? | – | neu gefunden (D-047), noch nicht auf der Seite |
 | | Assistenzen: u. a. Kosky (*Rusalka*, Wiederaufnahme-Regie 2016), Baumgarten (*Tannhäuser*, Bayreuth 2011–14), Thalbach, Guth, Konwitschny, Neuenfels | 2007– | | Regieassistenz / Spielleitung | – | [„My very special Barrie moment“](https://www.youtube.com/watch?v=eWz4lkQRvmQ) (Komische Oper) | – |
 
 **Pop-Up-Opera-Clips** (Kanal Komische Oper Berlin; Zuordnung zu den Google-Links wahrscheinlich, von Anisha bestätigen lassen – auch, bei welchen sie Regie geführt hat):

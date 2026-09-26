@@ -297,7 +297,14 @@ Grund: Entscheidung des Users.
 - Nachweis: Frame-Protokoll des Klons (keine Rundungssprünge mehr), Menü auf About und Case (Desktop), Handy-Menü, Schließen per Esc, Klick auf Fenster bzw. Link. Kein Band bleibt zurück, keine Konsolenfehler.
 Grund: Rückmeldung des Users.
 
-## D-046 · 2026-09-26 · Web-Recherche Projektangaben, Partner mit Logos, Datenschutz-Antworten
+## D-046 · 2026-09-26 · Rest-Ruck beim Karten-Klick: Klon wie die Karte aufgebaut
+- User: Nach D-045 ist beim Klick noch ein kleiner Ruck zur Seite zu sehen, als werde die Kachel neu geladen.
+- Ursache (nachgestellt mit DPR 2 und Scrollwerten auf Bruchteil-Pixeln, wie beim Trackpad): Die Karte ist eine eigene Ebene (`will-change: transform`) und wird per translate verschoben (Galerie x, Hover y). Der Klon lag dagegen nur per left/top im Layout, dadurch zeichnete der Browser ihn anders. Pixel-Abweichung Klon ↔ Karte: 7,1 / 3,9 / 6,2 (bei ganzen Pixeln 0).
+- Lösung: Der Klon wird genauso aufgebaut wie die Karte. left/top = Layout-Anteil (Rechteck minus Karten-Verschiebung), transform = Karten-Verschiebung, `will-change: transform`. Im Morph läuft die Verschiebung gleichzeitig auf 0, das Ende liegt wie der Hero im Layout. Abweichung danach 1,7 / 1,6 / 0,8, ganze Pixel 0. Der Rest ist Kantenglättung ohne Versatz (Verschiebungstest: Minimum bei 0 px).
+- Verworfen: Galerie und Klon aufs Geräte-Pixelraster runden. Die Abweichung stieg auf bis zu 5,7, weil Bilder bewusst auf Bruchteil-Pixeln gezeichnet werden.
+Grund: Rückmeldung des Users.
+
+## D-047 · 2026-09-26 · Web-Recherche Projektangaben, Partner mit Logos, Datenschutz-Antworten
 - User: **Showreel gibt es nicht** → Hinweis auf der About-Seite entfernt. **Kosky-Probenfoto:** Fotograf:in gibt es nicht, Bildnachweis bleibt weg (Foto bleibt, D-044).
 - User: **Partnerhäuser und Pressezitate dürfen genannt werden.** Partner auf der About-Seite jetzt als Logo-Reihe mit Link zur Website des Hauses (`content/site.ts` → `partners`, Logos in `public/media/partners/`, von den Websites der Häuser, einfarbig per `mask-image`). Ersetzt „nur Namen, keine Logos“ (P15).
 - User: **Keine Besucherstatistik.** Kontaktanfragen werden nur im Postfach aufbewahrt – Satz dazu im Datenschutz (Kontaktformular).
@@ -308,3 +315,10 @@ Grund: Rückmeldung des Users.
   - Neue Pressezitate: nmz (Schneekönigin), Berliner Morgenpost (Vivier). Tagesspiegel (Weihnachten) bleibt ohne Zitat (Paywall), nur Link.
   - Nicht gefunden → anfrage-anisha §2: VOCES8-Datum, Flucht III, Selam-Clips. Mitternachtstür laut Deutscher Oper am Rhein: Regie Mizgîn Bilmen – Anishas Rolle unklar. Neu gefunden: *Klangstreich*, Theater an der Wien ab 11.10.2026, Regie Anisha Bondy (noch nicht auf der Seite).
 Grund: Antworten und Auftrag des Users.
+
+## D-048 · 2026-09-26 · Liste an Anisha auf echte Fragen gekürzt, Veröffentlichung D-047
+- User: In anfrage-anisha.md stehen nur noch Fragen, die wir nicht selbst herausfinden konnten; alles Unklare aus der Recherche kommt dorthin (neu: Oz – Text und Puppenspiel, VOCES8 – Rolle Julia Hansen).
+- Selbst erledigen statt fragen: Das Ergebnis der YAMawards (29.09.) tragen wir selbst nach. „Der Zauberer von Oz“ bleibt unter „Create“, keine eigene Kategorie „Writing“. Ob „Flucht“ ins Archiv wandert, entscheiden wir, wenn klar ist, ob Bildmaterial kommt.
+- D-047 samt Merge von `main` (D-046) per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
+Grund: Entscheidung des Users.
+

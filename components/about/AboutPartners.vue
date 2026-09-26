@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Partner als Logo-Reihe mit Link zum Haus (D-046). Logos werden über
+// Partner als Logo-Reihe mit Link zum Haus (D-047). Logos werden über
 // mask-image einfarbig in --color-main gezeigt, damit sie zum Rest der Seite
 // passen (egal ob Original farbig, weiß oder schwarz). Breite ~ ratio^0,65, damit
 // sehr breite und schmale Logos ähnlich groß wirken.

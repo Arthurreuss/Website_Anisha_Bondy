@@ -117,7 +117,7 @@ export const siteContent: SiteContent = {
     'Benedict Andrews',
   ],
 
-  // Nennung freigegeben (D-046). Logos von den Websites der Häuser.
+  // Nennung freigegeben (D-047). Logos von den Websites der Häuser.
   partners: [
     { name: 'Komische Oper Berlin', url: 'https://www.komische-oper-berlin.de', logo: '/media/partners/komische-oper-berlin.svg', ratio: 9.05 },
     { name: 'Philharmonie Luxembourg', url: 'https://www.philharmonie.lu', logo: '/media/partners/philharmonie-luxembourg.svg', ratio: 1.48 },
