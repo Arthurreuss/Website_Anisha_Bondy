@@ -17,7 +17,7 @@
 
 ## Nächster Schritt
 1. User: Live-Seite ansehen (Fotos, Impressum, Kontakt).
-2. User: Search Console + Sitemap einreichen (HOSTING §5); Dornröschen-Video auf echtem Gerät prüfen (H.264 spielt im Container-Chromium nicht).
+2. User: Search Console bestätigt (DNS-TXT, nicht löschen) → `sitemap.xml` einreichen, Startseite per URL-Prüfung indexieren lassen (HOSTING §5); Dornröschen-Video auf echtem Gerät prüfen.
 3. Anisha: Fotos/Zeitstempel für die Kachel-Projekte (anfrage §7); Nutzung des Kosky-Probenfotos klären.
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
