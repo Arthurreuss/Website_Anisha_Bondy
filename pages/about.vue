@@ -8,10 +8,11 @@ import type { Locale } from '~/types/project'
 const { locale, t } = useI18n()
 const l = <T,>(v: { en: T; de: T }) => pick(v, locale.value as Locale)
 
-useSeoMeta({
+usePageSeo({
   title: () => t('about.seoTitle'),
-  description: () => l(siteContent.statement.body),
+  description: () => l(siteContent.bio)[0] ?? l(siteContent.statement.body),
 })
+usePersonSchema()
 </script>
 
 <template>

@@ -254,3 +254,13 @@ Grund: Antworten von Anisha, weitergegeben durch den User.
 - Arbeitsbranch per Fast-Forward nach `main` und `production` übernommen (ein Deploy) auf Zuruf des Users.
 - Offen (User): `anishabondy.com` in Pages als Custom Domain verbinden, `SITE_URL` = `https://anishabondy.com`, dann „Retry deployment“ (HOSTING §1/§3).
 Grund: Entscheidung des Users.
+
+## D-041 · 2026-09-26 · SEO-Grundausstattung
+- User: SEO nach dem Domain-Umzug fertigstellen.
+- `https://anishabondy.com` ist Standard für `baseUrl` (canonical/hreflang, `runtimeConfig.public.siteUrl`); `SITE_URL` überschreibt nur noch. Damit hängt SEO nicht mehr an einer Cloudflare-Variable.
+- Beim Vorrendern entstehen `sitemap.xml` (EN + DE mit hreflang-Paaren) und `robots.txt` (`config/seo-files.ts`, Hook `prerender:done`).
+- `prerender.autoSubfolderIndex: false`: `about.html` statt `about/index.html`. Cloudflare leitete `/about` auf `/about/` um (307), während canonical `/about` nannte; jetzt 200 ohne Umleitung.
+- `usePageSeo` (Titel, Beschreibung ≤ 160 Zeichen, og:*, twitter:card) auf allen Seiten; og:image = `public/og.jpg` (Porträt Claudia Greco, 1200×630), auf Case-Seiten das Cover. `og:locale`/`og:url` aus useLocaleHead. JSON-LD „Person“ auf Start- und About-Seite. Startseiten-Titel/Beschreibung mit Beruf und Wien.
+- Nachweis: Lighthouse (Desktop) SEO 100 auf Start, About, Case (vorher 82–91, D-037); Performance 97–99, Barrierefreiheit 96, Best Practices 100. Browser: Karte → Case, Zurück, Payloads ohne 4xx.
+- Search Console/Bing: Schritte in HOSTING §5 (User).
+Grund: Entscheidung des Users.

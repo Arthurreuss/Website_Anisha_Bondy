@@ -10,9 +10,11 @@ if (!project.value) {
   throw createError({ statusCode: 404, statusMessage: 'Project not found' })
 }
 
-useSeoMeta({
+usePageSeo({
   title: () => `${project.value!.title} — Anisha Bondy`,
   description: () => project.value!.intro[0] ?? `${project.value!.title} by Anisha Bondy.`,
+  // Vorschaubild = Cover, sofern Foto (SVG-Platzhalter zeigen soziale Netzwerke nicht an)
+  image: () => (project.value!.cover.src.endsWith('.svg') ? undefined : project.value!.cover.src),
 })
 </script>
 

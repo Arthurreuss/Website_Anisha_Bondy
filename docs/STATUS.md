@@ -8,14 +8,15 @@
 ## Aktiv
 - **Inhalte aus WeTransfer 25.09.** (D-039): Impressum (AT) + Verantwortliche im Datenschutz + E-Mail im Kontakt eingetragen; Fotos (Cover + Galerie) für Dornröschen, Zauberer von Oz, Lene, pOpera; About-Portrait (Claudia Greco); Vimeo-Video Schneekönigin. Auf `main` und `production` (D-040).
 - **P24 QA** (D-037): offen Safari/iPhone + Abnahme User.
-- **P25 Hosting** (D-032, D-038, D-040): `anishabondy.com` registriert; offen: Custom Domain in Pages + `SITE_URL` + Retry deployment (HOSTING §3).
+- **P25 Hosting** (D-032, D-038, D-040): `anishabondy.com` verbunden und live.
+- **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – auf `main`, noch nicht auf `production`.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
 1. User: Live-Seite ansehen (Fotos, Impressum, Kontakt).
-2. User: Custom Domain `anishabondy.com` (+ `www`) in Pages, `SITE_URL=https://anishabondy.com`, Retry deployment.
+2. User: SEO-Stand auf `production` freigeben; dann Search Console + Sitemap einreichen (HOSTING §5); alte `SITE_URL`-Variable in Cloudflare löschen oder auf `https://anishabondy.com`.
 3. Anisha: neue offene Punkte a–e in [anfrage-anisha.md](anfrage-anisha.md) (Oz-Fotos groß, Kosky-Foto, Trailer, Tätigkeit, Personen auf pOpera-Fotos).
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
 
@@ -28,7 +29,8 @@
 - Worktrees unter `.claude/worktrees/` brauchen `.nuxt/` im Haupt-Checkout (`npm ci` dort), sonst TSCONFIG_ERROR (D-026).
 - Inhalte: `content/projects/<slug>.ts`, `content/site.ts` (About), `content/legal.ts` (Impressum, Datenschutz, `contactEmail`), UI-Texte `i18n/locales/*.json`.
 - Fotos: `scripts/make-media.py` (Zuschnitt 4:5 / 16:10, Verkleinern); ältere: `make-cover.py`, `make-placeholder-cover.py`, `merge-locales.py`.
-- Build `npm run generate` → `.output/public` (mit `CF_PAGES=1` → `dist`), Server `python3 -m http.server 4193 --directory .output/public`. Playwright global unter `/opt/node22/lib/node_modules` (im Skriptordner verlinken).
+- Build `npm run generate` → `.output/public` (mit `CF_PAGES=1` → `dist`), Server mit sauberen URLs wie Cloudflare: `npx serve@14 dist -l 4194` (python http.server findet `about.html` nicht). Playwright global unter `/opt/node22/lib/node_modules` (im Skriptordner verlinken).
 
 ## Offene Fragen an den User
 - Abnahme P24 (Safari/iPhone).
+- „offen: …“-Kästen (`showTodos`) sind live sichtbar und werden von Google mitgelesen – ausblenden (`NUXT_PUBLIC_SHOW_TODOS=false`)?

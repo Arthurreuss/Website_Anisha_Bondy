@@ -2,10 +2,11 @@
 const { data: projects } = await useProjects()
 
 const { t } = useI18n()
-useSeoMeta({
-  title: 'Anisha Bondy',
+usePageSeo({
+  title: () => t('seo.homeTitle'),
   description: () => t('home.description'),
 })
+usePersonSchema()
 </script>
 
 <template>

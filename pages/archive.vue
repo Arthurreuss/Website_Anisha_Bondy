@@ -26,7 +26,7 @@ const filtered = computed(() => {
   return [...list].sort((a, b) => b.year - a.year)
 })
 
-useSeoMeta({
+usePageSeo({
   title: () => t('archive.seoTitle'),
   description: () => t('archive.seoDescription'),
 })

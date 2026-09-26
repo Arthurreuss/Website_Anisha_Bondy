@@ -18,7 +18,7 @@ Stand: 2026-09-25 · Entscheidung D-032. Schritte für den User (Konten gehören
    - Build output directory: **`dist`**
 4. **Environment variables** (Production):
    - `NUXT_PUBLIC_WEB3FORMS_KEY` = Zugangsschlüssel aus Schritt 2
-   - `SITE_URL` = die endgültige Adresse, z. B. `https://anishabondy.de` (bis die Domain steht: die `…pages.dev`-Adresse)
+   - `SITE_URL` – nicht nötig: Standard im Code ist `https://anishabondy.com` (D-041). Nur setzen, um testweise eine andere Adresse zu bauen; eine alte Übergangs-Adresse hier **löschen**.
    - Node-Version kommt aus `.node-version` (22).
 5. **Settings → Builds → Branch control:** „Preview branches“ auf **None** stellen – sonst baut Cloudflare zusätzlich bei jedem Push auf `main`.
 6. Speichern → erster Build. Die Seite ist danach unter `<projekt>.pages.dev` erreichbar.
@@ -38,8 +38,18 @@ Umgebungsvariablen wirken erst beim nächsten Build (Deployments → „Retry de
 - **Cloudflare Registrar** verkauft Domains zum Einkaufspreis, aber **nicht jede Endung** – `.de` gibt es dort (Stand der Recherche) nicht, `.com` schon.
 - Weg für `.de`: bei einem Registrar kaufen (z. B. INWX, siehe anfrage-anisha §5), dann in Cloudflare **Add a domain** (Free-Plan) und beim Registrar die zwei **Nameserver** von Cloudflare eintragen. Danach verwaltet Cloudflare das DNS.
 - In Pages → Projekt → **Custom domains** → Domain (und `www.`) hinzufügen; HTTPS stellt Cloudflare automatisch aus.
-- Danach `SITE_URL` auf die Domain setzen und neu bauen (für hreflang/canonical).
+- `anishabondy.com` ist verbunden (D-040); die Adresse steht als Standard im Code (D-041).
 
 ## 4 · Netlify
 
 Abgelöst (D-033): `netlify.toml` ist aus dem Code entfernt. Die Netlify-Seite im Netlify-Konto löschen, falls noch nicht geschehen.
+
+## 5 · Suchmaschinen (D-041)
+
+Was die Seite selbst mitbringt (bei jedem Build erzeugt): `sitemap.xml` (alle Seiten EN + DE mit hreflang), `robots.txt` (verweist auf die Sitemap; Cloudflares „managed robots.txt“ stellt seinen Block davor), canonical/hreflang mit voller Adresse, Titel + Beschreibung je Seite, Vorschaubild für geteilte Links (`public/og.jpg`, Case-Seiten: Cover), strukturierte Daten „Person“ auf Start- und About-Seite. Seiten liegen als `about.html` usw., damit `/about` ohne Umleitung ausgeliefert wird.
+
+Einmalig (User):
+1. **Google Search Console** (search.google.com/search-console) → Property hinzufügen → Typ **Domain** → `anishabondy.com`. Google zeigt einen TXT-Eintrag; in Cloudflare unter **DNS → Records → Add record** als Typ TXT, Name `@`, Inhalt einfügen → in der Search Console „Bestätigen“.
+2. Dort **Sitemaps** → `sitemap.xml` einreichen.
+3. Optional **Bing Webmaster Tools**: „Import from Google Search Console“ übernimmt alles.
+4. Optional **www → ohne www**: Cloudflare → Rules → Redirect Rules → Vorlage „Redirect from WWW to root“ (301). Canonical zeigt ohnehin auf die Adresse ohne www.

@@ -24,7 +24,7 @@
   },
   "home": {
     "title": "Ausgewählte Arbeiten",
-    "description": "Anisha Bondy – Regisseurin für Oper und Musiktheater. Direct. Create. Participate."
+    "description": "Anisha Bondy – Regisseurin für Oper und partizipatives Musiktheater. Lebt in Wien, arbeitet international, u. a. Philharmonie Luxembourg, Musikverein Wien."
   },
   "lang": {
     "label": "Sprache"
@@ -65,11 +65,13 @@
   },
   "legal": {
     "imprint": {
-      "title": "Impressum"
+      "title": "Impressum",
+      "seoDescription": "Impressum von anishabondy.com."
     },
     "privacy": {
       "title": "Datenschutz",
-      "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen"
+      "draftNotice": "Entwurf – vor Livegang rechtlich prüfen lassen",
+      "seoDescription": "Datenschutzerklärung von anishabondy.com."
     }
   },
   "case": {
@@ -118,5 +120,9 @@
     "work": "Arbeiten",
     "archive": "Archiv",
     "about": "Über mich"
+  },
+  "seo": {
+    "homeTitle": "Anisha Bondy – Regisseurin für Oper & Musiktheater",
+    "jobTitle": "Regisseurin für Oper und Musiktheater"
   }
 }

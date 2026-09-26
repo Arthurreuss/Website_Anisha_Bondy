@@ -24,7 +24,7 @@
   },
   "home": {
     "title": "Selected work",
-    "description": "Anisha Bondy – director for opera and music theatre. Direct. Create. Participate."
+    "description": "Anisha Bondy – director for opera and participatory music theatre. Based in Vienna, working internationally, e.g. Philharmonie Luxembourg, Musikverein Wien."
   },
   "lang": {
     "label": "Language"
@@ -65,11 +65,13 @@
   },
   "legal": {
     "imprint": {
-      "title": "Imprint"
+      "title": "Imprint",
+      "seoDescription": "Legal notice for anishabondy.com."
     },
     "privacy": {
       "title": "Privacy policy",
-      "draftNotice": "Draft — to be reviewed legally before going live"
+      "draftNotice": "Draft — to be reviewed legally before going live",
+      "seoDescription": "Privacy policy for anishabondy.com."
     }
   },
   "case": {
@@ -118,5 +120,9 @@
     "work": "work",
     "archive": "archive",
     "about": "about"
+  },
+  "seo": {
+    "homeTitle": "Anisha Bondy – Director, Opera & Music Theatre",
+    "jobTitle": "Director, opera and music theatre"
   }
 }

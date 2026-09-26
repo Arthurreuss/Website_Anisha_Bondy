@@ -7,8 +7,9 @@ import { privacySections } from '~/content/legal'
 const { locale, t } = useI18n()
 const currentLocale = computed(() => locale.value as 'en' | 'de')
 
-useSeoMeta({
+usePageSeo({
   title: () => `${t('legal.privacy.title')} — Anisha Bondy`,
+  description: () => t('legal.privacy.seoDescription'),
 })
 </script>
 

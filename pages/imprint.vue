@@ -6,8 +6,9 @@ import { imprintFields, imprintNotes } from '~/content/legal'
 const { locale, t } = useI18n()
 const currentLocale = computed(() => locale.value as 'en' | 'de')
 
-useSeoMeta({
+usePageSeo({
   title: () => `${t('legal.imprint.title')} — Anisha Bondy`,
+  description: () => t('legal.imprint.seoDescription'),
 })
 </script>
 
