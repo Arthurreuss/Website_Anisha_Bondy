@@ -58,7 +58,7 @@ useHeroTransition(mediaRef, props.project.slug)
           :poster="props.project.cover.poster"
           @playing="isPlaying = true"
         >
-          <source :src="props.project.cover.src" type="video/webm" />
+          <source :src="props.project.cover.src" :type="videoType(props.project.cover.src)" />
         </video>
         <img
           v-else

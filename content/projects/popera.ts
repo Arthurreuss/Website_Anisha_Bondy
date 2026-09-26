@@ -14,8 +14,8 @@ export default defineProject({
     type: 'image',
     src: '/media/popera/cover.jpg',
     alt: {
-      en: 'At a rehearsal, a woman raises her arm, a sheet of paper in her hand, in front of an orange wall.',
-      de: 'Bei der Probe hebt eine Frau den Arm, ein Blatt in der Hand, vor einer orangen Wand.',
+      en: 'Anisha Bondy raises her arm at a rehearsal, a sheet of paper in her hand, in front of an orange wall.',
+      de: 'Anisha Bondy hebt bei der Probe den Arm, ein Blatt in der Hand, vor einer orangen Wand.',
     },
     width: 1365,
     height: 1706,
@@ -55,8 +55,8 @@ export default defineProject({
           type: 'image',
           src: '/media/popera/02a.jpg',
           alt: {
-            en: 'A woman and a singer look at the score together.',
-            de: 'Eine Frau und ein Sänger sehen gemeinsam in die Noten.',
+            en: 'Anisha Bondy and a singer look at the score together.',
+            de: 'Anisha Bondy und ein Sänger sehen gemeinsam in die Noten.',
           },
           width: 1200,
           height: 1500,
@@ -93,8 +93,8 @@ export default defineProject({
         type: 'image',
         src: '/media/popera/03.jpg',
         alt: {
-          en: 'A rehearsal with a large choir of participants of all ages.',
-          de: 'Probe mit einem großen Chor aus Mitwirkenden jeden Alters.',
+          en: 'Anisha Bondy rehearses with a large choir of participants of all ages.',
+          de: 'Anisha Bondy probt mit einem großen Chor aus Mitwirkenden jeden Alters.',
         },
         width: 2048,
         height: 1280,

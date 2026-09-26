@@ -13,8 +13,13 @@ if (!project.value) {
 usePageSeo({
   title: () => `${project.value!.title} — Anisha Bondy`,
   description: () => project.value!.intro[0] ?? `${project.value!.title} by Anisha Bondy.`,
-  // Vorschaubild = Cover, sofern Foto (SVG-Platzhalter zeigen soziale Netzwerke nicht an)
-  image: () => (project.value!.cover.src.endsWith('.svg') ? undefined : project.value!.cover.src),
+  // Vorschaubild = Cover-Foto bzw. Standbild des Cover-Videos (SVG-Platzhalter
+  // zeigen soziale Netzwerke nicht an)
+  image: () => {
+    const c = project.value!.cover
+    const src = c.type === 'video' ? c.poster : c.src
+    return src && !src.endsWith('.svg') ? src : undefined
+  },
 })
 </script>
 

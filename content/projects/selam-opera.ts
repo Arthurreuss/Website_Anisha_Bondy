@@ -13,14 +13,15 @@ export default defineProject({
   role: { en: 'Artistic direction', de: 'Szenische Leitung' },
   tags: { en: ['Pop-up opera', 'Intercultural', 'Public space'], de: ['Pop-Up-Opera', 'Interkulturell', 'Öffentlicher Raum'] },
   cover: {
+    // Vorläufig: Standbild aus dem Pop-Up-Clip (YouTube-Vorschaubild, D-042)
     type: 'image',
-    src: '/media/selam-opera/cover.svg',
+    src: '/media/selam-opera/cover.jpg',
     alt: {
-      en: 'Placeholder cover: Selam Opera!',
-      de: 'Platzhalter-Cover: Selam Opera!',
+      en: 'A singer in a beret and leather jacket sings with outstretched arms among the audience of a pop-up opera.',
+      de: 'Eine Sängerin mit Baskenmütze und Lederjacke singt mit ausgebreiteten Armen mitten im Publikum einer Pop-Up-Oper.',
     },
-    width: 1200,
-    height: 1500,
+    width: 576,
+    height: 720,
   },
   intro: {
     en: [

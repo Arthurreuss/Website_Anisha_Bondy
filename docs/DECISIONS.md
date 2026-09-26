@@ -264,3 +264,14 @@ Grund: Entscheidung des Users.
 - Nachweis: Lighthouse (Desktop) SEO 100 auf Start, About, Case (vorher 82–91, D-037); Performance 97–99, Barrierefreiheit 96, Best Practices 100. Browser: Karte → Case, Zurück, Payloads ohne 4xx.
 - Search Console/Bing: Schritte in HOSTING §5 (User).
 Grund: Entscheidung des Users.
+
+## D-042 · 2026-09-26 · Antworten a–e, Dornröschen-Video, Selam-Cover, Bilder für Kacheln
+- Antworten von Anisha stehen in anfrage-anisha.md (Kopf). Impressum-Tätigkeit: „Regisseurin, Oper & Musiktheater“.
+- pOpera: Die Bildbeschreibungen nennen Anisha auf dem Cover, auf 02a und auf 03. Auf 02b/02c sind nach Abgleich andere Personen zu sehen, dort bleibt der Text neutral.
+- **Dornröschen:** Cover = stumme Schleife (10 s ab 0:13 aus der 9:16-Fassung ohne „Willkommen“, 4:5 800×1000, H.264 `cover.mp4` + Standbild `cover-poster.jpg`). Das bisherige Cover-Foto wandert als „Der Hofstaat“ in die Galerie. Credits und Besetzung aus der Schlusstafel übernommen. `<source type>` ergibt sich jetzt aus der Endung (`utils/video-type.ts`), bisher war es fest `video/webm`. og:image auf Case-Seiten mit Video = Standbild.
+- Hinweis: Das Chromium im Container spielt kein H.264 ab (Standbild wird korrekt gezeigt). Chrome, Safari, Firefox und Edge spielen es ab; der Nutzer prüft am echten Gerät.
+- **Selam Opera!:** vorläufiges Cover aus dem YouTube-Vorschaubild des Pop-Up-Clips AriBiymQ0og (576×720, mehr gibt das Vorschaubild nicht her).
+- Andere Kacheln: YouTube blockt Downloads aus dem Container (429). Die Vorschaubilder von Peter Pan und Hänsel & Gretel sind Grafiken und taugen nicht. Deshalb Aufgabe an Anisha, anfrage-anisha §7: zuerst Pressefotos der Häuser, sonst Zeitstempel und Videodatei.
+- og:image: Das Porträt (Claudia Greco = Fotografin) zeigt Anisha. Bleibt Standard, bis der User etwas anderes will.
+- Ausrollen auf `production` auf Zuruf des Users (inkl. D-041).
+Grund: Antworten und Entscheidungen des Users.

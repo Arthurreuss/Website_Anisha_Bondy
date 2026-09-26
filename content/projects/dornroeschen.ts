@@ -1,4 +1,4 @@
-// Quelle: docs/INHALTE.md §3 (Dornröschen).
+// Quelle: docs/INHALTE.md §3 (Dornröschen); Credits aus dem Trailer (D-042).
 import { defineProject } from '~/types/project'
 
 export default defineProject({
@@ -11,15 +11,16 @@ export default defineProject({
   role: { en: 'Direction', de: 'Regie' },
   tags: { en: ['Dance', 'Tchaikovsky', 'New format'], de: ['Tanz', 'Tschaikowsky', 'Neues Format'] },
   cover: {
-    type: 'image',
-    src: '/media/dornroeschen/cover.jpg',
+    type: 'video',
+    src: '/media/dornroeschen/cover.mp4',
+    poster: '/media/dornroeschen/cover-poster.jpg',
     alt: {
-      en: 'Performers in colourful costumes gather excitedly around an old woman in a floral dress on stage.',
-      de: 'Darsteller:innen in bunten Kostümen drängen sich aufgeregt um eine alte Frau im geblümten Kleid auf der Bühne.',
+      en: 'Scenes from Sleeping Beauty: dancers and singers in colourful costumes in front of the orchestra.',
+      de: 'Szenen aus Dornröschen: Tänzer:innen und Sänger:innen in bunten Kostümen vor dem Orchester.',
     },
-    width: 1600,
-    height: 2000,
-    credit: 'Inês Rebelo de Andrade',
+    width: 800,
+    height: 1000,
+    credit: 'Trailer: Philharmonie Luxembourg',
   },
   intro: {
     en: [
@@ -88,6 +89,21 @@ export default defineProject({
     },
     {
       type: 'single',
+      label: { en: 'The court', de: 'Der Hofstaat' },
+      media: {
+        type: 'image',
+        src: '/media/dornroeschen/04.jpg',
+        alt: {
+          en: 'Performers in colourful costumes gather excitedly around an old woman in a floral dress on stage.',
+          de: 'Darsteller:innen in bunten Kostümen drängen sich aufgeregt um eine alte Frau im geblümten Kleid auf der Bühne.',
+        },
+        width: 2400,
+        height: 1500,
+        credit: 'Inês Rebelo de Andrade',
+      },
+    },
+    {
+      type: 'single',
       label: { en: 'The rose tent', de: 'Das Rosenzelt' },
       media: {
         type: 'image',
@@ -104,16 +120,24 @@ export default defineProject({
   ],
   videos: [{ provider: 'youtube', id: 'z7sEa5xDJAg', title: { en: 'Sleeping Beauty', de: 'Dornröschen' } }],
   credits: [
-    { role: { en: 'Direction', de: 'Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Choreography', de: 'Choreografie' }, name: 'Mariana Souza' },
-    { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Sasha Scolnik-Brower' },
+    { role: { en: 'Concept & direction', de: 'Konzept & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Concept & choreography', de: 'Konzept & Choreografie' }, name: 'Mariana Souza' },
+    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'Sasha Scolnik-Brower' },
+    { role: { en: 'Text & dramaturgy', de: 'Text & Dramaturgie' }, name: 'Sabrina Zwach' },
+    { role: { en: 'Set', de: 'Bühne' }, name: 'Isabelle Kaiser' },
+    { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Saskia Theis' },
+    { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
+    {
+      role: { en: 'Cast', de: 'Mit' },
+      name: 'Corinna Kirchhoff, Annick Schadeck, Mathilde Braun, Antony Franz, Inka Löwendorf, Florian Anderer, Prince Mihai, Anastasia Corker',
+    },
   ],
   awards: [],
   press: [],
   featured: true,
   order: 7,
   todos: {
-    en: ['Exact premiere date', 'Further credits'],
-    de: ['Genaues Premierendatum', 'Weitere Credits'],
+    en: ['Exact premiere date'],
+    de: ['Genaues Premierendatum'],
   },
 })

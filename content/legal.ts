@@ -24,7 +24,7 @@ export const imprintFields: ImprintField[] = [
   {
     key: 'profession',
     label: { en: 'Profession', de: 'Tätigkeit' },
-    value: { en: 'Director, music theatre', de: 'Regisseurin, Musiktheater' },
+    value: { en: 'Director, opera & music theatre', de: 'Regisseurin, Oper & Musiktheater' },
   },
   {
     key: 'address',

@@ -20,7 +20,7 @@ const props = defineProps<{ media: Media; parallax?: boolean }>()
     playsinline
     :poster="props.media.poster"
   >
-    <source :src="props.media.src" type="video/webm" />
+    <source :src="props.media.src" :type="videoType(props.media.src)" />
   </video>
   <img
     v-else

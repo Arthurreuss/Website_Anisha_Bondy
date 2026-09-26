@@ -1,17 +1,21 @@
 # Was wir von Anisha brauchen
 
-Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (ersetzt INHALTE.md §7). Der erste Entwurf der Seite steht mit echten Inhalten; was noch fehlt, ist auf der Seite als gestrichelter Kasten „offen: …“ markiert. Anisha beantwortet bzw. liefert, Arthur baut ein.
+Stand: 2026-09-26 (2) · **Die** Liste offener Fragen und Lieferungen an Anisha (ersetzt INHALTE.md §7). Der erste Entwurf der Seite steht mit echten Inhalten; was noch fehlt, ist auf der Seite als gestrichelter Kasten „offen: …“ markiert. Anisha beantwortet bzw. liefert, Arthur baut ein.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.), ein Unterordner pro Projekt (`01_peter-pan/`, `02_…`), dazu `00_allgemein/` für Portrait und Texte. Antworten gern direkt unter die Fragen.
 
 **Beantwortet am 26.09. (D-039):** E-Mail (1.1), Domain (§5 → `anishabondy.com`), Impressum-Angaben (§6: Wien, Kleinunternehmerin ohne UID), Portraits (Claudia Greco), Fotos zu Dornröschen, Zauberer von Oz, Lene und pOpera, Video Schneekönigin. Schon eingebaut.
 
-**Neu offen aus der Lieferung:**
-- a. Zauberer von Oz: Die Fotos von Julia Wesely sind die „small“-Fassung (1182 px). Gibt es sie größer?
-- b. Probenfoto „Barry Kosky – Proben Echnaton“: Wer hat es fotografiert, und darf es auf die About-Seite?
-- c. Dornröschen-Trailer (.mov): als stummer Kurzloop aufs Cover? Das YouTube-Video ist schon eingebunden.
-- d. Tätigkeit im Impressum: Passt „Regisseurin, Musiktheater“? Ab 2027 die UID nachreichen.
-- e. Auf den pOpera-Fotos: Ist das Anisha? (Dann nennen die Bildbeschreibungen sie mit Namen.)
+**Antworten 26.09. (D-042):** a. Größere Oz-Fotos gibt es nicht. · b. Wer das Kosky-Probenfoto gemacht hat, ist unbekannt; die Nutzung klärt Anisha noch, bis dahin wird es nicht verwendet. · c. Der Dornröschen-Trailer läuft als stumme Schleife auf dem Cover; die Credits aus dem Trailer sind übernommen. · d. Tätigkeit: „Regisseurin, Oper & Musiktheater“. · e. Anisha ist auf dem pOpera-Cover, auf dem ersten Bild der Dreiergruppe und auf dem Chorbild darunter.
+
+## 7 · Bilder für Projekte, die noch eine farbige Kachel haben
+
+Offen sind **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, Flucht, VOCES8** (alle auf der Startseite) sowie im Archiv **Die Schneekönigin, Die Mitternachtstür, Les espaces acoustiques, Vivier 70/35**. **Selam Opera!** hat vorläufig ein Standbild aus einem Pop-Up-Clip.
+
+Am besten in dieser Reihenfolge:
+1. **Pressefotos der Häuser.** Die Philharmonie Luxembourg hat zu Dornröschen, Lene und pOpera schon Fotos geliefert (Inês Rebelo de Andrade, Alfonso Salgueiro, Laurent Sturm). Bitte bei der Presseabteilung auch nach **Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten, VOCES8 und Flucht** fragen. Pro Projekt reichen 3–6 Fotos, dazu der Name der Fotograf:in.
+2. **Wenn es keine Fotos gibt: Szenen aus den Videos.** Pro Projekt 1–3 Stellen als Minute:Sekunde, die Anisha besonders gefallen (z. B. „Peter Pan 12:40 – Flugszene“). Hochformat 4:5 ist das Ziel, die Szene sollte also eine Figur oder Gruppe in der Bildmitte zeigen. YouTube lässt Downloads aus unserer Umgebung nicht zu, deshalb brauchen wir dazu die **Videodatei** (vom Haus oder per WeTransfer). Daraus schneiden wir Standbilder oder eine kurze stumme Schleife wie bei Dornröschen.
+3. **Selam Opera!:** Gibt es Fotos der Pop-Up-Auftritte? Sonst bleibt das Standbild.
 
 ---
 
