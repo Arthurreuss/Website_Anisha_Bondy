@@ -7,7 +7,7 @@
 
 ## Aktiv
 - **Feedback 27.09.** (D-055) → Pakete P26–P31 in [PLAN.md](PLAN.md). Noch nichts umgesetzt.
-- Ausgangsmaterial (nur im Container-Scratchpad, bei Abbruch neu holen): drei Video-Ausschnitte 1080p (Lene, Peter Pan, Hänsel und Gretel); 17 Fotos von annehoelzinger.de (D-056).
+- Ausgangsmaterial (nur im Container-Scratchpad, bei Abbruch neu holen): Video-Ausschnitte 1080p (Lene, Peter Pan, Hänsel und Gretel, Nacht vor Weihnachten = Vimeo 792233594), Barrie-Video (1:27); 17 Fotos von annehoelzinger.de (D-056).
 - Projekttexte als Google Doc an Anisha: „Projekttexte Website anishabondy.com – zum Korrigieren“ (Drive des Users, ID `1jccHWcOwFOQhqua9_khu6naE2P7QLR07-l3kZZQ7PIw`). User teilt es mit Anisha. Rücklauf → Texte, Reihenfolge, Season 2026/27.
 - **P24 QA**: offen Safari/iPhone + Abnahme User.
 
@@ -20,7 +20,7 @@
 - keine.
 
 ## Nächster Schritt
-1. User: Freigabe Plan; Google Doc an Anisha (geteilt mit User-Gmail); VOCES8- und Vimeo-792233594-Ausschnitt; Peter-Pan-Videos verkleinert hochladen; oranges Foto (D-056).
+1. User: Freigabe Plan; Google Doc an Anisha (geteilt mit User-Gmail); VOCES8-Ausschnitt; Peter-Pan-Videos (218 MB) per Google-Drive-Link („jeder mit dem Link“), Download per curl; oranges Foto (D-056).
 2. Anisha: offene Punkte [anfrage-anisha.md](anfrage-anisha.md) §6.
 3. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).

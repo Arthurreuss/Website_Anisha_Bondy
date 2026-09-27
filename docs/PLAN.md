@@ -35,7 +35,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P24 | QA Animationen v2: reduced-motion, Mobil, Safari, Lighthouse, Nutzertest | **Opus** | P18–P23 | 🔄 | – |
 | P25 | Hosting-Umzug: Cloudflare Pages, Branch production, Formular Web3Forms, Domain (D-032; `SITE_URL` durch Standard im Code ersetzt, D-041) | **Opus** + User | – | ✅ | docs/HOSTING.md, .node-version |
 | P26 | Feedback 27.09. Texte: Begriffe EN (Stage/Musical Director), Credits Lene + H&G, „Flucht-Trilogie“, Kontakt-Überschrift raus, Selam-Dolmuş-Touren, Fotograf:innen sichtbar, Partner + TaW/Brucknerhaus, Barrie-Video auf About, og:image (D-055) | Sonnet | – | ⬜ | public/og-portrait.jpg, public/media/partners/brucknerhaus-linz.svg |
-| P27 | Video-Schleifen als Cover: Lene, Peter Pan, Hänsel und Gretel (+ VOCES8, Vimeo 792233594 sobald geliefert); Standbilder für Galerien (D-055) | Sonnet | – | ⬜ | public/media/peter-pan/cover.mp4, public/media/haensel-und-gretel/cover.mp4, public/media/lene-fliegt-ins-zirkusland/cover.mp4 |
+| P27 | Video-Schleifen als Cover: Lene, Peter Pan, Hänsel und Gretel , Die Nacht vor Weihnachten (Vimeo 792233594, 21 s geliefert) (+ VOCES8 sobald geliefert); Standbilder für Galerien (D-055) | Sonnet | – | ⬜ | public/media/peter-pan/cover.mp4, public/media/haensel-und-gretel/cover.mp4, public/media/lene-fliegt-ins-zirkusland/cover.mp4 |
 | P28 | Lene: Papagei-Foto im Intro-Stapel, Wechsel auf Video-Schleife, sobald die Galerie aufgeht (D-055) | **Opus** | P27 | ⬜ | – |
 | P29 | Farbpalette Anisha statt Tageszeit-Farben, Uhr bleibt, kein Scroll-Farbwechsel (D-055) | **Opus** | – | ⬜ | – |
 | P30 | Standardsprache Deutsch: DE unter `/`, EN unter `/en`, Weiterleitungen `/de/…`, hreflang/Sitemap (D-055) | **Opus** | – | ⬜ | public/_redirects |
