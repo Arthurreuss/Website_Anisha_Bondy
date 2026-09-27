@@ -12,7 +12,7 @@
 - **P24 QA**: offen Safari/iPhone + Abnahme User.
 
 ## Laufende Agenten
-- **Sonnet A** – P26 Texte/Credits/About/og:image (Worktree).
+- Sonnet A – P26 fertig und gemergt (Theater-an-der-Wien-Logo nur als Jubiläumslogo „225 Jahre“ gefunden; pOpera 02b weiter Credit Inês Rebelo de Andrade – bei Anisha prüfen).
 - **Sonnet B** – P27 Video-Schleifen + Galerien Peter Pan/Schneekönigin (Worktree).
 - Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User), P30 Deutsch als Standard fertig (D-059). P28: Mechanik `cover.introImage` + `galleryIntroDone` committet (D-060 folgt), Lene-Daten warten auf `loop.mp4` von Sonnet B. Danach Merge, P31.
 
