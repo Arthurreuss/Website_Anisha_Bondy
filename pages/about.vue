@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // /about (P15, D-011): Porträt, Statement, Dreisatz, Approach, Bio,
-// „Worked with“, Zitat, Timeline (Lebenslauf), Presse & Preise, Partner.
+// Barrie-Kosky-Video (P26/D-055), „Worked with“, Zitat, Timeline (Lebenslauf),
+// Presse & Preise, Partner.
 import { siteContent } from '~/content/site'
 import { pick } from '~/content/projects'
 import type { Locale } from '~/types/project'
@@ -22,6 +23,7 @@ usePersonSchema()
     <AboutPillars />
     <AboutApproach />
     <AboutBio />
+    <AboutBarrieVideo />
     <AboutWorkedWith />
     <AboutQuote />
     <AboutTimeline />
