@@ -366,3 +366,20 @@ Grund: Auftrag des Users.
 ## D-054 · 2026-09-26 · D-052 und D-053 live
 - Flucht (D-052) und Selam Opera! (D-053) per Fast-Forward nach `main` und `production` übernommen (ein Deploy), auf Zuruf des Users.
 Grund: Freigabe des Users.
+
+## D-055 · 2026-09-27 · Feedback Anisha 27.09. (Mail + WhatsApp) und Antworten des Users
+Umsetzung als Pakete P26–P31 in [PLAN.md](PLAN.md). Rohquellen: Mail/WhatsApp im Chat, WhatsApp-Bilder und Videoausschnitte vom User hochgeladen (nicht im Repo).
+- **Video-Schleifen statt Platzhalter** (stumm, wie D-039/D-052): Lene ab 30:39, Peter Pan 20:53–21:16, Hänsel und Gretel 34:58–35:20 (Ausschnitte der Philharmonie-Mitschnitte, vom User geliefert, 1080p); VOCES8 36:27–36:41 (Vimeo 828590577) und Vimeo 792233594 ab 3:56 folgen. Ausschnitte aus den Filmen genügen; Jacobs Schnitte später höchstens als Trailer auf der Case-Seite.
+- **Lene:** Papagei-Foto (bisheriges Cover) bleibt im Intro-Stapel; sobald die Galerie aufgeht, wechselt die Kachel auf die Video-Schleife.
+- **Farben:** Tageszeit-Palette durch Anishas Palette ersetzen (dunkles Blau, Lila, tiefes Rot, Pink, Hellblau); Uhr bleibt als Spiel. **Kein** Farbwechsel beim Scrollen.
+- **Sprache:** Standard wird Deutsch (ersetzt D-018 bzw. P12 „EN unter `/`, DE unter `/de`“): DE unter `/`, EN unter `/en`; alte `/de/…`-Adressen leiten weiter. Anlass: Anisha sah die EN-Seite mit Browser-Übersetzung („Tee“ statt „the“).
+- **Begriffe EN:** „Stage Director“ / „Musical Director“ statt „(Stage/Musical) direction“ bzw. „Direction“. Lene: Anisha = „Creative Director & Stage Director“. Hänsel und Gretel: Renate Vogg = Ausstattung, David Münch = Bühnenbau (Scenic constructor).
+- **Titel:** „Flucht“ → „Flucht-Trilogie“, EN wörtlich „Flight Trilogy“.
+- **Kontakt:** Überschrift „Let’s build together“ / DE-Entsprechung entfällt, der zweite Satz bleibt.
+- **Fotograf:innen sichtbar nennen:** Claudia Greco (Portraits, Probenfoto mit Barrie Kosky), Laurent Sturm + Sébastien Grebille (pOpera), Alfonso Salgueiro (Lene), Inês Rebelo de Andrade (Dornröschen), Julia Wesely (Oz). Auch bei Cover und About-Fotos.
+- **Vorschaubild (og:image):** Foto mit Mantel → freundlicheres Bild (Bio-Portrait; oranges Foto, falls die Datei kommt). Neuer Dateiname wegen WhatsApp-Cache.
+- **Selam Opera!:** Anishas Dolmuş-Touren nennen: Gastarbeiterroute 2016 · In zwei Heimaten zu Hause 2016–2019 · Kesin Dönüş 2019–2020 · „Ben und Henry – ein Operndolmuş für Kinder“ 2018 (UA; Musik Attila Kadri Şendil, Libretto Susanne Wolf).
+- **About:** Video „My very special Barrie moment“ (YouTube eWz4lkQRvmQ, Komische Oper) in den Bio-Teil; Partner + Theater an der Wien, Brucknerhaus Linz.
+- **Anne Hölzinger** (Bühne & Kostüm, annehoelzinger.de) hat eigene Fotos zu Schneekönigin, Ligeti- und Xenakis-Festival: nur mit ihrer Zustimmung übernehmen (Anisha fragt), Nachweis „Anne Hölzinger“.
+- **Projekttexte als Google Doc** an Anisha: sie korrigiert, legt die Reihenfolge fest und ergänzt Zukunftspläne (z. B. NEST – Wiener Staatsoper, April 2027). Rücklauf → Box „Season 2026/27“ (D-049).
+Grund: Rückmeldung Anisha, Antworten des Users.

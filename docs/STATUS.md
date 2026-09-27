@@ -2,29 +2,28 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-26 · D-039 – D-053 live (D-047 Web-Recherche + Partner-Logos, D-048 Liste gekürzt, D-049 Antworten Anisha); live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-27 · D-039 – D-054 live; **D-055 = Feedback Anisha 27.09., geplant als P26–P31**; live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
-- **Inhalte aus WeTransfer 25.09.** (D-039): Impressum (AT) + Verantwortliche im Datenschutz + E-Mail im Kontakt eingetragen; Fotos (Cover + Galerie) für Dornröschen, Zauberer von Oz, Lene, pOpera; About-Portrait (Claudia Greco); Vimeo-Video Schneekönigin. Auf `main` und `production` (D-040).
-- **P24 QA** (D-037): offen Safari/iPhone + Abnahme User.
-- **P25 Hosting** ✅ (D-032, D-038, D-040, D-041): `anishabondy.com` live, Formular an Anisha.
-- **SEO** (D-041): Sitemap, robots.txt, canonical mit Domain, og/twitter, JSON-LD – live.
-- **Bilder für Kacheln** (D-042): Aufgabe an Anisha ([anfrage-anisha.md](anfrage-anisha.md) §1).
-- **Feinschliff** (D-045, D-046): Flicker Karte → Case (GSAP-Rundung, Video-Klon, Klon wie Karten-Ebene), Titelband im Menü – live. D-050: Galerie hält beim Karten-Klick an (Ruck nach rechts) – live. D-051: Fenster-Scrollbar ausgeblendet (Rest-Ruck) – live.
-- **Projektangaben aus dem Netz** (D-047): Termine (Feld `dates`), Credits, Pressezitate, Partner-Logos mit Links; Showreel-Hinweis raus – live.
-- **Flucht** (D-052): Cover-Schleife + 9 Standbilder aus dem Trailer; **Selam Opera!** (D-053): Bus-Schleife als Cover + Galerie aus dem Dokumentarfilm – live.
-- **Antworten Anisha** (D-049): Selam-Credits/Clips, Oz-Text, Flucht-Trailer, Klangstreich neu, Mitternachtstür gelöscht, Instagram/LinkedIn – live. Geplant: Box „Season 2026/27“, sobald Anishas Liste (5 Projekte) da ist.
+- **Feedback 27.09.** (D-055) → Pakete P26–P31 in [PLAN.md](PLAN.md). Noch nichts umgesetzt.
+- Ausgangsmaterial (nur im Container-Scratchpad, bei Abbruch neu hochladen): drei Video-Ausschnitte 1080p (Lene, Peter Pan, Hänsel und Gretel).
+- Projekttexte als Google Doc an Anisha: „Projekttexte Website anishabondy.com – zum Korrigieren“ (Drive des Users, ID `1jccHWcOwFOQhqua9_khu6naE2P7QLR07-l3kZZQ7PIw`). User teilt es mit Anisha. Rücklauf → Texte, Reihenfolge, Season 2026/27.
+- **P24 QA**: offen Safari/iPhone + Abnahme User.
+
+## Arbeitsaufteilung (token-sparend)
+- **Sonnet A (Worktree):** P26 Texte/Credits/About/og:image – klar vorgegebene Werte aus D-055, keine Gestaltung.
+- **Sonnet B (Worktree, parallel):** P27 Video-Schleifen (ffmpeg über `pip install imageio-ffmpeg`) + Cover-Felder; berührt nur `cover` in den Projektdateien, damit Merge mit A konfliktfrei.
+- **Opus (Hauptsession):** P29 Palette, P30 Sprache DE, danach P28 Lene-Intro, Merge + Browser-Check (P31).
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. Anisha: Liste Season 2026/27, Fotos, VOCES8-Datum, Rechtsprüfung ([anfrage-anisha.md](anfrage-anisha.md)).
-2. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
-3. User: Karten-Klick nach Trackpad-Scrollen prüfen (D-046, D-050, D-051); Dornröschen-Video auf echtem Gerät.
-4. Search Console fertig (Sitemap 38 Seiten, Indexierung Start/About beantragt) – nur abwarten.
-5. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Originale der Lieferung hat der User gesichert.
+1. User: Freigabe Plan; Google Doc an Anisha; VOCES8- und Vimeo-792233594-Ausschnitt hochladen; Peter-Pan-Videos (WeTransfer) hochladen; oranges Foto (optional).
+2. Anisha: Anne Hölzinger um Fotos fragen; offene Punkte [anfrage-anisha.md](anfrage-anisha.md) §6.
+3. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
+4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 
 ## Bekannte Kleinigkeiten
 - Zeilen-Split nur reiner Text (D-013).

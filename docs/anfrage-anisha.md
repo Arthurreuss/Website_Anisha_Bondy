@@ -1,6 +1,6 @@
 # Was wir von Anisha noch brauchen
 
-Stand: 2026-09-26 · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047; Antworten D-049). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047, D-049); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
+Stand: 2026-09-27 · Rückfragen zum Feedback 27.09. in §6 (D-055) · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047; Antworten D-049). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047, D-049); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
@@ -56,6 +56,17 @@ Dabei klären:
 3. **Bildrechte:** Dürfen die Fotos der Häuser und Fotograf:innen auf deiner Seite gezeigt werden (Nachweise stehen jeweils dabei)? Beim Kosky-Probenfoto ist die Fotograf:in unbekannt – dieses Restrisiko ist bewusst in Kauf genommen (D-044). Ebenso bei den **Logos der Partnerhäuser** auf der About-Seite (von deren Websites übernommen, D-047).
 
 Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (Cloudflare, Inc., USA; Server-Logfiles mit IP-Adressen) · Kontaktformular über Web3Forms (Weiterleitung per E-Mail an anishabondy@gmail.com) · YouTube/Vimeo erst nach Klick (YouTube über youtube-nocookie.com) · Schrift lokal eingebunden · keine Cookies, kein Tracking.
+
+## 6 · Rückfragen zum Feedback vom 27.09. (D-055)
+
+1. **Google Doc mit allen Projekttexten** korrigieren, Reihenfolge festlegen, Zukunftspläne ergänzen (u. a. NEST – Wiener Staatsoper, April 2027, mit richtigem Datum).
+2. **Anne Hölzinger** fragen, ob wir ihre Fotos (Schneekönigin, Ligeti-Festival, Xenakis-Festival) mit Nachweis „Anne Hölzinger“ zeigen dürfen. Ligeti und Xenakis gibt es auf der Seite noch nicht: als neue Archiv-Projekte? Dann bitte Jahr, Haus, Rolle, 2–3 Sätze.
+3. **Selam Opera!:** Gehört „Komşu Dolmuş seit 2020“ auch zu dir? „Ben und Henry“ als eigenes Projekt oder als Absatz bei Selam? Dürfen die Zahlen aus dem Buch (über 750.000 erreichte Personen, 670.000 Videoaufrufe, Stand Nov. 2021) und ein Auszug aus deinem Text „Die richtige Balance“ auf die Seite?
+4. **Hänsel und Gretel, Englisch:** Renate Vogg „Set & Costume Design“, David Münch „Scenic Construction“ – passt das?
+5. **Vorschaubild:** Das Foto mit orangem Hintergrund bitte als Datei, sonst nehmen wir das Bio-Portrait.
+6. **Peter Pan:** Videos der Inszenierung (WeTransfer) → daraus Standbilder für die Galerie.
+
+---
 
 ## 5 · Technische Anforderungen an Bilder und Videos
 
