@@ -14,7 +14,7 @@
 ## Laufende Agenten
 - **Sonnet A** – P26 Texte/Credits/About/og:image (Worktree).
 - **Sonnet B** – P27 Video-Schleifen + Galerien Peter Pan/Schneekönigin (Worktree).
-- Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User), P30 Deutsch als Standard fertig (D-059); danach P28, Merge, P31.
+- Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User), P30 Deutsch als Standard fertig (D-059). P28: Mechanik `cover.introImage` + `galleryIntroDone` committet (D-060 folgt), Lene-Daten warten auf `loop.mp4` von Sonnet B. Danach Merge, P31.
 
 ## Nächster Schritt
 1. Agenten-Ergebnisse reviewen und mergen; P28 Lene-Intro.

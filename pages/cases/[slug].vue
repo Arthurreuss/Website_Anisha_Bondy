@@ -17,7 +17,7 @@ usePageSeo({
   // zeigen soziale Netzwerke nicht an)
   image: () => {
     const c = project.value!.cover
-    const src = c.type === 'video' ? c.poster : c.src
+    const src = c.type === 'video' ? (c.introImage ?? c.poster) : c.src
     return src && !src.endsWith('.svg') ? src : undefined
   },
 })

@@ -53,6 +53,14 @@ const CLIP_OPEN = 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
 
 let played = false
 
+/**
+ * true, sobald die Galerie „aufgegangen“ ist (Karten in der Reihe gelandet)
+ * oder das Intro gar nicht läuft. Karten mit `cover.introImage` zeigen bis
+ * dahin das Foto statt der Video-Schleife (D-060). Modulweiter ref() wie in
+ * useDaytimeTheme – nur clientseitig relevant.
+ */
+export const galleryIntroDone = ref(false)
+
 // Vor Hydration ausgeführt; fällt nach 12 s zurück, falls JS scheitert
 // (Intro dauert jetzt bis ~6s + max. 4s Bildwarte + 0.6s Startverzögerung).
 const headScript = `(function(){try{if(window.__introPlayed||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var d=document.documentElement;d.classList.add('${INTRO_CLASS}');setTimeout(function(){d.classList.remove('${INTRO_CLASS}')},12000)}catch(e){}})()`
@@ -101,13 +109,17 @@ export function useGalleryIntro(container: Ref<HTMLElement | null>, gallery: Gal
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     if (!el || played || !initialLoad || reduced) {
       played = true
+      galleryIntroDone.value = true
       reveal()
       return
     }
     played = true
 
     const allItems = Array.from(el.querySelectorAll<HTMLElement>('.gallery-item'))
-    if (!allItems.length) return reveal()
+    if (!allItems.length) {
+      galleryIntroDone.value = true
+      return reveal()
+    }
 
     const isMobile = window.matchMedia('(max-width: 767px)').matches
     const a = isMobile ? 2 : 4 // Anzahl mitspielender Karten (§1.1)
@@ -250,8 +262,15 @@ export function useGalleryIntro(container: Ref<HTMLElement | null>, gallery: Gal
         tl.set(item, { opacity: 1 }, FADE_START + duration)
       })
 
-      // Ab Landung darf gezogen werden
-      tl.call(() => gallery.setEnabled(true), [], FALL_END)
+      // Ab Landung darf gezogen werden; Intro-Fotos weichen der Video-Schleife
+      tl.call(
+        () => {
+          gallery.setEnabled(true)
+          galleryIntroDone.value = true
+        },
+        [],
+        FALL_END,
+      )
 
       // 5. Namen gleiten erst danach von unten ein (§1.6)
       tl.to(
@@ -266,6 +285,7 @@ export function useGalleryIntro(container: Ref<HTMLElement | null>, gallery: Gal
 
   onMounted(play)
   onBeforeUnmount(() => {
+    galleryIntroDone.value = true
     ctx?.revert()
     ctx = null
     reveal()

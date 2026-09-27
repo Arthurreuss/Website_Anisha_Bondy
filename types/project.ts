@@ -15,6 +15,12 @@ export interface Media {
   src: string
   /** Standbild für Videos, wird bis zum ersten Frame gezeigt */
   poster?: string
+  /**
+   * Nur Video-Cover: Foto, das im Intro-Stapel der Startseite statt des Videos
+   * zu sehen ist; sobald die Galerie aufgeht, blendet es aus und die Schleife
+   * läuft (D-060). Gleicher Bildausschnitt/Alt-Text wie das Video.
+   */
+  introImage?: string
   alt: string
   width: number
   height: number

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Project } from '~/types/project'
 import RollText from '~/components/ui/RollText.vue'
+import { galleryIntroDone } from '~/composables/useGalleryIntro'
 
 const props = defineProps<{ project: Project; eager?: boolean }>()
 
@@ -17,6 +18,16 @@ const cover = computed(() => props.project.cover)
         </div>
         <div class="gallery-item__img">
           <div v-if="cover.type === 'video'" class="gallery-item__media gallery-item__video">
+            <!-- Foto nur im Intro-Stapel, danach die Schleife (D-060); steht als
+                 erstes <img>, damit das Intro auf sein Dekodieren wartet -->
+            <img
+              v-if="cover.introImage"
+              class="gallery-item__poster gallery-item__intro-still"
+              :class="{ 'is-hidden': galleryIntroDone }"
+              :src="cover.introImage"
+              :alt="cover.alt"
+              draggable="false"
+            />
             <video
               :src="cover.src"
               :poster="cover.poster"
@@ -146,9 +157,16 @@ const cover = computed(() => props.project.cover)
   }
 }
 
+// Über Video und Standbild; blendet nach dem Intro weich aus (D-060)
+.gallery-item__intro-still {
+  z-index: 1;
+  transition: opacity 0.8s ease;
+}
+
 // reduced-motion (D-028): Theme-Wechsel bleiben, nur ohne Animation.
 @media (prefers-reduced-motion: reduce) {
-  .gallery-item__img::after {
+  .gallery-item__img::after,
+  .gallery-item__intro-still {
     transition: none !important;
   }
 }
