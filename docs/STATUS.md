@@ -6,22 +6,19 @@
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
-- **Feedback 27.09.** (D-055) → Pakete P26–P31 in [PLAN.md](PLAN.md). Noch nichts umgesetzt.
-- Ausgangsmaterial (nur im Container-Scratchpad, bei Abbruch neu holen): Video-Ausschnitte 1080p (Lene, Peter Pan, Hänsel und Gretel, Nacht vor Weihnachten = Vimeo 792233594), Barrie-Video (1:27); 17 Fotos von annehoelzinger.de (D-056).
-- Projekttexte als Google Doc an Anisha: „Projekttexte Website anishabondy.com – zum Korrigieren“ (Drive des Users, ID `1jccHWcOwFOQhqua9_khu6naE2P7QLR07-l3kZZQ7PIw`). User teilt es mit Anisha. Rücklauf → Texte, Reihenfolge, Season 2026/27.
+- **Feedback 27.09.** (D-055 – D-057) → P26–P31 in [PLAN.md](PLAN.md). Material komplett (D-057).
+- Ausgangsmaterial (nur Scratchpad `/tmp/claude-0/-home-user-Website-Anisha-Bondy/4f3973c7-1afe-55c8-ac26-92bc60acac06/scratchpad/clips`, bei Abbruch neu holen): Schleifen-Quellen lene/peter-pan/haensel-und-gretel (.webm), nacht-vor-weihnachten.mp4, voces8.mp4 (1440p), barrie-moment.mkv, og-orange.jpg, peter-pan-projektionen/ (10 Videos), anne-hoelzinger/ (17 Fotos). Peter-Pan-Zip: Google-Drive-Datei `1MJxqNUQZdNEyCTGvh-qKF3mCMKUSEZBl`.
+- Projekttexte als Google Doc an Anisha (ID `1jccHWcOwFOQhqua9_khu6naE2P7QLR07-l3kZZQ7PIw`, geteilt mit User-Gmail). Rücklauf → Texte, Reihenfolge, Season 2026/27.
 - **P24 QA**: offen Safari/iPhone + Abnahme User.
 
-## Arbeitsaufteilung (token-sparend)
-- **Sonnet A (Worktree):** P26 Texte/Credits/About/og:image – klar vorgegebene Werte aus D-055, keine Gestaltung.
-- **Sonnet B (Worktree, parallel):** P27 Video-Schleifen (ffmpeg über `pip install imageio-ffmpeg`) + Cover-Felder; berührt nur `cover` in den Projektdateien, damit Merge mit A konfliktfrei.
-- **Opus (Hauptsession):** P29 Palette, P30 Sprache DE, danach P28 Lene-Intro, Merge + Browser-Check (P31).
-
 ## Laufende Agenten
-- keine.
+- **Sonnet A** – P26 Texte/Credits/About/og:image (Worktree).
+- **Sonnet B** – P27 Video-Schleifen + Galerien Peter Pan/Schneekönigin (Worktree).
+- Opus (Hauptsession) parallel: P29 Palette, P30 Sprache DE; danach P28, Merge, P31.
 
 ## Nächster Schritt
-1. User: Freigabe Plan; Google Doc an Anisha (geteilt mit User-Gmail); VOCES8-Ausschnitt; Peter-Pan-Videos (218 MB) per Google-Drive-Link („jeder mit dem Link“), Download per curl; oranges Foto (D-056).
-2. Anisha: offene Punkte [anfrage-anisha.md](anfrage-anisha.md) §6.
+1. Agenten-Ergebnisse reviewen und mergen; P28 Lene-Intro.
+2. Anisha: Google Doc; offene Punkte [anfrage-anisha.md](anfrage-anisha.md) §6 (Ligeti/Xenakis als Projekte?, Selam-Fragen, H&G-Begriffe, Fotograf:in Orange-Foto).
 3. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
 4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 

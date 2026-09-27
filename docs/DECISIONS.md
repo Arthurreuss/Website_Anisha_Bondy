@@ -389,3 +389,10 @@ Grund: Rückmeldung Anisha, Antworten des Users.
 - og:image: Foto mit orangem Hintergrund (ersetzt „Bio-Portrait“ in D-055), Datei kommt vom User.
 - Peter-Pan-Szenenvideos (~500 MB, WeTransfer; Download aus dem Container verweigert): User verkleinert lokal (1080p H.264, ohne Ton) und lädt sie hoch. Rohvideos nicht ins Repo, nur fertige Schleifen/Standbilder.
 Grund: Antworten des Users.
+
+## D-057 · 2026-09-27 · Material für P26/P27 vollständig
+- **Peter Pan:** Die WeTransfer-Videos (10 Dateien, 2048×1024, 23 s – 3 min; per Google-Drive-Link geladen) sind die **Videoprojektionen** der Inszenierung (Aquarell-Welten: Prolog, Flug, Wald, Sonnenuntergang, Nacht, Sonnenaufgang, Höhle, Sturm, Dschungel, Ozean), keine Aufführungsmitschnitte. Verwendung: Galerie-Block „Die Welten (Videoprojektion)“, Nachweis „Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux“. Cover bleibt die Aufführungs-Schleife 20:53–21:16.
+- **VOCES8:** Ausschnitt 36:25–36:43 über den Vimeo-Embed-Link (Referer anishabondy.com) in 2560×1440 geholt – HLS-Segmente per curl, Schnitt lokal (das statische ffmpeg stürzt bei Netzquellen ab).
+- **Die Nacht vor Weihnachten:** Vimeo 792233594 ist ein 21-s-Clip dieser Produktion (1080p) → Cover-Schleife statt Platzhalter.
+- **og:image:** Orange-Foto (Probe pOpera, Fondation-EME-Logo unten rechts) im Querformat 1200×630 so zugeschnitten, dass das Logo außerhalb liegt. Datei `public/og-portrait.jpg` (neuer Name wegen WhatsApp-Cache).
+Grund: Lieferungen des Users.
