@@ -396,3 +396,10 @@ Grund: Antworten des Users.
 - **Die Nacht vor Weihnachten:** Vimeo 792233594 ist ein 21-s-Clip dieser Produktion (1080p) → Cover-Schleife statt Platzhalter.
 - **og:image:** Orange-Foto (Probe pOpera, Fondation-EME-Logo unten rechts) im Querformat 1200×630 so zugeschnitten, dass das Logo außerhalb liegt. Datei `public/og-portrait.jpg` (neuer Name wegen WhatsApp-Cache).
 Grund: Lieferungen des Users.
+
+## D-058 · 2026-09-27 · P29: Anishas Farbpalette statt Tageszeit-Farben (ersetzt Farbwerte aus P10)
+- Hintergrund über den Tag (Uhr/„Zeitreise“ bleibt): 22–05 Nachtblau `#0C1636` → 07 Lila `#3B1F63` → 09–12 Hellblau `#BCD6EE` → 14–16 Pink `#F3B9CF` → 18 Tiefrot `#6A1230` → 20 Dunkelblau `#16275A` → 22 Nachtblau. Kein Farbwechsel beim Scrollen (D-055).
+- Textfarbe nicht mehr interpoliert: je Hintergrund hell `#F6F1EA` oder dunkel `#141432`, je nachdem, was mehr Kontrast hat (Palettentöne ≥ 10:1; nur in den kurzen Übergängen ~08 und ~17 Uhr kurz ≈ 3.9:1). Säulen-/Todo-Akzente schalten mit (dunkle Varianten ≥ 4.5:1 auf Hellblau/Pink, helle ≥ 5.5:1 auf den dunklen Tönen).
+- Header: auf farbigem Hintergrund Textfarbe statt „difference“-Mischung (sonst Komplementärfarben wie Mint auf Rot) – Schwelle über Sättigung in `isTwilight`.
+- Bilder in dunklen Phasen nur noch leicht abgedunkelt (max. 10 % statt 15 %). Fallback-Tokens (SSG) = Hellblau. Head-Skript und Laufzeit geprüft: identische Werte für alle halben Stunden.
+Grund: Wunsch Anisha (D-055), User: „jetzige Farben durch neue Palette ersetzen und anschauen“.

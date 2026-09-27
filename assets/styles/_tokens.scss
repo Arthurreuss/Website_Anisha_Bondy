@@ -24,20 +24,20 @@ $gutter-mobile: 0.8rem;
 $gutter-tablet-up: 1.6rem;
 
 :root {
-  // Tagesfarben als Fallback (SSG-Markup vor Hydration, Head-Skript in
-  // app.vue überschreibt beide sofort per lokaler Uhrzeit, P10/D-012-Muster;
-  // utils/daytime-theme.ts ist die alleinige Quelle der Stützpunkte).
-  --color-main: #111111;
-  --color-bg: #f8f6f2;
+  // Fallback (SSG-Markup vor Hydration, Head-Skript in app.vue überschreibt
+  // beide sofort per lokaler Uhrzeit, P10/D-012-Muster; utils/daytime-theme.ts
+  // ist die alleinige Quelle der Palette, D-058). Hier: Hellblau am Vormittag.
+  --color-main: #141432;
+  --color-bg: #bcd6ee;
 
   // Säulen-Akzente (D-017/D-018), Töne aus Anishas Mockup. Nachts blendet
   // das Tageszeit-Theme (P10) hellere Varianten ein (utils/daytime-theme.ts
   // ACCENT_NIGHT), damit sie auf dunklem Hintergrund lesbar bleiben.
-  --color-direct: #b01e3c;
+  --color-direct: #9a1633;
   --color-create: #15294f;
-  --color-participate: #c27c14;
+  --color-participate: #6e4606;
   // Platzhalter für offene Fragen (UiTodo)
-  --color-todo: #c2410c;
+  --color-todo: #8f2e05;
 
   // Tageszeit-Theme (P10): dunkles Overlay über Bildern / Helligkeitsfaktor
   // für Hintergrundbilder, nachts von 0 → --img-over-opacity max. bzw.
@@ -83,7 +83,7 @@ html.daytime-transition body {
 // Fenster-Übergang (P22): dunklere Fläche hinter den Seiten-Fenstern,
 // folgt dem Tageszeit-Theme (P10).
 :root {
-  --color-backdrop: color-mix(in srgb, var(--color-bg) 55%, #2a2716);
+  --color-backdrop: color-mix(in srgb, var(--color-bg) 55%, #0a0c1c);
 }
 
 // Eigene Ebene statt body-Hintergrund: der body blendet Farbwechsel über

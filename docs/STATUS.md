@@ -14,7 +14,7 @@
 ## Laufende Agenten
 - **Sonnet A** – P26 Texte/Credits/About/og:image (Worktree).
 - **Sonnet B** – P27 Video-Schleifen + Galerien Peter Pan/Schneekönigin (Worktree).
-- Opus (Hauptsession) parallel: P29 Palette, P30 Sprache DE; danach P28, Merge, P31.
+- Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User); jetzt P30 Sprache DE; danach P28, Merge, P31.
 
 ## Nächster Schritt
 1. Agenten-Ergebnisse reviewen und mergen; P28 Lene-Intro.

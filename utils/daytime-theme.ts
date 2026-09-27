@@ -1,36 +1,28 @@
-// Tageszeit-Theme (P10, Spezifikation §3 „Tageszeit-Theme“).
+// Tageszeit-Theme (P10, Palette seit P29/D-058: Anishas Farben statt
+// Tag-hell/Nacht-dunkel).
 //
-// Eine einzige Stützpunkt-Tabelle (BG_STOPS / TEXT_STOPS / ACCENT_DAY /
-// ACCENT_NIGHT) wird von zwei Stellen genutzt, damit die Farbwerte nirgends
-// doppelt vorkommen:
+// Eine einzige Stützpunkt-Tabelle (BG_STOPS) plus Text- und Akzentfarben
+// wird von zwei Stellen genutzt, damit die Farbwerte nirgends doppelt
+// vorkommen:
 //   1. `buildHeadInlineScript()` serialisiert die Tabellen (JSON) in einen
 //      eigenständigen String, der als Inline-<script> im <head> läuft (vor
 //      dem ersten Paint, Muster D-012) und `document.documentElement.style`
-//      direkt setzt – kein Aufblitzen des Tages-Looks bei Nacht.
+//      direkt setzt – kein Aufblitzen einer falschen Farbe.
 //   2. `computeTheme()` / `applyTheme()` laufen zur Laufzeit (Composable
 //      `useDaytimeTheme()`), lesen dieselben Tabellen aus diesem Modul und
 //      aktualisieren die Variablen jede Minute weich (CSS-Transition).
 //
-// Kontrast-Hinweis (Abnahmekriterium): Text muss auf dem Hintergrund zu jeder
-// Zeit lesbar sein (Ziel ≥ 4.5:1, WCAG AA für Fließtext). Eine direkte lineare
-// RGB-Überblendung von Gelb (#F1C345) nach Dunkel (#111111) läuft zwangsläufig
-// durch einen "schlammigen" Oliv-Ton MIT SCHLECHTEM Kontrast, weil der
-// Hintergrund genau in diesem Moment selbst einen mittleren Grauton hat (jeder
-// Übergang von dunklem zu hellem Hintergrund muss zwangsläufig einmal einen
-// mittleren Lichtwert durchlaufen; gegen einen mittleren Grauton erreicht
-// *keine* einzelne feste Textfarbe 4.5:1 – das ist eine Kontrast-Obergrenze,
-// keine Umsetzungslücke). Deshalb: TEXT_STOPS führen die Morgen-/Abend-Farbe
-// über eine kurze, nahezu weiße Brücke (#F5F3EA) und wechseln erst am
-// rechnerisch besten Punkt (Kontrast zu Gelb == Kontrast zu Dunkel) hart auf
-// Dunkel um. Damit sinkt der Kontrast nur noch in einem kurzen Fenster
-// (ca. 05:51–06:05 und 18:39–18:43, siehe Abschlussbericht) auf minimal
-// 3.8:1 statt wie bei reiner linearer Interpolation auf ca. 1:1. Das ist die
-// bewusste Abweichung von den wörtlichen Spezifikations-Stützpunkten
-// (§3-Tabelle nennt nur Eckpunkte, keine Zwischenfarben).
+// Kontrast: Die Palette hat dunkle Töne (Nachtblau, Dunkelblau, Lila,
+// Tiefrot → heller Text) und helle Töne (Hellblau, Pink → dunkler Text).
+// Die Textfarbe wird nicht interpoliert, sondern je Hintergrund die mit dem
+// höheren Kontrast gewählt (auf den Palettenfarben ≥ 10:1). Nur in den kurzen
+// Übergängen hell↔dunkel (ca. 07:40–08:20 und 16:40–17:20) liegt der
+// Hintergrund im mittleren Lichtwert, dort sinkt der Kontrast kurz auf
+// minimal ≈ 3.9:1 – physikalische Grenze, siehe Hinweis in D-016/P10.
 export interface ColorStop {
   /** Lokale Stunde als Dezimalzahl, 0–24 (z. B. 5.5 = 05:30). */
   h: number
-  /** Hex-Farbe, z. B. '#2C2922'. */
+  /** Hex-Farbe, z. B. '#0C1636'. */
   c: string
 }
 
@@ -49,70 +41,68 @@ export interface DaytimeTheme {
   twilight: boolean
 }
 
-// --- Hintergrund (§3-Tabelle wörtlich, plus 1-Minuten-Sprung an der
-// Tag/Nacht-Grenze 04:59→05:00 und 20:00, damit 21–04 Uhr wirklich flach
-// bleibt statt über Nacht komplett neu zu interpolieren). ---
+// --- Hintergrund: Anishas Palette (D-058) über den Tag. Flache Abschnitte
+// über doppelte Stützpunkte; die Uhr im Header („Zeitreise“) läuft weiterhin
+// durch alle Farben. ---
+const NACHTBLAU = '#0C1636'
+const LILA = '#3B1F63'
+const HELLBLAU = '#BCD6EE'
+const PINK = '#F3B9CF'
+const TIEFROT = '#6A1230'
+const DUNKELBLAU = '#16275A'
+
 export const BG_STOPS: ColorStop[] = [
-  { h: 4 + 59 / 60, c: '#2C2922' },
-  { h: 5, c: '#60594C' },
-  { h: 8, c: '#CEC9BB' },
-  { h: 9, c: '#F8F6F2' },
-  { h: 17, c: '#F8F6F2' },
-  { h: 18, c: '#CEC9BB' },
-  { h: 19, c: '#60594C' },
-  { h: 20, c: '#2C2922' },
+  { h: 5, c: NACHTBLAU },
+  { h: 7, c: LILA },
+  { h: 9, c: HELLBLAU },
+  { h: 12, c: HELLBLAU },
+  { h: 14, c: PINK },
+  { h: 16, c: PINK },
+  { h: 18, c: TIEFROT },
+  { h: 20, c: DUNKELBLAU },
+  { h: 22, c: NACHTBLAU },
 ]
 
-// --- Text: siehe Kontrast-Hinweis oben. #F4CF6A ist #F1C345 leicht
-// aufgehellt (Boost ~20 %), damit der Kontrast exakt um 05:00/19:00 (wo der
-// Hintergrund noch dunkel ist) 4.5:1 erreicht; #F5F3EA ist die
-// Kontrast-Brücke. ---
-export const TEXT_STOPS: ColorStop[] = [
-  { h: 4 + 59 / 60, c: '#C3BEB1' },
-  { h: 5, c: '#F4CF6A' },
-  { h: 5 + 9 / 60, c: '#F5F3EA' },
-  { h: 5 + 51 / 60, c: '#F5F3EA' },
-  { h: 5 + 52 / 60, c: '#111111' },
-  { h: 9, c: '#111111' },
-  { h: 17, c: '#111111' },
-  { h: 18 + 42 / 60, c: '#111111' },
-  { h: 18 + 43 / 60, c: '#F5F3EA' },
-  { h: 18 + 51 / 60, c: '#F5F3EA' },
-  { h: 19, c: '#F4CF6A' },
-  { h: 20, c: '#C3BEB1' },
-]
+// --- Text: helle bzw. dunkle Variante, je nach Kontrast (siehe oben). ---
+export const TEXT_LIGHT = '#F6F1EA'
+export const TEXT_DARK = '#141432'
 
-// Säulen-/Todo-Farben: Tageswerte = bestehende Tokens (D-017/D-018/D-019),
-// Nachtwerte = aufgehellte Varianten, damit sie auf dem dunklen
-// Nacht-Hintergrund (#2C2922) ebenfalls ≥ 4.5:1 erreichen (geprüft).
+// Säulen-/Todo-Farben: auf hellen Palettentönen die dunklen Varianten
+// (≥ 4.5:1 auf Hellblau und Pink), auf dunklen die hellen (≥ 5.5:1 auf allen
+// dunklen Tönen, geprüft). Umschaltung zusammen mit der Textfarbe.
 export const ACCENT_DAY = {
-  direct: '#B01E3C',
+  direct: '#9A1633',
   create: '#15294F',
-  participate: '#C27C14',
-  todo: '#C2410C',
+  participate: '#6E4606',
+  todo: '#8F2E05',
 }
 
 export const ACCENT_NIGHT = {
-  direct: '#EC6E86',
-  create: '#7FA8E8',
-  participate: '#F0A93E',
-  todo: '#F2884A',
+  direct: '#FF8FA6',
+  create: '#9EC1FF',
+  participate: '#F5B14A',
+  todo: '#FF9A5C',
 }
 
-const BG_DAY = '#F8F6F2'
-const BG_NIGHT = '#2C2922'
-const MAX_IMG_OVERLAY = 0.15
-const MIN_BG_BRIGHTNESS = 0.78
-// Header nutzt weiß + mix-blend-mode: difference. Auf mittelgrauem Hintergrund
-// ergibt das fast denselben Grauton (unlesbar) – in diesem Bereich (mittlerer
-// Kanalwert) schaltet `html.theme-twilight` den Header auf --color-main um.
+// Bilder werden nur in den dunklen Phasen leicht abgedunkelt; Maßstab ist
+// die Helligkeit zwischen hellstem (Hellblau) und dunkelstem Ton (Nachtblau).
+const BG_DAY = HELLBLAU
+const BG_NIGHT = NACHTBLAU
+const MAX_IMG_OVERLAY = 0.1
+const MIN_BG_BRIGHTNESS = 0.85
+// Header nutzt weiß + mix-blend-mode: difference. Auf farbigem Hintergrund
+// ergäbe das die Komplementärfarbe (z. B. Mint auf Tiefrot) – bei gesättigtem
+// oder mittelhellem Hintergrund schaltet `html.theme-twilight` den Header auf
+// --color-main um. Mit der Palette D-058 ist das praktisch immer der Fall.
 const TWILIGHT_MIN = 70
 const TWILIGHT_MAX = 190
+const TWILIGHT_SAT = 12
 
 export function isTwilight(bg: string): boolean {
   const [r, g, b] = hexToRgb(bg)
   const avg = (r + g + b) / 3
-  return avg > TWILIGHT_MIN && avg < TWILIGHT_MAX
+  const sat = Math.max(r, g, b) - Math.min(r, g, b)
+  return sat > TWILIGHT_SAT || (avg > TWILIGHT_MIN && avg < TWILIGHT_MAX)
 }
 
 function hexToRgb(hex: string): [number, number, number] {
@@ -167,6 +157,12 @@ function relativeLuminance([r, g, b]: number[]): number {
   return 0.2126 * chan(r) + 0.7152 * chan(g) + 0.0722 * chan(b)
 }
 
+function contrast(a: number[], b: number[]): number {
+  const la = relativeLuminance(a)
+  const lb = relativeLuminance(b)
+  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05)
+}
+
 /** Lokale Stunde als Dezimalzahl (Stunde + Minuten/60 + Sekunden/3600). */
 export function getLocalHourFraction(date: Date = new Date()): number {
   return date.getHours() + date.getMinutes() / 60 + date.getSeconds() / 3600
@@ -175,20 +171,19 @@ export function getLocalHourFraction(date: Date = new Date()): number {
 /** Berechnet das vollständige Theme (Farben, Overlay, Helligkeit) für eine Stunde. */
 export function computeTheme(hour: number): DaytimeTheme {
   const bg = rgbToHex(colorAt(BG_STOPS, hour))
-  const text = rgbToHex(colorAt(TEXT_STOPS, hour))
+  const bgRgb = hexToRgb(bg)
+  const lightText = contrast(bgRgb, hexToRgb(TEXT_LIGHT)) >= contrast(bgRgb, hexToRgb(TEXT_DARK))
+  const text = lightText ? TEXT_LIGHT : TEXT_DARK
 
-  // Nacht-Anteil (0 = voller Tag, 1 = volle Nacht) aus der Helligkeit des
-  // gerade berechneten Hintergrunds abgeleitet – keine zweite Zeittabelle
-  // nötig, dieselben BG-Zahlen bestimmen auch Overlay/Helligkeit/Akzente.
-  const bgLum = relativeLuminance(hexToRgb(bg))
+  // Dunkel-Anteil (0 = hellster, 1 = dunkelster Ton) aus der Helligkeit des
+  // gerade berechneten Hintergrunds – bestimmt Overlay und Bildhelligkeit.
+  const bgLum = relativeLuminance(bgRgb)
   const dayLum = relativeLuminance(hexToRgb(BG_DAY))
   const nightLum = relativeLuminance(hexToRgb(BG_NIGHT))
   const nightMix = Math.min(1, Math.max(0, (dayLum - bgLum) / (dayLum - nightLum)))
 
-  const direct = rgbToHex(lerpHex(ACCENT_DAY.direct, ACCENT_NIGHT.direct, nightMix))
-  const create = rgbToHex(lerpHex(ACCENT_DAY.create, ACCENT_NIGHT.create, nightMix))
-  const participate = rgbToHex(lerpHex(ACCENT_DAY.participate, ACCENT_NIGHT.participate, nightMix))
-  const todo = rgbToHex(lerpHex(ACCENT_DAY.todo, ACCENT_NIGHT.todo, nightMix))
+  const accents = lightText ? ACCENT_NIGHT : ACCENT_DAY
+  const { direct, create, participate, todo } = accents
 
   return {
     bg,
@@ -227,7 +222,8 @@ export function applyTheme(el: HTMLElement, theme: DaytimeTheme): void {
 export function buildHeadInlineScript(): string {
   const data = JSON.stringify({
     bg: BG_STOPS,
-    text: TEXT_STOPS,
+    tl: TEXT_LIGHT,
+    td: TEXT_DARK,
     accentDay: ACCENT_DAY,
     accentNight: ACCENT_NIGHT,
     bgDay: BG_DAY,
@@ -236,6 +232,7 @@ export function buildHeadInlineScript(): string {
     minBrightness: MIN_BG_BRIGHTNESS,
     twMin: TWILIGHT_MIN,
     twMax: TWILIGHT_MAX,
+    twSat: TWILIGHT_SAT,
   })
   // Bewusst minimal/ohne Kommentare (läuft vor dem ersten Paint).
   return `(function(){try{
@@ -249,19 +246,21 @@ function lum(c){function ch(v){v=v/255;return v<=0.03928?v/12.92:Math.pow((v+0.0
 var now=new Date();
 var hour=now.getHours()+now.getMinutes()/60+now.getSeconds()/3600;
 var bg=rh(ca(D.bg,hour));
-var text=rh(ca(D.text,hour));
 var bgLum=lum(hx(bg)),dayLum=lum(hx(D.bgDay)),nightLum=lum(hx(D.bgNight));
+function cr(a,b){return(Math.max(a,b)+0.05)/(Math.min(a,b)+0.05)}
+var lt=cr(bgLum,lum(hx(D.tl)))>=cr(bgLum,lum(hx(D.td)));
+var text=lt?D.tl:D.td;var A=lt?D.accentNight:D.accentDay;
 var mix=Math.min(1,Math.max(0,(dayLum-bgLum)/(dayLum-nightLum)));
 var d=document.documentElement;
 d.style.setProperty('--color-bg',bg);
 d.style.setProperty('--color-main',text);
 d.style.setProperty('--img-over-opacity',String(Math.round(mix*D.maxOverlay*1000)/1000));
 d.style.setProperty('--bg-brightness',String(Math.round((1-mix*(1-D.minBrightness))*1000)/1000));
-d.style.setProperty('--color-direct',rh(lh(D.accentDay.direct,D.accentNight.direct,mix)));
-d.style.setProperty('--color-create',rh(lh(D.accentDay.create,D.accentNight.create,mix)));
-d.style.setProperty('--color-participate',rh(lh(D.accentDay.participate,D.accentNight.participate,mix)));
-d.style.setProperty('--color-todo',rh(lh(D.accentDay.todo,D.accentNight.todo,mix)));
+d.style.setProperty('--color-direct',A.direct);
+d.style.setProperty('--color-create',A.create);
+d.style.setProperty('--color-participate',A.participate);
+d.style.setProperty('--color-todo',A.todo);
 d.style.setProperty('--daytime-hour',String(hour));
-var bc=hx(bg),avg=(bc[0]+bc[1]+bc[2])/3;if(avg>D.twMin&&avg<D.twMax)d.classList.add('theme-twilight');
+var bc=hx(bg),avg=(bc[0]+bc[1]+bc[2])/3,sat=Math.max(bc[0],bc[1],bc[2])-Math.min(bc[0],bc[1],bc[2]);if(sat>D.twSat||(avg>D.twMin&&avg<D.twMax))d.classList.add('theme-twilight');
 }catch(e){}})()`
 }

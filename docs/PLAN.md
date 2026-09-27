@@ -37,7 +37,7 @@ Umfangsänderungen nur mit Verweis auf [DECISIONS.md](DECISIONS.md).
 | P26 | Feedback 27.09. Texte: Begriffe EN (Stage/Musical Director), Credits Lene + H&G, „Flucht-Trilogie“, Kontakt-Überschrift raus, Selam-Dolmuş-Touren, Fotograf:innen sichtbar, Partner + TaW/Brucknerhaus, Barrie-Video auf About, og:image (D-055) | Sonnet | – | 🔄 | public/og-portrait.jpg |
 | P27 | Video-Schleifen als Cover: Lene, Peter Pan, Hänsel und Gretel, Die Nacht vor Weihnachten (Vimeo 792233594), VOCES8; Standbilder für Galerien (D-055); Peter-Pan-Projektionen und Anne-Hölzinger-Fotos (Schneekönigin) in Galerien (D-057) | Sonnet | – | 🔄 | public/media/peter-pan/cover.mp4, public/media/haensel-und-gretel/cover.mp4, public/media/lene-fliegt-ins-zirkusland/loop.mp4 |
 | P28 | Lene: Papagei-Foto im Intro-Stapel, Wechsel auf Video-Schleife, sobald die Galerie aufgeht (D-055) | **Opus** | P27 | ⬜ | – |
-| P29 | Farbpalette Anisha statt Tageszeit-Farben, Uhr bleibt, kein Scroll-Farbwechsel (D-055) | **Opus** | – | ⬜ | – |
+| P29 | Farbpalette Anisha statt Tageszeit-Farben, Uhr bleibt, kein Scroll-Farbwechsel (D-055) | **Opus** | – | 👀 | utils/daytime-theme.ts |
 | P30 | Standardsprache Deutsch: DE unter `/`, EN unter `/en`, Weiterleitungen `/de/…`, hreflang/Sitemap (D-055) | **Opus** | – | ⬜ | public/_redirects |
 | P31 | Merge P26–P30, Browser-Check DE/EN, Build, Deploy auf Zuruf | **Opus** | P26–P30 | ⬜ | – |
 
