@@ -8,7 +8,7 @@ export default defineProject({
   venue: 'Philharmonie Luxembourg',
   year: 2025,
   pillar: 'direct',
-  role: { en: 'Stage direction', de: 'Regie' },
+  role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' },
   dates: {
     en: ['World premiere 25 April 2025, Philharmonie Luxembourg', 'Family performance 26 April 2025'],
     de: ['Uraufführung 25. April 2025, Philharmonie Luxembourg', 'Familienvorstellung 26. April 2025'],
@@ -86,8 +86,8 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Elena Kats-Chernin' },
     { role: { en: 'Libretto', de: 'Libretto' }, name: 'Susanne Felicitas Wolf' },
-    { role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'James Hendry' },
+    { role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Musical Director', de: 'Musikalische Leitung' }, name: 'James Hendry' },
     { role: { en: 'Circus', de: 'Zirkus' }, name: "Zaltimbanq' Zirkus · Irina Chechulina" },
     { role: { en: 'Choreography', de: 'Choreografie' }, name: 'Mariana Souza' },
     { role: { en: 'Set', de: 'Bühne' }, name: 'Julia Hansen' },

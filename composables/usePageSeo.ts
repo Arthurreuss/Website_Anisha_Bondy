@@ -24,7 +24,7 @@ export function usePageSeo({ title, description, image }: PageSeo) {
     description: () => clip(description()),
     ogTitle: title,
     ogDescription: () => clip(description()),
-    ogImage: () => abs(image?.() ?? '/og.jpg'),
+    ogImage: () => abs(image?.() ?? '/og-portrait.jpg'),
     ogType: 'website',
     ogSiteName: 'Anisha Bondy',
     twitterCard: 'summary_large_image',

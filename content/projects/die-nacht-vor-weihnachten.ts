@@ -36,7 +36,7 @@ export default defineProject({
   },
   videos: [{ provider: 'youtube', id: '0SRwI1FEzZM', title: { en: 'The Night Before Christmas – trailer (RSB)', de: 'Die Nacht vor Weihnachten – Trailer (RSB)' } }],
   credits: [
-    { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
+    { role: { en: 'Musical Director', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
     { role: { en: 'Scenic staging', de: 'Szenische Einrichtung' }, name: 'Anisha Bondy' },
     { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Uta Jäger, Saskia Theis' },
     { role: { en: 'Lighting', de: 'Licht' }, name: 'Marco Philipp' },

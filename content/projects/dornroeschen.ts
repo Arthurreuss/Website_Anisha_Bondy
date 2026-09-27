@@ -8,7 +8,7 @@ export default defineProject({
   venue: 'Philharmonie Luxembourg',
   year: 2026,
   pillar: 'create',
-  role: { en: 'Direction', de: 'Regie' },
+  role: { en: 'Stage Director', de: 'Regie' },
   dates: {
     en: ['Premiere 6 March 2026 (school performance), Philharmonie Luxembourg', 'Family performance 7 March 2026'],
     de: ['Premiere 6. März 2026 (Schulvorstellung), Philharmonie Luxembourg', 'Familienvorstellung 7. März 2026'],
@@ -124,9 +124,9 @@ export default defineProject({
   ],
   videos: [{ provider: 'youtube', id: 'z7sEa5xDJAg', title: { en: 'Sleeping Beauty', de: 'Dornröschen' } }],
   credits: [
-    { role: { en: 'Concept & direction', de: 'Konzept & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Concept & Stage Director', de: 'Konzept & Regie' }, name: 'Anisha Bondy' },
     { role: { en: 'Concept & choreography', de: 'Konzept & Choreografie' }, name: 'Mariana Souza' },
-    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'Sasha Scolnik-Brower' },
+    { role: { en: 'Musical Director', de: 'Musikalische Leitung' }, name: 'Sasha Scolnik-Brower' },
     { role: { en: 'Text & dramaturgy', de: 'Text & Dramaturgie' }, name: 'Sabrina Zwach' },
     { role: { en: 'Set', de: 'Bühne' }, name: 'Isabelle Kaiser' },
     { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Saskia Theis' },

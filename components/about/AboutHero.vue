@@ -23,6 +23,7 @@ useReveal(rootRef)
         loading="eager"
       />
     </div>
+    <p class="about-hero__credit font-body-12">{{ $t('about.portraitCredit') }}</p>
 
     <div class="about-hero__text">
       <h1 class="font-headline-1 about-hero__title" data-reveal="lines">{{ l(siteContent.statement.title) }}</h1>
@@ -49,6 +50,16 @@ useReveal(rootRef)
   overflow: hidden;
   aspect-ratio: 2 / 3;
   background-color: color-mix(in srgb, var(--color-main) 6%, transparent);
+
+  @include desktop {
+    grid-column: 1 / 6;
+  }
+}
+
+.about-hero__credit {
+  grid-column: 1 / -1;
+  opacity: 0.5;
+  margin: 0.8rem 0 0;
 
   @include desktop {
     grid-column: 1 / 6;

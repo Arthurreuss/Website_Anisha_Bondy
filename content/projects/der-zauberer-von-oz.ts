@@ -11,7 +11,7 @@ export default defineProject({
   },
   year: 2026,
   pillar: 'create',
-  role: { en: 'Text & direction', de: 'Text & Regie' },
+  role: { en: 'Text & Stage Director', de: 'Text & Regie' },
   dates: {
     en: ['World premiere 17 January 2026, Musikverein Vienna (Brahms-Saal)', '25 January 2026, Philharmonie Luxembourg', '20–27 March 2027, Brucknerhaus Linz'],
     de: ['Uraufführung 17. Januar 2026, Musikverein Wien (Brahms-Saal)', '25. Januar 2026, Philharmonie Luxembourg', '20.–27. März 2027, Brucknerhaus Linz'],
@@ -154,7 +154,7 @@ export default defineProject({
   ],
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Matthias Werner' },
-    { role: { en: 'Text & direction', de: 'Text & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Text & Stage Director', de: 'Text & Regie' }, name: 'Anisha Bondy' },
     { role: { en: 'Text, puppets, puppetry & concept', de: 'Text, Puppen, Puppenspiel & Konzept' }, name: 'Suse Wächter' },
     { role: { en: 'Costume & set', de: 'Kostüm & Bühne' }, name: 'Renate Vogg' },
     { role: { en: 'Performer', de: 'Spiel' }, name: 'Lenya Gramß' },

@@ -32,7 +32,7 @@ export default defineProject({
   videos: [],
   credits: [
     { role: { en: 'Scenic staging', de: 'Szenische Einrichtung' }, name: 'Anisha Bondy' },
-    { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
+    { role: { en: 'Musical Director', de: 'Dirigat' }, name: 'Vladimir Jurowski' },
     { role: { en: 'Viola', de: 'Viola' }, name: 'Jean-Claude Velin' },
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Rundfunk-Sinfonieorchester Berlin, ensemble unitedberlin' },
   ],

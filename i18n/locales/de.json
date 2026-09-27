@@ -34,7 +34,6 @@
     "ariaLabel": "Ortszeit-Uhr, ziehbar, aktuell"
   },
   "contact": {
-    "headline": "Lass uns etwas gemeinsam entstehen lassen",
     "intro": "Erzähl mir von deinem Projekt – ich melde mich.",
     "success": "Danke — ich melde mich in Kürze bei dir.",
     "error": "Etwas ist schiefgelaufen, bitte versuch es noch einmal.",
@@ -81,6 +80,7 @@
       "role": "Rolle",
       "dates": "Termine",
       "credits": "Credits",
+      "photos": "Fotos",
       "awards": "Preise",
       "awardWon": "Ausgezeichnet",
       "awardNominated": "Nominiert",
@@ -95,6 +95,7 @@
   "about": {
     "seoTitle": "Über mich — Anisha Bondy",
     "portraitAlt": "Porträt von Anisha Bondy",
+    "portraitCredit": "Foto: Claudia Greco",
     "approachEyebrow": "Haltung",
     "bioHeading": "Biografie",
     "workedWithHeading": "Zusammengearbeitet mit",
@@ -104,7 +105,9 @@
     "wonLabel": "Gewonnen",
     "nominatedLabel": "Nominiert",
     "rehearsalAlt": "Schwarzweißfoto aus dem Probenraum: Anisha Bondy lacht im Gespräch mit Barrie Kosky, um sie herum Mitwirkende und ein Kind.",
-    "rehearsalCaption": "Probe zu „Echnaton“ mit Barrie Kosky"
+    "rehearsalCaption": "Probe zu „Echnaton“ mit Barrie Kosky",
+    "rehearsalCredit": "Foto: Claudia Greco",
+    "barrieVideoTitle": "My very special Barrie moment – Anisha Bondy über Barrie Kosky"
   },
   "archive": {
     "seoTitle": "Archiv — Anisha Bondy",

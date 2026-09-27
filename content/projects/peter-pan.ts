@@ -8,7 +8,7 @@ export default defineProject({
   venue: 'Philharmonie Luxembourg',
   year: 2024,
   pillar: 'direct',
-  role: { en: 'Stage direction', de: 'Regie' },
+  role: { en: 'Stage Director', de: 'Regie' },
   dates: {
     en: ['World premiere 4 May 2024, Philharmonie Luxembourg'],
     de: ['Uraufführung 4. Mai 2024, Philharmonie Luxembourg'],
@@ -35,8 +35,8 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Frank Schwemmer' },
     { role: { en: 'Libretto', de: 'Libretto' }, name: 'Michael Frowin' },
-    { role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'Harry Ogg, David Fernández Caravaca' },
+    { role: { en: 'Stage Director', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Musical Director', de: 'Musikalische Leitung' }, name: 'Harry Ogg, David Fernández Caravaca' },
     { role: { en: 'Set', de: 'Bühne' }, name: 'Julia Hansen' },
     { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Uta Jäger' },
     { role: { en: 'Lighting', de: 'Licht' }, name: 'Michael Morgan' },

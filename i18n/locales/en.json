@@ -34,7 +34,6 @@
     "ariaLabel": "Local time clock, draggable, currently"
   },
   "contact": {
-    "headline": "Let’s build together",
     "intro": "Tell me about your project and I’ll get in touch.",
     "success": "Thank you — I’ll get back to you soon.",
     "error": "Something went wrong, please try again.",
@@ -81,6 +80,7 @@
       "role": "Role",
       "dates": "Dates",
       "credits": "Credits",
+      "photos": "Photos",
       "awards": "Awards",
       "awardWon": "Winner",
       "awardNominated": "Nominated",
@@ -95,6 +95,7 @@
   "about": {
     "seoTitle": "About — Anisha Bondy",
     "portraitAlt": "Portrait of Anisha Bondy",
+    "portraitCredit": "Photo: Claudia Greco",
     "approachEyebrow": "Approach",
     "bioHeading": "Biography",
     "workedWithHeading": "Worked with",
@@ -104,7 +105,9 @@
     "wonLabel": "Won",
     "nominatedLabel": "Nominated",
     "rehearsalAlt": "Black-and-white photo from the rehearsal room: Anisha Bondy laughs in conversation with Barrie Kosky, surrounded by cast members and a child.",
-    "rehearsalCaption": "Rehearsing “Akhnaten” with Barrie Kosky"
+    "rehearsalCaption": "Rehearsing “Akhnaten” with Barrie Kosky",
+    "rehearsalCredit": "Photo: Claudia Greco",
+    "barrieVideoTitle": "My very special Barrie moment"
   },
   "archive": {
     "seoTitle": "Archive — Anisha Bondy",

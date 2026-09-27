@@ -8,7 +8,7 @@ export default defineProject({
   venue: 'Philharmonie Luxembourg',
   year: 2025,
   pillar: 'create',
-  role: { en: 'Direction', de: 'Regie' },
+  role: { en: 'Stage Director', de: 'Regie' },
   dates: {
     en: ['20 December 2025, Philharmonie Luxembourg (Grand Auditorium)'],
     de: ['20. Dezember 2025, Philharmonie Luxembourg (Grand Auditorium)'],
@@ -33,13 +33,13 @@ export default defineProject({
   },
   videos: [{ provider: 'youtube', id: 'GzFMk8-KMOM', title: { en: 'Hansel and Gretel', de: 'Hänsel und Gretel' } }],
   credits: [
-    { role: { en: 'Direction', de: 'Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Musical direction', de: 'Dirigat' }, name: 'John Warner' },
+    { role: { en: 'Stage Director', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Musical Director', de: 'Dirigat' }, name: 'John Warner' },
     { role: { en: 'Narrator', de: 'Moderation / Erzähler' }, name: 'Malte Arkona' },
     { role: { en: 'Music', de: 'Musik' }, name: 'Engelbert Humperdinck' },
     { role: { en: 'Text', de: 'Text' }, name: 'Pamela Dürr' },
-    { role: { en: 'Set', de: 'Bühne' }, name: 'David Münch' },
-    { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Renate Vogg' },
+    { role: { en: 'Scenic Construction', de: 'Bühnenbau' }, name: 'David Münch' },
+    { role: { en: 'Set & Costume Design', de: 'Ausstattung' }, name: 'Renate Vogg' },
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
     { role: { en: 'Children’s choir', de: 'Kinderchor' }, name: 'Kinderchor Forte (Conservatoire de la Ville de Luxembourg) · Sylvie Serra-Jacobs' },
     {
