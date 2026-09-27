@@ -1,0 +1,4 @@
+# Standardsprache seit D-059 Deutsch: DE ohne Präfix, EN unter /en.
+# Alte deutsche Adressen (/de, /de/…) dauerhaft auf die neuen umleiten.
+/de      /        301
+/de/*    /:splat  301

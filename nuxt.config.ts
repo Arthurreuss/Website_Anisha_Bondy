@@ -13,13 +13,14 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/i18n'],
 
-  // Zweisprachig (D-018): EN unter /, DE unter /de
+  // Zweisprachig (D-018): DE unter /, EN unter /en (D-059, vorher umgekehrt;
+  // alte /de/…-Adressen leiten per public/_redirects weiter)
   i18n: {
     locales: [
-      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
       { code: 'de', language: 'de', name: 'Deutsch', file: 'de.json' },
+      { code: 'en', language: 'en', name: 'English', file: 'en.json' },
     ],
-    defaultLocale: 'en',
+    defaultLocale: 'de',
     baseUrl: siteUrl,
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
@@ -46,7 +47,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       // Case-Seiten werden über die Links der Startseite gefunden; Seiten, die
       // nur im Menü-Overlay verlinkt sind, explizit (P15/P16, ersetzt D-011).
-      routes: ['/', '/de', '/about', '/archive', '/de/about', '/de/archive', '/imprint', '/de/imprint', '/privacy', '/de/privacy'],
+      routes: ['/', '/en', '/about', '/archive', '/en/about', '/en/archive', '/imprint', '/en/imprint', '/privacy', '/en/privacy'],
     },
   },
 

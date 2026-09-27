@@ -3,32 +3,33 @@
 import { writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 
-const DE = '/de'
+// Standardsprache DE ohne Präfix, EN unter /en (D-059)
+const EN = '/en'
 
 /** Nur echte Seiten: keine Payloads, Fallbacks oder Dateien mit Endung. */
 function isPage(route: string) {
   return !/\.[a-z0-9]+$/i.test(route) && !route.includes('_payload') && route !== '/200' && route !== '/404'
 }
 
-/** EN-Pfad zu einem Pfad (EN ohne Präfix, DE unter /de, D-018). */
-function enPath(route: string) {
-  if (route === DE) return '/'
-  return route.startsWith(`${DE}/`) ? route.slice(DE.length) : route
+/** DE-Pfad zu einem Pfad (DE ohne Präfix, EN unter /en, D-059). */
+function dePath(route: string) {
+  if (route === EN) return '/'
+  return route.startsWith(`${EN}/`) ? route.slice(EN.length) : route
 }
 
 export async function writeSeoFiles(publicDir: string, siteUrl: string, routes: string[]) {
   const pages = new Set(routes.filter(isPage))
-  const enPages = [...new Set([...pages].map(enPath))].sort()
+  const dePages = [...new Set([...pages].map(dePath))].sort()
   const url = (path: string) => `${siteUrl}${path}`
 
-  const entries = enPages.map((en) => {
-    const de = en === '/' ? DE : `${DE}${en}`
+  const entries = dePages.map((de) => {
+    const en = de === '/' ? EN : `${EN}${de}`
     const alternates = [
-      `    <xhtml:link rel="alternate" hreflang="en" href="${url(en)}"/>`,
-      pages.has(de) ? `    <xhtml:link rel="alternate" hreflang="de" href="${url(de)}"/>` : '',
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${url(en)}"/>`,
+      `    <xhtml:link rel="alternate" hreflang="de" href="${url(de)}"/>`,
+      pages.has(en) ? `    <xhtml:link rel="alternate" hreflang="en" href="${url(en)}"/>` : '',
+      `    <xhtml:link rel="alternate" hreflang="x-default" href="${url(de)}"/>`,
     ].filter(Boolean)
-    return [en, pages.has(de) ? de : null]
+    return [de, pages.has(en) ? en : null]
       .filter((p): p is string => p !== null)
       .map((loc) => `  <url>\n    <loc>${url(loc)}</loc>\n${alternates.join('\n')}\n  </url>`)
       .join('\n')

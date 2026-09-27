@@ -14,13 +14,13 @@
 ## Laufende Agenten
 - **Sonnet A** – P26 Texte/Credits/About/og:image (Worktree).
 - **Sonnet B** – P27 Video-Schleifen + Galerien Peter Pan/Schneekönigin (Worktree).
-- Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User); jetzt P30 Sprache DE; danach P28, Merge, P31.
+- Opus (Hauptsession): P29 Palette fertig (D-058, Abnahme User), P30 Deutsch als Standard fertig (D-059); danach P28, Merge, P31.
 
 ## Nächster Schritt
 1. Agenten-Ergebnisse reviewen und mergen; P28 Lene-Intro.
 2. Anisha: Google Doc; offene Punkte [anfrage-anisha.md](anfrage-anisha.md) §6 (Ligeti/Xenakis als Projekte?, Selam-Fragen, H&G-Begriffe, Fotograf:in Orange-Foto).
 3. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
-4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
+4. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy). Nach Deploy: Sitemap in Search Console neu einreichen (D-059).
 
 ## Bekannte Kleinigkeiten
 - Zeilen-Split nur reiner Text (D-013).

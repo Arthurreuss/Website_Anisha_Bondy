@@ -403,3 +403,10 @@ Grund: Lieferungen des Users.
 - Header: auf farbigem Hintergrund Textfarbe statt „difference“-Mischung (sonst Komplementärfarben wie Mint auf Rot) – Schwelle über Sättigung in `isTwilight`.
 - Bilder in dunklen Phasen nur noch leicht abgedunkelt (max. 10 % statt 15 %). Fallback-Tokens (SSG) = Hellblau. Head-Skript und Laufzeit geprüft: identische Werte für alle halben Stunden.
 Grund: Wunsch Anisha (D-055), User: „jetzige Farben durch neue Palette ersetzen und anschauen“.
+
+## D-059 · 2026-09-27 · P30: Deutsch ist Standardsprache (ersetzt D-018 „EN unter /, DE unter /de“)
+- `defaultLocale: 'de'`, DE ohne Präfix, EN unter `/en/…`; Reihenfolge im Sprachumschalter DE / EN. `fallbackLocale` bleibt EN (fehlende DE-Texte → EN).
+- `public/_redirects`: `/de` und `/de/*` → 301 auf die Adresse ohne Präfix (Cloudflare Pages; Nitro hängt seine 404-Regel dahinter an).
+- Sitemap/hreflang (`config/seo-files.ts`): x-default = DE; canonical und `<html lang>` kommen weiter aus `useLocaleHead`. Nachgeprüft im Build: `/` lang=de, `/en` lang=en, 38 URLs, Case-Links locale-richtig.
+- Folge: bisher geteilte englische Links (`/about`, `/cases/…`) zeigen jetzt Deutsch. Nach dem Deploy Sitemap in der Search Console neu einreichen.
+Grund: User (D-055).
