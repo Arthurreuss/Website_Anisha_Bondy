@@ -7,6 +7,18 @@ import type { Project } from '~/types/project'
 
 const props = defineProps<{ project: Project }>()
 
+// Fotograf:innen-Nachweis: alle eindeutigen `credit`-Werte aus Cover und Galerie,
+// ohne Video-/Film-Quellen (die stehen schon je Galerieblock, siehe CaseGallery).
+const isPhotoCredit = (c: string) => !/^(film|trailer|clip|video):/i.test(c.trim())
+
+const photoCredits = computed(() => {
+  const raw = [
+    props.project.cover.credit,
+    ...props.project.gallery.flatMap((b) => (b.type === 'single' ? [b.media.credit] : b.media.map((m) => m.credit))),
+  ].filter((c): c is string => Boolean(c))
+  return Array.from(new Set(raw)).filter(isPhotoCredit)
+})
+
 const hasContent = computed(
   () =>
     Boolean(props.project.role) ||
@@ -14,7 +26,8 @@ const hasContent = computed(
     props.project.credits.length > 0 ||
     props.project.awards.length > 0 ||
     props.project.press.length > 0 ||
-    props.project.todos.length > 0,
+    props.project.todos.length > 0 ||
+    photoCredits.value.length > 0,
 )
 
 const rootRef = ref<HTMLElement | null>(null)
@@ -47,6 +60,15 @@ useReveal(rootRef)
         <li v-for="credit in project.credits" :key="`${credit.role}-${credit.name}`" class="font-body">
           <span class="uppercase font-body-12 list__role">{{ credit.role }}</span> — {{ credit.name }}
         </li>
+      </ul>
+    </div>
+
+    <div v-if="photoCredits.length" class="facts__col">
+      <div class="label-mask">
+        <p class="label font-body-12 uppercase" data-reveal="mask">{{ $t('case.facts.photos') }}</p>
+      </div>
+      <ul class="list">
+        <li v-for="c in photoCredits" :key="c" class="font-body">{{ c }}</li>
       </ul>
     </div>
 
