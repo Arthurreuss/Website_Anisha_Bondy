@@ -15,11 +15,16 @@ export default defineProject({
   },
   tags: { en: ['Narrated concert', 'Family', 'New format'], de: ['Erzählkonzert', 'Familie', 'Neues Format'] },
   cover: {
-    type: 'image',
-    src: '/media/haensel-und-gretel/cover.svg',
-    alt: { en: 'Placeholder cover: Hansel and Gretel', de: 'Platzhalter-Cover: Hänsel und Gretel' },
-    width: 1200,
-    height: 1500,
+    type: 'video',
+    src: '/media/haensel-und-gretel/cover.mp4',
+    poster: '/media/haensel-und-gretel/cover-poster.jpg',
+    alt: {
+      en: 'The orchestra and a small gingerbread house on the dimly lit stage of the Grand Auditorium.',
+      de: 'Das Orchester und ein kleines Lebkuchenhaus auf der dunkel erleuchteten Bühne des Grand Auditorium.',
+    },
+    width: 800,
+    height: 1000,
+    credit: 'Film: Philharmonie Luxembourg',
   },
   intro: {
     en: [
