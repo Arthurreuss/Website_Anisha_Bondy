@@ -383,3 +383,9 @@ Umsetzung als Pakete P26–P31 in [PLAN.md](PLAN.md). Rohquellen: Mail/WhatsApp 
 - **Anne Hölzinger** (Bühne & Kostüm, annehoelzinger.de) hat eigene Fotos zu Schneekönigin, Ligeti- und Xenakis-Festival: nur mit ihrer Zustimmung übernehmen (Anisha fragt), Nachweis „Anne Hölzinger“.
 - **Projekttexte als Google Doc** an Anisha: sie korrigiert, legt die Reihenfolge fest und ergänzt Zukunftspläne (z. B. NEST – Wiener Staatsoper, April 2027). Rücklauf → Box „Season 2026/27“ (D-049).
 Grund: Rückmeldung Anisha, Antworten des Users.
+
+## D-056 · 2026-09-27 · Antworten zu D-055: Anne-Hölzinger-Fotos frei, oranges Foto als Vorschaubild
+- Fotos von annehoelzinger.de dürfen verwendet werden (Zusage Anisha/Anne), Nachweis „Anne Hölzinger“. Abgerufen: Schneekönigin 7, Ligeti-Festival 4, Xenakis-Festival 6 Bilder, je nur 980×900 (Web-Größe) – Originale bei Anne erfragen, falls größer gebraucht.
+- og:image: Foto mit orangem Hintergrund (ersetzt „Bio-Portrait“ in D-055), Datei kommt vom User.
+- Peter-Pan-Szenenvideos (~500 MB, WeTransfer; Download aus dem Container verweigert): User verkleinert lokal (1080p H.264, ohne Ton) und lädt sie hoch. Rohvideos nicht ins Repo, nur fertige Schleifen/Standbilder.
+Grund: Antworten des Users.

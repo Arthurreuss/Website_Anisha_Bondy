@@ -60,10 +60,10 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 ## 6 · Rückfragen zum Feedback vom 27.09. (D-055)
 
 1. **Google Doc mit allen Projekttexten** korrigieren, Reihenfolge festlegen, Zukunftspläne ergänzen (u. a. NEST – Wiener Staatsoper, April 2027, mit richtigem Datum).
-2. **Anne Hölzinger** fragen, ob wir ihre Fotos (Schneekönigin, Ligeti-Festival, Xenakis-Festival) mit Nachweis „Anne Hölzinger“ zeigen dürfen. Ligeti und Xenakis gibt es auf der Seite noch nicht: als neue Archiv-Projekte? Dann bitte Jahr, Haus, Rolle, 2–3 Sätze.
+2. **Anne Hölzinger:** Fotos freigegeben (D-056). Ligeti und Xenakis gibt es auf der Seite noch nicht: als neue Archiv-Projekte? Dann bitte Jahr, Haus, Rolle, 2–3 Sätze.
 3. **Selam Opera!:** Gehört „Komşu Dolmuş seit 2020“ auch zu dir? „Ben und Henry“ als eigenes Projekt oder als Absatz bei Selam? Dürfen die Zahlen aus dem Buch (über 750.000 erreichte Personen, 670.000 Videoaufrufe, Stand Nov. 2021) und ein Auszug aus deinem Text „Die richtige Balance“ auf die Seite?
 4. **Hänsel und Gretel, Englisch:** Renate Vogg „Set & Costume Design“, David Münch „Scenic Construction“ – passt das?
-5. **Vorschaubild:** Das Foto mit orangem Hintergrund bitte als Datei, sonst nehmen wir das Bio-Portrait.
+5. **Vorschaubild:** Foto mit orangem Hintergrund bitte als Datei (D-056).
 6. **Peter Pan:** Videos der Inszenierung (WeTransfer) → daraus Standbilder für die Galerie.
 
 ---
