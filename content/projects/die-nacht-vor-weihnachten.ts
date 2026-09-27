@@ -18,11 +18,16 @@ export default defineProject({
   },
   tags: { en: ['Staged concert', 'Rimsky-Korsakov', 'Christmas'], de: ['Szenisches Konzert', 'Rimski-Korsakow', 'Weihnachten'] },
   cover: {
-    type: 'image',
-    src: '/media/die-nacht-vor-weihnachten/cover.svg',
-    alt: { en: 'Placeholder cover: The Night Before Christmas', de: 'Platzhalter-Cover: Die Nacht vor Weihnachten' },
-    width: 1200,
-    height: 1500,
+    type: 'video',
+    src: '/media/die-nacht-vor-weihnachten/cover.mp4',
+    poster: '/media/die-nacht-vor-weihnachten/cover-poster.jpg',
+    alt: {
+      en: 'Scenes from The Night Before Christmas: the female chorus, a witch with a broom among the orchestra, and the male soloists in fur hats.',
+      de: 'Szenen aus Die Nacht vor Weihnachten: der Frauenchor, eine Hexe mit Besen zwischen den Musiker:innen und die Solisten in Pelzmützen.',
+    },
+    width: 800,
+    height: 1000,
+    credit: 'Clip: Rundfunk-Sinfonieorchester Berlin',
   },
   intro: {
     en: [
