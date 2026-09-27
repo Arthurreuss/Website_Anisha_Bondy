@@ -34,7 +34,6 @@
     "ariaLabel": "Local time clock, draggable, currently"
   },
   "contact": {
-    "headline": "Let’s build together",
     "intro": "Tell me about your project and I’ll get in touch.",
     "success": "Thank you — I’ll get back to you soon.",
     "error": "Something went wrong, please try again.",

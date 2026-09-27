@@ -173,10 +173,7 @@ async function onSubmit() {
     </button>
 
     <div class="contact-overlay__inner">
-      <h2 :ref="(el) => setRevealEl(el, 0)" class="contact-overlay__headline font-headline-1">
-        {{ $t('contact.headline') }}
-      </h2>
-      <p :ref="(el) => setRevealEl(el, 1)" class="contact-overlay__intro font-body">
+      <p :ref="(el) => setRevealEl(el, 0)" class="contact-overlay__intro font-body">
         {{ $t('contact.intro') }}
       </p>
 
@@ -187,7 +184,7 @@ async function onSubmit() {
       <form v-else name="contact" class="contact-form" @submit.prevent="onSubmit">
         <input v-model="botcheck" type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
-        <div :ref="(el) => setRevealEl(el, 2)" class="contact-form__field">
+        <div :ref="(el) => setRevealEl(el, 1)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-name">01. {{ $t('contact.fields.name') }}</label>
           <input
             id="contact-name"
@@ -199,7 +196,7 @@ async function onSubmit() {
           />
         </div>
 
-        <div :ref="(el) => setRevealEl(el, 3)" class="contact-form__field">
+        <div :ref="(el) => setRevealEl(el, 2)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-email">02. {{ $t('contact.fields.email') }}</label>
           <input
             id="contact-email"
@@ -211,7 +208,7 @@ async function onSubmit() {
           />
         </div>
 
-        <div :ref="(el) => setRevealEl(el, 4)" class="contact-form__field">
+        <div :ref="(el) => setRevealEl(el, 3)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-organisation">
             03. {{ $t('contact.fields.organisation') }}
           </label>
@@ -224,7 +221,7 @@ async function onSubmit() {
           />
         </div>
 
-        <fieldset :ref="(el) => setRevealEl(el, 5)" class="contact-form__field">
+        <fieldset :ref="(el) => setRevealEl(el, 4)" class="contact-form__field">
           <legend class="contact-form__label font-body-12 uppercase">04. {{ $t('contact.fields.concern') }}</legend>
           <div class="contact-form__chips">
             <label v-for="option in concernOptions" :key="option" class="chip">
@@ -240,14 +237,14 @@ async function onSubmit() {
           </div>
         </fieldset>
 
-        <div :ref="(el) => setRevealEl(el, 6)" class="contact-form__field">
+        <div :ref="(el) => setRevealEl(el, 5)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-period">
             05. {{ $t('contact.fields.period') }}
           </label>
           <input id="contact-period" v-model="form.period" type="text" name="period" class="contact-form__input font-body" />
         </div>
 
-        <div :ref="(el) => setRevealEl(el, 7)" class="contact-form__field">
+        <div :ref="(el) => setRevealEl(el, 6)" class="contact-form__field">
           <label class="contact-form__label font-body-12 uppercase" for="contact-message">
             06. {{ $t('contact.fields.message') }}
           </label>
@@ -262,7 +259,7 @@ async function onSubmit() {
         </div>
 
         <button
-          :ref="(el) => setRevealEl(el, 8)"
+          :ref="(el) => setRevealEl(el, 7)"
           type="submit"
           class="contact-form__submit font-body-40-100"
           :disabled="status === 'sending'"
@@ -275,7 +272,7 @@ async function onSubmit() {
         </p>
       </form>
 
-      <div :ref="(el) => setRevealEl(el, 9)" class="contact-overlay__info font-body-12 uppercase">
+      <div :ref="(el) => setRevealEl(el, 8)" class="contact-overlay__info font-body-12 uppercase">
         <p class="contact-overlay__info-heading">{{ $t('contact.info.heading') }}</p>
         <dl class="contact-overlay__info-list">
           <div class="contact-overlay__info-item">
