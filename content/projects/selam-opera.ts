@@ -29,10 +29,12 @@ export default defineProject({
     en: [
       'Selam Opera! took opera out of the house and into the city: singers and musicians of the Komische Oper Berlin performed short pop-up scenes on markets, in a boxing club, a nightclub and other everyday places. Artistic director: Mustafa Akça; creative director and stage director: Anisha Bondy.',
       'Its best-known chapter, the Operndolmuş, retraced the historical route of the Turkish “guest worker” generation from Berlin to Istanbul by minibus, with performances and shared stories along the way – awarded the BKM Prize for Cultural Education in 2017. The project ran from 2015 to 2022.',
+      'The Operndolmuş toured several times: “Gastarbeiterroute” (2016), “In zwei Heimaten zu Hause” (At Home in Two Homelands, 2016–2019) and “Kesin Dönüş” (Final Return, 2019–2020). In 2018 it also premiered “Ben und Henry – ein Operndolmuş für Kinder”, an Operndolmuş for children, with music by Attila Kadri Şendil and libretto by Susanne Wolf.',
     ],
     de: [
       'Selam Opera! holte die Oper aus dem Haus und in die Stadt: Sänger:innen und Musiker:innen der Komischen Oper Berlin bespielten mit kurzen Pop-Up-Szenen Märkte, einen Boxclub, einen Nachtclub und andere Alltagsorte. Künstlerische Leitung: Mustafa Akça; Creative Director und Regie: Anisha Bondy.',
       'Das bekannteste Kapitel, der Operndolmuş, folgte mit einem Kleinbus der historischen Route der türkischen „Gastarbeiter“-Generation von Berlin nach Istanbul, mit Auftritten und geteilten Geschichten unterwegs – ausgezeichnet mit dem BKM-Preis Kulturelle Bildung 2017. Das Projekt lief von 2015 bis 2022.',
+      'Der Operndolmuş fuhr mehrfach: „Gastarbeiterroute“ (2016), „In zwei Heimaten zu Hause“ (2016–2019) und „Kesin Dönüş“ (2019–2020). 2018 feierte außerdem „Ben und Henry – ein Operndolmuş für Kinder“ Uraufführung, mit Musik von Attila Kadri Şendil und Libretto von Susanne Wolf.',
     ],
   },
   gallery: [
@@ -190,6 +192,8 @@ export default defineProject({
   credits: [
     { role: { en: 'Artistic Director', de: 'Artistic Director' }, name: 'Mustafa Akça' },
     { role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Music (Ben und Henry)', de: 'Musik (Ben und Henry)' }, name: 'Attila Kadri Şendil' },
+    { role: { en: 'Libretto (Ben und Henry)', de: 'Libretto (Ben und Henry)' }, name: 'Susanne Wolf' },
   ],
   awards: [
     {
