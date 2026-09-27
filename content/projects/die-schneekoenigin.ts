@@ -17,10 +17,14 @@ export default defineProject({
   tags: { en: ['Fairy tale opera', 'Children’s opera', 'World premiere'], de: ['Märchenoper', 'Kinderoper', 'Uraufführung'] },
   cover: {
     type: 'image',
-    src: '/media/die-schneekoenigin/cover.svg',
-    alt: { en: 'Placeholder cover: The Snow Queen', de: 'Platzhalter-Cover: Die Schneekönigin' },
-    width: 1200,
-    height: 1500,
+    src: '/media/die-schneekoenigin/cover.jpg',
+    alt: {
+      en: 'A wedding couple in front of a colourful ferris wheel, surrounded by the ensemble.',
+      de: 'Ein Brautpaar vor einem bunten Riesenrad, umgeben vom Ensemble.',
+    },
+    width: 720,
+    height: 900,
+    credit: 'Anne Hölzinger',
   },
   intro: {
     en: [
@@ -30,6 +34,74 @@ export default defineProject({
       'Pierangelo Valtinonis Märchenoper nach Hans Christian Andersen, ein Auftragswerk der Komischen Oper Berlin: Gerda macht sich auf, ihren Freund Kay aus dem eisigen Palast der Schneekönigin zu befreien. Anisha Bondy inszenierte die Uraufführung für Publikum ab sechs Jahren.',
     ],
   },
+  gallery: [
+    {
+      type: 'single',
+      label: { en: 'Departure', de: 'Aufbruch' },
+      media: {
+        type: 'image',
+        src: '/media/die-schneekoenigin/01.jpg',
+        alt: { en: 'A small caravan loaded with luggage under a starry night sky.', de: 'Ein kleiner Wohnwagen voller Gepäck unter einem Sternenhimmel.' },
+        width: 980,
+        height: 900,
+        credit: 'Anne Hölzinger',
+      },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'On the way', de: 'Unterwegs' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/die-schneekoenigin/02a.jpg',
+          alt: { en: 'Two silhouettes walking hand in hand through a blue-lit doorway.', de: 'Zwei Silhouetten gehen Hand in Hand durch eine blau beleuchtete Tür.' },
+          width: 720,
+          height: 900,
+          credit: 'Anne Hölzinger',
+        },
+        {
+          type: 'image',
+          src: '/media/die-schneekoenigin/02b.jpg',
+          alt: { en: 'Children on a swinging boat, lit in cold blue light.', de: 'Kinder auf einem Schaukelboot im kalten blauen Licht.' },
+          width: 720,
+          height: 900,
+          credit: 'Anne Hölzinger',
+        },
+        {
+          type: 'image',
+          src: '/media/die-schneekoenigin/02c.jpg',
+          alt: { en: 'A girl standing among tall dark pillars and ghostly figures with brooms.', de: 'Ein Mädchen zwischen hohen dunklen Stelen und geisterhaften Gestalten mit Besen.' },
+          width: 720,
+          height: 900,
+          credit: 'Anne Hölzinger',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'Home of the Snow Queen', de: 'Zuhause bei der Schneekönigin' },
+      media: {
+        type: 'image',
+        src: '/media/die-schneekoenigin/03.jpg',
+        alt: { en: 'A caravan kitchen with a steaming pot over a fire, two figures beside it.', de: 'Eine Wohnwagenküche mit einem dampfenden Topf über dem Feuer, zwei Figuren daneben.' },
+        width: 980,
+        height: 900,
+        credit: 'Anne Hölzinger',
+      },
+    },
+    {
+      type: 'single',
+      label: { en: 'The caravan', de: 'Der Wohnwagen' },
+      media: {
+        type: 'image',
+        src: '/media/die-schneekoenigin/04.jpg',
+        alt: { en: 'The caravan alone on the empty, fog-covered stage.', de: 'Der Wohnwagen allein auf der leeren, nebelverhangenen Bühne.' },
+        width: 980,
+        height: 900,
+        credit: 'Anne Hölzinger',
+      },
+    },
+  ],
   videos: [{ provider: 'vimeo', id: '1136280860', title: { en: 'The Snow Queen', de: 'Die Schneekönigin' } }],
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Pierangelo Valtinoni' },
@@ -58,8 +130,4 @@ export default defineProject({
   ],
   featured: false,
   order: 102,
-  todos: {
-    en: ['Image material'],
-    de: ['Bildmaterial'],
-  },
 })
