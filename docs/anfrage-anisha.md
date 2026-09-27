@@ -64,7 +64,8 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 3. **Selam Opera!:** Gehört „Komşu Dolmuş seit 2020“ auch zu dir? „Ben und Henry“ als eigenes Projekt oder als Absatz bei Selam? Dürfen die Zahlen aus dem Buch (über 750.000 erreichte Personen, 670.000 Videoaufrufe, Stand Nov. 2021) und ein Auszug aus deinem Text „Die richtige Balance“ auf die Seite?
 4. **Hänsel und Gretel, Englisch:** Renate Vogg „Set & Costume Design“, David Münch „Scenic Construction“ – passt das?
 5. **Vorschaubild:** Foto mit orangem Hintergrund bitte als Datei (D-056).
-6. **Peter Pan:** Videos der Inszenierung (WeTransfer) → daraus Standbilder für die Galerie.
+6. **pOpera:** Galeriefoto 02b ist „Inês Rebelo de Andrade“ zugeordnet – stimmt das, oder ist es von Laurent Sturm / Sébastien Grebille?
+7. **Theater an der Wien:** Logo auf der Seite ist das Jubiläumslogo „225 Jahre“ – gibt es ein schlichtes?
 
 ---
 

@@ -410,3 +410,9 @@ Grund: Wunsch Anisha (D-055), User: „jetzige Farben durch neue Palette ersetze
 - Sitemap/hreflang (`config/seo-files.ts`): x-default = DE; canonical und `<html lang>` kommen weiter aus `useLocaleHead`. Nachgeprüft im Build: `/` lang=de, `/en` lang=en, 38 URLs, Case-Links locale-richtig.
 - Folge: bisher geteilte englische Links (`/about`, `/cases/…`) zeigen jetzt Deutsch. Nach dem Deploy Sitemap in der Search Console neu einreichen.
 Grund: User (D-055).
+
+## D-060 · 2026-09-27 · P27/P28 gemergt: Schleifen, Galerien, Lene-Intro
+- **P27 (Sonnet B):** Cover-Schleifen 800×1000 H.264 stumm: Peter Pan (11 s, eine Einstellung), Hänsel und Gretel (10 s, Orchester/Lebkuchenhaus – Publikums-Nahaufnahmen von Kindern bewusst ausgelassen), Nacht vor Weihnachten (11 s, 3 Schnitte), VOCES8 (12 s, enger Ausschnitt aus 1440p), Lene `loop.mp4` (13 s, Stelzenläuferin über dem Kinderchor + Akrobatinnen; ab ≈ 30:37 statt 30:39, ruhigere Einstellung). Peter-Pan-Galerie: 8 Standbilder der Videoprojektionen (Prolog, Dschungel nicht verwendet). Schneekönigin: Cover + 6 Galeriebilder von Anne Hölzinger (nur 720×900 bzw. 980×900). Platzhalter-SVGs gelöscht. Todos „Produktionsfotos“ bei H&G und VOCES8 bleiben (nur Cover, keine Galerie).
+- **P28:** Neues Feld `cover.introImage` (nur Video-Cover): Foto liegt im Intro-Stapel über dem Video und blendet in 0,8 s aus, sobald die Karten gelandet sind (`galleryIntroDone` in `useGalleryIntro`, auch gesetzt, wenn kein Intro läuft oder die Seite verlassen wird). Lene: Cover = Schleife, `introImage` = Papagei-Foto (Alfonso Salgueiro), og:image der Case-Seite = `introImage`. Nachgeprüft im Browser: Stapel zeigt das Foto, danach Schleife, Case-Hero mit Video.
+- Hinweis Test: Playwright-Chromium spielt kein H.264 ab (nur Poster sichtbar) – echte Browser schon.
+Grund: Umsetzung D-055 – D-057.

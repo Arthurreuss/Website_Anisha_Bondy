@@ -14,16 +14,20 @@ export default defineProject({
     de: ['Uraufführung 25. April 2025, Philharmonie Luxembourg', 'Familienvorstellung 26. April 2025'],
   },
   tags: { en: ['Children’s opera', 'Circus', 'World premiere'], de: ['Kinderoper', 'Zirkus', 'Uraufführung'] },
+  // Kachel: im Intro-Stapel das Foto (Papagei), sobald die Galerie aufgeht die
+  // Schleife aus dem Philharmonie-Mitschnitt ab ≈ 30:37 (Wunsch Anisha, D-055/D-060)
   cover: {
-    type: 'image',
-    src: '/media/lene-fliegt-ins-zirkusland/cover.jpg',
+    type: 'video',
+    src: '/media/lene-fliegt-ins-zirkusland/loop.mp4',
+    poster: '/media/lene-fliegt-ins-zirkusland/loop-poster.jpg',
+    introImage: '/media/lene-fliegt-ins-zirkusland/cover.jpg',
     alt: {
-      en: 'A performer in a red feathered bird costume walks down the aisle through the children in the audience.',
-      de: 'Eine Darstellerin im roten Federkostüm geht durch den Mittelgang zwischen den Kindern im Publikum.',
+      en: 'Circus opera on stage: a performer in a red feathered bird costume on stilts above the children’s choir, then acrobats doing the splits.',
+      de: 'Zirkusoper auf der Bühne: eine Darstellerin im roten Federkostüm auf Stelzen über dem Kinderchor, danach Akrobatinnen im Spagat.',
     },
-    width: 1067,
-    height: 1334,
-    credit: 'Alfonso Salgueiro',
+    width: 800,
+    height: 1000,
+    credit: 'Film: Philharmonie Luxembourg',
   },
   intro: {
     en: [
