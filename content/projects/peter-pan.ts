@@ -15,11 +15,16 @@ export default defineProject({
   },
   tags: { en: ['Children’s opera', 'Adventure', 'World premiere'], de: ['Kinderoper', 'Abenteuer', 'Uraufführung'] },
   cover: {
-    type: 'image',
-    src: '/media/peter-pan/cover.svg',
-    alt: { en: 'Placeholder cover: Peter Pan', de: 'Platzhalter-Cover: Peter Pan' },
-    width: 1200,
-    height: 1500,
+    type: 'video',
+    src: '/media/peter-pan/cover.mp4',
+    poster: '/media/peter-pan/cover-poster.jpg',
+    alt: {
+      en: 'Peter Pan and Wendy talk on the wooden stage set, snow-covered fabric at their feet.',
+      de: 'Peter Pan und Wendy im Gespräch auf der hölzernen Bühne, verschneiter Stoff zu ihren Füßen.',
+    },
+    width: 800,
+    height: 1000,
+    credit: 'Film: Philharmonie Luxembourg',
   },
   intro: {
     en: [
@@ -31,6 +36,92 @@ export default defineProject({
       'Die Auftragsproduktion der Philharmonie Luxembourg wurde dort 2024 uraufgeführt.',
     ],
   },
+  gallery: [
+    {
+      type: 'single',
+      label: { en: 'The worlds', de: 'Die Welten' },
+      media: {
+        type: 'image',
+        src: '/media/peter-pan/01.jpg',
+        alt: { en: 'Video projection: a watercolour forest with an autumn tree by the water.', de: 'Videoprojektion: ein Aquarell-Wald mit einem herbstlich gefärbten Baum am Wasser.' },
+        width: 1638,
+        height: 1024,
+        credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+      },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'Day and night', de: 'Tag und Nacht' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/peter-pan/02a.jpg',
+          alt: { en: 'Video projection: a golden sunset over water.', de: 'Videoprojektion: ein goldener Sonnenuntergang über dem Wasser.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+        {
+          type: 'image',
+          src: '/media/peter-pan/02b.jpg',
+          alt: { en: 'Video projection: a starry night sky over Neverland.', de: 'Videoprojektion: ein Sternenhimmel über Nimmerland.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+        {
+          type: 'image',
+          src: '/media/peter-pan/02c.jpg',
+          alt: { en: 'Video projection: pink and violet clouds at sunrise over the sea.', de: 'Videoprojektion: rosa und violette Wolken bei Sonnenaufgang über dem Meer.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'The flight', de: 'Der Flug' },
+      media: {
+        type: 'image',
+        src: '/media/peter-pan/03.jpg',
+        alt: { en: 'Video projection: bright clouds seen from among the treetops.', de: 'Videoprojektion: helle Wolken, gesehen zwischen den Baumwipfeln.' },
+        width: 1638,
+        height: 1024,
+        credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+      },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'Cave, storm and ocean', de: 'Höhle, Sturm und Ozean' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/peter-pan/04a.jpg',
+          alt: { en: 'Video projection: the glowing exit of a blue-lit cave.', de: 'Videoprojektion: der leuchtende Ausgang einer blau schimmernden Höhle.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+        {
+          type: 'image',
+          src: '/media/peter-pan/04b.jpg',
+          alt: { en: 'Video projection: dark storm clouds with lightning.', de: 'Videoprojektion: dunkle Gewitterwolken mit einem Blitz.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+        {
+          type: 'image',
+          src: '/media/peter-pan/04c.jpg',
+          alt: { en: 'Video projection: a breaking wave on the open ocean.', de: 'Videoprojektion: eine brechende Welle auf offenem Meer.' },
+          width: 819,
+          height: 1024,
+          credit: 'Video: Étienne Guiol, Thomas Ocampo, Johan Pirroux',
+        },
+      ],
+    },
+  ],
   videos: [{ provider: 'youtube', id: 'TRjf79QTV-s', title: 'Peter Pan' }],
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Frank Schwemmer' },
@@ -52,8 +143,4 @@ export default defineProject({
   press: [],
   featured: true,
   order: 5,
-  todos: {
-    en: ['Production photos for the gallery'],
-    de: ['Produktionsfotos für die Galerie'],
-  },
 })
