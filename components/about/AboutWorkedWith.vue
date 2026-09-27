@@ -14,7 +14,7 @@ useReveal(rootRef)
   <section class="worked-with container" ref="rootRef">
     <p class="font-body-12 uppercase worked-with__heading">{{ $t('about.workedWithHeading') }}</p>
     <p class="worked-with__list font-headline-2" data-reveal="lines">{{ names }}</p>
-    <!-- Probenfoto mit Barrie Kosky (D-044); Fotograf:in unbekannt -->
+    <!-- Probenfoto mit Barrie Kosky (D-044); Fotografin: Claudia Greco (D-055) -->
     <figure class="worked-with__figure">
       <div class="worked-with__image" data-reveal="image">
         <img
@@ -26,6 +26,7 @@ useReveal(rootRef)
         />
       </div>
       <figcaption class="font-body-12 worked-with__caption">{{ $t('about.rehearsalCaption') }}</figcaption>
+      <p class="font-body-12 worked-with__credit">{{ $t('about.rehearsalCredit') }}</p>
     </figure>
   </section>
 </template>
@@ -74,5 +75,10 @@ useReveal(rootRef)
 .worked-with__caption {
   margin-top: 0.8rem;
   opacity: 0.6;
+}
+
+.worked-with__credit {
+  margin-top: 0.4rem;
+  opacity: 0.5;
 }
 </style>

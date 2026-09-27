@@ -95,6 +95,7 @@
   "about": {
     "seoTitle": "Über mich — Anisha Bondy",
     "portraitAlt": "Porträt von Anisha Bondy",
+    "portraitCredit": "Foto: Claudia Greco",
     "approachEyebrow": "Haltung",
     "bioHeading": "Biografie",
     "workedWithHeading": "Zusammengearbeitet mit",
@@ -104,7 +105,8 @@
     "wonLabel": "Gewonnen",
     "nominatedLabel": "Nominiert",
     "rehearsalAlt": "Schwarzweißfoto aus dem Probenraum: Anisha Bondy lacht im Gespräch mit Barrie Kosky, um sie herum Mitwirkende und ein Kind.",
-    "rehearsalCaption": "Probe zu „Echnaton“ mit Barrie Kosky"
+    "rehearsalCaption": "Probe zu „Echnaton“ mit Barrie Kosky",
+    "rehearsalCredit": "Foto: Claudia Greco"
   },
   "archive": {
     "seoTitle": "Archiv — Anisha Bondy",
