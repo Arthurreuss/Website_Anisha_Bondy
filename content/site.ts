@@ -126,6 +126,8 @@ export const siteContent: SiteContent = {
     { name: 'Rundfunk-Sinfonieorchester Berlin', url: 'https://www.rsb-online.de', logo: '/media/partners/rsb.svg', ratio: 2.31 },
     { name: 'ensemble unitedberlin', url: 'https://unitedberlin.de', logo: '/media/partners/ensemble-unitedberlin.svg', ratio: 5.1 },
     { name: "Zaltimbanq' Zirkus", url: 'https://www.zaltimbanq.lu', logo: '/media/partners/zaltimbanq.png', ratio: 0.57 },
+    { name: 'Theater an der Wien', url: 'https://www.theater-wien.at', logo: '/media/partners/theater-an-der-wien.png', ratio: 2.97 },
+    { name: 'Brucknerhaus Linz', url: 'https://www.brucknerhaus.at', logo: '/media/partners/brucknerhaus-linz.svg', ratio: 4.86 },
   ],
 
   pressGeneral: [
