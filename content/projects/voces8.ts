@@ -11,11 +11,16 @@ export default defineProject({
   role: { en: 'Direction & concept', de: 'Regie & Konzept' },
   tags: { en: ['Vocal octet', 'New format', 'Interactive'], de: ['Vokaloktett', 'Neues Format', 'Interaktiv'] },
   cover: {
-    type: 'image',
-    src: '/media/voces8/cover.svg',
-    alt: { en: 'Placeholder cover: The World is Turning', de: 'Platzhalter-Cover: The World is Turning' },
-    width: 1200,
-    height: 1500,
+    type: 'video',
+    src: '/media/voces8/cover.mp4',
+    poster: '/media/voces8/cover-poster.jpg',
+    alt: {
+      en: 'The ensemble in dark costumes and painted masks, standing on the dimly lit stage.',
+      de: 'Das Ensemble in dunklen Kostümen und bemalten Masken auf der schummrig beleuchteten Bühne.',
+    },
+    width: 800,
+    height: 1000,
+    credit: 'Film: Philharmonie Luxembourg',
   },
   intro: {
     en: [
