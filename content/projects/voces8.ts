@@ -8,7 +8,7 @@ export default defineProject({
   venue: 'Philharmonie Luxembourg',
   year: 2023,
   pillar: 'create',
-  role: { en: 'Direction & concept', de: 'Regie & Konzept' },
+  role: { en: 'Stage Director & Concept', de: 'Regie & Konzept' },
   tags: { en: ['Vocal octet', 'New format', 'Interactive'], de: ['Vokaloktett', 'Neues Format', 'Interaktiv'] },
   cover: {
     type: 'image',
@@ -29,7 +29,7 @@ export default defineProject({
   },
   videos: [{ provider: 'vimeo', id: '828590577', hash: '52a72d49ab', title: 'The World is Turning' }],
   credits: [
-    { role: { en: 'Direction & concept', de: 'Regie & Konzept' }, name: 'Anisha Bondy' },
+    { role: { en: 'Stage Director & Concept', de: 'Regie & Konzept' }, name: 'Anisha Bondy' },
     { role: { en: 'Concept', de: 'Konzept' }, name: 'Julia Hansen' },
   ],
   awards: [],

@@ -12,7 +12,7 @@ export default defineProject({
   venue: 'Theater an der Wien',
   year: 2026,
   pillar: 'direct',
-  role: { en: 'Stage direction', de: 'Regie' },
+  role: { en: 'Stage Director', de: 'Regie' },
   dates: {
     en: ['Austrian premiere 11 October 2026, Theater an der Wien (Hölle)'],
     de: ['Österreichische Erstaufführung 11. Oktober 2026, Theater an der Wien (Hölle)'],
@@ -39,7 +39,7 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Marc L. Vogler' },
     { role: { en: 'Libretto', de: 'Libretto' }, name: 'Dany Handschuh' },
-    { role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Stage Director', de: 'Regie' }, name: 'Anisha Bondy' },
     { role: { en: 'Cast', de: 'Mit' }, name: 'Ivo Kovrigar, Anita Rosati, Ella Feldmeier' },
   ],
   awards: [],

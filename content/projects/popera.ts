@@ -8,7 +8,7 @@ export default defineProject({
   venue: { en: 'Fondation EME / Philharmonie Luxembourg', de: 'Fondation EME / Philharmonie Luxembourg' },
   year: 2026,
   pillar: 'participate',
-  role: { en: 'Stage direction', de: 'Regie' },
+  role: { en: 'Stage Director', de: 'Regie' },
   dates: {
     en: ['Premiere 23 April 2026, Philharmonie Luxembourg (Grand Auditorium)', 'School performance 24 April 2026'],
     de: ['Premiere 23. April 2026, Philharmonie Luxembourg (Grand Auditorium)', 'Schulvorstellung 24. April 2026'],
@@ -140,12 +140,12 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Tim Wollmann' },
     { role: { en: 'Text', de: 'Text' }, name: 'Antoine Pohu' },
-    { role: { en: 'Concept & artistic direction', de: 'Konzept & künstlerische Leitung' }, name: 'Paulo Lameiro' },
-    { role: { en: 'Stage direction', de: 'Regie' }, name: 'Anisha Bondy' },
-    { role: { en: 'Co-direction & choreography', de: 'Co-Regie & Choreografie' }, name: 'Mariana Souza' },
+    { role: { en: 'Concept & Artistic Director', de: 'Konzept & künstlerische Leitung' }, name: 'Paulo Lameiro' },
+    { role: { en: 'Stage Director', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Co-Director & Choreography', de: 'Co-Regie & Choreografie' }, name: 'Mariana Souza' },
     { role: { en: 'Set & costumes', de: 'Bühne & Kostüme' }, name: 'Anne Hölzinger' },
-    { role: { en: 'Musical direction', de: 'Musikalische Leitung' }, name: 'Ivan Boumans' },
-    { role: { en: 'Choir direction', de: 'Chorleitung' }, name: 'Julie Colin, Pit Heyart' },
+    { role: { en: 'Musical Director', de: 'Musikalische Leitung' }, name: 'Ivan Boumans' },
+    { role: { en: 'Choir Director', de: 'Chorleitung' }, name: 'Julie Colin, Pit Heyart' },
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
     {
       role: { en: 'Cast', de: 'Mit' },
