@@ -421,3 +421,8 @@ Grund: Umsetzung D-055 – D-057.
 - *Lene fliegt ins Zirkusland* hat am 29.09.2026 in Helsingør den YAMaward „Best Opera“ gewonnen. Projektseite: `awards` → `won`, Intro-Satz DE/EN angepasst, offener Punkt „Ergebnis YAMawards“ entfernt. Erscheint dadurch auch unter „Presse & Preise“ auf About.
 - Online gab es am 30.09. noch keine Bestätigung (Winners-Seite zeigt 2025). Link auf die offizielle Meldung nachtragen, sobald veröffentlicht.
 Grund: Mitteilung des Users.
+
+## D-062 · 2026-09-30 · Lene: Public Choice Award, nicht „Best Opera“ (ersetzt D-061)
+- *Lene fliegt ins Zirkusland* hat bei den YAMawards 2026 den **Public Choice Award** gewonnen; in „Best Opera“ bleibt es bei der Nominierung. `awards` enthält beides (won + nominated), Intro-Satz DE/EN entsprechend.
+- Offizielle Quelle weiter offen (Winners-Seite zeigt am 30.09. noch 2025).
+Grund: Korrektur des Users.

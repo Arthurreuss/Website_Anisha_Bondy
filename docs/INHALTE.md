@@ -31,7 +31,7 @@ Säule = Vorschlag für Direct (D) / Create (C) / Participate (P). ★ = Kandida
 
 | | Projekt | Jahr | Haus / Partner | Rolle | Säule | Video | Presse / Preis |
 |---|---|---|---|---|---|---|---|
-| ★ | **Lene fliegt ins Zirkusland** – Märchenzirkusoper (Kats-Chernin / Wolf), UA | 2025 | Philharmonie Luxembourg, Zaltimbanq' Zirkus | Regie | D | [YT mAt9nKScTB8](https://youtu.be/mAt9nKScTB8) | **YAMaward 2026 „Best Opera“ gewonnen** – Verleihung 29.09.2026, Helsingør (D-061) |
+| ★ | **Lene fliegt ins Zirkusland** – Märchenzirkusoper (Kats-Chernin / Wolf), UA | 2025 | Philharmonie Luxembourg, Zaltimbanq' Zirkus | Regie | D | [YT mAt9nKScTB8](https://youtu.be/mAt9nKScTB8) | **YAMawards 2026: Public Choice Award gewonnen**, nominiert „Best Opera“ – Verleihung 29.09.2026, Helsingør (D-062) |
 | ★ | **Peter Pan** – Abenteueroper (Schwemmer / Frowin), UA | 2024 | Philharmonie Luxembourg | Regie | D | [YT TRjf79QTV-s](https://youtu.be/TRjf79QTV-s) | – |
 | ★ | **Der Zauberer von Oz** – Musiktheater mit Puppenspiel (Musik M. Werner) | 2026 | Philharmonie Luxembourg + Musikverein Wien; Brucknerhaus Linz 03/2027 | **Text** & Regie (mit Suse Wächter) | C | [YT Short WvE5Xzjf6kU](https://youtube.com/shorts/WvE5Xzjf6kU), [YT XFyY4etJ63Y](https://www.youtube.com/watch?v=XFyY4etJ63Y) („Film“ im Docx) | – |
 | ★ | **Dornröschen** – Musiktanztheater (Tschaikowsky) | 2026 | Philharmonie Luxembourg | Regie | C | [YT z7sEa5xDJAg](https://youtu.be/z7sEa5xDJAg) | – |
@@ -52,7 +52,7 @@ Carmen in Kreuzberg `AriBiymQ0og` · Ring frei für Helena! `SR1GJEFUYUc` · Wie
 
 ## 4. Presse & Anerkennung (öffentlich gefunden)
 
-- **YAMawards 2026**, **Gewinner „Best Opera“**: *Lene fliegt ins Zirkusland* (Nominierung: [YAM](https://www.youngaudiencesmusic.com/post/announcing-the-yamawards-nominees-2026); Gewinn laut User 30.09., online noch keine Quelle – D-061).
+- **YAMawards 2026**, *Lene fliegt ins Zirkusland*: **Public Choice Award gewonnen**, nominiert „Best Opera“ (Nominierung: [YAM](https://www.youngaudiencesmusic.com/post/announcing-the-yamawards-nominees-2026); Gewinn laut User 30.09., online noch keine Quelle – D-062).
 - **BKM-Preis Kulturelle Bildung 2017** für Selam Opera! / Gastarbeiterroute ([Komische Oper](https://www.komische-oper-berlin.de/entdecken/selam_opera/auf-den-spuren-der-gastarbeiterroute/)).
 - **Tagesspiegel**, Frederik Hanssen, 24.12.2022, *Die Nacht vor Weihnachten*: „charmante“ szenische Einrichtung ([Link](https://www.tagesspiegel.de/kultur/weihnachtsoper-schmiede-dir-dein-gluck-9088726.html) – Wortlaut hinter Paywall, nur verlinkt).
 - **nmz**, Barbara Haack, 25.10.2010, *Die Schneekönigin*: „Lebhaft und kindgerecht von Anisha Bondy inszeniert“ ([Link](https://www.nmz.de/online/kinderoper-ernst-genommen-pierangelo-valtinoni-die-schneekoenigin-an-der-komischen-oper)).
