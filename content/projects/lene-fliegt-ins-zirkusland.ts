@@ -32,11 +32,11 @@ export default defineProject({
   intro: {
     en: [
       'Lene dreams of the circus – and one day she simply flies there. Elena Kats-Chernin’s new children’s opera, with a libretto by Susanne Felicitas Wolf, brings singers, orchestra and circus artists onto one stage: a witty, poetic tribute to creativity, artistic freedom, courage and friendship.',
-      'Commissioned by the Philharmonie Luxembourg and premiered there in April 2025, the production was nominated for the YAMawards 2026 in the category “Best Opera” and won the Public Choice Award on 29 September 2026 in Helsingør.',
+      'Commissioned by the Philharmonie Luxembourg and premiered there in April 2025, the production was nominated for the YAMawards 2026 in the category “Best Opera” and won the Audience Award on 29 September 2026 in Helsingør.',
     ],
     de: [
       'Lene träumt vom Zirkus – und eines Tages fliegt sie einfach hin. Elena Kats-Chernins neue Kinderoper nach einem Libretto von Susanne Felicitas Wolf holt Sänger:innen, Orchester und Artist:innen auf eine Bühne: eine witzige, poetische Hommage an Kreativität, künstlerische Freiheit, Mut und Freundschaft.',
-      'Die Auftragsproduktion der Philharmonie Luxembourg, im April 2025 uraufgeführt, war für die YAMawards 2026 in der Kategorie „Best Opera“ nominiert und gewann am 29. September 2026 in Helsingør den Public Choice Award (Publikumspreis).',
+      'Die Auftragsproduktion der Philharmonie Luxembourg, im April 2025 uraufgeführt, war für die YAMawards 2026 in der Kategorie „Best Opera“ nominiert und gewann am 29. September 2026 in Helsingør den Publikumspreis.',
     ],
   },
   gallery: [
@@ -105,7 +105,7 @@ export default defineProject({
     },
   ],
   awards: [
-    { label: { en: 'YAMawards – Public Choice Award', de: 'YAMawards – Public Choice Award (Publikumspreis)' }, year: 2026, status: 'won' },
+    { label: { en: 'YAMawards – Audience Award', de: 'YAMawards – Publikumspreis' }, year: 2026, status: 'won' },
     { label: { en: 'YAMawards – Best Opera', de: 'YAMawards – Best Opera' }, year: 2026, status: 'nominated' },
   ],
   press: [],

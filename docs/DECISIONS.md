@@ -426,3 +426,7 @@ Grund: Mitteilung des Users.
 - *Lene fliegt ins Zirkusland* hat bei den YAMawards 2026 den **Public Choice Award** gewonnen; in „Best Opera“ bleibt es bei der Nominierung. `awards` enthält beides (won + nominated), Intro-Satz DE/EN entsprechend.
 - Offizielle Quelle weiter offen (Winners-Seite zeigt am 30.09. noch 2025).
 Grund: Korrektur des Users.
+
+## D-063 · 2026-09-30 · Lene: „Audience Award“ statt „Public Choice Award“ (ergänzt D-062)
+- Auf der Website heißt der YAMawards-Preis „Audience Award“ (EN) bzw. „Publikumspreis“ (DE); die offizielle YAM-Bezeichnung ist „Public Choice“.
+Grund: Wunsch des Users – klingt besser.
