@@ -416,3 +416,8 @@ Grund: User (D-055).
 - **P28:** Neues Feld `cover.introImage` (nur Video-Cover): Foto liegt im Intro-Stapel über dem Video und blendet in 0,8 s aus, sobald die Karten gelandet sind (`galleryIntroDone` in `useGalleryIntro`, auch gesetzt, wenn kein Intro läuft oder die Seite verlassen wird). Lene: Cover = Schleife, `introImage` = Papagei-Foto (Alfonso Salgueiro), og:image der Case-Seite = `introImage`. Nachgeprüft im Browser: Stapel zeigt das Foto, danach Schleife, Case-Hero mit Video.
 - Hinweis Test: Playwright-Chromium spielt kein H.264 ab (nur Poster sichtbar) – echte Browser schon.
 Grund: Umsetzung D-055 – D-057.
+
+## D-061 · 2026-09-30 · Lene gewinnt den YAMaward 2026 „Best Opera“
+- *Lene fliegt ins Zirkusland* hat am 29.09.2026 in Helsingør den YAMaward „Best Opera“ gewonnen. Projektseite: `awards` → `won`, Intro-Satz DE/EN angepasst, offener Punkt „Ergebnis YAMawards“ entfernt. Erscheint dadurch auch unter „Presse & Preise“ auf About.
+- Online gab es am 30.09. noch keine Bestätigung (Winners-Seite zeigt 2025). Link auf die offizielle Meldung nachtragen, sobald veröffentlicht.
+Grund: Mitteilung des Users.

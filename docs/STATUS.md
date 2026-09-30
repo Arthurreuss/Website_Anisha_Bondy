@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-09-27 · D-039 – D-054 live; **D-055 = Feedback Anisha 27.09., geplant als P26–P31**; live = Branch `production`, `main` = Arbeitsstand
+**Stand:** 2026-09-30 · D-061 YAMaward Lene eingetragen · D-039 – D-054 live; **D-055 = Feedback Anisha 27.09., geplant als P26–P31**; live = Branch `production`, `main` = Arbeitsstand
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
 
 ## Aktiv
@@ -18,7 +18,7 @@
 1. User: Abnahme (Farben D-058, Sprache D-059, Lene-Intro D-060, Texte/Credits). Dann Branch nach `main` und auf Zuruf `production`.
 2. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059).
 3. Anisha: Google Doc; [anfrage-anisha.md](anfrage-anisha.md) §6 (Ligeti/Xenakis als Projekte?, Selam-Fragen, H&G-Begriffe, pOpera 02b Fotograf:in, schlichtes Logo Theater an der Wien).
-4. Wir: YAMawards-Ergebnis (29.09.) bei Lene eintragen.
+4. Wir: Quelle zum YAMaward-Gewinn nachtragen, sobald online ([Winners](https://www.youngaudiencesmusic.com/winners) zeigt noch 2025) – D-061.
 5. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 
 ## Bekannte Kleinigkeiten

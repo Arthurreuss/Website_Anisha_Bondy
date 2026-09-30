@@ -32,11 +32,11 @@ export default defineProject({
   intro: {
     en: [
       'Lene dreams of the circus – and one day she simply flies there. Elena Kats-Chernin’s new children’s opera, with a libretto by Susanne Felicitas Wolf, brings singers, orchestra and circus artists onto one stage: a witty, poetic tribute to creativity, artistic freedom, courage and friendship.',
-      'Commissioned by the Philharmonie Luxembourg and premiered there in April 2025, the production was nominated for the YAMawards 2026 in the category “Best Opera”.',
+      'Commissioned by the Philharmonie Luxembourg and premiered there in April 2025, the production won the YAMaward 2026 for “Best Opera” – presented on 29 September 2026 at the YAMsession in Helsingør.',
     ],
     de: [
       'Lene träumt vom Zirkus – und eines Tages fliegt sie einfach hin. Elena Kats-Chernins neue Kinderoper nach einem Libretto von Susanne Felicitas Wolf holt Sänger:innen, Orchester und Artist:innen auf eine Bühne: eine witzige, poetische Hommage an Kreativität, künstlerische Freiheit, Mut und Freundschaft.',
-      'Die Auftragsproduktion der Philharmonie Luxembourg wurde im April 2025 uraufgeführt und ist für die YAMawards 2026 in der Kategorie „Best Opera“ nominiert.',
+      'Die Auftragsproduktion der Philharmonie Luxembourg, im April 2025 uraufgeführt, erhielt am 29. September 2026 in Helsingør den YAMaward 2026 in der Kategorie „Best Opera“.',
     ],
   },
   gallery: [
@@ -104,12 +104,8 @@ export default defineProject({
       name: 'Danae Kontora, Susan Zarrabi, Peter Kirk, Hélène Gustin, Andrii Zubchevskyi and the artists of Zaltimbanq’ Zirkus',
     },
   ],
-  awards: [{ label: { en: 'YAMawards – Best Opera', de: 'YAMawards – Best Opera' }, year: 2026, status: 'nominated' }],
+  awards: [{ label: { en: 'YAMaward – Best Opera', de: 'YAMaward – Best Opera' }, year: 2026, status: 'won' }],
   press: [],
   featured: true,
   order: 1,
-  todos: {
-    en: ['YAMawards result (29 Sept 2026)'],
-    de: ['Ergebnis YAMawards (29.09.2026)'],
-  },
 })
