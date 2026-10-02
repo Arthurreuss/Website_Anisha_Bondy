@@ -176,6 +176,21 @@ export default defineProject({
         credit: 'Film: Komische Oper Berlin',
       },
     },
+    {
+      // Selfie des Teams bei der Preisverleihung (D-064; Fotograf:in unbekannt, daher ohne Nachweis)
+      type: 'single',
+      label: { en: 'BKM Prize 2017', de: 'BKM-Preis 2017' },
+      media: {
+        type: 'image',
+        src: '/media/selam-opera/07.jpg',
+        alt: {
+          en: 'Selfie of the laughing Selam Opera! team outdoors at the BKM Prize for Cultural Education 2017; a large silver balloon sculpture behind them.',
+          de: 'Selfie des lachenden Selam-Opera!-Teams im Freien bei der Verleihung des BKM-Preises Kulturelle Bildung 2017, dahinter eine große silberne Ballonskulptur.',
+        },
+        width: 1280,
+        height: 800,
+      },
+    },
   ],
   // Pop-Up-Clips unter Anishas Regie (D-049; ohne Waschsalon und Planetarium)
   videos: [

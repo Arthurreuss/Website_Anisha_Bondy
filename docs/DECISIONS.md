@@ -430,3 +430,8 @@ Grund: Korrektur des Users.
 ## D-063 · 2026-09-30 · Lene: „Audience Award“ statt „Public Choice Award“ (ergänzt D-062)
 - Auf der Website heißt der YAMawards-Preis „Audience Award“ (EN) bzw. „Publikumspreis“ (DE); die offizielle YAM-Bezeichnung ist „Public Choice“.
 Grund: Wunsch des Users – klingt besser.
+
+## D-064 · 2026-10-02 · Selam Opera!: Team-Foto BKM-Preis 2017
+- Neuer letzter Galerie-Block „BKM-Preis 2017“ (single, `07.jpg`, 1280×800, 16:10 aus 1280×960 mit `--focus-y 0.52`). Selfie des Teams bei der Preisverleihung; ohne Nachweis, da Fotograf:in unbekannt (Selfie).
+- Auf Zuruf des Users direkt auf `production` deployt.
+Grund: Lieferung des Users.
