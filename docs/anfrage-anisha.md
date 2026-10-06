@@ -67,7 +67,7 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 
 ## 7 · Rückfragen zum Google Doc (04.10., D-065)
 
-1. **Oz in Linz:** Im Doc steht „20.–217. März 2027“ – ist es 20.–27. oder 21.–27. März?
+1. **Oz in Linz:** Im Doc steht „20.–217. März 2027“ – endet die Serie am 21. oder am 27. März?
 2. **Lene:** „(Reseo) Publikumspreis 2026“ – gehört „RESEO“ in den Namen des Preises? Auf der Seite steht „YAMawards – Publikumspreis“.
 3. **pOpera, Besetzung:** „Princess (Kid)s“ – wer spielt die Princess? Steht jetzt als „children as Princess“.
 4. **Selam Opera!, Presse:** Das nachtkritik-Zitat ist wörtlich („… in denen diese eingebunden werden“). „die Zuschauer“ steht deshalb in eckigen Klammern – ok?

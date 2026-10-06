@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) auf Branch `claude/laughing-lovelace-vz1gvy`, **noch nicht live**; live = `production` (Stand D-064)
+**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) auf Branch `claude/laughing-lovelace-vz1gvy`, **noch nicht live**; live = `production` (Stand D-064)
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅. Feedback 27.09. (P26–P31) live.
 
 ## Aktiv
@@ -16,7 +16,7 @@
 ## Nächster Schritt
 1. User: Abnahme D-065; Rückfragen an Anisha in [anfrage-anisha.md](anfrage-anisha.md) §7 weitergeben.
 2. Box „Season 2026/27“ bauen, sobald Platz/Form geklärt (Liste: [INHALTE.md](INHALTE.md) §8).
-3. Lene: „Trailer hängt sich auf“ (WhatsApp Anisha) – welches Video/Gerät? Schleife `loop.mp4` technisch ok (faststart, H.264 High).
+3. Englische Texte + Rückfragen (§7) ins Google Doc: kein Google-Docs-Connector vorhanden (nur Drive) – Entscheidung User offen.
 4. Kommende Fotos: Klangstreich (nach 11.10.), Peter Pan.
 5. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059). Quelle YAMaward nachtragen (D-063).
 6. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
