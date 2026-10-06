@@ -2,11 +2,11 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) auf Branch `claude/laughing-lovelace-vz1gvy`, **noch nicht live**; live = `production` (Stand D-064)
+**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) **live** seit 06.10. (production = main)
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅. Feedback 27.09. (P26–P31) live.
 
 ## Aktiv
-- D-065: Abnahme User, dann nach `main` und auf Zuruf `production` (Klangstreich-Premiere 11.10.).
+- Warten auf Anishas Antworten im Google Doc (Tabs „Deutsch“, „Rückfragen“, „English“).
 - Rohmaterial nur im Scratchpad dieser Session (`…/scratchpad/wt/x`, WeTransfer läuft bis 07.10. ab).
 - **P24 QA**: offen Safari/iPhone + Abnahme User.
 
@@ -14,7 +14,7 @@
 - keine.
 
 ## Nächster Schritt
-1. User: Abnahme D-065/D-066; Anisha auf die neuen Doc-Tabs hinweisen.
+1. User: Anisha auf die Doc-Tabs „Rückfragen“ und „English“ hinweisen (Archiv-Projekte stehen in beiden Sprach-Tabs als Nr. 11–14).
 2. Box „Season 2026/27“ bauen, sobald Platz/Form geklärt (Liste: [INHALTE.md](INHALTE.md) §8).
 3. Google Doc: Tabs „Rückfragen“ (= anfrage-anisha §7) und „English“ (EN-Texte aller 14 Projekte) angelegt (06.10.). Anishas Antworten/Korrekturen dort abwarten → einbauen.
 4. Kommende Fotos: Klangstreich (nach 11.10.), Peter Pan.

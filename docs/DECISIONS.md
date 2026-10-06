@@ -450,3 +450,4 @@ Grund: Lieferung Anisha (WeTransfer 04.10., Google Doc), WhatsApp vom 05./06.10.
 - **Die Nacht vor Weihnachten:** 0,7 s Standbild am Anfang ebenfalls entfernt (10,3 s).
 - Alle Cover-Schleifen geprüft (Frames < 200 Byte = unverändertes Bild): sonst keine Hänger.
 Grund: WhatsApp Anisha, Beschreibung des Users.
+- Auf Zuruf des Users deployt (06.10.): `main` und `production` per Fast-Forward. Google-Doc-Tab 1 heißt jetzt „Deutsch“.
