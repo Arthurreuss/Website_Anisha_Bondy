@@ -14,9 +14,9 @@
 - keine.
 
 ## Nächster Schritt
-1. User: Abnahme D-065; Rückfragen an Anisha in [anfrage-anisha.md](anfrage-anisha.md) §7 weitergeben.
+1. User: Abnahme D-065/D-066; Anisha auf die neuen Doc-Tabs hinweisen.
 2. Box „Season 2026/27“ bauen, sobald Platz/Form geklärt (Liste: [INHALTE.md](INHALTE.md) §8).
-3. Englische Texte + Rückfragen (§7) ins Google Doc: kein Google-Docs-Connector vorhanden (nur Drive) – Entscheidung User offen.
+3. Google Doc: Tabs „Rückfragen“ (= anfrage-anisha §7) und „English“ (EN-Texte aller 14 Projekte) angelegt (06.10.). Anishas Antworten/Korrekturen dort abwarten → einbauen.
 4. Kommende Fotos: Klangstreich (nach 11.10.), Peter Pan.
 5. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059). Quelle YAMaward nachtragen (D-063).
 6. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
