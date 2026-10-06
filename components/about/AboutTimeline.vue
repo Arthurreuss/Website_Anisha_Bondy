@@ -2,7 +2,7 @@
 // Timeline = Lebenslauf (D-017), aus allen Projekten via useAllProjects(),
 // sortiert nach `year`. Auf Desktop horizontal scrollbar, auf Mobil vertikal.
 const { data: projects } = await useAllProjects()
-const sorted = computed(() => [...projects.value].sort((a, b) => a.year - b.year))
+const sorted = computed(() => [...projects.value].sort(byPremiere))
 
 const rootRef = ref<HTMLElement | null>(null)
 useReveal(rootRef)

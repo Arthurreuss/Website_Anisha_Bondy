@@ -23,7 +23,7 @@ function setPillar(value: Pillar | 'all') {
 // Neueste zuerst, wie ein Werk-/Presseverzeichnis.
 const filtered = computed(() => {
   const list = activePillar.value === 'all' ? projects.value : projects.value.filter((p) => p.pillar === activePillar.value)
-  return [...list].sort((a, b) => b.year - a.year)
+  return [...list].sort((a, b) => byPremiere(b, a))
 })
 
 usePageSeo({

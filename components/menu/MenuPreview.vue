@@ -18,7 +18,7 @@ const l = <T,>(v: { en: T; de: T }) => pick(v, locale.value as Locale)
 // Ohne await: Daten liegen schon im Cache der Seiten (gleicher Schlüssel)
 const { data: all } = useAllProjects()
 const featured = computed(() => all.value.filter((p) => p.featured).slice(0, 6))
-const archive = computed(() => [...all.value].sort((a, b) => b.year - a.year).slice(0, 10))
+const archive = computed(() => [...all.value].sort((a, b) => byPremiere(b, a)).slice(0, 10))
 const still = (p: (typeof all.value)[number]) => (p.cover.type === 'video' ? p.cover.poster : p.cover.src)
 </script>
 

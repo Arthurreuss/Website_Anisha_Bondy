@@ -1,6 +1,6 @@
 # Was wir von Anisha noch brauchen
 
-Stand: 2026-09-27 · Rückfragen zum Feedback 27.09. in §6 (D-055) · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047; Antworten D-049). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047, D-049); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
+Stand: 2026-10-06 · Rückfragen zum Google Doc in §7 (D-065) · Rückfragen zum Feedback 27.09. in §6 (D-055) · **Die** Liste offener Fragen und Lieferungen an Anisha (neu zusammengefasst, D-044; Web-Recherche D-047; Antworten D-049). Beantwortetes steht in DECISIONS (D-039, D-042, D-043, D-047, D-049); erledigte Punkte sind hier gelöscht. Was auf der Seite noch fehlt, ist dort als gestrichelter Kasten „offen: …“ markiert. Sobald ein Punkt beantwortet und eingebaut ist, verschwindet der Kasten.
 
 **Lieferung am einfachsten:** ein geteilter Ordner (Google Drive o. ä.) oder WeTransfer, ein Unterordner pro Projekt. Antworten gern direkt unter die Fragen.
 
@@ -34,7 +34,6 @@ Antworten vom 26.09. sind eingebaut (D-049). Noch offen:
 | Projekt | Offen |
 |---|---|
 | **Season 2026/27** | Liste der fünf kommenden Projekte (Titel, Haus, Premiere, deine Rolle) – dafür kommt eine eigene Box „Upcoming“ auf die Seite. Klangstreich ist schon angelegt. |
-| VOCES8 – The World is Turning | Genaues Datum 2023. |
 | Flucht | Erledigt aus dem YouTube-Trailer (D-052). Die Originaldatei vom Haus hätte bessere Qualität und klärt die Rechte. |
 | Die Nacht vor Weihnachten | Fotos (Trailer ist gefunden und eingebaut). |
 
@@ -59,13 +58,22 @@ Was die Seite technisch tut (für die Prüfung): Hosting bei Cloudflare Pages (C
 
 ## 6 · Rückfragen zum Feedback vom 27.09. (D-055)
 
-1. **Google Doc mit allen Projekttexten** korrigieren, Reihenfolge festlegen, Zukunftspläne ergänzen (u. a. NEST – Wiener Staatsoper, April 2027, mit richtigem Datum).
+1. **Google Doc:** Korrekturen eingebaut (D-065). Offen: NEST – Wiener Staatsoper (Datum, Rolle), siehe §7.
 2. **Anne Hölzinger:** Fotos freigegeben (D-056). Ligeti und Xenakis gibt es auf der Seite noch nicht: als neue Archiv-Projekte? Dann bitte Jahr, Haus, Rolle, 2–3 Sätze.
 3. **Selam Opera!:** Gehört „Komşu Dolmuş seit 2020“ auch zu dir? „Ben und Henry“ als eigenes Projekt oder als Absatz bei Selam? Dürfen die Zahlen aus dem Buch (über 750.000 erreichte Personen, 670.000 Videoaufrufe, Stand Nov. 2021) und ein Auszug aus deinem Text „Die richtige Balance“ auf die Seite?
 4. **Hänsel und Gretel, Englisch:** Renate Vogg „Set & Costume Design“, David Münch „Scenic Construction“ – passt das?
 5. **Vorschaubild:** Foto mit orangem Hintergrund bitte als Datei (D-056).
-6. **pOpera:** Galeriefoto 02b ist „Inês Rebelo de Andrade“ zugeordnet – stimmt das, oder ist es von Laurent Sturm / Sébastien Grebille?
 7. **Theater an der Wien:** Logo auf der Seite ist das Jubiläumslogo „225 Jahre“ – gibt es ein schlichtes?
+
+## 7 · Rückfragen zum Google Doc (04.10., D-065)
+
+1. **Oz in Linz:** Im Doc steht „20.–217. März 2027“ – ist es 20.–27. oder 21.–27. März?
+2. **Lene:** „(Reseo) Publikumspreis 2026“ – gehört „RESEO“ in den Namen des Preises? Auf der Seite steht „YAMawards – Publikumspreis“.
+3. **pOpera, Besetzung:** „Princess (Kid)s“ – wer spielt die Princess? Steht jetzt als „children as Princess“.
+4. **Selam Opera!, Presse:** Das nachtkritik-Zitat ist wörtlich („… in denen diese eingebunden werden“). „die Zuschauer“ steht deshalb in eckigen Klammern – ok?
+5. **Englische Texte:** sind von uns aus deinen deutschen Änderungen übersetzt – einmal drüberschauen.
+6. **Season 2026/27:** Für „Der kleine Drache Immer-Heiß“ fehlt noch ein kurzer Text; NEST (Staatsoper) Datum/Rolle. Hänsel und Gretel Dresden und Konzerthaus/Musikverein lassen wir weg, bis es offiziell ist.
+7. **Neue Fotos:** Klangstreich (Premiere 11.10.) und Peter Pan – bitte schicken, mit Fotograf:in.
 
 ---
 

@@ -19,8 +19,8 @@ export default defineProject({
     src: '/media/peter-pan/cover.mp4',
     poster: '/media/peter-pan/cover-poster.jpg',
     alt: {
-      en: 'Peter Pan and Wendy talk on the wooden stage set, snow-covered fabric at their feet.',
-      de: 'Peter Pan und Wendy im Gespräch auf der hölzernen Bühne, verschneiter Stoff zu ihren Füßen.',
+      en: 'Trailer: Peter and Wendy in front of a blue backdrop, Tinker Bell, the Lost Boys with sticks and Captain Hook with his pirates.',
+      de: 'Trailer: Peter und Wendy vor blauem Prospekt, Tinker Bell, die Verlorenen Jungs mit Stöcken und Kapitän Hook mit seinen Piraten.',
     },
     width: 800,
     height: 1000,
@@ -28,11 +28,11 @@ export default defineProject({
   },
   intro: {
     en: [
-      'Frank Schwemmer’s new opera, with a libretto by Michael Frowin, takes J. M. Barrie’s adventure to Neverland and turns it into music theatre for young audiences: flight, pirates and the fear of growing up, told through voices and orchestra.',
+      'Frank Schwemmer’s new opera, with a libretto by Michael Frowin, takes J. M. Barrie’s adventure to Neverland and turns it into music theatre for young audiences: flying, pirates and the fear of growing up, told by six soloists, five pirates, a 50-strong children’s choir and full orchestra.',
       'The production was commissioned by the Philharmonie Luxembourg and had its world premiere there in 2024.',
     ],
     de: [
-      'Frank Schwemmers neue Oper nach einem Libretto von Michael Frowin bringt J. M. Barries Abenteuer im Nimmerland als Musiktheater für junges Publikum auf die Bühne: Fliegen, Piraten und die Angst vorm Erwachsenwerden, erzählt mit Stimmen und Orchester.',
+      'Frank Schwemmers neue Oper nach einem Libretto von Michael Frowin bringt J. M. Barries Abenteuer im Nimmerland als Musiktheater für junges Publikum auf die Bühne: vom Fliegen, von Piraten und von der Angst vorm Erwachsenwerden, erzählt mit sechs Solist:innen, fünf Piraten, einem 50-köpfigen Kinderchor und großem Orchester.',
       'Die Auftragsproduktion der Philharmonie Luxembourg wurde dort 2024 uraufgeführt.',
     ],
   },

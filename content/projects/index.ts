@@ -30,6 +30,7 @@ export function resolveProject(p: ProjectSource, locale: Locale): Project {
     venue: pick(p.venue, locale),
     year: p.year,
     yearLabel: p.yearLabel ?? String(p.year),
+    premiere: p.premiere ?? '',
     pillar: p.pillar,
     role: pick(p.role, locale),
     dates: p.dates ? pick(p.dates, locale) : [],

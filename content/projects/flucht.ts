@@ -137,7 +137,9 @@ export default defineProject({
   ],
   videos: [{ provider: 'youtube', id: 'NUGsQ-HoR54', title: { en: 'Flucht – trailer', de: 'Flucht – Trailer' } }],
   credits: [
+    { role: { en: 'Concept development', de: 'Konzeptentwicklung' }, name: 'Mustafa Akça, Rainer Simon, Ulrich Lenz, Anisha Bondy' },
     { role: { en: 'Stage Director', de: 'Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Spatial concept', de: 'Raumkonzept' }, name: 'Anne Hölzinger' },
     { role: { en: 'Musical Director (Flucht I)', de: 'Musikalische Leitung (Flucht I)' }, name: 'Stefan Sanderling' },
     { role: { en: 'Mezzo-soprano (Flucht I)', de: 'Mezzosopran (Flucht I)' }, name: 'Karolina Gumos' },
     { role: { en: 'With (Flucht II)', de: 'Mit (Flucht II)' }, name: 'Safar, Babylon Orchestra' },

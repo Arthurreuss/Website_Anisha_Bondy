@@ -7,8 +7,9 @@ export default defineProject({
   subtitle: { en: 'Fairy-tale circus opera · World premiere', de: 'Märchenzirkusoper · Uraufführung' },
   venue: 'Philharmonie Luxembourg',
   year: 2025,
+  premiere: '2025-04-25',
   pillar: 'direct',
-  role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' },
+  role: { en: 'Devising & Stage Director', de: 'Stückentwicklung & Regie' },
   dates: {
     en: ['World premiere 25 April 2025, Philharmonie Luxembourg', 'Family performance 26 April 2025'],
     de: ['Uraufführung 25. April 2025, Philharmonie Luxembourg', 'Familienvorstellung 26. April 2025'],
@@ -90,7 +91,7 @@ export default defineProject({
   credits: [
     { role: { en: 'Music', de: 'Musik' }, name: 'Elena Kats-Chernin' },
     { role: { en: 'Libretto', de: 'Libretto' }, name: 'Susanne Felicitas Wolf' },
-    { role: { en: 'Creative Director & Stage Director', de: 'Creative Director & Regie' }, name: 'Anisha Bondy' },
+    { role: { en: 'Devising & Stage Director', de: 'Stückentwicklung & Regie' }, name: 'Anisha Bondy' },
     { role: { en: 'Musical Director', de: 'Musikalische Leitung' }, name: 'James Hendry' },
     { role: { en: 'Circus', de: 'Zirkus' }, name: "Zaltimbanq' Zirkus · Irina Chechulina" },
     { role: { en: 'Choreography', de: 'Choreografie' }, name: 'Mariana Souza' },
@@ -98,7 +99,8 @@ export default defineProject({
     { role: { en: 'Costumes', de: 'Kostüme' }, name: 'Uta Jäger' },
     { role: { en: 'Lighting', de: 'Licht' }, name: 'Michael Morgan' },
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
-    { role: { en: 'Children’s choir', de: 'Kinderchor' }, name: 'Kinderchor Forte (Conservatoire de la Ville de Luxembourg) · Sylvie Serra-Jacobs' },
+    { role: { en: 'Children’s choir', de: 'Kinderchor' }, name: 'Kinderchor Forte (Conservatoire de la Ville de Luxembourg)' },
+    { role: { en: 'Chorus master', de: 'Chorleitung' }, name: 'Sylvie Serra-Jacobs' },
     {
       role: { en: 'Cast', de: 'Mit' },
       name: 'Danae Kontora, Susan Zarrabi, Peter Kirk, Hélène Gustin, Andrii Zubchevskyi and the artists of Zaltimbanq’ Zirkus',

@@ -7,3 +7,8 @@ import { projectSources, resolveProject } from '~/content/projects'
 export async function loadProjects(locale: Locale): Promise<Project[]> {
   return projectSources.map((p) => resolveProject(p, locale)).sort((a, b) => a.order - b.order)
 }
+
+/** Chronologisch aufsteigend: Jahr, dann Premierendatum (ohne Datum zuerst). */
+export function byPremiere(a: Project, b: Project): number {
+  return a.year - b.year || a.premiere.localeCompare(b.premiere)
+}

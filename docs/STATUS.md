@@ -2,24 +2,24 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-10-02 · D-064 Selam Opera!: Team-Foto BKM-Preis 2017 – **live** (production = main); D-063 live; D-039 – D-054 live; **D-055 = Feedback Anisha 27.09., geplant als P26–P31**; live = Branch `production`, `main` = Arbeitsstand
-**Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅.
+**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) auf Branch `claude/laughing-lovelace-vz1gvy`, **noch nicht live**; live = `production` (Stand D-064)
+**Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅. Feedback 27.09. (P26–P31) live.
 
 ## Aktiv
-- **Feedback 27.09.** (D-055 – D-060): P26–P30 fertig und auf `claude/affectionate-maxwell-d0f30h` gepusht; **P31 wartet auf Abnahme des Users**, dann Deploy auf Zuruf.
-- Rohmaterial nur im Scratchpad `/tmp/claude-0/-home-user-Website-Anisha-Bondy/4f3973c7-1afe-55c8-ac26-92bc60acac06/scratchpad/clips` (bei Abbruch neu holen; Peter-Pan-Zip: Drive `1MJxqNUQZdNEyCTGvh-qKF3mCMKUSEZBl`).
-- Projekttexte als Google Doc an Anisha (ID `1jccHWcOwFOQhqua9_khu6naE2P7QLR07-l3kZZQ7PIw`). Rücklauf → Texte, Reihenfolge, Season 2026/27.
+- D-065: Abnahme User, dann nach `main` und auf Zuruf `production` (Klangstreich-Premiere 11.10.).
+- Rohmaterial nur im Scratchpad dieser Session (`…/scratchpad/wt/x`, WeTransfer läuft bis 07.10. ab).
 - **P24 QA**: offen Safari/iPhone + Abnahme User.
 
 ## Laufende Agenten
 - keine.
 
 ## Nächster Schritt
-1. User: Abnahme (Farben D-058, Sprache D-059, Lene-Intro D-060, Texte/Credits). Dann Branch nach `main` und auf Zuruf `production`.
-2. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059).
-3. Anisha: Google Doc; [anfrage-anisha.md](anfrage-anisha.md) §6 (Ligeti/Xenakis als Projekte?, Selam-Fragen, H&G-Begriffe, pOpera 02b Fotograf:in, schlichtes Logo Theater an der Wien).
-4. Wir: Quelle zum YAMaward-Gewinn nachtragen, sobald online ([Winners](https://www.youngaudiencesmusic.com/winners) zeigt noch 2025) – D-063.
-5. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
+1. User: Abnahme D-065; Rückfragen an Anisha in [anfrage-anisha.md](anfrage-anisha.md) §7 weitergeben.
+2. Box „Season 2026/27“ bauen, sobald Platz/Form geklärt (Liste: [INHALTE.md](INHALTE.md) §8).
+3. Lene: „Trailer hängt sich auf“ (WhatsApp Anisha) – welches Video/Gerät? Schleife `loop.mp4` technisch ok (faststart, H.264 High).
+4. Kommende Fotos: Klangstreich (nach 11.10.), Peter Pan.
+5. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059). Quelle YAMaward nachtragen (D-063).
+6. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 
 ## Bekannte Kleinigkeiten
 - Zeilen-Split nur reiner Text (D-013).

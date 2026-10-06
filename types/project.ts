@@ -76,6 +76,8 @@ export interface Project {
   year: number
   /** Anzeige, z. B. „2015–2022“; sonst `year` */
   yearLabel: string
+  /** Premierendatum (JJJJ-MM-TT), sortiert innerhalb eines Jahres; leer = unbekannt */
+  premiere: string
   pillar: Pillar
   /** Anishas Rolle, z. B. „Regie“ */
   role: string
@@ -117,6 +119,8 @@ export interface ProjectSource {
   venue: string | L
   year: number
   yearLabel?: string
+  /** JJJJ-MM-TT, nur zum Sortieren (Archiv, Timeline, Menü) */
+  premiere?: string
   pillar: Pillar
   role: L
   dates?: L<string[]>

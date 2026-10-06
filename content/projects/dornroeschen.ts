@@ -7,8 +7,9 @@ export default defineProject({
   subtitle: { en: 'Music dance theatre after Tchaikovsky', de: 'Musiktanztheater nach Tschaikowsky' },
   venue: 'Philharmonie Luxembourg',
   year: 2026,
+  premiere: '2026-03-06',
   pillar: 'create',
-  role: { en: 'Stage Director', de: 'Regie' },
+  role: { en: 'Devising & Stage Director', de: 'Stückentwicklung & Regie' },
   dates: {
     en: ['Premiere 6 March 2026 (school performance), Philharmonie Luxembourg', 'Family performance 7 March 2026'],
     de: ['Premiere 6. März 2026 (Schulvorstellung), Philharmonie Luxembourg', 'Familienvorstellung 7. März 2026'],
@@ -28,11 +29,11 @@ export default defineProject({
   },
   intro: {
     en: [
-      'A music dance theatre production built around Tchaikovsky’s score for Sleeping Beauty, bringing dance and staged narration together for the Philharmonie Luxembourg.',
+      'A music dance theatre production built around Tchaikovsky’s score for Sleeping Beauty, bringing dance and staged narration together for the Philharmonie Luxembourg. With great fun and esprit, Sabrina Zwach creates a new encounter between spoken theatre and dance theatre. Corinna Kirchhoff embodies our Sleeping Beauty.',
       'Choreography is by Mariana Souza, with musical direction by Sasha Scolnik-Brower.',
     ],
     de: [
-      'Ein Musiktanztheater rund um Tschaikowskys Partitur zu Dornröschen, das Tanz und szenisches Erzählen für die Philharmonie Luxembourg zusammenbringt.',
+      'Ein Musiktanztheater rund um Tschaikowskys Partitur zu Dornröschen, das Tanz und szenisches Erzählen für die Philharmonie Luxembourg zusammenbringt. Sabrina Zwach erschafft mit viel Spaß und Esprit eine neue Begegnung zwischen Sprech- und Tanztheater. Corinna Kirchhoff verkörpert unser Dornröschen.',
       'Die Choreografie stammt von Mariana Souza, das Dirigat übernimmt Sasha Scolnik-Brower.',
     ],
   },
