@@ -470,3 +470,7 @@ Grund: E-Mail Anisha 09.10., Zusage User.
 - **Podcast** als Presse-Eintrag „Probenzimmer“ (Christian Schröder, Kai Weßler) mit neuem Feld `PressItem.kind: 'podcast'` → Link-Text „Podcast hören“ / „Listen to podcast“ statt „Artikel lesen“.
 - **Bildrechte:** Laut „Read Me“ des Pressebüros sind die Fotos honorarfrei nur für Social Media; Nutzung auf Websites muss mit dem Fotografen geklärt werden (Andrea Gruber, Pressebüro). Darum auf `main`, **nicht deployt**, bis Anisha die Freigabe hat. Die 5 Probenfotos aus D-068 sind bereits live und betroffen.
 Grund: Lieferung Anisha 09.10. (Mail Jelena Kittke, Pressebüro).
+
+## D-070 · 2026-10-09 · Klangstreich-Fotos freigegeben, D-069 live
+- Freigabe der Website-Nutzung (Lei Chen / MusikTheater an der Wien) laut User erteilt. D-069 auf Zuruf des Users deployt (`production` = `main`).
+Grund: Mitteilung des Users.
