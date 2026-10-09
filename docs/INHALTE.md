@@ -44,7 +44,7 @@ Säule = Vorschlag für Direct (D) / Create (C) / Participate (P). ★ = Kandida
 | | Claude Vivier – *70/35 – a sacred act* | 2018 | Konzerthaus Berlin, ensemble unitedberlin · Jurowski | szen. Einrichtung | C | – | hundert11 (gemischt, nicht zitieren) |
 | | Grisey – *Les espaces acoustiques* | 2019 | Konzerthaus Berlin · Jurowski | szen. Einrichtung | C | – | – |
 | | Die Schneekönigin | 2010 | Komische Oper Berlin | Regie | D | – | – |
-| | *Klangstreich* (Marc L. Vogler), ÖEA | 2026 | Theater an der Wien, ab 11.10.2026 | Regie | D | – | auf der Seite (D-049); Mitternachtstür war nicht Anishas Projekt, gelöscht |
+| | *Klangstreich* (Marc L. Vogler), ÖEA | 2026 | Theater an der Wien, ab 11.10.2026 | Regie | D | – | auf der Seite (D-049), seit D-068 erste Startseiten-Karte; Mitternachtstür war nicht Anishas Projekt, gelöscht |
 | | Assistenzen: u. a. Kosky (*Rusalka*, Wiederaufnahme-Regie 2016), Baumgarten (*Tannhäuser*, Bayreuth 2011–14), Thalbach, Guth, Konwitschny, Neuenfels | 2007– | | Regieassistenz / Spielleitung | – | [„My very special Barrie moment“](https://www.youtube.com/watch?v=eWz4lkQRvmQ) (Komische Oper) | – |
 
 **Pop-Up-Opera-Clips** (Kanal Komische Oper Berlin; Zuordnung zu den Google-Links wahrscheinlich, von Anisha bestätigen lassen – auch, bei welchen sie Regie geführt hat):

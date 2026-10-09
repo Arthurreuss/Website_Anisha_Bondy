@@ -455,3 +455,10 @@ Grund: WhatsApp Anisha, Beschreibung des Users.
 ## D-067 · 2026-10-09 · pOpera: „Participant Choir“ statt „Laienchor“
 - Galerie-Block „Der Laienchor“ / „The community choir“ heißt jetzt „Der Participant Choir“ / „The Participant Choir“; in den Credits (Mit) ebenso „Participant Choir“ statt „community choir“. Der Begriff bleibt auch im Deutschen englisch (Wortlaut Anisha).
 Grund: E-Mail Anisha 09.10. („das ist mir sehr wichtig“).
+
+## D-068 · 2026-10-09 · Klangstreich: eigene Karte an erster Stelle der Startseite
+- Anisha (E-Mail 09.10.): viel Material zur Premiere am 11.10. (Proben-/Produktionsfotos, Instagram-Trailer, Podcast, Presse), „doch ein eigenes Fenster?“. Vorschlag angenommen vom User: `featured: true`, `order: 0` → erste Karte der Startseite; im Archiv bleibt es per `premiere` oben.
+- 5 Probenfotos (s/w, Instagram-Quadrate mit weißem Rand, Rand abgeschnitten): Cover = Gesprächsrunde über der Partitur (bewusst nicht Anisha, vgl. D-065), Galerie: Proben (single) · W24 zu Besuch bei der Probe (3, davon 2 mit Anisha im Interview) · In der Maske (single). Fotograf:in unbekannt → kein `credit`, Todo „Fotonachweis“.
+- Ausbaustufen, wenn geliefert: Trailer als Cover-Schleife (Videodatei nötig, nicht nur Instagram-Link), Produktionsfotos als weiterer Block, Podcast als Link, Presse-Zitate.
+- Auf Zuruf des Users direkt deployt (mit D-067).
+Grund: E-Mail Anisha 09.10., Zusage User.
