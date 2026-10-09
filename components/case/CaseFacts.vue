@@ -95,7 +95,7 @@ useReveal(rootRef)
           </p>
           <p v-if="item.quote" class="font-body press-item__quote">&ldquo;{{ item.quote }}&rdquo;</p>
           <a v-if="item.url" :href="item.url" target="_blank" rel="noopener noreferrer" class="font-body-12 uppercase press-item__link">
-            {{ $t('case.facts.pressLink') }} ↗
+            {{ $t(item.kind === 'podcast' ? 'case.facts.podcastLink' : 'case.facts.pressLink') }} ↗
           </a>
         </li>
       </ul>

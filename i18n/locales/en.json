@@ -85,7 +85,8 @@
       "awardWon": "Winner",
       "awardNominated": "Nominated",
       "press": "Press",
-      "pressLink": "Read article"
+      "pressLink": "Read article",
+      "podcastLink": "Listen to podcast"
     },
     "gallery": {
       "empty": "Production photos to follow"

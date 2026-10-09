@@ -75,7 +75,7 @@ Auch im Google Doc als Tab „Rückfragen“ (dort plus Archiv-Frage, Homoki-Spi
 4. **Selam Opera!, Presse:** Das nachtkritik-Zitat ist wörtlich („… in denen diese eingebunden werden“). „die Zuschauer“ steht deshalb in eckigen Klammern – ok?
 5. **Englische Texte:** sind von uns aus deinen deutschen Änderungen übersetzt – einmal drüberschauen.
 6. **Season 2026/27:** Für „Der kleine Drache Immer-Heiß“ fehlt noch ein kurzer Text; NEST (Staatsoper) Datum/Rolle. Hänsel und Gretel Dresden und Konzerthaus/Musikverein lassen wir weg, bis es offiziell ist.
-7. **Neue Fotos:** Klangstreich – wer hat die Probenfotos (W24-Besuch) gemacht? Trailer bitte als Videodatei, dazu Produktionsfotos, Podcast-Link, Presse. Peter Pan – bitte schicken, mit Fotograf:in.
+7. **Neue Fotos:** Klangstreich – Freigabe für die Website bei Lei Chen über Andrea Gruber (andrea.gruber@vbw.at) einholen (laut Read Me nur Social Media frei); Premierenfotos Katharina Schiffl: Freigabe direkt bei ihr. Kritiken nach der Premiere. Peter Pan – bitte schicken, mit Fotograf:in.
 
 ---
 

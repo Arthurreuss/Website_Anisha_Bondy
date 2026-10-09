@@ -85,7 +85,8 @@
       "awardWon": "Ausgezeichnet",
       "awardNominated": "Nominiert",
       "press": "Presse",
-      "pressLink": "Artikel lesen"
+      "pressLink": "Artikel lesen",
+      "podcastLink": "Podcast hören"
     },
     "gallery": {
       "empty": "Produktionsfotos folgen"

@@ -20,14 +20,16 @@ export default defineProject({
   },
   tags: { en: ['Children’s opera', 'A cappella', 'Ages 4+'], de: ['Kinderoper', 'A cappella', 'Ab 4 Jahren'] },
   cover: {
-    type: 'image',
-    src: '/media/klangstreich/cover.jpg',
+    type: 'video',
+    src: '/media/klangstreich/cover.mp4',
+    poster: '/media/klangstreich/cover-poster.jpg',
     alt: {
-      en: 'Rehearsal: singers and the team sit together on benches, bent over the score.',
-      de: 'Probe: Sänger:innen und Team sitzen auf Bänken zusammen und beugen sich über die Partitur.',
+      en: 'Trailer: shadows of notes on the stave, a singer with a microphone, a rocker in a studded jacket, two singers with bird helmets.',
+      de: 'Trailer: Schatten von Noten auf dem Notensystem, ein Sänger mit Mikrofon, eine Rockerin in Nietenjacke, zwei Sängerinnen mit Vogelhelmen.',
     },
-    width: 1087,
-    height: 1359,
+    width: 800,
+    height: 1000,
+    credit: 'Film: MusikTheater an der Wien',
   },
   intro: {
     en: [
@@ -42,16 +44,140 @@ export default defineProject({
   gallery: [
     {
       type: 'single',
+      label: { en: 'On stage', de: 'Auf der Bühne' },
+      media: {
+          type: 'image',
+          src: '/media/klangstreich/s01.jpg',
+          alt: {
+            en: 'Two singers in bird helmets spread shimmering blue wings; between them Finn, in front of a paper silhouette of Vienna.',
+            de: 'Zwei Sängerinnen mit Vogelhelmen breiten schimmernde blaue Flügel aus, zwischen ihnen Finn, vor einer Papiersilhouette von Wien.',
+          },
+          width: 2400,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'Scenes', de: 'Szenen' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/klangstreich/s02a.jpg',
+          alt: {
+            en: 'The three singers in front of a red curtain and a starry backdrop, two of them as birds.',
+            de: 'Die drei Sänger:innen vor rotem Vorhang und Sternenhimmel, zwei davon als Vögel.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+        {
+          type: 'image',
+          src: '/media/klangstreich/s02b.jpg',
+          alt: {
+            en: 'A singer with a silver wig and silver gloves sings into a microphone in blue light.',
+            de: 'Eine Sängerin mit silberner Perücke und Silberhandschuhen singt in blauem Licht ins Mikrofon.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+        {
+          type: 'image',
+          src: '/media/klangstreich/s02c.jpg',
+          alt: {
+            en: 'Shadow play: a woman’s silhouette in purple light above the shadow of a man holding a microphone.',
+            de: 'Schattenspiel: die Silhouette einer Frau in violettem Licht über dem Schatten eines Mannes mit Mikrofon.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'On the road', de: 'Unterwegs' },
+      media: {
+          type: 'image',
+          src: '/media/klangstreich/s03.jpg',
+          alt: {
+            en: 'Finn and a singer in a top hat look out of a cardboard car.',
+            de: 'Finn und eine Sängerin mit Zylinder schauen aus einem Auto aus Pappe.',
+          },
+          width: 2400,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+    },
+    {
+      type: 'group-3',
+      label: { en: 'Finn’s journey', de: 'Finns Reise' },
+      media: [
+        {
+          type: 'image',
+          src: '/media/klangstreich/s04a.jpg',
+          alt: {
+            en: 'Finn kneels in a cone of light, hands on hips.',
+            de: 'Finn kniet im Lichtkegel, die Hände in die Hüften gestemmt.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+        {
+          type: 'image',
+          src: '/media/klangstreich/s04b.jpg',
+          alt: {
+            en: 'In front of a red wall, Finn reaches for an old radio.',
+            de: 'Vor roter Wand greift Finn nach einem alten Radio.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+        {
+          type: 'image',
+          src: '/media/klangstreich/s04c.jpg',
+          alt: {
+            en: 'A singer strikes a pose in front of a large golden disc of light.',
+            de: 'Eine Sängerin posiert vor einer großen goldenen Lichtscheibe.',
+          },
+          width: 1200,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+      ],
+    },
+    {
+      type: 'single',
+      label: { en: 'Shadows on the stave', de: 'Schatten im Notensystem' },
+      media: {
+          type: 'image',
+          src: '/media/klangstreich/s05.jpg',
+          alt: {
+            en: 'A treble clef and stave lines are projected onto white curtains; three silhouettes stand between them, two with note heads.',
+            de: 'Violinschlüssel und Notenlinien auf weißen Vorhängen, dazwischen drei Silhouetten, zwei davon mit Notenköpfen.',
+          },
+          width: 2400,
+          height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
+        },
+    },
+    {
+      type: 'single',
       label: { en: 'Rehearsals', de: 'Proben' },
       media: {
           type: 'image',
-          src: '/media/klangstreich/01.jpg',
+          src: '/media/klangstreich/r01.jpg',
           alt: {
             en: 'Singers in black rehearsal clothes and the team discuss the score on wooden benches.',
             de: 'Sänger:innen in schwarzer Probenkleidung und Team besprechen auf Holzbänken die Partitur.',
           },
           width: 2042,
           height: 1276,
+          credit: 'Lei Chen / MusikTheater an der Wien',
         },
     },
     {
@@ -60,33 +186,36 @@ export default defineProject({
       media: [
         {
           type: 'image',
-          src: '/media/klangstreich/02a.jpg',
+          src: '/media/klangstreich/r02a.jpg',
           alt: {
             en: 'Anisha Bondy gives an interview to W24 in the rehearsal room, a TV camera in the foreground.',
             de: 'Anisha Bondy im Interview mit W24 im Probenraum, im Vordergrund die Fernsehkamera.',
           },
           width: 1087,
           height: 1359,
+          credit: 'Lei Chen / MusikTheater an der Wien',
         },
         {
           type: 'image',
-          src: '/media/klangstreich/02b.jpg',
+          src: '/media/klangstreich/r02b.jpg',
           alt: {
             en: 'Anisha Bondy speaks animatedly into the W24 microphone.',
             de: 'Anisha Bondy spricht lebhaft ins W24-Mikrofon.',
           },
           width: 1200,
           height: 1500,
+          credit: 'Lei Chen / MusikTheater an der Wien',
         },
         {
           type: 'image',
-          src: '/media/klangstreich/02c.jpg',
+          src: '/media/klangstreich/r02c.jpg',
           alt: {
             en: 'A singer raises both arms during his W24 interview; the team watches from the rehearsal table.',
             de: 'Ein Sänger reißt im W24-Interview beide Arme hoch, das Team schaut vom Probentisch aus zu.',
           },
           width: 1087,
           height: 1359,
+          credit: 'Lei Chen / MusikTheater an der Wien',
         },
       ],
     },
@@ -95,13 +224,14 @@ export default defineProject({
       label: { en: 'In make-up', de: 'In der Maske' },
       media: {
           type: 'image',
-          src: '/media/klangstreich/03.jpg',
+          src: '/media/klangstreich/r03.jpg',
           alt: {
             en: 'A singer in a dressing gown laughs in the make-up room, seen through a mirror at a slant.',
             de: 'Ein Sänger im Morgenmantel lacht in der Maske, schräg durch einen Spiegel gesehen.',
           },
           width: 2042,
           height: 1276,
+          credit: 'Lei Chen / MusikTheater an der Wien',
         },
     },
   ],
@@ -116,11 +246,19 @@ export default defineProject({
     { role: { en: 'Cast', de: 'Mit' }, name: 'Jubin Amiri, Anita Rosati, Ella Feldmeier' },
   ],
   awards: [],
-  press: [],
+  press: [
+    {
+      source: 'Podcast „Probenzimmer“ · MusikTheater an der Wien',
+      author: 'Christian Schröder, Kai Weßler',
+      quote: { en: 'Klangstreich – Eine Note tanzt aus der Reihe', de: 'Klangstreich – Eine Note tanzt aus der Reihe' },
+      url: 'https://open.spotify.com/episode/7eEE6NLH2mIWAAXYwzZ0cG',
+      kind: 'podcast',
+    },
+  ],
   featured: true,
   order: 0,
   todos: {
-    en: ['Trailer, production photos, podcast and press after the premiere', 'Photo credit for the rehearsal photos'],
-    de: ['Trailer, Produktionsfotos, Podcast und Presse nach der Premiere', 'Fotonachweis der Probenfotos'],
+    en: ['Premiere photos and reviews after 11 October'],
+    de: ['Premierenfotos und Kritiken nach dem 11. Oktober'],
   },
 })

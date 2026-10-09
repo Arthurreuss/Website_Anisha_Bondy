@@ -462,3 +462,11 @@ Grund: E-Mail Anisha 09.10. („das ist mir sehr wichtig“).
 - Ausbaustufen, wenn geliefert: Trailer als Cover-Schleife (Videodatei nötig, nicht nur Instagram-Link), Produktionsfotos als weiterer Block, Podcast als Link, Presse-Zitate.
 - Auf Zuruf des Users direkt deployt (mit D-067).
 Grund: E-Mail Anisha 09.10., Zusage User.
+
+## D-069 · 2026-10-09 · Klangstreich: Trailer, Pressefotos Lei Chen, Podcast – wartet auf Bildrechte
+- Lieferung Pressebüro MusikTheater an der Wien (über Anisha): Pressefotos + Programmheftfotos (Nextcloud), 6 Trailer-Fassungen, Podcast-Link. Fotograf aller Proben-/Szenenfotos, auch der 5 Probenfotos aus D-068: **Lei Chen**.
+- **Cover** = Schleife aus `MASTER_TaW_Klangstreich_30Sek_4zu5.mp4`, 2,56–15,80 s (13,2 s: Notenschatten → Sänger → Rockerin → Schattentänzerin → Vogelhelme; ohne Logo und Endtafel), 800×1000 H.264 stumm, Poster bei 0,3 s, Credit „Film: MusikTheater an der Wien“. `cover.jpg` (Probenrunde) gelöscht.
+- **Galerie** 9 Blöcke: Auf der Bühne · Szenen (3) · Unterwegs · Finns Reise (3) · Schatten im Notensystem (Pressefotos 6, 1, 12, 5, 10, 15, 11, 13, 17), danach die Probenfotos aus D-068 (umbenannt `r…`). Alle mit Credit „Lei Chen / MusikTheater an der Wien“ (Wortlaut des Copyright-Vermerks). Programmheftfotos nicht verwendet (Pressefotos sind die Auswahl des Hauses).
+- **Podcast** als Presse-Eintrag „Probenzimmer“ (Christian Schröder, Kai Weßler) mit neuem Feld `PressItem.kind: 'podcast'` → Link-Text „Podcast hören“ / „Listen to podcast“ statt „Artikel lesen“.
+- **Bildrechte:** Laut „Read Me“ des Pressebüros sind die Fotos honorarfrei nur für Social Media; Nutzung auf Websites muss mit dem Fotografen geklärt werden (Andrea Gruber, Pressebüro). Darum auf `main`, **nicht deployt**, bis Anisha die Freigabe hat. Die 5 Probenfotos aus D-068 sind bereits live und betroffen.
+Grund: Lieferung Anisha 09.10. (Mail Jelena Kittke, Pressebüro).

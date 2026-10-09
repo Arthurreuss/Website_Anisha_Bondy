@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-10-09 · **D-067** pOpera „Participant Choir“ + **D-068** Klangstreich als erste Startseiten-Karte mit 5 Probenfotos, **live** seit 09.10. · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) **live** seit 06.10. (production = main)
+**Stand:** 2026-10-09 · **D-067** pOpera „Participant Choir“ + **D-068** Klangstreich als erste Startseiten-Karte mit 5 Probenfotos, **live** seit 09.10. · **D-069** Klangstreich Trailer-Cover + Pressefotos + Podcast nur auf `main` (wartet auf Bildrechte Lei Chen) · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) **live** seit 06.10. (production = main)
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅. Feedback 27.09. (P26–P31) live.
 
 ## Aktiv
@@ -17,7 +17,7 @@
 1. User: Anisha auf die Doc-Tabs „Rückfragen“ und „English“ hinweisen (Archiv-Projekte stehen in beiden Sprach-Tabs als Nr. 11–14).
 2. Box „Season 2026/27“ bauen, sobald Platz/Form geklärt (Liste: [INHALTE.md](INHALTE.md) §8).
 3. Google Doc: Tabs „Rückfragen“ (= anfrage-anisha §7) und „English“ (EN-Texte aller 14 Projekte) angelegt (06.10.). Anishas Antworten/Korrekturen dort abwarten → einbauen.
-4. Klangstreich nach der Premiere (D-068): Trailer-Datei → Cover-Schleife, Produktionsfotos, Podcast-Link, Presse, Fotonachweis der Probenfotos. Peter-Pan-Fotos.
+4. Klangstreich (D-069): Freigabe Website-Nutzung Lei Chen (über Andrea Gruber) → dann deployen. Premierenfotos (Katharina Schiffl, ab 12.10. im selben Nextcloud-Link, eigene Freigabe) und Kritiken. Peter-Pan-Fotos.
 5. Nach Deploy: Sitemap in der Search Console neu einreichen (D-059). Quelle YAMaward nachtragen (D-063).
 6. Nicht ohne Zuruf auf `production` pushen (jeder Push = Deploy).
 
@@ -33,5 +33,6 @@
 - Build `npm run generate` → `.output/public` (mit `CF_PAGES=1` → `dist`), Server mit sauberen URLs wie Cloudflare: `npx serve@14 dist -l 4194` (python http.server findet `about.html` nicht). Playwright global unter `/opt/node22/lib/node_modules` (im Skriptordner verlinken).
 
 ## Offene Fragen an den User
+- D-069 deployen, sobald Bildrechte geklärt? Bis dahin die 5 Probenfotos (live, Lei Chen) offline nehmen?
 - Abnahme P24 (Safari/iPhone).
 - Menü mit 4 Fenstern: „Über mich“ am Fensterrand angeschnitten (schon vor D-045) – Titel dort kleiner?

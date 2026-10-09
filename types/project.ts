@@ -57,6 +57,8 @@ export interface PressItem {
   quote?: string
   author?: string
   url?: string
+  /** Art des Links; bestimmt nur die Link-Beschriftung (Standard: Artikel) */
+  kind?: 'article' | 'podcast'
 }
 
 export interface Award {
