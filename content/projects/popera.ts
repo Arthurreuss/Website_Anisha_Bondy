@@ -108,7 +108,7 @@ export default defineProject({
     },
     {
       type: 'single',
-      label: { en: 'The community choir', de: 'Der Laienchor' },
+      label: { en: 'The Participant Choir', de: 'Der Participant Choir' },
       media: {
         type: 'image',
         src: '/media/popera/04.jpg',
@@ -219,7 +219,7 @@ export default defineProject({
     { role: { en: 'Orchestra', de: 'Orchester' }, name: 'Luxembourg Philharmonic' },
     {
       role: { en: 'Cast', de: 'Mit' },
-      name: 'Stephany Ortega (Juliet), Johannes Bamberger (Romeo), Fredrika Brillembourg (Pigeon Lady), Tijl Faveyts (Housekeeper), children as Princess, community choir, Pueri Cantores du Conservatoire de la Ville de Luxembourg, choir of the CLI Adam Roberti school',
+      name: 'Stephany Ortega (Juliet), Johannes Bamberger (Romeo), Fredrika Brillembourg (Pigeon Lady), Tijl Faveyts (Housekeeper), children as Princess, Participant Choir, Pueri Cantores du Conservatoire de la Ville de Luxembourg, choir of the CLI Adam Roberti school',
     },
   ],
   awards: [],

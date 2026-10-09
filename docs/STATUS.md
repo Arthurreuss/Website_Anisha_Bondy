@@ -2,7 +2,7 @@
 
 > Wird bei jedem Fortschritt **überschrieben**. Historie steht in Git und DECISIONS.md.
 
-**Stand:** 2026-10-06 · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) **live** seit 06.10. (production = main)
+**Stand:** 2026-10-09 · **D-067** pOpera „Participant Choir“ statt „Laienchor“ (main, noch nicht live) · **D-065 Lieferung Anisha 04.10.** (Oz-/Peter-Pan-Trailer als Cover, pOpera-Galerie neu, Texte aus dem Google Doc, Klangstreich oben im Archiv) + **D-066** (Lene-Schleife ohne Hänger) **live** seit 06.10. (production = main)
 **Phase:** 2 – echte Inhalte. Phase 1: P1–P9, P11 ✅, P10 ⏸. Animationen v2 P18–P23 ✅. Feedback 27.09. (P26–P31) live.
 
 ## Aktiv
@@ -33,5 +33,7 @@
 - Build `npm run generate` → `.output/public` (mit `CF_PAGES=1` → `dist`), Server mit sauberen URLs wie Cloudflare: `npx serve@14 dist -l 4194` (python http.server findet `about.html` nicht). Playwright global unter `/opt/node22/lib/node_modules` (im Skriptordner verlinken).
 
 ## Offene Fragen an den User
+- Deploy D-067 auf `production`?
+- Klangstreich (Premiere 11.10.): eigene Karte auf der Startseite statt nur Archiv? Material kommt (Proben-/Produktionsfotos, Trailer, Podcast, Presse).
 - Abnahme P24 (Safari/iPhone).
 - Menü mit 4 Fenstern: „Über mich“ am Fensterrand angeschnitten (schon vor D-045) – Titel dort kleiner?

@@ -451,3 +451,7 @@ Grund: Lieferung Anisha (WeTransfer 04.10., Google Doc), WhatsApp vom 05./06.10.
 - Alle Cover-Schleifen geprüft (Frames < 200 Byte = unverändertes Bild): sonst keine Hänger.
 Grund: WhatsApp Anisha, Beschreibung des Users.
 - Auf Zuruf des Users deployt (06.10.): `main` und `production` per Fast-Forward. Google-Doc-Tab 1 heißt jetzt „Deutsch“.
+
+## D-067 · 2026-10-09 · pOpera: „Participant Choir“ statt „Laienchor“
+- Galerie-Block „Der Laienchor“ / „The community choir“ heißt jetzt „Der Participant Choir“ / „The Participant Choir“; in den Credits (Mit) ebenso „Participant Choir“ statt „community choir“. Der Begriff bleibt auch im Deutschen englisch (Wortlaut Anisha).
+Grund: E-Mail Anisha 09.10. („das ist mir sehr wichtig“).
